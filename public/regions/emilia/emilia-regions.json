@@ -1,0 +1,324 @@
+[
+  {
+    "id": "Albana di Romagna DOCG",
+    "name": "Albana di Romagna",
+    "type": "DOCG",
+    "style": ["白酒", "甜酒"],
+    "hectare": "800",
+    "description": "義大利第一個獲得 DOCG 等級的白酒產區,使用 Albana 葡萄品種釀造多種風格的白酒。",
+    "grapes": ["Albana"],
+    "details": {
+      "introduction": "Albana di Romagna 於 1987 年成為義大利第一個獲得 DOCG 等級的白酒產區。可以釀造不甜(secco)、微甜(amabile)、甜酒(dolce)和氣泡酒(spumante)等多種風格。",
+      "climate": "受亞得里亞海影響的溫和氣候,丘陵地形提供良好的日照和排水條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Bolognesi Classico Pignoletto DOCG",
+    "name": "Colli Bolognesi Classico Pignoletto",
+    "type": "DOCG",
+    "style": ["白酒", "氣泡酒"],
+    "hectare": "500",
+    "description": "位於 Bologna 丘陵地區的白酒產區,使用 Pignoletto 葡萄釀造靜態和氣泡酒。",
+    "grapes": ["Pignoletto"],
+    "details": {
+      "introduction": "2011 年升格為 DOCG。Pignoletto 是當地特有的白葡萄品種,能釀造出清新爽口的白酒和優質氣泡酒。",
+      "climate": "丘陵地區的溫和氣候,晝夜溫差大,有利於保持葡萄的酸度和香氣。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Romagna Albana DOCG",
+    "name": "Romagna Albana",
+    "type": "DOCG",
+    "style": ["白酒", "甜酒"],
+    "hectare": "750",
+    "description": "Romagna 地區的白酒產區,與 Albana di Romagna DOCG 相似但範圍更廣。",
+    "grapes": ["Albana"],
+    "details": {
+      "introduction": "使用 Albana 葡萄品種釀造,可生產干型、半甜和甜酒等多種風格。",
+      "climate": "溫和的丘陵氣候,適合 Albana 葡萄的成熟。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Romagna Albana Spumante DOCG",
+    "name": "Romagna Albana Spumante",
+    "type": "DOCG",
+    "style": ["氣泡酒"],
+    "hectare": "300",
+    "description": "專門生產 Albana 氣泡酒的 DOCG 產區。",
+    "grapes": ["Albana"],
+    "details": {
+      "introduction": "2011 年獲得 DOCG 認證,專注於生產高品質的 Albana 氣泡酒,採用傳統法或 Charmat 法釀造。",
+      "climate": "Romagna 丘陵地區的理想氣候條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Lambrusco di Sorbara DOC",
+    "name": "Lambrusco di Sorbara",
+    "type": "DOC",
+    "style": ["氣泡酒", "紅酒"],
+    "hectare": "1000",
+    "description": "Modena 地區最優雅的 Lambrusco 產區,以粉紅色氣泡酒著稱。",
+    "grapes": ["Lambrusco di Sorbara", "Lambrusco Salamino"],
+    "details": {
+      "introduction": "Lambrusco di Sorbara 是最細緻的 Lambrusco 品種,釀造出的氣泡酒通常呈現粉紅色,酸度高、香氣優雅。",
+      "climate": "Po 河谷的大陸性氣候,霧氣有助於葡萄的風味發展。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Lambrusco Grasparossa di Castelvetro DOC",
+    "name": "Lambrusco Grasparossa di Castelvetro",
+    "type": "DOC",
+    "style": ["氣泡酒", "紅酒"],
+    "hectare": "900",
+    "description": "Castelvetro 地區的 Lambrusco 產區,以深紅色且酒體飽滿的氣泡酒聞名。",
+    "grapes": ["Lambrusco Grasparossa"],
+    "details": {
+      "introduction": "Lambrusco Grasparossa 能釀造出顏色深、單寧較重的氣泡酒,風味濃郁,帶有紅色水果香氣。",
+      "climate": "丘陵地區的氣候,排水良好的土壤。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Lambrusco Salamino di Santa Croce DOC",
+    "name": "Lambrusco Salamino di Santa Croce",
+    "type": "DOC",
+    "style": ["氣泡酒", "紅酒"],
+    "hectare": "850",
+    "description": "Santa Croce 地區的 Lambrusco 產區,以平衡且果香豐富的氣泡酒著稱。",
+    "grapes": ["Lambrusco Salamino"],
+    "details": {
+      "introduction": "Lambrusco Salamino 因其葡萄串形似薩拉米香腸而得名,釀造的氣泡酒介於 Sorbara 和 Grasparossa 之間,平衡且易飲。",
+      "climate": "Modena 平原地區的氣候,適合 Lambrusco 生長。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sangiovese di Romagna DOC",
+    "name": "Sangiovese di Romagna",
+    "type": "DOC",
+    "style": ["紅酒"],
+    "hectare": "2500",
+    "description": "Romagna 地區最重要的紅酒產區,使用 Sangiovese 葡萄釀造。",
+    "grapes": ["Sangiovese"],
+    "details": {
+      "introduction": "至少使用 85% Sangiovese 葡萄釀造,可分為一般、Superiore 和 Riserva 等級。展現優雅的紅色水果香氣和良好的結構。",
+      "climate": "丘陵地區氣候,受亞得里亞海調節,適合 Sangiovese 葡萄的生長。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Trebbiano di Romagna DOC",
+    "name": "Trebbiano di Romagna",
+    "type": "DOC",
+    "style": ["白酒"],
+    "hectare": "2000",
+    "description": "Romagna 地區傳統的白酒產區,使用 Trebbiano Romagnolo 葡萄。",
+    "grapes": ["Trebbiano Romagnolo"],
+    "details": {
+      "introduction": "使用至少 85% 的 Trebbiano Romagnolo 葡萄釀造,是清爽易飲的日常白酒,帶有花香和柑橘香氣。",
+      "climate": "Romagna 的丘陵和平原地區,氣候溫和。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Piacentini DOC",
+    "name": "Colli Piacentini",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "1500",
+    "description": "Piacenza 丘陵地區的多元化產區,生產多種風格的葡萄酒。",
+    "grapes": ["Barbera", "Bonarda", "Malvasia di Candia", "Ortrugo"],
+    "details": {
+      "introduction": "1967 年建立的 DOC,涵蓋多個子產區和葡萄品種,包括 Gutturnio(Barbera 和 Bonarda 混釀)等知名酒款。",
+      "climate": "Apennine 山麓的丘陵氣候,多樣化的土壤類型。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli di Parma DOC",
+    "name": "Colli di Parma",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "400",
+    "description": "Parma 丘陵地區的產區,以 Malvasia 氣泡酒聞名。",
+    "grapes": ["Malvasia di Candia", "Barbera"],
+    "details": {
+      "introduction": "以 Malvasia di Candia 釀造的芳香型氣泡酒最具特色,也生產紅酒和靜態白酒。",
+      "climate": "山麓丘陵地區,氣候涼爽,適合釀造氣泡酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Bosco Eliceo DOC",
+    "name": "Bosco Eliceo",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "350",
+    "description": "位於 Po 河三角洲地區的獨特產區,擁有沙質土壤。",
+    "grapes": ["Fortana", "Sauvignon Blanc", "Merlot"],
+    "details": {
+      "introduction": "這個產區位於 Po 河口,沙質土壤賦予葡萄酒獨特的礦物感,以 Fortana 紅葡萄品種最具特色。",
+      "climate": "受 Po 河和亞得里亞海影響的特殊微氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Bolognesi DOC",
+    "name": "Colli Bolognesi",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "600",
+    "description": "Bologna 丘陵地區的傳統產區,生產多種風格的葡萄酒。",
+    "grapes": ["Pignoletto", "Barbera", "Cabernet Sauvignon", "Merlot"],
+    "details": {
+      "introduction": "涵蓋 Bologna 南部丘陵地區,除了當地品種外,也成功種植國際品種。",
+      "climate": "丘陵地區的溫和氣候,日照充足。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli d'Imola DOC",
+    "name": "Colli d'Imola",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "200",
+    "description": "Imola 地區的小型產區,界於 Emilia 和 Romagna 之間。",
+    "grapes": ["Sangiovese", "Trebbiano", "Chardonnay"],
+    "details": {
+      "introduction": "結合了 Emilia 和 Romagna 兩個地區的釀酒傳統,生產多樣化的葡萄酒。",
+      "climate": "丘陵氣候,適合多種葡萄品種。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli di Faenza DOC",
+    "name": "Colli di Faenza",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "180",
+    "description": "Faenza 地區的產區,主要生產 Sangiovese 和 Trebbiano。",
+    "grapes": ["Sangiovese", "Trebbiano", "Pinot Bianco"],
+    "details": {
+      "introduction": "Romagna 地區的傳統產區,以生產品質優良的 Sangiovese 紅酒為主。",
+      "climate": "丘陵地區氣候,適合傳統 Romagna 品種。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli di Scandiano e di Canossa DOC",
+    "name": "Colli di Scandiano e di Canossa",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "300",
+    "description": "Reggio Emilia 地區的產區,以 Lambrusco 和 Malvasia 聞名。",
+    "grapes": ["Lambrusco", "Malvasia di Candia", "Sauvignon Blanc"],
+    "details": {
+      "introduction": "歷史悠久的產區,以釀造傳統的 Lambrusco 氣泡酒和芳香型 Malvasia 著稱。",
+      "climate": "Apennine 山麓的氣候,適合釀造氣泡酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Romagna Centrale DOC",
+    "name": "Colli Romagna Centrale",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "250",
+    "description": "Romagna 中部丘陵地區的產區。",
+    "grapes": ["Sangiovese", "Trebbiano", "Chardonnay"],
+    "details": {
+      "introduction": "涵蓋 Romagna 中部的多個市鎮,生產傳統和現代風格的葡萄酒。",
+      "climate": "典型的 Romagna 丘陵氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Modena di Modena DOC",
+    "name": "Modena di Modena",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "500",
+    "description": "Modena 地區的廣泛性 DOC,涵蓋多種 Lambrusco 和其他品種。",
+    "grapes": ["Lambrusco", "Pignoletto", "Trebbiano"],
+    "details": {
+      "introduction": "包含 Modena 省的多個葡萄酒產區,以 Lambrusco 氣泡酒為主。",
+      "climate": "Po 河谷的大陸性氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Reggiano DOC",
+    "name": "Reggiano",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "400",
+    "description": "Reggio Emilia 地區的產區,以 Lambrusco 為主。",
+    "grapes": ["Lambrusco", "Malvasia", "Ancellotta"],
+    "details": {
+      "introduction": "Reggio Emilia 省的傳統產區,主要生產 Lambrusco 氣泡紅酒。",
+      "climate": "平原和丘陵混合的氣候條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Reno DOC",
+    "name": "Reno",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "300",
+    "description": "Reno 河流域的產區,橫跨 Bologna 和 Modena 兩省。",
+    "grapes": ["Pignoletto", "Montuni", "Lambrusco"],
+    "details": {
+      "introduction": "沿著 Reno 河的產區,以 Pignoletto 白酒和氣泡酒為特色。",
+      "climate": "河谷氣候,溫和濕潤。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Romagna DOC",
+    "name": "Romagna",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "氣泡酒"],
+    "hectare": "3000",
+    "description": "Romagna 地區的廣泛性 DOC,涵蓋多種葡萄品種和酒款。",
+    "grapes": ["Sangiovese", "Trebbiano", "Albana", "Pagadebit"],
+    "details": {
+      "introduction": "2011 年建立的綜合性 DOC,整合了 Romagna 地區的主要葡萄品種和產區。",
+      "climate": "Romagna 地區的多樣化氣候,從丘陵到沿海。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Emilia IGP",
+    "name": "Emilia",
+    "type": "IGP",
+    "style": ["紅酒", "白酒", "氣泡酒", "粉紅酒"],
+    "hectare": "5000",
+    "description": "涵蓋整個 Emilia 地區的 IGP,提供釀酒師更大的創作自由。",
+    "grapes": ["各種葡萄品種"],
+    "details": {
+      "introduction": "允許使用各種國際和本地葡萄品種,規範較 DOC/DOCG 寬鬆,適合創新型酒款。",
+      "climate": "整個 Emilia 地區,從平原到山區。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Rubicone IGP",
+    "name": "Rubicone",
+    "type": "IGP",
+    "style": ["紅酒", "白酒", "氣泡酒", "粉紅酒"],
+    "hectare": "4000",
+    "description": "Romagna 地區的 IGP,涵蓋 Rubicon 河流域。",
+    "grapes": ["各種葡萄品種"],
+    "details": {
+      "introduction": "提供 Romagna 釀酒師更多彈性,可以釀造創新風格的葡萄酒。",
+      "climate": "Romagna 地區的溫和氣候。",
+      "subregions": {}
+    }
+  }
+]

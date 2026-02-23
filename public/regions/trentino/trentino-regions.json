@@ -1,0 +1,86 @@
+[
+  {
+    "id": "DOC/Casteller DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 0,
+    "description": "Casteller DOC 是 Trentino 的重要紅酒產區",
+    "grapes": ["Schiava", "Lambrusco", "Merlot", "Teroldego"],
+    "details": {
+      "introduction": "Casteller DOC 生產以 Schiava 為主的紅酒。",
+      "climate": "高山氣候，日夜溫差大。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Teroldego Rotaliano DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 0,
+    "description": "Teroldego Rotaliano 是 Trentino 最著名的原生紅葡萄品種產區",
+    "grapes": ["Teroldego"],
+    "details": {
+      "introduction": "Teroldego Rotaliano DOC 專門生產 Teroldego 葡萄酒，是本區最具代表性的紅酒。",
+      "climate": "Campo Rotaliano 平原的獨特微氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Terradeiforti Valdadige Terradeiforti DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 0,
+    "description": "Valdadige 產區的優質子產區",
+    "grapes": ["Enantio", "Casetta", "Negrara"],
+    "details": {
+      "introduction": "Terradeiforti 專注於當地原生品種的釀造。",
+      "climate": "阿迪杰河谷的氣候條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Trentino DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 0,
+    "description": "Trentino DOC 是本產區最重要且涵蓋範圍最廣的法定產區",
+    "grapes": ["Teroldego", "Marzemino", "Chardonnay", "Pinot Grigio", "Müller-Thurgau"],
+    "details": {
+      "introduction": "Trentino DOC 涵蓋多種葡萄酒類型，從紅酒到白酒都有生產，是本區最具彈性的產區分類。",
+      "climate": "高山氣候，日夜溫差大，有利於葡萄品質的提升。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Trento DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": "氣泡酒",
+    "hectare": 0,
+    "description": "Trento DOC 是義大利最優質的傳統法氣泡酒產區之一",
+    "grapes": ["Chardonnay", "Pinot Noir", "Pinot Blanc", "Pinot Meunier"],
+    "details": {
+      "introduction": "Trento DOC 專門生產傳統法（Metodo Classico）氣泡酒，品質可媲美香檳。",
+      "climate": "高海拔與冷涼氣候創造了完美的氣泡酒釀造條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Valdadige  Etschtaler DOC",
+    "name": "DOC",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 0,
+    "description": "Valdadige 是橫跨 Trentino 與 Alto Adige 的跨區產區",
+    "grapes": ["Schiava", "Pinot Grigio", "Chardonnay"],
+    "details": {
+      "introduction": "Valdadige 產區沿著阿迪杰河谷延伸，生產多樣化的葡萄酒。",
+      "climate": "河谷氣候，受阿爾卑斯山脈影響。",
+      "subregions": {}
+    }
+  }
+]

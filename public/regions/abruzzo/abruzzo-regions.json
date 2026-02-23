@@ -1,0 +1,188 @@
+[
+  {
+    "id": "Abruzzo DOC",
+    "name": "Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti, L’Aquila, Teramo, Pescara",
+    "zone": "整個 Abruzzo 地區的丘陵、沿海及部分內陸（Alto Tirino、Valle Subequana、Valle Peligna、Valle Roveto）",
+    "style": ["白酒", "紅酒", "粉紅酒", "氣泡酒", "加強型酒", "passito"],
+    "grapes": [
+      "Montepulciano",
+      "Trebbiano",
+      "Chardonnay",
+      "Cococciola",
+      "Gewürztraminer",
+      "Malvasia bianca lunga",
+      "Montonico bianco",
+      "Moscato bianco",
+      "Passerina",
+      "Pecorino",
+      "Pinot nero"
+    ],
+    "description": "Abruzzo DOC 涵蓋 Abruzzo 地區主要丘陵、沿海及部分內陸產區，葡萄品種多元，以 Montepulciano 為主的紅酒佔主導地位，白酒則以 Trebbiano、Pecorino、Passerina 等為主。紅酒色澤深邃，果香濃郁，口感結構佳；白酒清新、果香明顯。產區亦生產粉紅酒、氣泡酒及 passito。",
+    "details": {
+      "成立年份": "1968",
+      "氣候條件": "地中海氣候，夏季炎熱乾燥，冬季溫和多雨",
+      "土壤類型": "多樣化，包括石灰岩、黏土、砂質土壤",
+      "葡萄栽培": "主要採用 Guyot 和 Cordone speronato 方式",
+      "釀造方法": "紅酒通常進行長時間浸皮發酵，白酒則強調果香和新鮮度",
+      "陳年潛力": "紅酒具良好陳年潛力，白酒適合年輕飲用"
+    },
+    "file": "Abruzzo DOC.geojson"
+  },
+  {
+    "id": "Cerasuolo d'Abruzzo DOC",
+    "name": "Cerasuolo d'Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti, L’Aquila, Teramo, Pescara",
+    "zone": "與 Abruzzo DOC 相同的產區，涵蓋沿海與內陸丘陵，產區內限定海拔低於600公尺的葡萄園",
+    "style": ["粉紅酒 (rosato)"],
+    "grapes": ["Montepulciano (≥85% 用於釀造)", "其他本地適宜的紅色葡萄（最多15%）"],
+    "description": "Cerasuolo d'Abruzzo 為 Abruzzo 地區特有的粉紅酒類（rosato），以 Montepulciano 為主（至少85%），採用短時間浸皮以萃取典型的鮮豔櫻桃色與果香，酒體清新且持久，常見基礎款與 Superiore。",
+    "details": {
+      "成立年份": "2010",
+      "氣候條件": "地中海氣候，夏季炎熱乾燥，冬季溫和多雨",
+      "土壤類型": "多樣化，包括石灰岩、黏土、砂質土壤",
+      "葡萄栽培": "主要採用 Guyot 和 Cordone speronato 方式",
+      "釀造方法": "短時間浸皮以萃取鮮豔色澤與果香，發酵溫度控制在較低範圍以保留新鮮度",
+      "陳年潛力": "適合年輕飲用，通常在釀造後1-2年內飲用最佳"
+    },
+    "file": "Cerasuolo d'Abruzzo DOC.geojson"
+  },
+  {
+    "id": "Controguerra DOC",
+    "name": "Controguerra",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Teramo",
+    "zone": "高泰拉莫（alto teramano）區域的五個市鎮：Controguerra、Torano Nuovo、Ancarano、Corropoli、Colonnella（靠近馬爾凱邊界）",
+    "style": ["紅酒", "白酒", "粉紅酒", "novello", "passito", "氣泡酒（metodo classico）"],
+    "grapes": ["Montepulciano", "Trebbiano Abruzzese", "Trebbiano Toscano", "Passerina", "Pecorino", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Chardonnay", "Malvasia bianca lunga"],
+    "description": "Controguerra DOC 限定於泰拉莫省的五個鄉鎮，主要生產多樣化的紅、白、粉紅與傳統法氣泡酒與 passito。紅白基礎以 Montepulciano（紅）與 Trebbiano（白）為主，區內亦栽種國際性品種如 Cabernet 與 Merlot，酒款可從清新易飲到結構複雜、具陳年潛力的風格皆有。",
+    "details": {
+      "成立年份": "1996",
+      "首批核准": "D.M. 20.08.1996, G.U. 201 del 28.08.1996",
+      "法規更新": "Ultime modifiche D.M. 07.03.2014",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/controguerra-doc/",
+      "涵蓋市鎮": ["Controguerra", "Torano Nuovo", "Ancarano", "Corropoli", "Colonnella"],
+      "品種與配比": "單一品種標示（varietal）須含至少85%該品種；passiti 白、紅皆有規定；spumante metodo classico 需在瓶中第二次發酵並於釋出前於酒泥上停留至少18個月（millesimato 另有更長要求）",
+      "釀造與陳年": "傳統釀造法；passiti 常以 caratelli 小桶長期陳年，部分紅酒具良好陳年潛力"
+    },
+    "file": "Controguerra DOC.geojson"
+  },
+  {
+    "id": "Montepulciano d'Abruzzo Colline Teramane DOCG",
+    "name": "Montepulciano d'Abruzzo Colline Teramane",
+    "type": "DOCG",
+    "region": "Abruzzo",
+    "province": "Teramo",
+    "zone": "Colline Teramane，位於 Teramo 省的 Gran Sasso 和 Monti della Laga 山麓一帶的特定市鎮",
+    "style": ["紅酒（含 Riserva）"],
+    "grapes": ["Montepulciano (主要)", "Sangiovese（可作輔助）"],
+    "description": "Colline Teramane DOCG 為專門釀造 Montepulciano 紅酒的高品質產區（DOCG），強調陳年與結構，具有濃郁果香與陳年後的複雜風味，並有 Riserva 規定的更長熟成期。",
+    "details": {
+      "成立年份": "2003",
+      "法規核准": "Approvata DOCG con D.M. 20.02.2003, G.U. 54 del 06.03.2003",
+      "法規更新": "Ultime modifiche pubblicate G.U.R.I.",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/montepulciano-d-abruzzo-colline-teramane-docg/",
+      "陳年要求": "至少一年的總陳年，其中至少兩個月的瓶中熟成；Riserva 有更長的陳年要求"
+    },
+    "file": "Montepulciano d'Abruzzo Colline Teramane DOCG.geojson"
+  },
+  {
+    "id": "Montepulciano d'Abruzzo DOC",
+    "name": "Montepulciano d'Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti, L’Aquila, Teramo, Pescara",
+    "zone": "Abruzzo 東部沿海與內陸丘陵地帶（覆蓋廣泛，包括數個子產區如 Alto Tirino、Casauria、Teate、Terre dei Peligni、Terre dei Vestini）",
+    "style": ["紅酒（含 Riserva）", "粉紅酒", "novello"],
+    "grapes": ["Montepulciano (主要)", "Trebbiano (作為白酒基礎)", "其他本地與國際品種作為輔助"],
+    "description": "Montepulciano d'Abruzzo 為該區最具代表性的紅酒，以 Montepulciano 品種為核心，風格從年輕果香型到結構豐富、適合陳年的酒款都有；DOC 允許多個子產區標示以突出來源特色。",
+    "details": {
+      "成立年份": "1968",
+      "法規更新": "D.M. 19.01.2023 – G.U. n. 30 del 06.02.2023",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/montepulciano-d-abruzzo-doc/",
+      "子產區": ["Alto Tirino", "Casauria", "Teate", "Terre dei Peligni", "Terre dei Vestini"],
+      "陳年要求": "Riserva 至少三年陳年（其中至少六個月使用木桶）"
+    },
+    "file": "Montepulciano d'Abruzzo DOC.geojson"
+  },
+  {
+    "id": "Ortona DOC",
+    "name": "Ortona",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti",
+    "zone": "僅限 Ortona 市行政區域，位於 Chieti 省，葡萄栽培面積比率極高",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Montepulciano", "Trebbiano Abruzzese", "Trebbiano Toscano"],
+    "description": "Ortona DOC 侷限於 Ortona 市，當地葡萄栽培密集，出產以 Montepulciano 為主的紅酒與以 Trebbiano 為基礎的白酒，紅酒常呈深沉的紅寶石色，口感均衡且具地方特色。",
+    "details": {
+      "成立年份": "2011",
+      "首批核准": "D.M. 20.04.2011, G.U. 106 del 09.05.2011",
+      "法規更新": "Ultime modifiche D.M. 07.03.2014",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/ortona-doc/",
+      "備註": "Ortona 市域內有超過三千公頃的葡萄園，為該市重要經濟作物"
+    },
+    "file": "Ortona DOC.geojson"
+  },
+  {
+    "id": "Terre Tollesi Tullum DOCG",
+    "name": "Terre Tollesi Tullum",
+    "type": "DOCG",
+    "region": "Abruzzo",
+    "province": "Chieti",
+    "zone": "以 Tollo 及其周邊丘陵為中心（海拔約80–228 m），包含如 Villamagna、Bucchianico、Vacri 等鄉鎮的特定葡萄園",
+    "style": ["紅酒", "紅酒 Riserva", "白酒（Pecorino、Passerina）", "Spumante（Metodo Classico）", "Passito"],
+    "grapes": ["Montepulciano (Rosso, ≥90% for Terre Tollesi rosso)", "Pecorino (白, 可為 Pecorino ≥90% 部分)", "Passerina", "Chardonnay", "Merlot", "Cabernet Sauvignon", "Sangiovese"],
+    "description": "Terre Tollesi/Tullum DOCG 為 Chieti 一帶的高品質產區，主要以 Montepulciano 為主的紅酒聞名（Rosso 至少90% Montepulciano），亦生產白酒（Pecorino、Passerina）、氣泡酒與 passito，風格從果香年輕型到結構豐富的 Riserva。",
+    "details": {
+      "成立年份": "2008 (DOC)，後續以 DOCG 形式註記與更新",
+      "重要法規": "D.M. 23.07.2008（DOC）以及後續多次修改，最新版 disciplinare 可參見官方公報",
+      "法規連結": "http://catalogoviti.politicheagricole.it/scheda_denom.php?t=dsc&q=2295",
+      "典型配比": "Rosso: Montepulciano ≥90%；Rosso Riserva: 更嚴格的陳年與含量要求；Spumante: Chardonnay ≥60%（具特殊規定）"
+    },
+    "file": "Terre Tollesi Tullum DOCG.geojson"
+  },
+  {
+    "id": "Trebbiano d'Abruzzo DOC",
+    "name": "Trebbiano d'Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti, L’Aquila, Teramo, Pescara",
+    "zone": "沿海及內陸丘陵帶（類似 Abruzzo DOC 範圍，排除最高山岳地帶），涵蓋約150 個市鎮",
+    "style": ["白酒（乾型）", "白酒 superiore", "passito"],
+    "grapes": ["Trebbiano Toscano", "Trebbiano Abruzzese", "Bombino Bianco", "Cococciola", "Passerina", "Malvasia bianca"],
+    "description": "Trebbiano d'Abruzzo 為以 Trebbiano 品種為主的白酒 DOC（最少85% Trebbiano Toscano 或 Trebbiano Abruzzese 或兩者組合），風格通常為乾型、果香與清新酸度，部分為 superiore 或以橡木熟成的款式。",
+    "details": {
+      "成立年份": "1972",
+      "法規更新": "D.M. 19.01.2023 – G.U. n. 30 del 06.02.2023",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/trebbiano-dabruzzo-doc/",
+      "品種配比": "至少85% Trebbiano Toscano 或 Trebbiano Abruzzese 或組合；其它白葡萄例如 Bombino、Cococciola 等可作補足",
+      "產量與生產規模": "年產約1400萬升（估值，來源 Quattrocalici）"
+    },
+    "file": "Trebbiano d'Abruzzo DOC.geojson"
+  },
+  {
+    "id": "Villamagna DOC",
+    "name": "Villamagna",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "province": "Chieti",
+    "zone": "位於 Chieti 省，介於 Tollo 與 Chieti 之間，涵蓋 Villamagna、Bucchianico、Vacri 等市鎮",
+    "style": ["紅酒", "紅酒 Riserva"],
+    "grapes": ["Montepulciano (主要)", "其他補充品種視規定而定"],
+    "description": "Villamagna DOC 為以 Montepulciano 為主的本地 DOC，酒款通常為中等酒體、紅色果香明顯、單寧圓潤，適合年輕飲用也有 Riserva 版本可陳年。",
+    "details": {
+      "成立年份": "2011",
+      "首批核准": "D.M. 20.04.2011 G.U. 106 del 09.05.2011",
+      "法規更新": "Ultime modifiche D.M. 07.03.2014",
+      "法規連結": "https://www.quattrocalici.it/disciplinari/villamagna-doc/",
+      "涵蓋市鎮": ["Villamagna", "Bucchianico", "Vacri"]
+    },
+    "file": "Villamagna DOC.geojson"
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "Cirò DOCG",
+    "name": "Cirò",
+    "type": "DOCG",
+    "region": "Calabria",
+    "province": "Crotone",
+    "zone": "Cirò",
+    "style": ["紅酒"],
+    "description": "Calabria 首個 DOCG，古希臘時代即種植葡萄，以 Gaglioppo 紅葡萄酒聞名於世",
+    "grapes": ["Gaglioppo"],
+    "hectare": "約 700 公頃",
+    "details": {
+      "introduction": "Cirò DOCG 於 2024 年正式升級為 DOCG，成為 Calabria 大區的首個 DOCG。這個產區擁有超過 2,500 年的葡萄種植歷史，據說古希臘運動員在奧林匹克競賽獲勝後會飲用此地的葡萄酒慶祝。DOCG 紅酒需至少含 95% Gaglioppo，具有深紅寶石色澤、豐富的紅色水果香氣和適中的單寧，需經至少 2 年陳年。",
+      "climate": "受愛奧尼亞海影響的溫暖地中海氣候，夏季炙熱，冬季溫和。葡萄園多位於面向海洋的山坡上，海拔 50-300 公尺。土壤富含石灰岩和黏土，提供良好排水性。Cirò Classico 產區位於最佳的傳統種植區域。",
+      "subregions": {
+        "Cirò Classico": "最核心的傳統產區，生產最優質的 Cirò 葡萄酒",
+        "Cirò Superiore Riserva": "需經至少 3 年陳年的頂級紅酒"
+      }
+    }
+  },
+  {
+    "id": "Bivongi DOC",
+    "name": "Bivongi",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "description": "位於Calabria南部的小型產區，生產優質的紅白葡萄酒",
+    "grapes": ["Gaglioppo", "Greco Bianco", "Mantonico Bianco", "Nocera"],
+    "hectare": "約100公頃",
+    "details": {
+      "introduction": "Bivongi DOC於1996年獲得認證，位於Reggio Calabria省的山區。該產區以其傳統釀酒工藝和本土葡萄品種聞名，生產結構良好的紅酒和清新的白酒。",
+      "climate": "典型的地中海氣候，夏季炎熱乾燥，冬季溫和多雨。海拔400-600公尺的山坡提供良好的晝夜溫差，有助於葡萄風味的發展。土壤以黏土和砂質為主。"
+    }
+  },
+  {
+    "id": "Cirò DOC",
+    "name": "Cirò",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "description": "Calabria最著名且歷史悠久的DOC產區，以Gaglioppo紅葡萄酒聞名於世",
+    "grapes": ["Gaglioppo", "Greco Bianco", "Trebbiano"],
+    "hectare": "約1,200公頃",
+    "details": {
+      "introduction": "Cirò DOC是Calabria最重要的葡萄酒產區，於1969年成為該區第一個DOC。據說古希臘運動員在奧林匹克競賽獲勝後會飲用此地的葡萄酒慶祝。紅酒需至少含95% Gaglioppo，具有深紅寶石色澤、豐富的紅色水果香氣和適中的單寧。",
+      "climate": "受愛奧尼亞海影響的溫暖地中海氣候，夏季炎熱，冬季溫和。葡萄園多位於面向海洋的山坡上，海拔50-300公尺。土壤富含石灰岩和黏土，提供良好排水性。Cirò Classico產區位於最佳的傳統種植區域。",
+      "subregions": {
+        "Cirò Classico": "最核心的傳統產區，生產最優質的Cirò葡萄酒",
+        "Cirò Superiore": "需經至少2年陳年的高級紅酒"
+      }
+    }
+  },
+  {
+    "id": "Greco di Bianco DOC",
+    "name": "Greco di Bianco",
+    "type": "DOC",
+    "style": ["甜酒"],
+    "description": "義大利最珍貴的甜白酒之一，以風乾的Greco Bianco葡萄釀造",
+    "grapes": ["Greco Bianco"],
+    "hectare": "約20公頃",
+    "details": {
+      "introduction": "Greco di Bianco是義大利南部最負盛名的甜酒，產量極其稀少。採用100% Greco Bianco葡萄，經過風乾濃縮後釀造。酒液呈金黃至琥珀色，散發杏桃、蜂蜜、柑橘的香氣，口感甜美但保持良好的酸度平衡。",
+      "climate": "位於Aspromonte山腳下靠近Ionian海的陡峭山坡，海拔200-500公尺。炎熱乾燥的夏季非常適合葡萄的風乾過程。土壤為沙質和黏土混合，富含礦物質。此地的微氣候造就了這款獨特甜酒的特殊風味。"
+    }
+  },
+  {
+    "id": "Lamezia DOC",
+    "name": "Lamezia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "description": "位於Calabria中部的多樣化產區，生產多種風格的葡萄酒",
+    "grapes": ["Gaglioppo", "Magliocco", "Greco Bianco", "Mantonico Bianco", "Trebbiano"],
+    "hectare": "約300公頃",
+    "details": {
+      "introduction": "Lamezia DOC於1979年獲得認證，位於Catanzaro省的Lamezia平原。該產區融合了傳統本土品種與現代釀酒技術，生產清新的白酒、果味豐富的紅酒和優雅的粉紅酒。",
+      "climate": "受Tyrrhenian海和內陸山區雙重影響的地中海氣候。葡萄園位於海拔50-400公尺的緩坡上。土壤類型多樣，包含火山土、沙質土和黏土，賦予葡萄酒複雜的礦物質特性。夏季海風調節氣溫，有助於芳香物質的保存。"
+    }
+  },
+  {
+    "id": "Melissa DOC",
+    "name": "Melissa",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "description": "位於Ionian海岸的產區，以平衡優雅的紅白葡萄酒著稱",
+    "grapes": ["Gaglioppo", "Greco Bianco", "Trebbiano", "Malvasia"],
+    "hectare": "約200公頃",
+    "details": {
+      "introduction": "Melissa DOC於1979年建立，位於Crotone省靠近海岸的丘陵地帶。紅酒主要由Gaglioppo釀造，展現柔和的單寧和成熟紅果香氣。白酒則以Greco Bianco為主，口感清新，帶有柑橘和白花香氣。",
+      "climate": "溫暖的地中海氣候，受Ionian海的調節影響顯著。葡萄園海拔100-350公尺，面向海洋的良好通風減少病害壓力。土壤以沙質黏土為主，排水性良好。充足的日照和海風造就了成熟度高但保持酸度的葡萄。"
+    }
+  },
+  {
+    "id": "S. Anna di Isola Capo Rizzuto DOC",
+    "name": "S. Anna di Isola Capo Rizzuto",
+    "type": "DOC",
+    "style": ["紅酒"],
+    "description": "靠近海岸的小型產區，專注於Gaglioppo紅葡萄酒的生產",
+    "grapes": ["Gaglioppo", "Nocera", "Nerello Cappuccio"],
+    "hectare": "約80公頃",
+    "details": {
+      "introduction": "S. Anna di Isola Capo Rizzuto DOC於2011年獲得認證，是Calabria較新的DOC之一。位於Crotone省的海岸地帶，專注生產以Gaglioppo為主（至少90%）的紅葡萄酒，展現海洋風土的獨特性格。",
+      "climate": "典型的海岸地中海氣候，受Ionian海直接影響。葡萄園多位於海拔50-200公尺的緩坡，少部分接近海平面。海風帶來的鹽分礦物質為葡萄酒增添獨特的鹹鮮風味。沙質土壤為主，排水極佳。"
+    }
+  },
+  {
+    "id": "Savuto DOC",
+    "name": "Savuto",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "description": "位於Calabria西部山區的傳統產區，生產優雅的高海拔紅酒",
+    "grapes": ["Gaglioppo", "Magliocco Canino", "Nerello Cappuccio", "Sangiovese"],
+    "hectare": "約150公頃",
+    "details": {
+      "introduction": "Savuto DOC於1975年建立，位於Cosenza省的Savuto河谷。葡萄園位於海拔200-700公尺的陡峭山坡上，是Calabria海拔最高的產區之一。主要生產以Gaglioppo和本土品種混釀的紅酒，具有良好的陳年潛力。Superiore等級需陳年至少2年。",
+      "climate": "山區氣候，受Tyrrhenian海影響。高海拔帶來顯著的晝夜溫差，有利於香氣和酸度的保存。土壤以黏土和石灰岩為主，富含礦物質。較涼爽的氣候造就了更優雅、單寧細緻的紅酒風格。"
+    }
+  },
+  {
+    "id": "Scavigna DOC",
+    "name": "Scavigna",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "description": "Tyrrhenian海岸的精品產區，以現代風格的葡萄酒聞名",
+    "grapes": ["Gaglioppo", "Nerello Cappuccio", "Greco Bianco", "Chardonnay", "Traminer"],
+    "hectare": "約50公頃",
+    "details": {
+      "introduction": "Scavigna DOC於2011年獲得認證，是Calabria最年輕的DOC之一。位於Catanzaro省靠近Tyrrhenian海的地區，該產區結合本土品種和國際品種，採用現代釀酒技術，生產風格清新、果味突出的葡萄酒。",
+      "climate": "受Tyrrhenian海直接影響的溫和地中海氣候。葡萄園位於海拔100-400公尺的沿海丘陵。海風提供天然降溫，延長葡萄成熟期。土壤以沙質和火山土為主，賦予葡萄酒獨特的礦物質特性和清新口感。"
+    }
+  },
+  {
+    "id": "Terre di Cosenza DOC",
+    "name": "Terre di Cosenza",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "description": "Calabria北部的廣大產區，展現多樣化的本土葡萄品種",
+    "grapes": ["Magliocco Canino", "Magliocco Dolce", "Greco Bianco", "Mantonico Bianco", "Gaglioppo"],
+    "hectare": "約250公頃",
+    "details": {
+      "introduction": "Terre di Cosenza DOC於2011年建立，整合了原本的多個小型產區，涵蓋Cosenza省的廣大區域。該產區特別重視Magliocco系列品種的推廣，這些本土品種正逐漸受到國際關注。可生產多種風格的葡萄酒，包括單一品種和混釀。",
+      "climate": "氣候因地形多樣而變化顯著，從沿海的溫暖地中海氣候到內陸山區的較涼爽氣候。葡萄園海拔範圍從100公尺至600公尺不等。土壤類型包括黏土、沙質土和石灰岩。這種多樣性使該產區能生產風格豐富的葡萄酒。",
+      "subregions": {
+        "Pollino": "靠近Pollino國家公園的高海拔子產區，生產優雅的紅酒",
+        "Verbicaro": "沿海子產區，以芳香型白酒著稱"
+      }
+    }
+  }
+]

@@ -1,0 +1,712 @@
+[
+  {
+    "name": "Amarone della Valpolicella",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Verona",
+    "styles": ["紅酒"],
+    "grapes": ["Corvina", "Corvinone", "Rondinella"],
+    "description": "以風乾葡萄釀製的濃郁紅酒，義大利最頂級紅酒之一。"
+  },
+  {
+    "name": "Recioto della Valpolicella",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Verona",
+    "styles": ["甜酒"],
+    "grapes": ["Corvina", "Corvinone", "Rondinella"],
+    "description": "Valpolicella 產區的甜型風乾葡萄酒。"
+  },
+  {
+    "name": "Bardolino Superiore",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Verona",
+    "styles": ["紅酒"],
+    "grapes": ["Corvina", "Rondinella", "Molinara"],
+    "description": "加爾達湖東岸的優質紅酒。"
+  },
+  {
+    "name": "Soave Superiore",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Verona",
+    "styles": ["白酒"],
+    "grapes": ["Garganega", "Trebbiano di Soave"],
+    "description": "Soave 產區頂級白酒，礦物感與花香突出。"
+  },
+  {
+    "name": "Recioto di Soave",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Verona",
+    "styles": ["甜酒"],
+    "grapes": ["Garganega"],
+    "description": "Soave 產區甜型風乾白酒，香氣馥郁。"
+  },
+  {
+    "name": "Asolo Prosecco",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Treviso",
+    "styles": ["氣泡酒"],
+    "grapes": ["Glera"],
+    "description": "Asolo 丘陵高品質 Prosecco 氣泡酒。"
+  },
+  {
+    "name": "Prosecco di Conegliano Valdobbiadene",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Treviso",
+    "styles": ["氣泡酒"],
+    "grapes": ["Glera"],
+    "description": "知名 Prosecco 產區，UNESCO 世界遺產地。"
+  },
+  {
+    "name": "Colli Euganei Fior d'Arancio",
+    "type": "DOCG",
+    "region": "Veneto",
+    "regionId": "veneto",
+    "province": "Padova",
+    "styles": ["甜酒", "氣泡酒"],
+    "grapes": ["Moscato Giallo"],
+    "description": "帕多瓦丘陵的橙花風味甜型氣泡酒。"
+  },
+  {
+    "name": "Barolo",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Cuneo",
+    "styles": ["紅酒"],
+    "grapes": ["Nebbiolo"],
+    "description": "義大利「酒王」，以 Nebbiolo 釀製，單寧強勁，陳年潛力極高。"
+  },
+  {
+    "name": "Barbaresco",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Cuneo",
+    "styles": ["紅酒"],
+    "grapes": ["Nebbiolo"],
+    "description": "義大利「酒后」，比 Barolo 稍優雅細緻。"
+  },
+  {
+    "name": "Barolo DOCG",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Cuneo",
+    "styles": ["紅酒"],
+    "grapes": ["Nebbiolo"],
+    "description": "皮埃蒙特最頂級法定產區紅酒。"
+  },
+  {
+    "name": "Asti Spumante / Moscato d'Asti",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Asti, Alessandria, Cuneo",
+    "styles": ["氣泡酒", "甜酒"],
+    "grapes": ["Moscato Bianco"],
+    "description": "阿斯蒂甜型氣泡酒，全球最知名甜酒之一。"
+  },
+  {
+    "name": "Dolcetto d'Alba",
+    "type": "DOC",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Cuneo",
+    "styles": ["紅酒"],
+    "grapes": ["Dolcetto"],
+    "description": "皮埃蒙特日常飲用紅酒，柔順果香。"
+  },
+  {
+    "name": "Barbera d'Asti Superiore",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Asti",
+    "styles": ["紅酒"],
+    "grapes": ["Barbera"],
+    "description": "阿斯提優質 Barbera 紅酒。"
+  },
+  {
+    "name": "Gavi / Cortese di Gavi",
+    "type": "DOCG",
+    "region": "Piedmont",
+    "regionId": "piedmont",
+    "province": "Alessandria",
+    "styles": ["白酒"],
+    "grapes": ["Cortese"],
+    "description": "皮埃蒙特最重要白酒，清新礦物感。"
+  },
+  {
+    "name": "Chianti",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "多省",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "托斯卡納最知名紅酒產區，以 Sangiovese 為主。"
+  },
+  {
+    "name": "Chianti Classico",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Firenze, Siena",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "基安蒂核心精華區，品質最高，黑公雞標誌享譽全球。"
+  },
+  {
+    "name": "Brunello di Montalcino",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Siena",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese Grosso"],
+    "description": "托斯卡納頂級紅酒，陳年 20 年以上仍精彩。"
+  },
+  {
+    "name": "Vino Nobile di Montepulciano",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Siena",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese (Prugnolo Gentile)"],
+    "description": "蒙特普爾恰諾「高貴紅酒」，結構豐厚。"
+  },
+  {
+    "name": "Morellino di Scansano",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Grosseto",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "馬雷瑪海岸 Sangiovese 紅酒，風格溫暖豐滿。"
+  },
+  {
+    "name": "Vernaccia di San Gimignano",
+    "type": "DOCG",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Siena",
+    "styles": ["白酒"],
+    "grapes": ["Vernaccia"],
+    "description": "義大利第一個 DOC 升格 DOCG 的白酒。"
+  },
+  {
+    "name": "Vin Santo del Chianti Classico",
+    "type": "DOC",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Firenze, Siena",
+    "styles": ["甜酒"],
+    "grapes": ["Trebbiano", "Malvasia"],
+    "description": "托斯卡納傳統風乾甜酒，搭配杏仁餅乾享用。"
+  },
+  {
+    "name": "Bolgheri",
+    "type": "DOC",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "Livorno",
+    "styles": ["紅酒", "白酒"],
+    "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+    "description": "Sassicaia 故鄉，義大利「超級托斯卡納」發源地。"
+  },
+  {
+    "name": "Toscana IGT",
+    "type": "IGT",
+    "region": "Tuscany",
+    "regionId": "tuscany",
+    "province": "全區",
+    "styles": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot"],
+    "description": "超級托斯卡納（Super Tuscan）的法律依據，囊括 Sassicaia、Tignanello 等頂酒。"
+  },
+  {
+    "name": "Franciacorta",
+    "type": "DOCG",
+    "region": "Lombardy",
+    "regionId": "lombardy",
+    "province": "Brescia",
+    "styles": ["氣泡酒"],
+    "grapes": ["Chardonnay", "Pinot Nero", "Pinot Bianco"],
+    "description": "義大利最頂級傳統法氣泡酒，被稱為「義大利香檳」。"
+  },
+  {
+    "name": "Oltrepò Pavese Metodo Classico",
+    "type": "DOCG",
+    "region": "Lombardy",
+    "regionId": "lombardy",
+    "province": "Pavia",
+    "styles": ["氣泡酒"],
+    "grapes": ["Pinot Nero"],
+    "description": "隆巴底 Pinot Nero 傳統法氣泡酒。"
+  },
+  {
+    "name": "Valtellina Superiore",
+    "type": "DOCG",
+    "region": "Lombardy",
+    "regionId": "lombardy",
+    "province": "Sondrio",
+    "styles": ["紅酒"],
+    "grapes": ["Nebbiolo (Chiavennasca)"],
+    "description": "阿爾卑斯山腳下陡坡梯田 Nebbiolo 紅酒。"
+  },
+  {
+    "name": "Sforzato di Valtellina",
+    "type": "DOCG",
+    "region": "Lombardy",
+    "regionId": "lombardy",
+    "province": "Sondrio",
+    "styles": ["紅酒"],
+    "grapes": ["Nebbiolo"],
+    "description": "以風乾 Nebbiolo 釀製的濃縮紅酒，酒精度高。"
+  },
+  {
+    "name": "Trentino",
+    "type": "DOC",
+    "region": "Trentino",
+    "regionId": "trentino",
+    "province": "Trento",
+    "styles": ["紅酒", "白酒", "氣泡酒"],
+    "grapes": ["Teroldego", "Lagrein", "Chardonnay", "Pinot Grigio"],
+    "description": "特倫蒂諾省主要 DOC，涵蓋多種葡萄品種。"
+  },
+  {
+    "name": "Alto Adige / Südtirol",
+    "type": "DOC",
+    "region": "Trentino",
+    "regionId": "trentino",
+    "province": "Bolzano",
+    "styles": ["紅酒", "白酒"],
+    "grapes": ["Gewürztraminer", "Pinot Grigio", "Lagrein", "Schiava"],
+    "description": "上阿迪傑德語區，品種多樣，尤以芳香白酒聞名。"
+  },
+  {
+    "name": "Teroldego Rotaliano",
+    "type": "DOC",
+    "region": "Trentino",
+    "regionId": "trentino",
+    "province": "Trento",
+    "styles": ["紅酒"],
+    "grapes": ["Teroldego"],
+    "description": "以特倫蒂諾在地品種 Teroldego 釀製的獨特紅酒。"
+  },
+  {
+    "name": "Trento",
+    "type": "DOC",
+    "region": "Trentino",
+    "regionId": "trentino",
+    "province": "Trento",
+    "styles": ["氣泡酒"],
+    "grapes": ["Chardonnay", "Pinot Nero"],
+    "description": "特倫蒂諾傳統法氣泡酒，媲美香檳。"
+  },
+  {
+    "name": "Collio Goriziano / Collio",
+    "type": "DOC",
+    "region": "Friuli",
+    "regionId": "friuli",
+    "province": "Gorizia",
+    "styles": ["白酒", "紅酒"],
+    "grapes": ["Ribolla Gialla", "Tocai Friulano", "Chardonnay", "Sauvignon Blanc"],
+    "description": "弗留利頂尖白酒產區，礦物純淨，陳年表現卓越。"
+  },
+  {
+    "name": "Colli Orientali del Friuli Picolit",
+    "type": "DOCG",
+    "region": "Friuli",
+    "regionId": "friuli",
+    "province": "Udine",
+    "styles": ["甜酒"],
+    "grapes": ["Picolit"],
+    "description": "弗留利稀有甜酒，採用 Picolit 葡萄，花香蜂蜜風味。"
+  },
+  {
+    "name": "Ramandolo",
+    "type": "DOCG",
+    "region": "Friuli",
+    "regionId": "friuli",
+    "province": "Udine",
+    "styles": ["甜酒"],
+    "grapes": ["Verduzzo Friulano"],
+    "description": "弗留利甜型白酒，以 Verduzzo 釀製，稠密芳香。"
+  },
+  {
+    "name": "Friuli Grave",
+    "type": "DOC",
+    "region": "Friuli",
+    "regionId": "friuli",
+    "province": "Pordenone, Udine",
+    "styles": ["白酒", "紅酒"],
+    "grapes": ["Tocai Friulano", "Pinot Grigio", "Merlot"],
+    "description": "弗留利最大 DOC，礫石土壤賦予清新礦物感。"
+  },
+  {
+    "name": "Lambrusco di Sorbara",
+    "type": "DOC",
+    "region": "Emilia",
+    "regionId": "emilia",
+    "province": "Modena",
+    "styles": ["氣泡酒", "紅酒"],
+    "grapes": ["Lambrusco di Sorbara"],
+    "description": "摩德納最優質 Lambrusco，顏色淡雅，酸度清爽。"
+  },
+  {
+    "name": "Pignoletto",
+    "type": "DOCG",
+    "region": "Emilia",
+    "regionId": "emilia",
+    "province": "Bologna",
+    "styles": ["白酒", "氣泡酒"],
+    "grapes": ["Grechetto Gentile"],
+    "description": "博洛尼亞丘陵清新白酒，適合搭配輕食。"
+  },
+  {
+    "name": "Romagna Sangiovese Superiore",
+    "type": "DOC",
+    "region": "Emilia",
+    "regionId": "emilia",
+    "province": "Forlì, Ravenna, Rimini",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "羅馬涅 Sangiovese 優質紅酒，結構均衡。"
+  },
+  {
+    "name": "Verdicchio dei Castelli di Jesi",
+    "type": "DOC",
+    "region": "Marche",
+    "regionId": "marche",
+    "province": "Ancona",
+    "styles": ["白酒"],
+    "grapes": ["Verdicchio"],
+    "description": "馬爾凱標誌性白酒，以「魚形瓶」聞名，清新礦物風。"
+  },
+  {
+    "name": "Conero",
+    "type": "DOCG",
+    "region": "Marche",
+    "regionId": "marche",
+    "province": "Ancona",
+    "styles": ["紅酒"],
+    "grapes": ["Montepulciano"],
+    "description": "馬爾凱頂級 Montepulciano 紅酒，結構紮實。"
+  },
+  {
+    "name": "Offida",
+    "type": "DOCG",
+    "region": "Marche",
+    "regionId": "marche",
+    "province": "Ascoli Piceno",
+    "styles": ["紅酒", "白酒"],
+    "grapes": ["Montepulciano", "Pecorino"],
+    "description": "馬爾凱南部新興 DOCG，Pecorino 白酒尤受矚目。"
+  },
+  {
+    "name": "Torgiano Rosso Riserva",
+    "type": "DOCG",
+    "region": "Umbria",
+    "regionId": "umbria",
+    "province": "Perugia",
+    "styles": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "翁布里亞頂級紅酒保留款，Lungarotti 家族代名詞。"
+  },
+  {
+    "name": "Sagrantino di Montefalco",
+    "type": "DOCG",
+    "region": "Umbria",
+    "regionId": "umbria",
+    "province": "Perugia",
+    "styles": ["紅酒"],
+    "grapes": ["Sagrantino"],
+    "description": "以 Sagrantino 釀製，為全球單寧含量最高的葡萄酒之一。"
+  },
+  {
+    "name": "Est! Est!! Est!!! di Montefiascone",
+    "type": "DOC",
+    "region": "Lazio",
+    "regionId": "lazio",
+    "province": "Viterbo",
+    "styles": ["白酒"],
+    "grapes": ["Trebbiano Toscano", "Malvasia"],
+    "description": "歷史悠久的白酒，名字來自中世紀旅行傳說。"
+  },
+  {
+    "name": "Frascati Superiore",
+    "type": "DOCG",
+    "region": "Lazio",
+    "regionId": "lazio",
+    "province": "Roma",
+    "styles": ["白酒"],
+    "grapes": ["Malvasia di Candia", "Trebbiano"],
+    "description": "羅馬近郊著名白酒，清新易飲，餐桌美酒。"
+  },
+  {
+    "name": "Cesanese del Piglio",
+    "type": "DOCG",
+    "region": "Lazio",
+    "regionId": "lazio",
+    "province": "Frosinone",
+    "styles": ["紅酒"],
+    "grapes": ["Cesanese"],
+    "description": "拉齊奧唯一紅酒 DOCG，以在地 Cesanese 品種釀製。"
+  },
+  {
+    "name": "Montepulciano d'Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "regionId": "abruzzo",
+    "province": "多省",
+    "styles": ["紅酒"],
+    "grapes": ["Montepulciano"],
+    "description": "阿布魯佐代表紅酒，濃郁果味，性價比高。"
+  },
+  {
+    "name": "Montepulciano d'Abruzzo Colline Teramane",
+    "type": "DOCG",
+    "region": "Abruzzo",
+    "regionId": "abruzzo",
+    "province": "Teramo",
+    "styles": ["紅酒"],
+    "grapes": ["Montepulciano"],
+    "description": "阿布魯佐 Teramane 丘陵頂級 Montepulciano。"
+  },
+  {
+    "name": "Trebbiano d'Abruzzo",
+    "type": "DOC",
+    "region": "Abruzzo",
+    "regionId": "abruzzo",
+    "province": "多省",
+    "styles": ["白酒"],
+    "grapes": ["Trebbiano Abruzzese"],
+    "description": "阿布魯佐清新白酒，Valentini 家族出品享譽全球。"
+  },
+  {
+    "name": "Taurasi",
+    "type": "DOCG",
+    "region": "Campania",
+    "regionId": "campania",
+    "province": "Avellino",
+    "styles": ["紅酒"],
+    "grapes": ["Aglianico"],
+    "description": "南義最偉大紅酒，被稱為「南方的 Barolo」。"
+  },
+  {
+    "name": "Greco di Tufo",
+    "type": "DOCG",
+    "region": "Campania",
+    "regionId": "campania",
+    "province": "Avellino",
+    "styles": ["白酒"],
+    "grapes": ["Greco"],
+    "description": "坎帕尼亞火山岩土壤上的複雜白酒。"
+  },
+  {
+    "name": "Fiano di Avellino",
+    "type": "DOCG",
+    "region": "Campania",
+    "regionId": "campania",
+    "province": "Avellino",
+    "styles": ["白酒"],
+    "grapes": ["Fiano"],
+    "description": "以古老品種 Fiano 釀製，南義最精彩白酒之一。"
+  },
+  {
+    "name": "Primitive di Manduria",
+    "type": "DOC",
+    "region": "Apulia",
+    "regionId": "apulia",
+    "province": "Taranto, Brindisi",
+    "styles": ["紅酒"],
+    "grapes": ["Primitivo"],
+    "description": "普利亞南部高酒精度 Primitivo，風格濃郁甜潤。"
+  },
+  {
+    "name": "Primitivo di Manduria Dolce Naturale",
+    "type": "DOCG",
+    "region": "Apulia",
+    "regionId": "apulia",
+    "province": "Taranto",
+    "styles": ["甜酒"],
+    "grapes": ["Primitivo"],
+    "description": "天然甜型 Primitivo，濃縮果醬與香料風味。"
+  },
+  {
+    "name": "Nero di Troia / Castel del Monte Nero di Troia Riserva",
+    "type": "DOCG",
+    "region": "Apulia",
+    "regionId": "apulia",
+    "province": "Bari, BAT",
+    "styles": ["紅酒"],
+    "grapes": ["Nero di Troia"],
+    "description": "普利亞在地品種 Nero di Troia 的頂級保留款。"
+  },
+  {
+    "name": "Aglianico del Vulture",
+    "type": "DOC",
+    "region": "Basilicata",
+    "regionId": "basilicata",
+    "province": "Potenza",
+    "styles": ["紅酒"],
+    "grapes": ["Aglianico"],
+    "description": "火山土壤上的 Aglianico，媲美坎帕尼亞的 Taurasi。"
+  },
+  {
+    "name": "Aglianico del Vulture Superiore",
+    "type": "DOCG",
+    "region": "Basilicata",
+    "regionId": "basilicata",
+    "province": "Potenza",
+    "styles": ["紅酒"],
+    "grapes": ["Aglianico"],
+    "description": "巴西利卡塔最高等級 Aglianico，陳年後細膩動人。"
+  },
+  {
+    "name": "Cirò",
+    "type": "DOC",
+    "region": "Calabria",
+    "regionId": "calabria",
+    "province": "Crotone, Catanzaro",
+    "styles": ["紅酒", "白酒", "粉紅酒"],
+    "grapes": ["Gaglioppo", "Greco Bianco"],
+    "description": "卡拉布里亞最知名 DOC，古希臘傳統葡萄品種。"
+  },
+  {
+    "name": "Greco di Bianco",
+    "type": "DOC",
+    "region": "Calabria",
+    "regionId": "calabria",
+    "province": "Reggio Calabria",
+    "styles": ["甜酒"],
+    "grapes": ["Greco Bianco"],
+    "description": "卡拉布里亞罕見甜型白酒，橘子花香突出。"
+  },
+  {
+    "name": "Etna",
+    "type": "DOC",
+    "region": "Sicily",
+    "regionId": "sicily",
+    "province": "Catania",
+    "styles": ["紅酒", "白酒"],
+    "grapes": ["Nerello Mascalese", "Carricante"],
+    "description": "埃特納火山坡地，義大利最熱門精品產區，被稱為「火山勃根地」。"
+  },
+  {
+    "name": "Cerasuolo di Vittoria",
+    "type": "DOCG",
+    "region": "Sicily",
+    "regionId": "sicily",
+    "province": "Ragusa, Caltanissetta, Catania",
+    "styles": ["紅酒"],
+    "grapes": ["Nero d'Avola", "Frappato"],
+    "description": "西西里唯一 DOCG，Nero d'Avola 與 Frappato 混釀。"
+  },
+  {
+    "name": "Marsala",
+    "type": "DOC",
+    "region": "Sicily",
+    "regionId": "sicily",
+    "province": "Trapani",
+    "styles": ["甜酒"],
+    "grapes": ["Grillo", "Catarratto", "Inzolia"],
+    "description": "西西里著名加烈甜酒，料理與品飲皆宜。"
+  },
+  {
+    "name": "Passito di Pantelleria",
+    "type": "DOC",
+    "region": "Sicily",
+    "regionId": "sicily",
+    "province": "Trapani",
+    "styles": ["甜酒"],
+    "grapes": ["Zibibbo (Moscato d'Alessandria)"],
+    "description": "潘泰萊里亞島風乾甜酒，蜂蜜杏桃香，舉世聞名。"
+  },
+  {
+    "name": "Cannonau di Sardegna",
+    "type": "DOC",
+    "region": "Sardinia",
+    "regionId": "sardinia",
+    "province": "全區",
+    "styles": ["紅酒"],
+    "grapes": ["Cannonau (Grenache)"],
+    "description": "撒丁島最重要紅酒，Grenache 的撒丁名，「百歲村」的健康秘訣。"
+  },
+  {
+    "name": "Vermentino di Gallura",
+    "type": "DOCG",
+    "region": "Sardinia",
+    "regionId": "sardinia",
+    "province": "Sassari",
+    "styles": ["白酒"],
+    "grapes": ["Vermentino"],
+    "description": "撒丁島北部花崗岩土壤的頂級白酒。"
+  },
+  {
+    "name": "Carignano del Sulcis",
+    "type": "DOC",
+    "region": "Sardinia",
+    "regionId": "sardinia",
+    "province": "Carbonia-Iglesias",
+    "styles": ["紅酒"],
+    "grapes": ["Carignano (Carignan)"],
+    "description": "撒丁島西南部百年老藤 Carignan 紅酒。"
+  },
+  {
+    "name": "Cinque Terre",
+    "type": "DOC",
+    "region": "Liguria",
+    "regionId": "liguria",
+    "province": "La Spezia",
+    "styles": ["白酒"],
+    "grapes": ["Bosco", "Albarola", "Vermentino"],
+    "description": "五漁村懸崖梯田白酒，自然環境極為壯觀。"
+  },
+  {
+    "name": "Rossese di Dolceacqua",
+    "type": "DOC",
+    "region": "Liguria",
+    "regionId": "liguria",
+    "province": "Imperia",
+    "styles": ["紅酒"],
+    "grapes": ["Rossese"],
+    "description": "利古里亞輕盈優雅紅酒，拿破崙最愛。"
+  },
+  {
+    "name": "Biferno",
+    "type": "DOC",
+    "region": "Molise",
+    "regionId": "molise",
+    "province": "Campobasso",
+    "styles": ["紅酒", "白酒", "粉紅酒"],
+    "grapes": ["Montepulciano", "Tintilia", "Trebbiano"],
+    "description": "莫利塞最主要 DOC，以 Tintilia 在地品種為代表。"
+  },
+  {
+    "name": "Tintilia del Molise",
+    "type": "DOC",
+    "region": "Molise",
+    "regionId": "molise",
+    "province": "全區",
+    "styles": ["紅酒"],
+    "grapes": ["Tintilia"],
+    "description": "莫利塞珍稀在地品種，結構豐滿，酸度活潑。"
+  }
+]

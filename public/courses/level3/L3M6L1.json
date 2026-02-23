@@ -1,0 +1,73 @@
+{
+  "id": "L3M6L1",
+  "title": "進階餐酒搭配理論",
+  "description": "深入探討義大利葡萄酒與食物搭配的進階原則，超越傳統的「紅酒配紅肉、白酒配白肉」，學習如何運用酸度、單寧、甜度與鮮味 (Umami) 創造完美的味覺平衡。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "超越傳統：餐酒搭配的核心元素",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">傳統的餐酒搭配法則（如紅酒配紅肉）雖然實用，但在面對複雜的現代料理或義大利豐富的地方菜系時，往往顯得不足。進階的餐酒搭配需要解構食物與葡萄酒的<strong>核心結構元素</strong>，並尋找它們之間的互動關係。</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-8\"><div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100\"><h4 class=\"text-blue-800 font-bold mb-4 flex items-center\"><span class=\"material-icons mr-2\">water_drop</span> 葡萄酒的結構元素</h4><ul class=\"space-y-2 text-gray-700\"><li><strong>酸度 (Acidity)：</strong> 葡萄酒的骨架，能切割油脂、喚醒味蕾。</li><li><strong>單寧 (Tannin)：</strong> 紅酒的澀感，能與蛋白質結合，但也容易與苦味或辣味衝突。</li><li><strong>甜度 (Sweetness)：</strong> 殘糖量，能中和辣味、呼應甜點，或與鹹味形成對比。</li><li><strong>酒精度 (Alcohol)：</strong> 帶來酒體與重量感，過高會放大辣味。</li><li><strong>風味強度 (Flavor Intensity)：</strong> 輕盈果香 vs. 濃郁陳年香氣。</li></ul></div><div class=\"bg-orange-50 p-6 rounded-xl border border-orange-100\"><h4 class=\"text-orange-800 font-bold mb-4 flex items-center\"><span class=\"material-icons mr-2\">restaurant</span> 食物的結構元素</h4><ul class=\"space-y-2 text-gray-700\"><li><strong>油脂 (Fat)：</strong> 來自肉類、奶油或橄欖油，需要酸度或單寧來平衡。</li><li><strong>酸味 (Sourness)：</strong> 來自檸檬、醋或番茄，會讓葡萄酒顯得更甜、果香更濃。</li><li><strong>鹹味 (Saltiness)：</strong> 增強葡萄酒的果香，柔化單寧與酸度。</li><li><strong>甜味 (Sweetness)：</strong> 會讓葡萄酒顯得更酸、更苦、更乾澀。</li><li><strong>鮮味 (Umami)：</strong> 來自蘑菇、熟成起司、海鮮，會放大葡萄酒的苦味與單寧。</li></ul></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "互動法則：互補與對比",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">了解了結構元素後，我們可以運用兩種主要的搭配策略：<strong>互補 (Congruent)</strong> 與 <strong>對比 (Contrasting)</strong>。</p><div class=\"space-y-6\"><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200\"><h4 class=\"text-xl font-bold text-gray-800 mb-4 flex items-center\"><span class=\"material-icons text-green-600 mr-2\">handshake</span> 互補搭配 (Congruent Pairing)</h4><p class=\"text-gray-600 mb-4\">尋找食物與葡萄酒中相似的風味或結構，讓它們互相呼應、增強彼此的特徵。這是一種安全且和諧的搭配方式。</p><div class=\"bg-gray-50 p-4 rounded-lg\"><ul class=\"space-y-2 text-sm text-gray-700\"><li><strong>重量感互補：</strong> 濃郁的燉肉 (Ossobuco) 搭配酒體飽滿的 Barolo；清淡的白魚搭配輕盈的 Pinot Grigio。</li><li><strong>風味互補：</strong> 帶有泥土、蘑菇香氣的陳年 Nebbiolo 搭配松露燉飯 (Truffle Risotto)；帶有草本氣息的 Sauvignon Blanc 搭配青醬義大利麵 (Pesto)。</li><li><strong>酸度互補：</strong> 番茄基底的紅醬義大利麵（高酸度）搭配同樣高酸度的 Chianti (Sangiovese)。</li></ul></div></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200\"><h4 class=\"text-xl font-bold text-gray-800 mb-4 flex items-center\"><span class=\"material-icons text-purple-600 mr-2\">compare_arrows</span> 對比搭配 (Contrasting Pairing)</h4><p class=\"text-gray-600 mb-4\">利用食物與葡萄酒中相反的元素來創造平衡，通常能帶來令人驚喜的味覺體驗。這需要更精準的拿捏。</p><div class=\"bg-gray-50 p-4 rounded-lg\"><ul class=\"space-y-2 text-sm text-gray-700\"><li><strong>酸度切割油脂：</strong> 炸海鮮 (Fritto Misto) 或富含奶油的料理，搭配高酸度的氣泡酒 (Franciacorta) 或白酒 (Verdicchio)，酸度能洗刷口腔的油膩感。</li><li><strong>甜度中和辣味/鹹味：</strong> 帶有辣味的卡拉布里亞香腸 ('Nduja) 或極鹹的藍紋起司 (Gorgonzola)，搭配帶有甜味的 Moscato d'Asti 或甜酒 (Vin Santo)。</li><li><strong>單寧結合蛋白質：</strong> 充滿油脂與蛋白質的佛羅倫斯大牛排 (Bistecca alla Fiorentina)，搭配高單寧的 Brunello di Montalcino，單寧會與蛋白質結合，讓肉質顯得多汁，同時柔化酒的澀感。</li></ul></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "棘手元素的處理：鮮味 (Umami) 與辣味",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">在進階搭配中，最容易出錯的往往是食物中的「鮮味」與「辣味」。它們對葡萄酒的結構有著強烈的負面影響。</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-8 mb-8\"><div class=\"bg-red-50 p-6 rounded-xl border border-red-100\"><h4 class=\"text-red-800 font-bold mb-4 flex items-center\"><span class=\"material-icons mr-2\">local_fire_department</span> 辣味 (Spiciness) 的挑戰</h4><p class=\"text-gray-700 mb-4\">辣味不是味覺，而是一種痛覺。它會<strong>放大葡萄酒的酒精灼熱感、單寧的澀感與苦味</strong>，同時掩蓋果香與甜度。</p><div class=\"bg-white p-4 rounded-lg border border-red-200\"><h5 class=\"font-bold text-red-700 mb-2\">解決方案：</h5><ul class=\"list-disc list-inside text-sm text-gray-600 space-y-1\"><li><strong>避免：</strong> 高酒精度、高單寧、重度橡木桶陳年的紅酒。</li><li><strong>選擇：</strong> 低酒精度、帶有殘糖 (Off-dry)、果香濃郁的白酒或氣泡酒（如 Moscato d'Asti, Prosecco, 或微甜的 Riesling）。</li></ul></div></div><div class=\"bg-indigo-50 p-6 rounded-xl border border-indigo-100\"><h4 class=\"text-indigo-800 font-bold mb-4 flex items-center\"><span class=\"material-icons mr-2\">set_meal</span> 鮮味 (Umami) 的陷阱</h4><p class=\"text-gray-700 mb-4\">鮮味存在於蘆筍、蘑菇、熟成起司、醬油與海鮮中。它會讓葡萄酒顯得<strong>更苦、更澀、更酸，且果香減弱</strong>（產生金屬味）。</p><div class=\"bg-white p-4 rounded-lg border border-indigo-200\"><h5 class=\"font-bold text-indigo-700 mb-2\">解決方案：</h5><ul class=\"list-disc list-inside text-sm text-gray-600 space-y-1\"><li><strong>如果食物只有鮮味（如清蒸蘆筍）：</strong> 搭配果香濃郁、無橡木桶影響的白酒。</li><li><strong>如果食物有鮮味且帶有鹹味（如帕瑪森起司、生火腿）：</strong> 鹹味會抵消鮮味的負面影響！此時可以搭配高酸度、甚至帶有單寧的紅酒（如 Chianti Classico）。</li></ul></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "義大利的「在地搭配 (Regional Pairing)」哲學",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">在義大利，最完美的餐酒搭配往往遵循一個簡單的原則：<strong>「長在一起的，就搭在一起 (What grows together, goes together)」</strong>。這不僅是文化傳統，背後也有深刻的科學與風土邏輯。</p><div class=\"bg-gray-900 p-6 rounded-xl text-white mb-8\"><div class=\"grid grid-cols-1 md:grid-cols-3 gap-6\"><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-yellow-400 font-bold mb-2\">皮埃蒙特 (Piemonte)</h4><p class=\"text-sm text-gray-300 mb-2\"><strong>食物：</strong> 白松露 (White Truffle)、生牛肉塔塔 (Carne Cruda)、濃郁的起司火鍋 (Fonduta)。</p><p class=\"text-sm text-gray-300\"><strong>葡萄酒：</strong> Barolo 或 Barbaresco (Nebbiolo)。</p><p class=\"text-xs text-gray-400 mt-2\"><strong>邏輯：</strong> 陳年 Nebbiolo 的泥土、蘑菇與枯葉香氣與白松露完美互補；高單寧與高酸度則能切割起司與生肉的豐富油脂。</p></div><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-green-400 font-bold mb-2\">托斯卡尼 (Toscana)</h4><p class=\"text-sm text-gray-300 mb-2\"><strong>食物：</strong> 佛羅倫斯大牛排 (Bistecca alla Fiorentina)、野豬肉醬義大利麵 (Pappardelle al Cinghiale)。</p><p class=\"text-sm text-gray-300\"><strong>葡萄酒：</strong> Chianti Classico 或 Brunello di Montalcino (Sangiovese)。</p><p class=\"text-xs text-gray-400 mt-2\"><strong>邏輯：</strong> Sangiovese 的高酸度能平衡番茄基底的肉醬；強勁的單寧則需要大牛排豐富的蛋白質與油脂來柔化。</p></div><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-blue-400 font-bold mb-2\">坎帕尼亞 (Campania)</h4><p class=\"text-sm text-gray-300 mb-2\"><strong>食物：</strong> 拿坡里披薩 (瑪格麗特)、海鮮義大利麵、水牛莫札瑞拉起司。</p><p class=\"text-sm text-gray-300\"><strong>葡萄酒：</strong> Fiano di Avellino 或 Greco di Tufo (白酒)。</p><p class=\"text-xs text-gray-400 mt-2\"><strong>邏輯：</strong> 南部白酒豐富的果香與礦物酸度，能完美襯托海鮮的鮮甜，並切割水牛起司的濃郁奶香，同時不會被番茄的酸度掩蓋。</p></div></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在進階餐酒搭配中，食物中的「甜味」會對葡萄酒產生什麼影響？",
+      "options": [
+        "讓葡萄酒顯得更甜、果香更濃郁",
+        "讓葡萄酒顯得更酸、更苦、更乾澀，且果香減弱",
+        "完全中和葡萄酒的單寧",
+        "提升葡萄酒的酒精度"
+      ],
+      "correctAnswer": 1,
+      "explanation": "食物的甜味會讓味蕾對甜度的感知疲勞，因此搭配的葡萄酒會顯得缺乏果香，酸度、苦味與單寧的澀感會被放大。這就是為什麼甜點必須搭配比它更甜的甜酒。"
+    },
+    {
+      "question": "當你面對一道富含油脂的料理（如炸海鮮或濃郁的奶油燉飯）時，最適合運用哪一種「對比搭配 (Contrasting Pairing)」策略？",
+      "options": [
+        "選擇高酒精度的紅酒來增加重量感",
+        "選擇帶有強烈橡木桶香草味的白酒來呼應奶油味",
+        "選擇高酸度的白酒或氣泡酒，利用酸度來「切割 (Cut through)」油脂，洗刷味蕾",
+        "選擇極甜的甜酒來中和油脂"
+      ],
+      "correctAnswer": 2,
+      "explanation": "酸度是切割油脂的最佳武器。高酸度的葡萄酒（如 Franciacorta 氣泡酒或 Verdicchio 白酒）能清除口腔中的油膩感，讓每一口食物都像第一口一樣美味。"
+    },
+    {
+      "question": "食物中的「鮮味 (Umami)」通常會讓葡萄酒產生負面變化（變苦、變澀）。但如果這道充滿鮮味的食物同時帶有強烈的「鹹味 (Saltiness)」（例如帕瑪森起司或生火腿），你應該如何搭配？",
+      "options": [
+        "只能搭配白開水，因為鮮味太難處理",
+        "鹹味會抵消鮮味的負面影響，因此可以安全地搭配高酸度甚至帶有單寧的紅酒（如 Chianti Classico）",
+        "必須搭配極甜的 Moscato d'Asti 來掩蓋鹹味",
+        "只能搭配完全無酸度的低酒精度白酒"
+      ],
+      "correctAnswer": 1,
+      "explanation": "鹹味是葡萄酒的好朋友！它能增強果香並柔化單寧與酸度。當鮮味與鹹味同時存在時（如熟成起司），鹹味的正面影響會抵消鮮味的負面影響，使得搭配紅酒成為可能。"
+    },
+    {
+      "question": "義大利的「在地搭配 (Regional Pairing)」哲學強調「長在一起的，就搭在一起」。下列哪一組搭配最符合這個原則？",
+      "options": [
+        "西西里島的 Nero d'Avola 搭配阿爾卑斯山的起司火鍋",
+        "皮埃蒙特的 Barolo 搭配拿坡里海鮮披薩",
+        "托斯卡尼的 Chianti Classico 搭配佛羅倫斯大牛排 (Bistecca alla Fiorentina)",
+        "威尼托的 Amarone 搭配清蒸白魚"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Chianti Classico (Sangiovese) 的高酸度與強勁單寧，完美契合托斯卡尼當地著名的佛羅倫斯大牛排，單寧能與牛肉豐富的蛋白質結合，是經典的在地搭配。"
+    }
+  ]
+}

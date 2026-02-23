@@ -1,0 +1,418 @@
+[
+  {
+    "id": "Castel del Monte Bombino Nero DOCG",
+    "name": "Castel del Monte Bombino Nero",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": 150,
+    "description": "以 Bombino Nero 葡萄釀造的優質紅酒產區",
+    "grapes": ["Bombino Nero"],
+    "details": {
+      "introduction": "Castel del Monte Bombino Nero DOCG 於 2011 年獲得 DOCG 認證，是 Puglia 地區最年輕的 DOCG 之一。此產區圍繞著名的八角形城堡 Castel del Monte，主要使用 Bombino Nero 葡萄釀造優雅而具有陳年潛力的紅酒。",
+      "climate": "地中海氣候，受海拔影響較大，位於海拔 200-500 公尺之間。日夜溫差顯著，有助於葡萄保持良好的酸度和香氣複雜度。"
+    }
+  },
+  {
+    "id": "Castel del Monte Nero di Troia DOCG",
+    "name": "Castel del Monte Nero di Troia",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": 200,
+    "description": "以 Nero di Troia（Uva di Troia）葡萄為主的頂級產區",
+    "grapes": ["Nero di Troia"],
+    "details": {
+      "introduction": "2011 年升格為 DOCG，專注於展現 Nero di Troia（也稱 Uva di Troia）葡萄的優質特性。此品種能釀造出結構紮實、單寧豐富且具有陳年潛力的紅酒。Riserva 級別需陳年至少 3 年。",
+      "climate": "溫和的地中海氣候，海拔較高的葡萄園享有良好的通風和日夜溫差，造就優雅且具礦物質特性的酒款。"
+    }
+  },
+  {
+    "id": "Castel del Monte Rosso Riserva DOCG",
+    "name": "Castel del Monte Rosso Riserva",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": 180,
+    "description": "Castel del Monte 產區的陳年紅酒",
+    "grapes": ["Nero di Troia", "Aglianico"],
+    "details": {
+      "introduction": "2011 年獲得 DOCG 認證，是 Castel del Monte 產區的旗艦級陳年紅酒。主要使用 Nero di Troia（最少 65%）混釀 Aglianico 或其他本地品種，需陳年至少 2 年才能上市。",
+      "climate": "海拔 200-600 公尺的丘陵地帶，石灰質土壤為主，地中海氣候帶來充足陽光，高海拔確保良好酸度平衡。"
+    }
+  },
+  {
+    "id": "Primitivo di Manduria Dolce Naturale DOCG",
+    "name": "Primitivo di Manduria Dolce Naturale",
+    "type": "DOCG",
+    "style": "甜酒",
+    "hectare": 300,
+    "description": "Primitivo 葡萄釀造的天然甜酒",
+    "grapes": ["Primitivo"],
+    "details": {
+      "introduction": "2011 年升格為 DOCG，專門生產使用過熟 Primitivo 葡萄釀造的天然甜紅酒。葡萄會在藤上完全成熟甚至過熟，或經過風乾濃縮，釀造出酒精度高、甜度豐富的甜酒。",
+      "climate": "炎熱乾燥的地中海氣候，靠近 Taranto 灣。充足的陽光和溫暖氣候使葡萄達到極高的成熟度和糖分濃度。"
+    }
+  },
+  {
+    "id": "Aleatico di Puglia DOC",
+    "name": "Aleatico di Puglia",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 120,
+    "description": "以 Aleatico 葡萄釀造的紅酒產區",
+    "grapes": ["Aleatico"],
+    "details": {
+      "introduction": "使用 Aleatico 葡萄釀造的特色紅酒和甜酒，這種葡萄帶有獨特的花香和香料特性。可釀造成干型或甜型酒款。",
+      "climate": "溫暖的地中海氣候，適合 Aleatico 葡萄充分成熟，發展出濃郁的香氣和風味。"
+    }
+  },
+  {
+    "id": "Alezio DOC",
+    "name": "Alezio",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 450,
+    "description": "位於 Salento 半島的傳統產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "位於 Lecce 省的傳統產區，主要使用 Negroamaro（至少 80%）混釀少量 Malvasia Nera。紅酒需陳年至少 2 年才能標示 Riserva。",
+      "climate": "典型的 Salento 半島氣候，炎熱乾燥，海風調節作用明顯。紅土為主的土壤賦予酒款獨特的礦物質特性。"
+    }
+  },
+  {
+    "id": "Barletta DOC",
+    "name": "Barletta",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 250,
+    "description": "位於 Puglia 北部的產區",
+    "grapes": ["Nero di Troia"],
+    "details": {
+      "introduction": "位於 Barletta 市周圍，主要使用 Nero di Troia 葡萄（至少 90%）釀造紅酒和粉紅酒。此產區於 2011 年獲得 DOC 認證。",
+      "climate": "地中海氣候，受亞得里亞海影響，夏季炎熱但有海風調節，冬季溫和。"
+    }
+  },
+  {
+    "id": "Brindisi DOC",
+    "name": "Brindisi",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 800,
+    "description": "Brindisi 省的重要產區",
+    "grapes": ["Negroamaro", "Malvasia Nera", "Susumaniello"],
+    "details": {
+      "introduction": "Brindisi 是 Puglia 最早獲得 DOC 認證的產區之一（1979年）。主要使用 Negroamaro（至少 70%）釀造紅酒和粉紅酒，Riserva 需陳年至少 2 年。",
+      "climate": "沿海地中海氣候，受亞得里亞海影響顯著，提供涼爽的海風。土壤以石灰質和紅土為主。"
+    }
+  },
+  {
+    "id": "Cacc'e mmitte di Lucera DOC",
+    "name": "Cacc'e mmitte di Lucera",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 180,
+    "description": "Foggia 省的傳統產區",
+    "grapes": ["Nero di Troia", "Montepulciano"],
+    "details": {
+      "introduction": "產區名稱來自當地方言「cacc'e mmitte」意為「倒出並混合」，反映了傳統的混釀方式。使用 Nero di Troia、Montepulciano 和 Sangiovese 等品種混釀。",
+      "climate": "內陸丘陵氣候，日夜溫差較大，有利於葡萄保持良好的酸度和香氣複雜度。"
+    }
+  },
+  {
+    "id": "Castel del Monte DOC",
+    "name": "Castel del Monte",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": 1500,
+    "description": "圍繞著名八角形城堡的多樣化產區",
+    "grapes": ["Nero di Troia", "Bombino Nero", "Aglianico", "Pampanuto", "Chardonnay"],
+    "details": {
+      "introduction": "1971 年獲得 DOC 認證，圍繞著 UNESCO 世界遺產八角形城堡 Castel del Monte。生產多種類型酒款，紅酒以 Nero di Troia 為主，白酒以 Pampanuto 和 Chardonnay 為主。",
+      "climate": "海拔 200-600 公尺的丘陵地帶，享有良好的通風和日夜溫差。石灰質土壤為主，賦予酒款優雅和礦物質特性。"
+    }
+  },
+  {
+    "id": "Colline Joniche Tarantine DOC",
+    "name": "Colline Joniche Tarantine",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 350,
+    "description": "Taranto 省的產區",
+    "grapes": ["Primitivo", "Malvasia Nera", "Verdeca"],
+    "details": {
+      "introduction": "位於 Taranto 省愛奧尼亞海沿岸的丘陵地帶，生產以 Primitivo 為主的紅酒和以 Verdeca 為主的白酒。",
+      "climate": "沿海地中海氣候，受愛奧尼亞海調節，夏季炎熱但有海風降溫，適合葡萄緩慢成熟。"
+    }
+  },
+  {
+    "id": "Copertino DOC",
+    "name": "Copertino",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 650,
+    "description": "Lecce 省的歷史悠久產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "1976 年獲得 DOC 認證，是 Salento 最古老的產區之一。以 Negroamaro（至少 70%）為主釀造紅酒和粉紅酒，Riserva 需陳年至少 2 年。",
+      "climate": "典型的 Salento 炎熱氣候，紅土壤富含鐵質，賦予 Negroamaro 葡萄獨特的深色和濃郁風味。"
+    }
+  },
+  {
+    "id": "Galatina DOC",
+    "name": "Galatina",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 420,
+    "description": "Salento 半島的產區",
+    "grapes": ["Negroamaro", "Chardonnay"],
+    "details": {
+      "introduction": "1997 年獲得 DOC 認證，位於 Lecce 省中心。紅酒以 Negroamaro 為主，白酒則使用 Chardonnay 為主要品種。",
+      "climate": "炎熱乾燥的 Salento 氣候，適合釀造濃郁飽滿的紅酒和結構豐富的白酒。"
+    }
+  },
+  {
+    "id": "Gioia del Colle DOC",
+    "name": "Gioia del Colle",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": 950,
+    "description": "以 Primitivo 葡萄聞名的產區",
+    "grapes": ["Primitivo", "Aleatico", "Verdeca"],
+    "details": {
+      "introduction": "1987 年獲得 DOC 認證，位於 Bari 省南部丘陵地帶。以優質的 Primitivo 葡萄聞名，海拔較高的葡萄園能釀造出比 Manduria 更優雅、酸度更好的 Primitivo。",
+      "climate": "海拔 300-500 公尺的高原氣候，日夜溫差大，賦予 Primitivo 葡萄更好的香氣複雜度和酸度平衡。"
+    }
+  },
+  {
+    "id": "Gravina DOC",
+    "name": "Gravina",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 280,
+    "description": "生產白酒和氣泡酒的產區",
+    "grapes": ["Greco", "Malvasia Bianca", "Bianco d'Alessano"],
+    "details": {
+      "introduction": "1983 年獲得 DOC 認證，專注於白酒和氣泡酒生產。使用 Greco、Malvasia Bianca 和 Bianco d'Alessano 混釀，可釀造靜止白酒或傳統法氣泡酒。",
+      "climate": "內陸丘陵氣候，海拔較高，適合白葡萄保持良好的酸度和清新的香氣。"
+    }
+  },
+  {
+    "id": "Leverano DOC",
+    "name": "Leverano",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": 550,
+    "description": "Lecce 省的多元產區",
+    "grapes": ["Negroamaro", "Malvasia Nera", "Malvasia Bianca"],
+    "details": {
+      "introduction": "1979 年獲得 DOC 認證，生產多種類型酒款。紅酒以 Negroamaro 為主，白酒以 Malvasia Bianca 和 Bombino Bianco 為主。",
+      "climate": "Salento 半島的炎熱氣候，靠近愛奧尼亞海，海風提供一定的降溫作用。"
+    }
+  },
+  {
+    "id": "Lizzano DOC",
+    "name": "Lizzano",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 400,
+    "description": "Taranto 省的產區",
+    "grapes": ["Negroamaro", "Malvasia Nera", "Primitivo"],
+    "details": {
+      "introduction": "1988 年獲得 DOC 認證，位於 Taranto 省愛奧尼亞海沿岸。生產以 Negroamaro 為主的紅酒和粉紅酒，也有少量 Primitivo 酒款。",
+      "climate": "沿海炎熱氣候，受海風調節，土壤以紅土和石灰質為主。"
+    }
+  },
+  {
+    "id": "Locorotondo DOC",
+    "name": "Locorotondo",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 720,
+    "description": "著名的白酒產區",
+    "grapes": ["Verdeca", "Bianco d'Alessano"],
+    "details": {
+      "introduction": "1969 年獲得 DOC 認證，是 Puglia 最著名的白酒產區之一。位於風景如畫的 Valle d'Itria，以 Verdeca 和 Bianco d'Alessano 混釀清新爽口的白酒。",
+      "climate": "海拔 400-500 公尺的丘陵氣候，白色的 trulli 石屋點綴其間。日夜溫差大，適合釀造清新優雅的白酒。"
+    }
+  },
+  {
+    "id": "Martina Martina Franca DOC",
+    "name": "Martina Franca",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 500,
+    "description": "Valle d'Itria 的白酒產區",
+    "grapes": ["Verdeca", "Bianco d'Alessano"],
+    "details": {
+      "introduction": "1969 年獲得 DOC 認證，與 Locorotondo 相鄰，同樣位於 Valle d'Itria。使用相同的葡萄品種 Verdeca 和 Bianco d'Alessano 釀造清爽的白酒。",
+      "climate": "丘陵地帶氣候，海拔較高，石灰質土壤為主，提供良好的排水和礦物質特性。"
+    }
+  },
+  {
+    "id": "Matino DOC",
+    "name": "Matino",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 380,
+    "description": "Lecce 省的產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "1971 年獲得 DOC 認證，位於 Salento 半島南部。以 Negroamaro（至少 70%）為主釀造紅酒和粉紅酒。",
+      "climate": "炎熱的 Salento 氣候，靠近愛奧尼亞海，紅土壤富含礦物質。"
+    }
+  },
+  {
+    "id": "Moscato di Trani DOC",
+    "name": "Moscato di Trani",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 150,
+    "description": "以 Moscato 釀造的甜酒和氣泡酒產區",
+    "grapes": ["Moscato Bianco"],
+    "details": {
+      "introduction": "1974 年獲得 DOC 認證，專門生產以 Moscato Bianco（Moscato di Trani）釀造的甜酒和氣泡酒。可釀造成靜止甜酒、氣泡甜酒或加烈甜酒。",
+      "climate": "沿海地中海氣候，溫暖的氣候使 Moscato 葡萄發展出豐富的香氣和糖分。"
+    }
+  },
+  {
+    "id": "Nardò DOC",
+    "name": "Nardò",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 480,
+    "description": "Lecce 省的傳統產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "1987 年獲得 DOC 認證，位於 Salento 半島西南部，靠近愛奧尼亞海。以 Negroamaro（至少 80%）為主釀造紅酒和粉紅酒。",
+      "climate": "典型的 Salento 炎熱氣候，海風調節溫度，土壤以石灰質和紅土為主。"
+    }
+  },
+  {
+    "id": "Negroamaro di Terra d'Otranto DOC",
+    "name": "Negroamaro di Terra d'Otranto",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 600,
+    "description": "專注於 Negroamaro 葡萄的產區",
+    "grapes": ["Negroamaro"],
+    "details": {
+      "introduction": "2011 年獲得 DOC 認證，專門展現 Negroamaro 葡萄的優質特性。涵蓋 Lecce 和 Brindisi 省的 Terra d'Otranto 地區，要求至少 85% Negroamaro。",
+      "climate": "Salento 半島南部的炎熱氣候，強烈的陽光使 Negroamaro 發展出深色、高酒精度和濃郁的風味。"
+    }
+  },
+  {
+    "id": "Orta Nova DOC",
+    "name": "Orta Nova",
+    "type": "DOC",
+    "style": "粉紅酒",
+    "hectare": 200,
+    "description": "Foggia 省的粉紅酒產區",
+    "grapes": ["Nero di Troia", "Sangiovese"],
+    "details": {
+      "introduction": "1984 年獲得 DOC 認證，位於 Foggia 省，專門生產粉紅酒（Rosato）。主要使用 Nero di Troia 和 Sangiovese 混釀。",
+      "climate": "內陸平原氣候，夏季炎熱，適合釀造果味豐富的粉紅酒。"
+    }
+  },
+  {
+    "id": "Ostuni DOC",
+    "name": "Ostuni",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 320,
+    "description": "Brindisi 省的產區",
+    "grapes": ["Impigno", "Francavilla", "Ottavianello"],
+    "details": {
+      "introduction": "1972 年獲得 DOC 認證，以著名的白色城市 Ostuni 命名。白酒使用本地品種 Impigno 和 Francavilla，紅酒則使用 Ottavianello（Cinsault）為主。",
+      "climate": "沿海地中海氣候，受亞得里亞海影響，白色的石灰質土壤反射陽光，有助於葡萄成熟。"
+    }
+  },
+  {
+    "id": "Primitivo di Manduria DOC",
+    "name": "Primitivo di Manduria",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 2800,
+    "description": "最著名的 Primitivo 產區",
+    "grapes": ["Primitivo"],
+    "details": {
+      "introduction": "1974 年獲得 DOC 認證，是 Puglia 最著名的產區之一，專門生產 Primitivo 紅酒（美國稱之為 Zinfandel）。酒款濃郁飽滿，酒精度高，果味豐富。",
+      "climate": "炎熱乾燥的地中海氣候，靠近 Taranto 灣，充足的陽光和溫暖使 Primitivo 達到極高的成熟度。富含鐵質的紅土賦予酒款獨特特性。"
+    }
+  },
+  {
+    "id": "Rosso di Cerignola DOC",
+    "name": "Rosso di Cerignola",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 280,
+    "description": "Foggia 省的紅酒產區",
+    "grapes": ["Nero di Troia"],
+    "details": {
+      "introduction": "1974 年獲得 DOC 認證，位於 Foggia 省的 Cerignola 地區。主要使用 Nero di Troia（至少 55%）混釀 Sangiovese 等品種。",
+      "climate": "Tavoliere 平原的炎熱氣候，土壤肥沃，適合葡萄生長。"
+    }
+  },
+  {
+    "id": "Salice Salentino DOC",
+    "name": "Salice Salentino",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒", "白酒"],
+    "hectare": 1600,
+    "description": "Salento 最重要的 DOC 產區之一",
+    "grapes": ["Negroamaro", "Malvasia Nera", "Chardonnay"],
+    "details": {
+      "introduction": "1976 年獲得 DOC 認證，是 Salento 最重要且最負盛名的產區之一。紅酒以 Negroamaro（至少 75%）混釀 Malvasia Nera，Riserva 需陳年至少 2 年。也生產粉紅酒和白酒。",
+      "climate": "典型的 Salento 炎熱氣候，紅土壤富含礦物質，賦予 Negroamaro 葡萄濃郁的風味和深色。"
+    }
+  },
+  {
+    "id": "San Severo DOC",
+    "name": "San Severo",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": 850,
+    "description": "Foggia 省北部的多元產區",
+    "grapes": ["Montepulciano", "Sangiovese", "Bombino Bianco", "Trebbiano"],
+    "details": {
+      "introduction": "1968 年獲得 DOC 認證，是 Puglia 最早獲得 DOC 認證的產區之一。位於 Foggia 省北部，生產多種類型酒款。紅酒以 Montepulciano 和 Sangiovese 為主，白酒以 Bombino Bianco 和 Trebbiano 為主。",
+      "climate": "Gargano 半島附近的溫和地中海氣候，受亞得里亞海調節，土壤多樣，包括石灰質和黏土。"
+    }
+  },
+  {
+    "id": "Squinzano DOC",
+    "name": "Squinzano",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 720,
+    "description": "Lecce 省的傳統產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "1976 年獲得 DOC 認證，是 Salento 半島最古老和最負盛名的產區之一。以 Negroamaro（至少 70%）為主釀造紅酒和粉紅酒，Riserva 需陳年至少 2 年。",
+      "climate": "炎熱乾燥的 Salento 氣候，靠近亞得里亞海，紅土壤為 Negroamaro 提供理想的生長條件。"
+    }
+  },
+  {
+    "id": "Tavoliere Tavoliere delle Puglie DOC",
+    "name": "Tavoliere delle Puglie",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": 1200,
+    "description": "Foggia 省的大型產區",
+    "grapes": ["Nero di Troia", "Bombino Bianco"],
+    "details": {
+      "introduction": "2011 年獲得 DOC 認證，涵蓋 Foggia 省的 Tavoliere 平原，是 Italy 最大的平原之一。紅酒以 Nero di Troia 為主，白酒以 Bombino Bianco 為主。",
+      "climate": "平原氣候，夏季炎熱，土壤肥沃。受 Gargano 半島和 Apennine 山脈影響。"
+    }
+  },
+  {
+    "id": "Terra d'Otranto DOC",
+    "name": "Terra d'Otranto",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": 900,
+    "description": "Salento 半島南部的產區",
+    "grapes": ["Negroamaro", "Malvasia Nera"],
+    "details": {
+      "introduction": "2011 年獲得 DOC 認證，涵蓋 Lecce 和 Brindisi 兩省的 Salento 半島南部。以 Negroamaro 為主釀造紅酒和粉紅酒，也可使用 Primitivo、Malvasia Nera 等品種。",
+      "climate": "Salento 半島極南端的炎熱氣候，受愛奧尼亞海和亞得里亞海雙重影響，陽光充足，適合釀造濃郁的紅酒。"
+    }
+  }
+]

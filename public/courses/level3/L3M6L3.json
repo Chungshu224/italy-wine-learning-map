@@ -1,0 +1,73 @@
+{
+  "id": "L3M6L3",
+  "title": "酒單設計與庫存管理",
+  "description": "從專業侍酒師與餐廳經營者的角度，學習如何設計一份具備商業價值、平衡性與義大利特色的酒單，並掌握庫存管理與定價策略。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "酒單設計的核心原則",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">一份優秀的酒單不只是把酒名列出來，它是餐廳靈魂的延伸，也是創造利潤的關鍵工具。設計酒單時，必須在「專業性」、「顧客需求」與「商業效益」之間取得平衡。</p><div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\"><div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100 text-center\"><span class=\"material-icons text-4xl text-blue-500 mb-2\">restaurant_menu</span><h4 class=\"text-blue-800 font-bold mb-2\">與菜單的契合度</h4><p class=\"text-sm text-gray-600\">酒單必須與餐廳的料理風格（如北義大利菜、海鮮餐廳或披薩店）緊密結合，提供足夠的搭配選擇。</p></div><div class=\"bg-green-50 p-6 rounded-xl border border-green-100 text-center\"><span class=\"material-icons text-4xl text-green-500 mb-2\">balance</span><h4 class=\"text-green-800 font-bold mb-2\">風格與價格的平衡</h4><p class=\"text-sm text-gray-600\">涵蓋從清爽到濃郁的各種風格，並提供從入門款 (Entry-level) 到頂級膜拜酒 (Icon wines) 的完整價格帶。</p></div><div class=\"bg-purple-50 p-6 rounded-xl border border-purple-100 text-center\"><span class=\"material-icons text-4xl text-purple-500 mb-2\">visibility</span><h4 class=\"text-purple-800 font-bold mb-2\">易讀性與導航</h4><p class=\"text-sm text-gray-600\">避免過度專業的術語。可以按產區、葡萄品種或「風味風格（如：清脆白酒、飽滿紅酒）」來分類，幫助顧客快速找到想要的酒。</p></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "建構義大利特色酒單",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利擁有超過 400 種原生葡萄品種與 20 個產區。一份具備深度的義大利酒單，應該展現這種多樣性，同時保留經典。</p><div class=\"space-y-6\"><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200\"><h4 class=\"text-xl font-bold text-gray-800 mb-4 flex items-center\"><span class=\"material-icons text-red-600 mr-2\">star</span> 必備的「三大支柱 (The Big Three)」</h4><p class=\"text-gray-600 mb-4\">任何義大利酒單都不能缺少這三個最具代表性的產區與酒款，它們是吸引傳統消費者的基石：</p><ul class=\"list-disc list-inside text-sm text-gray-700 space-y-2\"><li><strong>皮埃蒙特 (Piemonte)：</strong> Barolo, Barbaresco (Nebbiolo) 以及日常飲用的 Barbera。</li><li><strong>托斯卡尼 (Toscana)：</strong> Chianti Classico, Brunello di Montalcino (Sangiovese) 以及 Super Tuscans。</li><li><strong>威尼托 (Veneto)：</strong> Amarone della Valpolicella, Prosecco 以及 Soave。</li></ul></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200\"><h4 class=\"text-xl font-bold text-gray-800 mb-4 flex items-center\"><span class=\"material-icons text-teal-600 mr-2\">explore</span> 探索與驚喜 (Discovery & Surprises)</h4><p class=\"text-gray-600 mb-4\">為了展現侍酒師的專業度並吸引進階愛好者，酒單必須包含一些較冷門但品質極高的產區或品種：</p><ul class=\"list-disc list-inside text-sm text-gray-700 space-y-2\"><li><strong>南部與島嶼的崛起：</strong> 西西里島的 Etna Rosso (Nerello Mascalese)、坎帕尼亞的 Taurasi (Aglianico)。</li><li><strong>原生白葡萄的復興：</strong> 薩丁尼亞島的 Vermentino、馬爾凱的 Verdicchio、坎帕尼亞的 Fiano。</li><li><strong>橘酒與自然酒：</strong> 來自 Friuli-Venezia Giulia 的浸皮白酒 (Orange Wine)，迎合現代潮流。</li></ul></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "定價策略 (Pricing Strategy)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">餐廳的葡萄酒定價直接影響利潤率 (Profit Margin) 與銷售速度。傳統的「統一倍數加成 (Flat Markup)」已經過時，現代侍酒師多採用「滑動比例 (Sliding Scale)」或「現金利潤 (Cash Margin)」策略。</p><div class=\"bg-gray-50 p-8 rounded-xl border border-gray-200 mb-8\"><div class=\"grid grid-cols-1 md:grid-cols-2 gap-8\"><div class=\"space-y-4\"><h4 class=\"text-lg font-bold text-gray-800 border-b border-gray-300 pb-2\">傳統：統一倍數加成 (Flat Markup)</h4><p class=\"text-sm text-gray-600\">將所有進價乘以一個固定的倍數（通常是 3 倍或 4 倍）。</p><ul class=\"space-y-2 text-sm text-gray-700\"><li><strong>缺點：</strong> 便宜的酒（進價 $10，賣 $30）利潤太少；昂貴的酒（進價 $100，賣 $300）價格過高，導致無人問津，庫存積壓。</li></ul></div><div class=\"space-y-4\"><h4 class=\"text-lg font-bold text-blue-800 border-b border-blue-300 pb-2\">現代：滑動比例 (Sliding Scale)</h4><p class=\"text-sm text-gray-600\">根據進價的不同，採用不同的加成倍數。<strong>進價越低，倍數越高；進價越高，倍數越低。</strong></p><ul class=\"space-y-2 text-sm text-gray-700\"><li><strong>入門酒款 (Entry-level)：</strong> 進價 $10，加成 3.5 倍，賣 $35（確保基本利潤率）。</li><li><strong>中階酒款 (Mid-tier)：</strong> 進價 $30，加成 2.5 倍，賣 $75。</li><li><strong>頂級酒款 (Fine Wine)：</strong> 進價 $100，加成 1.5 倍，賣 $150（鼓勵顧客升級消費，賺取更高的「絕對現金利潤」）。</li></ul></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "庫存管理與單杯酒 (By-the-Glass) 策略",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">良好的庫存管理能確保資金流動，而單杯酒 (By-the-Glass, BTG) 則是餐廳葡萄酒銷售的引擎，通常佔總銷售額的 50% 以上。</p><div class=\"bg-gray-900 p-6 rounded-xl text-white mb-8\"><div class=\"flex flex-col space-y-4\"><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-yellow-400 font-bold mb-2\">單杯酒 (BTG) 的黃金法則</h4><p class=\"text-sm text-gray-300\"><strong>「第一杯酒必須能收回整瓶的成本。」</strong> 如果一瓶酒進價 $15，單杯（通常一瓶倒 5-6 杯）的售價就應該定在 $15 左右。這樣即使剩下的酒壞掉，也不會虧本。BTG 酒單應該經常更換，並包含至少一款氣泡酒、兩款白酒、兩款紅酒與一款甜酒。</p></div><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-green-400 font-bold mb-2\">庫存周轉率 (Inventory Turnover)</h4><p class=\"text-sm text-gray-300\">不要把資金壓在賣不出去的酒上。定期檢視銷售數據（如 POS 系統），找出「滯銷品 (Dead Stock)」。對於滯銷的酒款，可以透過員工推薦、搭配特定套餐 (Pairing Menu) 或舉辦主題晚宴來加速消耗。</p></div><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-blue-400 font-bold mb-2\">保存系統 (Preservation Systems)</h4><p class=\"text-sm text-gray-300\">為了提供更高價、更優質的單杯酒選擇（如單杯 Barolo），餐廳必須投資保存系統。例如使用惰性氣體（如氬氣 Argon）的 <strong>Coravin</strong> 系統，可以在不拔出軟木塞的情況下取酒，讓剩下的酒液保存數月甚至數年不氧化。</p></div></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在設計一份具備深度的義大利酒單時，除了必備的「三大支柱（皮埃蒙特、托斯卡尼、威尼托）」之外，侍酒師通常會加入哪些元素來展現專業度並吸引進階愛好者？",
+      "options": [
+        "大量加入法國波爾多的頂級酒款",
+        "只提供最便宜的餐酒 (Vino da Tavola)",
+        "加入較冷門但品質極高的產區或品種，如西西里島的 Etna Rosso 或坎帕尼亞的 Fiano",
+        "將所有酒款的價格提高三倍"
+      ],
+      "correctAnswer": 2,
+      "explanation": "一份優秀的酒單需要平衡「經典」與「探索」。加入如 Etna 或原生白葡萄等新興或冷門產區，能展現酒單的深度與侍酒師的選酒眼光。"
+    },
+    {
+      "question": "現代餐廳在制定葡萄酒價格時，為了鼓勵顧客購買高價位的頂級酒款，同時確保入門酒款的利潤率，最常採用哪一種定價策略？",
+      "options": [
+        "統一倍數加成 (Flat Markup)，所有酒款一律乘以 3 倍",
+        "滑動比例 (Sliding Scale)，進價越低的酒加成倍數越高，進價越高的酒加成倍數越低",
+        "所有酒款統一售價 $50",
+        "只賣進價最便宜的酒"
+      ],
+      "correctAnswer": 1,
+      "explanation": "滑動比例策略能避免昂貴的酒款因為固定倍數加成而變得天價（導致賣不出去），同時透過較低的倍數鼓勵顧客「升級消費」，餐廳雖然利潤率 (Margin %) 降低，但賺取的絕對現金 (Cash Margin) 卻更多。"
+    },
+    {
+      "question": "關於餐廳的「單杯酒 (By-the-Glass, BTG)」定價，業界最常見的「黃金法則」是什麼？",
+      "options": [
+        "單杯酒的售價應該等於整瓶酒的進貨成本",
+        "單杯酒的售價應該是整瓶酒售價的一半",
+        "單杯酒應該免費提供以吸引顧客",
+        "單杯酒的售價應該比買整瓶還要貴很多"
+      ],
+      "correctAnswer": 0,
+      "explanation": "為了控制耗損風險（開瓶後賣不完導致氧化變質），業界的標準做法是將第一杯酒的售價定為整瓶酒的進價成本。這樣賣出第一杯就已經回本，剩下的都是純利潤。"
+    },
+    {
+      "question": "如果餐廳希望在單杯酒單 (BTG) 上提供非常昂貴的頂級酒款（例如單杯售價 $50 的陳年 Barolo），為了避免開瓶後賣不完而氧化變質，最有效的解決方案是什麼？",
+      "options": [
+        "將剩下的酒放進冷凍庫結冰",
+        "使用傳統的真空抽氣塞 (Vacuum Pump)",
+        "使用如 Coravin 這種注入惰性氣體（氬氣）且不需拔出軟木塞的取酒系統",
+        "強迫顧客一次買兩杯"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Coravin 系統利用細針穿透軟木塞取酒，同時注入氬氣填補空出的體積，防止氧氣進入。拔出細針後軟木塞會自然密合，讓剩下的酒液能保存數月甚至數年，是提供高價單杯酒的必備工具。"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+[
+  {
+    "id": "Bonarda dell'Oltrepò Pavese DOC",
+    "name": "Bonarda dell'Oltrepò Pavese DOC",
+    "type": "DOC",
+    "description": "Bonarda dell'Oltrepò Pavese DOC 是義大利倫巴底大區南部 Oltrepò Pavese 丘陵地帶的著名紅葡萄酒法定產區，以 Croatina 為主的葡萄釀製，擁有悠久的釀酒歷史，2010 年自 Oltrepò Pavese DOC 獨立成為專屬法定產區。",
+    "style": ["紅酒", "靜態（fermo）", "微氣泡（frizzante）"],
+    "grapes": ["Croatina", "Uva Rara", "Vespolina"],
+    "hectare": 3900,
+    "details": {
+      "introduction": "Bonarda dell'Oltrepò Pavese DOC 位於倫巴底大區南部的 Oltrepò Pavese 地區，地形以丘陵為主，是義大利最重要的紅葡萄酒產區之一。該產區以 Croatina 葡萄為主，釀造出色澤紅寶石、帶紫色反光、果香濃郁且口感圓潤的紅酒。原為 Oltrepò Pavese DOC 的一個類型，2010 年獨立成為 DOC。",
+      "climate": "產區屬於亞平寧山脈丘陵地帶，氣候溫和，日夜溫差大，有利於葡萄成熟與風味發展。土壤多為黏土與石灰岩，適合種植 Croatina 等紅葡萄品種。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Botticino DOC",
+    "name": "Botticino DOC",
+    "type": "DOC",
+      "description": "Botticino DOC 是義大利倫巴底大區布雷西亞省的紅葡萄酒法定產區，主要以 Barbera、Schiava gentile、Marzemino 和 Sangiovese 等葡萄混釀，酒色紅寶石帶石榴紅光澤，口感乾型、單寧明顯且和諧，適合搭配烤肉與中熟起司。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）"],
+      "grapes": ["Barbera", "Schiava gentile", "Marzemino", "Sangiovese"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Botticino DOC 位於倫巴底大區布雷西亞、Rezzato 與 Botticino 等地，屬於小型但歷史悠久的紅酒產區。該產區以多種葡萄混釀，Barbera 至少 30%，Marzemino 至少 20%，Schiava gentile 至少 10%，Sangiovese 至少 10%。成酒色澤紅寶石，香氣濃郁，口感乾型且單寧感明顯。",
+        "climate": "產區位於阿爾卑斯山南麓，屬溫帶大陸性氣候，夏季溫暖，冬季較冷，日夜溫差有助於葡萄風味發展。土壤多為石灰岩與黏土混合，適合多種紅葡萄品種共生。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Buttafuoco Buttafuoco dell'Oltrepò Pavese DOC",
+    "name": "Buttafuoco Buttafuoco dell'Oltrepò Pavese DOC",
+    "type": "DOC",
+      "description": "Buttafuoco dell'Oltrepò Pavese DOC 是義大利倫巴底大區 Oltrepò Pavese 地區的紅葡萄酒法定產區，以 Barbera 和 Croatina 為主混釀，酒色紅寶石，香氣濃郁，口感乾型且酒體飽滿，適合搭配肉類料理。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "酒體飽滿（di corpo）"],
+      "grapes": ["Barbera", "Croatina"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Buttafuoco dell'Oltrepò Pavese DOC 產自倫巴底大區南部 Oltrepò Pavese 多個市鎮，主要以 Barbera（25-65%）和 Croatina（25-65%）混釀，並可加入其他紅葡萄品種。成酒色澤紅寶石，香氣濃郁，口感乾型且酒體結實。",
+        "climate": "產區屬於亞平寧山脈丘陵地帶，氣候溫和，日夜溫差大，有利於葡萄成熟與風味發展。土壤多為黏土與石灰岩，適合 Barbera 和 Croatina 的生長。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Capriano del Colle DOC",
+    "name": "Capriano del Colle DOC",
+    "type": "DOC",
+      "description": "Capriano del Colle DOC 是義大利倫巴底大區布雷西亞省 Capriano del Colle 與 Poncarale 地區的紅葡萄酒法定產區，主要以 Marzemino、Merlot、Sangiovese 等葡萄混釀，酒色紅寶石，口感乾型、和諧，適合搭配燉肉與烤肉料理。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "和諧（armonico）"],
+      "grapes": ["Marzemino", "Merlot", "Sangiovese"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Capriano del Colle DOC 位於倫巴底大區布雷西亞省 Capriano del Colle 與 Poncarale，主要以 Marzemino（至少 40%）、Merlot（至少 20%）、Sangiovese（至少 10%）混釀，成酒色澤紅寶石，香氣愉悅且具特色，口感乾型、和諧且帶有鹹味。",
+        "climate": "產區屬溫帶大陸性氣候，夏季溫暖，冬季較冷，日夜溫差有助於葡萄風味發展。土壤多為黏土與石灰岩混合，適合多種紅葡萄品種共生。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Casteggio DOC",
+    "name": "Casteggio DOC",
+    "type": "DOC",
+      "description": "Casteggio DOC 是義大利倫巴底大區 Oltrepò Pavese 丘陵地帶的紅葡萄酒法定產區，主要以 Barbera 為主，並可混釀 Croatina、Pinot Nero、Uva Rara、Vespolina 等品種，酒色紅寶石，香氣複雜，口感濃郁且和諧。",
+      "style": ["紅酒", "靜態（fermo）", "和諧（armonico）", "複雜（complesso）"],
+      "grapes": ["Barbera", "Croatina", "Pinot Nero", "Uva Rara", "Vespolina"],
+      "hectare": 1778,
+      "details": {
+        "introduction": "Casteggio DOC 位於倫巴底大區 Oltrepò Pavese 南部的丘陵地帶，涵蓋 Casteggio 及周邊 7 個市鎮。該產區以 Barbera 為主，並可混釀 Croatina、Pinot Nero、Uva Rara、Vespolina 等品種，傳統上以紅酒為主，酒體濃郁且香氣複雜。2010 年自 Oltrepò Pavese DOC 獨立成為專屬法定產區。",
+        "climate": "產區屬於亞平寧山脈丘陵地帶，氣候溫和，日夜溫差大，有利於葡萄成熟與風味發展。土壤多為黏土與石灰岩，適合多種紅葡萄品種共生。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Cellatica DOC",
+    "name": "Cellatica DOC",
+    "type": "DOC",
+      "description": "Cellatica DOC 是義大利倫巴底大區布雷西亞省的紅葡萄酒法定產區，主要以 Marzemino、Barbera、Incrocio Terzi n.1 等葡萄混釀，酒色紅寶石，香氣具特色，口感乾型且帶有鹹味，適合搭配義式前菜與燉肉。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "特色（caratteristico）"],
+      "grapes": ["Marzemino", "Barbera", "Incrocio Terzi n.1"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Cellatica DOC 位於布雷西亞省 Rodengo Saiano、Gussago、Cellatica、Collebeato、Brescia 等地，主要以 Marzemino（至少 30%）、Barbera（至少 30%）、Incrocio Terzi n.1（至少 10%）混釀，成酒色澤紅寶石，香氣具特色，口感乾型且帶有鹹味。",
+        "climate": "產區屬溫帶大陸性氣候，夏季溫暖，冬季較冷，日夜溫差有助於葡萄風味發展。土壤多為黏土與石灰岩混合，適合多種紅葡萄品種共生。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Curtefranca DOC",
+    "name": "Curtefranca DOC",
+    "type": "DOC",
+      "description": "Curtefranca DOC 是義大利倫巴底大區布雷西亞省的紅葡萄酒法定產區，主要以 Cabernet Franc、Carmenère、Merlot、Cabernet Sauvignon 等葡萄混釀，酒色紅寶石且濃郁，口感中等酒體、乾型且和諧，適合搭配燉肉與中熟起司。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "中等酒體（di medio corpo）", "和諧（armonico）"],
+      "grapes": ["Cabernet Franc", "Carmenère", "Merlot", "Cabernet Sauvignon"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Curtefranca DOC 位於布雷西亞省多個市鎮，主要以 Cabernet Franc 和/或 Carmenère（至少 20%）、Merlot（至少 25%）、Cabernet Sauvignon（10-35%）混釀，成酒色澤紅寶石且濃郁，口感中等酒體、乾型且和諧。",
+        "climate": "產區屬溫帶大陸性氣候，夏季溫暖，冬季較冷，日夜溫差有助於葡萄風味發展。土壤多為黏土與石灰岩混合，適合多種國際紅葡萄品種共生。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Franciacorta DOCG",
+    "name": "Franciacorta DOCG",
+    "type": "DOCG",
+      "description": "Franciacorta DOCG 是義大利最著名的氣泡酒產區之一，位於倫巴底大區布雷西亞省，以傳統瓶中二次發酵（Metodo Classico）釀造高品質氣泡酒，包含多種風格如 Brut、Satèn、Rosé、Millesimato、Riserva。",
+      "style": ["氣泡酒（spumante）", "傳統法（Metodo Classico）", "Brut", "Satèn", "Rosé", "Millesimato", "Riserva"],
+      "grapes": ["Chardonnay", "Pinot Nero", "Pinot Bianco", "Erbamat"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Franciacorta DOCG 產區自 1967 年設立 DOC，1995 年升格為 DOCG，專注於高品質氣泡酒生產。僅允許使用 Chardonnay、Pinot Nero、Pinot Bianco 及 Erbamat 等品種，並以瓶中二次發酵釀造。產區內包含多種風格與甜度等級，Satèn 以柔和細緻氣泡著稱，Rosé 至少含 25% Pinot Nero。",
+        "climate": "產區位於布雷西亞省多個市鎮，屬溫帶大陸性氣候，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄酸度與香氣保存。土壤多為冰磧石、黏土與石灰岩混合，適合釀造高品質氣泡酒。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Garda Bresciano Riviera del Garda Bresciano DOC",
+    "name": "Garda Bresciano Riviera del Garda Bresciano DOC",
+    "type": "DOC",
+      "description": "Garda Bresciano DOC（又稱 Riviera del Garda Bresciano DOC）是義大利倫巴底大區布雷西亞省加爾達湖沿岸的多元葡萄酒產區，涵蓋白酒、紅酒、桃紅酒與特色 Groppello 紅酒，風格清新、果香明顯。",
+      "style": ["白酒", "紅酒", "桃紅酒（Chiaretto）", "靜態（fermo）", "Groppello"],
+      "grapes": ["Groppello Gentile", "Groppello di Mocasina", "Groppello di Santo Stefano", "Barbera", "Marzemino", "Sangiovese", "Riesling Italico"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Garda Bresciano DOC（Riviera del Garda Bresciano DOC）產區自 1977 年設立，位於布雷西亞省加爾達湖西岸丘陵地帶。以 Groppello 為代表性紅葡萄品種，並生產白酒、桃紅酒（Chiaretto）等多元風格。Chiaretto 以花果香氣與清新酸度著稱，Groppello 紅酒則細膩、帶香料與紅果風味。",
+        "climate": "產區受加爾達湖調節，屬溫和湖區氣候，夏季溫暖、冬季較溫和，日夜溫差適中，有利於葡萄成熟與香氣發展。土壤多為礫石、黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Garda Colli Mantovani DOC",
+    "name": "Garda Colli Mantovani DOC",
+    "type": "DOC",
+      "description": "Garda Colli Mantovani DOC 是義大利倫巴底大區曼托瓦省加爾達湖南岸丘陵地帶的法定產區，涵蓋多種白、紅、桃紅葡萄酒，風格多元且受湖區氣候影響，酒質清新、果香明顯。",
+      "style": ["白酒", "紅酒", "桃紅酒（rosato）", "Cabernet", "Chardonnay", "Pinot Grigio", "Riesling Italico", "Garganega", "靜態（fermo）"],
+      "grapes": ["Cabernet Franc", "Cabernet Sauvignon", "Chardonnay", "Garganega", "Molinara", "Negrara", "Pinot Bianco", "Pinot Grigio", "Riesling", "Riesling Italico"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Garda Colli Mantovani DOC 產區設立於 1976 年，位於倫巴底大區曼托瓦省加爾達湖南岸的丘陵地帶，涵蓋多個市鎮。該產區自新石器時代即有葡萄栽培歷史，羅馬時期已盛行釀酒。現今以多種國際與在地品種釀造白、紅、桃紅等多元風格葡萄酒。",
+        "climate": "產區受加爾達湖調節，屬溫和湖區氣候，夏季溫暖、冬季較溫和，通風良好，日夜溫差適中，有利於葡萄成熟與香氣發展。土壤多為丘陵礫石、黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Lambrusco Mantovano DOC",
+    "name": "Lambrusco Mantovano DOC",
+    "type": "DOC",
+      "description": "Lambrusco Mantovano DOC 是義大利倫巴底大區曼托瓦省的著名微氣泡紅酒產區，涵蓋 Oltrepò Mantovano 與 Viadanese-Sabbionetano 兩大子區，主要生產帶有果香、酸度明亮且易飲的紅、桃紅微氣泡酒。",
+      "style": ["紅酒", "桃紅酒（rosato）", "微氣泡（frizzante）", "乾型（secco）"],
+      "grapes": ["Lambrusco Viadanese", "Lambrusco Maestri", "Lambrusco Marani", "Lambrusco Salamino", "Lambrusco di Sorbara", "Lambrusco Grasparossa", "Ancellotta", "Fortana"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Lambrusco Mantovano DOC 產區設立於 1987 年，位於曼托瓦省波河兩岸，分為 Oltrepò Mantovano（波河右岸）與 Viadanese-Sabbionetano（波河與奧利奧河間）兩大子區。該產區以 Lambrusco 家族多個品種混釀，釀造出色澤鮮明、果香濃郁、口感清爽的微氣泡紅酒與桃紅酒。葡萄栽培歷史悠久，最早可追溯至羅馬時代。",
+        "climate": "產區屬波河平原，夏季炎熱且濕潤，冬季寒冷並常有霧氣，春季偶有霜凍。高溫有助於 Lambrusco 品種的成熟與多酚、芳香物質的累積。土壤多為沖積土與黏土，適合微氣泡紅酒風格。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Lugana DOC",
+    "name": "Lugana DOC",
+    "type": "DOC",
+      "description": "Lugana DOC 是義大利倫巴底與威尼托交界的著名白葡萄酒產區，主要以 Trebbiano di Soave（當地稱 Turbiana）釀造，酒色淡黃帶綠，香氣細緻，口感新鮮、柔和且和諧，適合搭配海鮮與前菜。",
+      "style": ["白酒", "靜態（fermo）", "乾型（secco）", "柔和（morbido）", "和諧（armonico）"],
+      "grapes": ["Trebbiano di Soave (Turbiana)", "其他不具芳香性的白葡萄（最多10%）"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Lugana DOC 產區跨越倫巴底布雷西亞省與威尼托維羅納省南端，靠近加爾達湖。以 Trebbiano di Soave（Turbiana）為主釀造白酒，產區以礫石與黏土土壤為主，酒款以新鮮、細緻、帶有礦石感著稱。",
+        "climate": "受加爾達湖調節，產區氣候溫和，夏季溫暖、冬季較溫和，濕度適中，有利於葡萄酸度與香氣保存。土壤多為礫石、黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Oltrepò Pavese DOC",
+    "name": "Oltrepò Pavese DOC",
+    "type": "DOC",
+      "description": "Oltrepò Pavese DOC 是義大利倫巴底大區南部 Oltrepò Pavese 丘陵地帶的主要紅葡萄酒法定產區，以 Barbera 和 Croatina 為主混釀，酒色紅寶石、香氣濃郁，口感中等酒體、單寧柔和，適合搭配肉類與起司。",
+      "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "中等酒體（di corpo）", "柔和單寧（poco tannico）"],
+      "grapes": ["Barbera (25-65%)", "Croatina (25-65%)", "其他不具芳香性的紅葡萄（最多50%）"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Oltrepò Pavese DOC 產區位於倫巴底大區南部，涵蓋多個市鎮的丘陵地帶。該產區以 Barbera 和 Croatina 為主混釀紅酒，並可加入其他本地紅葡萄品種。成酒色澤紅寶石，香氣濃郁，口感中等酒體、單寧柔和。",
+        "climate": "產區屬亞平寧山脈丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄成熟與風味發展。土壤多為黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Oltrepò Pavese metodo classico DOCG",
+    "name": "Oltrepò Pavese metodo classico DOCG",
+    "type": "DOCG",
+      "description": "Oltrepò Pavese Metodo Classico DOCG 是義大利倫巴底大區 Oltrepò Pavese 丘陵地帶的高品質傳統法氣泡酒產區，以 Pinot Nero 為主，輔以 Chardonnay、Pinot Grigio、Pinot Bianco，酒色淡黃、氣泡細緻持久，香氣優雅，口感新鮮、和諧。",
+      "style": ["氣泡酒（spumante）", "傳統法（Metodo Classico）", "乾型（secco）", "細緻氣泡（bollicine fini）", "和諧（armonico）"],
+      "grapes": ["Pinot Nero（至少70%）", "Chardonnay", "Pinot Grigio", "Pinot Bianco（合計最多30%）"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Oltrepò Pavese Metodo Classico DOCG 產區位於倫巴底大區南部 Oltrepò Pavese 丘陵地帶，專注於傳統瓶中二次發酵氣泡酒生產。以 Pinot Nero 為主，輔以 Chardonnay、Pinot Grigio、Pinot Bianco，酒款以細緻氣泡、優雅香氣與新鮮口感著稱。",
+        "climate": "產區屬亞平寧山脈丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄酸度與香氣保存。土壤多為黏土與石灰岩混合，適合釀造高品質氣泡酒。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Oltrepò Pavese Pinot grigio DOC",
+    "name": "Oltrepò Pavese Pinot grigio DOC",
+    "type": "DOC",
+      "description": "Oltrepò Pavese Pinot Grigio DOC 是義大利倫巴底大區 Oltrepò Pavese 丘陵地帶的白葡萄酒法定產區，以 Pinot Grigio 為主釀造，酒色淡黃，香氣果香明顯，口感新鮮、鹹味、愉悅，適合搭配海鮮與前菜。",
+      "style": ["白酒", "靜態（fermo）", "乾型（secco）", "新鮮（fresco）", "果香（fruttato）", "鹹味（sapido）"],
+      "grapes": ["Pinot Grigio（至少85%）", "Pinot Nero、其他不具芳香性的白葡萄（最多15%）"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Oltrepò Pavese Pinot Grigio DOC 產區位於倫巴底大區南部 Oltrepò Pavese 丘陵地帶，專注於 Pinot Grigio 白葡萄酒生產。酒款以新鮮果香、淡黃酒色與鹹味口感著稱，適合搭配多種義式料理。",
+        "climate": "產區屬亞平寧山脈丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄酸度與香氣保存。土壤多為黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "Pinot nero dell'Oltrepò Pavese DOC",
+    "name": "Pinot nero dell'Oltrepò Pavese DOC",
+    "type": "DOC",
+      "description": "Pinot nero dell'Oltrepò Pavese DOC 是義大利倫巴底大區 Oltrepò Pavese 丘陵地帶的單一品種紅葡萄酒法定產區，以 Pinot Nero 釀造，酒色紅寶石，香氣細緻，口感優雅、結構良好，適合陳年。",
+      "style": ["紅酒", "靜態（fermo）", "單一品種（Pinot Nero）", "優雅（fine）", "結構良好（di struttura）"],
+      "grapes": ["Pinot Nero"],
+      "hectare": 0,
+      "details": {
+        "introduction": "Pinot nero dell'Oltrepò Pavese DOC 產區設立於 2010 年，位於倫巴底大區南部 Oltrepò Pavese 丘陵地帶。該產區以 Pinot Nero 為唯一品種釀造紅酒，酒款以細緻香氣、優雅口感與良好結構著稱，適合陳年。",
+        "climate": "產區屬亞平寧山脈丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄成熟與香氣發展。土壤多為黏土與石灰岩混合。",
+        "subregions": {}
+    }
+  },
+  {
+    "id": "San Colombano San Colombano al Lambro DOC",
+    "name": "San Colombano San Colombano al Lambro DOC",
+    "type": "DOC",
+    "description": "San Colombano al Lambro DOC 是義大利倫巴底大區唯一跨米蘭、羅迪、帕維亞三省的法定產區，位於波河平原中部的丘陵地帶，擁有自羅馬時代以來悠久的葡萄栽培歷史。該產區以紅、白、Riserva 等多種風格聞名，主要紅酒以 Croatina、Barbera、Uva Rara 為主，白酒則以 Chardonnay、Verdea、Malvasia 等混釀。",
+    "style": ["紅酒", "白酒", "Riserva", "靜態（fermo）", "中等酒體（di corpo）", "果香（fruttato）", "和諧（armonico）"],
+    "grapes": ["Croatina", "Barbera", "Uva Rara", "Verdea", "Chardonnay", "Malvasia", "Pinot Nero"],
+    "hectare": 250,
+    "details": {
+      "introduction": "San Colombano al Lambro DOC 產區位於倫巴底大區中南部，橫跨米蘭、羅迪、帕維亞三省，地形以波河平原中的丘陵為主。葡萄栽培歷史可追溯至羅馬時代，中世紀由聖哥倫巴諾修道士復興，現今以多元葡萄混釀紅、白酒為主。1984 年獲 DOC 認證。",
+      "climate": "產區屬波河平原丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差適中，有利於葡萄成熟與香氣發展。土壤多為黏土與石灰岩混合，適合多種葡萄品種共生。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "San Martino della Battaglia DOC",
+    "name": "San Martino della Battaglia DOC",
+    "type": "DOC",
+    "description": "San Martino della Battaglia DOC 是義大利倫巴底大區與威尼托交界的白葡萄酒法定產區，主要以 Tocai Friulano（現稱 Friulano）為主釀造，尤以甜型加強酒（liquoroso）著稱，色澤稻草黃，香氣濃郁，口感甜美和諧，適合搭配甜點與藍紋起司。",
+    "style": ["白酒", "加強酒（liquoroso）", "甜型（dolce）", "靜態（fermo）", "濃郁（intenso）", "和諧（armonico）"],
+    "grapes": ["Tocai Friulano（至少80%）", "其他不具芳香性的白葡萄（最多20%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "San Martino della Battaglia DOC 產區位於倫巴底與威尼托交界的加爾達湖南岸，涵蓋 Sirmione、Lonato del Garda、Peschiera del Garda、Desenzano del Garda 等地。以 Tocai Friulano 為主釀造白酒，尤以甜型加強酒（liquoroso）聞名，色澤稻草黃，香氣濃郁，口感甜美和諧。",
+      "climate": "產區受加爾達湖調節，屬溫和湖區氣候，夏季溫暖、冬季較溫和，濕度適中，有利於葡萄酸度與香氣保存。土壤多為礫石、黏土與石灰岩混合。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sangue di Giuda Sangue di Giuda dell'Oltrepò Pavese DOC",
+    "name": "Sangue di Giuda Sangue di Giuda dell'Oltrepò Pavese DOC",
+    "type": "DOC",
+    "description": "Sangue di Giuda dell'Oltrepò Pavese DOC 是義大利倫巴底大區 Oltrepò Pavese 丘陵地帶的甜型紅葡萄酒法定產區，以 Barbera 和 Croatina 為主混釀，酒色紅寶石，香氣濃郁，口感甜美、圓潤且單寧柔和，常見微氣泡型，適合搭配甜點與餅乾。",
+    "style": ["紅酒", "甜型（dolce）", "靜態（fermo）", "微氣泡（frizzante）", "圓潤（morbido）", "中等酒體（di corpo）", "柔和單寧（poco tannico）"],
+    "grapes": ["Barbera (25-65%)", "Croatina (25-65%)", "其他本地紅葡萄（最多45%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Sangue di Giuda dell'Oltrepò Pavese DOC 產區位於倫巴底大區南部 Oltrepò Pavese 丘陵地帶，專注於甜型紅葡萄酒生產。以 Barbera 和 Croatina 為主混釀，成酒色澤紅寶石，香氣濃郁，口感甜美、圓潤且單寧柔和，常見微氣泡型，適合搭配甜點與餅乾。",
+      "climate": "產區屬亞平寧山脈丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄成熟與香氣發展。土壤多為黏土與石灰岩混合。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Scanzo Moscato di Scanzo DOCG",
+    "name": "Scanzo Moscato di Scanzo DOCG",
+    "type": "DOCG",
+    "description": "Moscato di Scanzo DOCG（又稱 Scanzo DOCG）是義大利倫巴底大區貝加莫省 Scanzorosciate 地區的甜型紅葡萄酒法定產區，專以 Moscato di Scanzo 單一品種釀造 passito（風乾）甜紅酒，色澤紅寶石，香氣細緻、持久，口感甜美、圓潤且帶有獨特香料與玫瑰花香。",
+    "style": ["甜型紅酒（passito rosso dolce）", "單一品種（Moscato di Scanzo）", "靜態（fermo）", "細緻（fine）", "持久（persistente）", "香料（speziato）", "花香（floreale）"],
+    "grapes": ["Moscato di Scanzo（100%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Moscato di Scanzo DOCG 產區位於倫巴底大區貝加莫省 Scanzorosciate，專以 Moscato di Scanzo 單一品種釀造 passito 甜紅酒。葡萄需風乾至少 21 天，成酒色澤紅寶石，香氣細緻、持久，帶有玫瑰、香料與果乾風味，口感甜美且圓潤。2009 年升格為 DOCG。",
+      "climate": "產區屬亞平寧山脈北麓丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄糖分與香氣累積。土壤多為石灰岩與黏土混合，適合 Moscato di Scanzo 生長與風乾。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sforzato di Valtellina  Sfursat di Valtellina DOCG",
+    "name": "Sforzato di Valtellina  Sfursat di Valtellina DOCG",
+    "type": "DOCG",
+    "description": "Sforzato di Valtellina DOCG（Sfursat di Valtellina DOCG）是義大利倫巴底大區松德里奧省 Valtellina 山谷的頂級 passito 乾型紅葡萄酒產區，以 Nebbiolo（當地稱 Chiavennasca）為主釀造。葡萄經風乾後釀製，酒色石榴紅，香氣濃郁、果乾與香料風味，口感醇厚、酒體飽滿且適合陳年。",
+    "style": ["紅酒", "passito（風乾）", "乾型（secco）", "靜態（fermo）", "濃郁（intenso）", "酒體飽滿（di corpo）", "陳年潛力（da invecchiamento）"],
+    "grapes": ["Nebbiolo (Chiavennasca)（至少90%）", "其他本地紅葡萄（最多10%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Sforzato di Valtellina DOCG 產區位於倫巴底大區松德里奧省 Valtellina 山谷，專以 Nebbiolo（Chiavennasca）為主釀造 passito 乾型紅酒。葡萄經風乾後釀製，成酒色澤石榴紅，香氣濃郁，帶有果乾、香料與花香，口感醇厚、酒體飽滿且適合陳年。",
+      "climate": "產區屬阿爾卑斯山南麓山谷地帶，氣候涼爽，夏季溫暖、冬季寒冷，日夜溫差大，有利於葡萄糖分與香氣累積。土壤多為砂礫、石灰岩與黏土混合，適合 Nebbiolo 風乾與釀造高酒精度紅酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Terre del Colleoni Colleoni DOC",
+    "name": "Terre del Colleoni Colleoni DOC",
+    "type": "DOC",
+    "description": "Terre del Colleoni Colleoni DOC（又稱 Terre del Colleoni o Colleoni Spumante DOC）是義大利倫巴底大區貝加莫省多個市鎮的法定產區，專注於高品質白葡萄氣泡酒生產。以 Pinot Bianco、Pinot Grigio、Chardonnay 或 Manzoni Bianco 為主釀造，酒色稻草黃，氣泡細緻持久，香氣果香、花香明顯，口感乾型且和諧，適合搭配海鮮與前菜。",
+    "style": ["白酒", "氣泡酒（spumante）", "乾型（secco）", "細緻氣泡（bollicine fini）", "持久氣泡（bollicine persistenti）", "和諧（armonico）", "果香（fruttato）", "花香（floreale）"],
+    "grapes": ["Pinot Bianco（至少85%）", "Pinot Grigio（至少85%）", "Chardonnay（至少85%）", "Manzoni Bianco（至少85%）", "其他同色葡萄（最多15%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Terre del Colleoni Colleoni DOC 產區位於倫巴底大區貝加莫省多個市鎮，專注於白葡萄氣泡酒生產。允許使用 Pinot Bianco、Pinot Grigio、Chardonnay 或 Manzoni Bianco 為主釀造，並以瓶中二次發酵（傳統法）熟成至少 15 個月（年份酒 24 個月）。成酒色澤稻草黃，氣泡細緻持久，香氣果香、花香明顯，口感乾型且和諧。",
+      "climate": "產區屬阿爾卑斯山南麓丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄酸度與香氣保存。土壤多為石灰岩與黏土混合，適合白葡萄品種生長與釀造高品質氣泡酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Valcalepio DOC",
+    "name": "Valcalepio DOC",
+    "type": "DOC",
+    "description": "Valcalepio DOC 是義大利倫巴底大區貝加莫省北部丘陵地帶的法定產區，1976 年設立，涵蓋多個市鎮。產區以紅、白、甜型 passito 等多元風格聞名，紅酒以 Merlot、Cabernet Sauvignon 為主，白酒以 Pinot Bianco、Chardonnay、Pinot Grigio 為主，甜酒則以 Moscato di Scanzo 釀造。酒款風格優雅、結構良好，適合陳年。",
+    "style": ["紅酒", "白酒", "甜型酒（passito）", "靜態（fermo）", "優雅（fine）", "結構良好（di struttura）", "陳年潛力（da invecchiamento）"],
+    "grapes": ["Merlot", "Cabernet Sauvignon", "Pinot Bianco", "Chardonnay", "Pinot Grigio", "Moscato di Scanzo"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Valcalepio DOC 產區位於貝加莫省北部丘陵地帶，北臨奧羅比山脈，東接伊塞奧湖，西至 Monte Canto。葡萄栽培歷史悠久，自羅馬時代即有記載。現今以國際品種與本地品種混釀紅、白、甜型酒，紅酒以 Merlot、Cabernet Sauvignon 為主，白酒以 Pinot Bianco、Chardonnay、Pinot Grigio 為主，甜型酒則以 Moscato di Scanzo 釀造。",
+      "climate": "產區屬阿爾卑斯山南麓丘陵地帶，氣候溫和，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄成熟與香氣發展。土壤多為石灰岩、黏土與礫石混合，適合多種葡萄品種生長。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Valtellina rosso Rosso di Valtellina DOC",
+    "name": "Valtellina rosso Rosso di Valtellina DOC",
+    "type": "DOC",
+    "description": "Valtellina rosso DOC（Rosso di Valtellina DOC）是義大利倫巴底大區松德里奧省 Valtellina 山谷的紅葡萄酒法定產區，以 Nebbiolo（當地稱 Chiavennasca）為主釀造。酒色紅寶石，香氣細緻、持久且具特色，口感乾型、單寧柔和，適合搭配義式前菜、肉醬義大利麵與中熟起司。",
+    "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "細緻（fine）", "持久（persistente）", "特色（caratteristico）", "柔和單寧（poco tannico）"],
+    "grapes": ["Nebbiolo (Chiavennasca)（至少90%）", "其他本地紅葡萄（最多10%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Valtellina rosso DOC 產區位於倫巴底大區松德里奧省 Valtellina 山谷，專以 Nebbiolo（Chiavennasca）為主釀造紅酒。成酒色澤紅寶石，香氣細緻、持久且具特色，口感乾型、單寧柔和。法規規定至少 90% Nebbiolo，其餘可為本地非芳香型紅葡萄。",
+      "climate": "產區屬阿爾卑斯山南麓山谷地帶，氣候涼爽，夏季溫暖、冬季寒冷，日夜溫差大，有利於葡萄成熟與香氣發展。土壤多為砂礫、石灰岩與黏土混合，適合 Nebbiolo 生長與釀造細緻紅酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Valtellina Superiore DOCG",
+    "name": "Valtellina Superiore DOCG",
+    "type": "DOCG",
+    "description": "Valtellina Superiore DOCG 是義大利倫巴底大區松德里奧省 Valtellina 山谷的頂級紅葡萄酒產區，1998 年升格為 DOCG。以 Nebbiolo（當地稱 Chiavennasca）為主釀造，酒色紅寶石偏石榴紅，香氣細緻、持久且具特色，口感乾型、結構良好、單寧明顯，適合陳年。產區包含多個著名子區。",
+    "style": ["紅酒", "靜態（fermo）", "乾型（secco）", "結構良好（di struttura）", "細緻（fine）", "持久（persistente）", "特色（caratteristico）", "單寧明顯（tannico）", "陳年潛力（da invecchiamento）"],
+    "grapes": ["Nebbiolo (Chiavennasca)（至少90%）", "其他本地紅葡萄（最多10%）"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Valtellina Superiore DOCG 產區位於松德里奧省 Valtellina 山谷，專以 Nebbiolo（Chiavennasca）為主釀造頂級紅酒。成酒色澤紅寶石偏石榴紅，香氣細緻、持久且具特色，口感乾型、結構良好、單寧明顯，適合陳年。產區包含 Maroggia、Grumello、Inferno、Valgella 等著名子區。",
+      "climate": "產區屬阿爾卑斯山南麓山谷地帶，氣候涼爽，夏季溫暖、冬季寒冷，日夜溫差大，有利於葡萄成熟與香氣發展。土壤多為砂礫、石灰岩與黏土混合，適合 Nebbiolo 生長與釀造結構型紅酒。",
+      "subregions": {"Maroggia":{}, "Grumello":{}, "Inferno":{}, "Valgella":{}}
+    }
+  },
+  {
+    "id": "Valtènesi DOC",
+    "name": "Valtènesi DOC",
+    "type": "DOC",
+    "description": "Valtènesi DOC 是義大利倫巴底大區布雷西亞省加爾達湖西岸的法定產區，2011 年設立。以 Groppello 家族葡萄為主釀造紅酒與桃紅酒（Chiaretto），酒色淡雅，香氣果香、花香與香料感明顯，口感細緻、平衡且具地域特色。",
+    "style": ["紅酒", "桃紅酒（Chiaretto）", "靜態（fermo）", "細緻（fine）", "果香（fruttato）", "花香（floreale）", "香料（speziato）", "平衡（equilibrato）", "地域特色（territoriale）"],
+    "grapes": ["Groppello Gentile", "Groppello di Mocasina", "Groppello di Santo Stefano"],
+    "hectare": 0,
+    "details": {
+      "introduction": "Valtènesi DOC 產區位於布雷西亞省加爾達湖西岸，受湖泊調節，氣候溫和。以 Groppello 家族葡萄為主釀造紅酒與桃紅酒（Chiaretto），酒款以細緻果香、花香與香料感著稱，展現明顯地域特色。",
+      "climate": "產區屬加爾達湖區，氣候溫和、受湖泊調節，夏季溫暖、冬季較溫和，日夜溫差適中，有利於葡萄成熟與香氣發展。土壤多為礫石、黏土與石灰岩混合，適合 Groppello 品種生長。",
+      "subregions": {}
+    }
+  }
+]

@@ -1,0 +1,872 @@
+[
+  {
+    "id": "Aleatico Passito dell'Elba Elba Aleatico Passito DOCG",
+    "name": "Aleatico Passito dell'Elba Elba Aleatico Passito",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Comuni dell’Isola d’Elba (Livorno)",
+    "style": ["甜酒", "紅酒", "加強酒"],
+    "grapes": ["Aleatico"],
+    "description": "Elba Aleatico Passito DOCG 是托斯卡納群島中最大島嶼 Elba 的特色甜型紅酒，以 Aleatico 葡萄釀造，採用日曬短時間風乾（10-20天）後釀製，展現濃郁的紅寶石色與高濃縮度，香氣複雜，口感甜美且餘韻悠長。",
+    "details": {
+      "introduction": "Elba Aleatico Passito DOCG 產自義大利第三大島 Elba，該島地形多為丘陵，葡萄園分布於海拔0-450公尺。此酒以 Aleatico 單一品種釀造，並經過短暫日曬風乾，展現出獨特的甜美與香氣。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，九月日照充足，有利於葡萄風乾與糖分累積。",
+      "subregions": {},
+      "grape_varieties": ["Aleatico"]
+    }
+  },
+  {
+    "id": "Barco Reale di Carmignano DOC",
+    "name": "Barco Reale di Carmignano",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Prato",
+    "zone": "Poggio a Caiano 等地區",
+    "style": ["紅酒", "粉紅酒"],
+    "grapes": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Trebbiano Toscano", "Canaiolo Bianco", "Malvasia Bianca Lunga"],
+    "description": "Barco Reale di Carmignano DOC 是 Carmignano DOCG 的副產區，以 Sangiovese 為主，混釀 Cabernet Sauvignon、Cabernet Franc 等，並有紅酒與粉紅酒（Vin Ruspo）兩種風格。此酒年輕、果香明顯、結構均衡，適合早飲。",
+    "details": {
+      "introduction": "Barco Reale di Carmignano DOC 得名自梅第奇家族的狩獵園區，屬 Carmignano DOCG 的 ricaduta（副產區），允許較高產量且不強制橡木桶熟成。紅酒與粉紅酒（Vin Ruspo）皆以 Sangiovese 為主，融合波爾多品種，展現年輕活潑的風格。",
+      "climate": "托斯卡納內陸溫暖乾燥，葡萄成熟度高，適合釀造結構均衡、果香明顯的紅酒與粉紅酒。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Trebbiano Toscano", "Canaiolo Bianco", "Malvasia Bianca Lunga"]
+    }
+  },
+  {
+    "id": "Bianco dell'Empolese DOC",
+    "name": "Bianco dell'Empolese",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Firenze",
+    "zone": "多個佛羅倫斯省轄區",
+    "style": ["白酒", "甜酒"],
+    "grapes": ["Trebbiano Toscano"],
+    "description": "Bianco dell'Empolese DOC 以 Trebbiano Toscano 為主釀造，包含白酒與 Vin Santo（甜型）兩種風格。白酒呈稻草黃，口感清新，Vin Santo 則色澤金黃至琥珀，風味濃郁。",
+    "details": {
+      "introduction": "Bianco dell'Empolese DOC 產自佛羅倫斯省多個市鎮，主力品種為 Trebbiano Toscano。白酒採晚採收，保有新鮮果香與平衡酸度，Vin Santo 以風乾葡萄釀製，甜美濃郁。",
+      "climate": "溫帶氣候，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano"]
+    }
+  },
+  {
+    "id": "Bianco di Pitigliano DOC",
+    "name": "Bianco di Pitigliano",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Pitigliano, Sorano, Scansano, Manciano 等地區",
+    "style": ["白酒", "氣泡酒", "甜酒"],
+    "grapes": ["Trebbiano Toscano", "Ansonica", "Chardonnay", "Grechetto", "Greco", "Malvasia Bianca Lunga", "Pinot Bianco", "Riesling Italico", "Sauvignon", "Verdello"],
+    "description": "Bianco di Pitigliano DOC 以 Trebbiano Toscano 為主，混釀多種白葡萄品種，包含靜態白酒、氣泡酒（Spumante）、甜型 Vin Santo。白酒色澤稻草黃，香氣細緻，口感新鮮，Vin Santo 則濃郁甜美。",
+    "details": {
+      "introduction": "Bianco di Pitigliano DOC 產自托斯卡納南部 Grosseto 省多個市鎮，主力品種為 Trebbiano Toscano，輔以多種白葡萄。風格多元，包含白酒、氣泡酒與甜型 Vin Santo。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Ansonica", "Chardonnay", "Grechetto", "Greco", "Malvasia Bianca Lunga", "Pinot Bianco", "Riesling Italico", "Sauvignon", "Verdello"]
+    }
+  },
+  {
+    "id": "Bolgheri DOC",
+    "name": "Bolgheri",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Castagneto Carducci",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "grapes": ["Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Syrah", "Sangiovese", "Vermentino", "Trebbiano Toscano", "Sauvignon"],
+    "description": "Bolgheri DOC 是義大利最著名的現代紅酒產區之一，以波爾多品種混釀紅酒聞名，也生產白酒與粉紅酒。紅酒結構強勁、陳年潛力佳，白酒清新，粉紅酒果香明亮。",
+    "details": {
+      "introduction": "Bolgheri DOC 位於托斯卡納沿海，因 Sassicaia 等頂級酒款而享譽國際。產區以波爾多品種為主，紅酒風格現代，白酒與粉紅酒則展現地中海沿岸的清新與活力。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，海風調節溫度，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Syrah", "Sangiovese", "Vermentino", "Trebbiano Toscano", "Sauvignon"]
+    }
+  },
+  {
+    "id": "Bolgheri Sassicaia DOC",
+    "name": "Bolgheri Sassicaia",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Castagneto Carducci（Sassicaia專屬區塊）",
+    "style": ["紅酒"],
+    "grapes": ["Cabernet Sauvignon", "Cabernet Franc"],
+    "description": "Bolgheri Sassicaia DOC 是義大利唯一為單一酒莊（Tenuta San Guido）設立的法定產區，僅生產紅酒，以 Cabernet Sauvignon 為主，混釀 Cabernet Franc。酒體結構強勁、陳年潛力極佳，風格優雅細緻。",
+    "details": {
+      "introduction": "Bolgheri Sassicaia DOC 位於 Bolgheri 產區內的專屬地塊，僅限 Tenuta San Guido 酒莊生產。以波爾多品種為主，酒款屢獲國際大獎，是義大利頂級紅酒代表。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，土壤礫石多，利於葡萄根系發展與風味集中。",
+      "subregions": {},
+      "grape_varieties": ["Cabernet Sauvignon", "Cabernet Franc"]
+    }
+  },
+  {
+    "id": "Brunello di Montalcino DOCG",
+    "name": "Brunello di Montalcino",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Montalcino",
+    "style": ["紅酒"],
+    "grapes": ["Sangiovese (Brunello)", "Brunello"],
+    "description": "Brunello di Montalcino DOCG 是義大利最具代表性的頂級紅酒之一，僅以 Sangiovese（Brunello）單一品種釀造，需長時間陳年，展現深邃結構、複雜香氣與極佳陳年潛力。",
+    "details": {
+      "introduction": "Brunello di Montalcino DOCG 產自 Siena 省 Montalcino 單一市鎮，僅以 Sangiovese（Brunello）釀造。法定需陳年至少五年（Riserva 六年），是義大利最早獲 DOCG 的紅酒之一。",
+      "climate": "溫暖乾燥、日夜溫差大，土壤多變，適合 Sangiovese 積累風味與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese (Brunello)", "Brunello"]
+    }
+  },
+  {
+    "id": "Candia dei Colli Apuani DOC",
+    "name": "Candia dei Colli Apuani",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Massa-Carrara",
+    "zone": "Carrara, Massa 等地區",
+    "style": ["紅酒", "白酒", "粉紅酒", "甜酒"],
+    "grapes": ["Vermentino", "Vermentino Nero", "Barsaglina", "Merlot", "Sangiovese"],
+    "description": "Candia dei Colli Apuani DOC 位於托斯卡納最北端，涵蓋 Massa、Carrara 等地，生產紅、白、粉紅與 Vin Santo 甜酒。Vermentino 是白酒主力，紅酒則以 Sangiovese、Merlot、Barsaglina 為主。",
+    "details": {
+      "introduction": "Candia dei Colli Apuani DOC 產自阿普安山丘陵地帶，靠近利古里亞，氣候受山海調節。Vermentino 白酒清新，紅酒結構均衡，粉紅酒與甜酒風格多元。",
+      "climate": "山區與海洋交會，日照充足，氣候溫和，適合多樣葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Vermentino", "Vermentino Nero", "Barsaglina", "Merlot", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Capalbio DOC",
+    "name": "Capalbio",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Capalbio, Manciano, Orbetello 等地區",
+    "style": ["紅酒", "白酒", "粉紅酒", "甜酒", "Riserva"],
+    "grapes": ["Sangiovese", "Trebbiano Toscano", "Vermentino", "Cabernet Sauvignon"],
+    "description": "Capalbio DOC 位於托斯卡納南部 Grosseto 省，涵蓋 Capalbio、Manciano、Orbetello 等地，主要生產紅、白、粉紅與甜型 Vin Santo。紅酒以 Sangiovese 為主，白酒以 Vermentino、Trebbiano Toscano 為主，並有 Cabernet Sauvignon 等國際品種。",
+    "details": {
+      "introduction": "Capalbio DOC 產區地處丘陵與山麓地帶，氣候溫暖，土壤多樣。紅酒以 Sangiovese 為主，混釀 Cabernet Sauvignon，風格圓潤、果香與香料氣息明顯。白酒以 Vermentino、Trebbiano Toscano 為主，清新爽口。粉紅酒色澤明亮，香氣果香濃郁。甜酒 Vin Santo 金黃至琥珀色，香氣複雜。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，適合多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Trebbiano Toscano", "Vermentino", "Cabernet Sauvignon"]
+    }
+  },
+  {
+    "id": "Carmignano DOCG",
+    "name": "Carmignano",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Prato",
+    "zone": "Carmignano, Poggio a Caiano",
+    "style": ["紅酒", "Riserva"],
+    "grapes": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Trebbiano Toscano", "Canaiolo Bianco", "Malvasia Bianca Lunga"],
+    "description": "Carmignano DOCG 是義大利最古老的法定產區之一，主產紅酒與 Riserva，Sangiovese 為主體，混釀 Cabernet Sauvignon、Cabernet Franc 等。酒體結構強勁，香氣細緻，陳年潛力佳。",
+    "details": {
+      "introduction": "Carmignano DOCG 產區歷史可追溯至 1716 年，位於 Prato 省丘陵地帶。紅酒以 Sangiovese 為主，融合波爾多品種，展現優雅與力量兼具的風格。Riserva 需更長陳年，風味更複雜。",
+      "climate": "溫暖、通風良好，日夜溫差大，夏季降雨分布均勻，有利於葡萄成熟與風味積累。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Trebbiano Toscano", "Canaiolo Bianco", "Malvasia Bianca Lunga"]
+    }
+  },
+  {
+    "id": "Chianti Classico DOCG",
+    "name": "Chianti Classico",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Firenze, Siena",
+    "zone": "Chianti 最古老產區，橫跨佛羅倫斯與錫耶納省",
+    "style": ["紅酒", "Riserva", "Gran Selezione"],
+    "grapes": ["Sangiovese"],
+    "description": "Chianti Classico DOCG 是托斯卡納最具代表性的紅酒產區，僅生產紅酒，Sangiovese 必須佔 80%以上。風格優雅，結構均衡，帶有紫羅蘭、莓果、香料等複雜香氣，陳年潛力佳。",
+    "details": {
+      "introduction": "Chianti Classico DOCG 產區歷史可追溯至 1716 年，是世界最早劃定的法定產區之一。僅允許生產紅酒，Sangiovese 為主，並有 Riserva 與 Gran Selezione 等高階分級。",
+      "climate": "丘陵地帶，日夜溫差大，土壤多變，適合 Sangiovese 積累風味與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese"]
+    }
+  },
+  {
+    "id": "Chianti DOCG",
+    "name": "Chianti",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Arezzo, Firenze, Siena, Pisa, Pistoia, Prato",
+    "zone": "托斯卡納中部多省丘陵地帶，含多個法定子產區",
+    "style": ["紅酒", "Riserva", "Superiore", "Novello"],
+    "grapes": ["Sangiovese", "Canaiolo Nero", "Colorino", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Trebbiano Toscano", "Malvasia del Chianti"],
+    "description": "Chianti DOCG 是義大利最知名的紅酒產區之一，涵蓋多個子產區。紅酒以 Sangiovese 為主，混釀 Canaiolo、Colorino、Cabernet Sauvignon、Merlot 等，風格多元，酸度明亮，適合陳年。",
+    "details": {
+      "introduction": "Chianti DOCG 產區橫跨托斯卡納多省，包含 Colli Aretini、Colli Fiorentini、Colli Senesi、Colline Pisane、Montalbano、Montespertoli、Rufina 等子產區。紅酒以 Sangiovese 為主，並可混釀多種本地與國際品種。",
+      "climate": "丘陵地帶，日夜溫差大，氣候溫和，適合多樣葡萄品種生長。",
+      "subregions": {
+        "Colli Aretini": {},
+        "Colli Fiorentini": {},
+        "Colli Senesi": {},
+        "Colline Pisane": {},
+        "Montalbano": {},
+        "Montespertoli": {},
+        "Rufina": {}
+      },
+      "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Colorino", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Trebbiano Toscano", "Malvasia del Chianti"]
+    }
+  },
+  {
+    "id": "Colli dell'Etruria Centrale DOC",
+    "name": "Colli dell'Etruria Centrale",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Firenze, Siena, Pisa, Pistoia, Prato, Arezzo",
+    "zone": "托斯卡納中部多省丘陵地帶，涵蓋 Chianti 主要產區及周邊",
+    "style": ["紅酒", "白酒", "粉紅酒", "Novello", "Riserva"],
+    "grapes": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Pinot Nero", "Gamay", "Trebbiano Toscano"],
+    "description": "Colli dell'Etruria Centrale DOC 為 Chianti DOCG 的 ricaduta（副產區），涵蓋托斯卡納中部多省，允許生產紅、白、粉紅、Novello 與 Riserva。紅酒以 Sangiovese 為主，混釀多種本地與國際品種，風格多元且彈性高。",
+    "details": {
+      "introduction": "Colli dell'Etruria Centrale DOC 產區橫跨 Chianti 主要省分，設立目的是給予生產者更多混釀與風格彈性。紅酒以 Sangiovese 為主，白酒以 Trebbiano 為主，並可混釀多種國際品種。",
+      "climate": "丘陵地帶，日夜溫差大，氣候溫和，適合多樣葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Pinot Nero", "Gamay", "Trebbiano Toscano"]
+    }
+  },
+  {
+    "id": "Colli di Luni DOC",
+    "name": "Colli di Luni",
+    "type": "DOC",
+    "region": "Liguria, Toscana",
+    "province": "La Spezia, Massa-Carrara",
+    "zone": "利古里亞東部與托斯卡納北部，Massa-Carrara 與 La Spezia 多個市鎮",
+    "style": ["白酒", "紅酒", "Albarola", "Vermentino"],
+    "grapes": ["Vermentino", "Albarola", "Trebbiano Toscano", "Sangiovese"],
+    "description": "Colli di Luni DOC 橫跨利古里亞與托斯卡納，主產 Vermentino、Albarola 白酒與 Sangiovese 紅酒。白酒清新帶花果香，紅酒結構中等，口感柔和，均帶有地中海沿岸的鹹鮮感。",
+    "details": {
+      "introduction": "Colli di Luni DOC 產區自羅馬時代即有葡萄栽培，地形多為平原與低丘陵，土壤排水佳。Vermentino 白酒最具代表性，Albarola、Trebbiano 亦常見，紅酒以 Sangiovese 為主。",
+      "climate": "地中海型氣候，沿海多日照，通風良好，土壤多沙質，賦予葡萄酒鮮明的鹹鮮與花果香。",
+      "subregions": {},
+      "grape_varieties": ["Vermentino", "Albarola", "Trebbiano Toscano", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Colline Lucchesi DOC",
+    "name": "Colline Lucchesi",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Lucca",
+    "zone": "Lucca 省 Capannori、Porcari 等地區丘陵",
+    "style": ["紅酒", "白酒", "Merlot", "Syrah", "Vermentino"],
+    "grapes": ["Sangiovese", "Merlot", "Ciliegiolo", "Syrah", "Trebbiano Toscano", "Vermentino", "Sauvignon"],
+    "description": "Colline Lucchesi DOC 是托斯卡納歷史悠久的產區，主產 Sangiovese 紅酒與 Trebbiano、Vermentino 白酒，並有 Merlot、Syrah 等單一品種酒款。風格清新、果香明亮，白酒帶有花果香與礦物感。",
+    "details": {
+      "introduction": "Colline Lucchesi DOC 產區自 1968 年設立，位於 Lucca 省丘陵地帶。紅酒以 Sangiovese、Merlot、Ciliegiolo 為主，白酒以 Trebbiano、Vermentino、Sauvignon 為主，並有 Syrah 等國際品種。",
+      "climate": "溫帶氣候，丘陵多風，日夜溫差大，適合多樣葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Merlot", "Ciliegiolo", "Syrah", "Trebbiano Toscano", "Vermentino", "Sauvignon"]
+    }
+  },
+  {
+    "id": "Cortona DOC",
+    "name": "Cortona",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Arezzo",
+    "zone": "Cortona 市鎮及周邊丘陵地帶",
+    "style": ["紅酒", "白酒", "甜酒(Vin Santo)", "Cabernet Sauvignon", "Syrah", "Merlot", "Chardonnay"],
+    "grapes": ["Syrah", "Merlot", "Cabernet Sauvignon", "Chardonnay", "Grechetto", "Malvasia Bianca di Candia", "Sauvignon"],
+    "description": "Cortona DOC 以 Syrah 紅酒最具代表性，並生產 Cabernet Sauvignon、Merlot 等國際品種紅酒，以及 Chardonnay、Grechetto、Malvasia Bianca di Candia、Sauvignon 等白酒與甜型 Vin Santo。紅酒結構豐富、陳年潛力佳，白酒清新，甜酒香氣濃郁。",
+    "details": {
+      "introduction": "Cortona DOC 成立於 1999 年，位於托斯卡納東南部的 Arezzo 省 Cortona 市鎮。Syrah 紅酒享譽國際，產區土壤富含黏土，保水性佳，有助於葡萄成熟與風味積累。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，日夜溫差大，土壤多黏土與石灰岩，利於多種葡萄品種生長與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Syrah", "Merlot", "Cabernet Sauvignon", "Chardonnay", "Grechetto", "Malvasia Bianca di Candia", "Sauvignon"]
+    }
+  },
+  {
+    "id": "Elba DOC",
+    "name": "Elba",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Isola d’Elba（利沃諾省全境）",
+    "style": ["白酒", "紅酒", "粉紅酒", "甜酒(Vin Santo)", "Passito"],
+    "grapes": ["Trebbiano Toscano", "Ansonica", "Vermentino", "Moscato Bianco", "Sangiovese"],
+    "description": "Elba DOC 涵蓋義大利第三大島 Elba 全境，主產白酒（以 Trebbiano Toscano、Ansonica、Vermentino、Moscato 為主）、紅酒與粉紅酒（以 Sangiovese 為主），並有多款甜型 Passito。白酒礦物感明顯，紅酒果香濃郁，甜酒香氣複雜。",
+    "details": {
+      "introduction": "Elba DOC 成立於 1967 年，涵蓋 Elba 島全境。產區以多元葡萄品種釀造多樣風格，白酒以 Trebbiano Toscano、Ansonica、Vermentino、Moscato 為主，紅酒與粉紅酒以 Sangiovese 為主，並有多款 Passito 甜酒。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，葡萄成熟度高，土壤礦物質豐富，賦予白酒明顯礦物感與鹹鮮。Passito 甜酒因氣候炎熱，糖分濃縮度高。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Ansonica", "Vermentino", "Moscato Bianco", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Grance Senesi DOC",
+    "name": "Grance Senesi",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Rapolano Terme、Murlo、Asciano 等 Siena 省地區",
+    "style": ["紅酒", "白酒", "Cabernet Sauvignon", "Sangiovese", "Novello"],
+    "grapes": ["Sangiovese", "Canaiolo", "Trebbiano Toscano", "Malvasia Bianca Lunga", "Cabernet Sauvignon"],
+    "description": "Grance Senesi DOC 產區位於 Siena 省南部，涵蓋 Val d’Arbia、Val d’Orcia 等地。主產 Sangiovese 紅酒、Cabernet Sauvignon、Canaiolo、白酒（以 Trebbiano、Malvasia 為主）及 Novello。紅酒結構均衡，白酒清新，展現托斯卡納丘陵特色。",
+    "details": {
+      "introduction": "Grance Senesi DOC 成立於 2010 年，名稱源自中世紀 Siena 地區的農業莊園。產區以 Sangiovese 為主，並有 Canaiolo、Cabernet Sauvignon、Trebbiano、Malvasia 等多元品種，風格多元。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，丘陵地形與黏土、石灰岩土壤有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Canaiolo", "Trebbiano Toscano", "Malvasia Bianca Lunga", "Cabernet Sauvignon"]
+    }
+  },
+  {
+    "id": "Maremma Toscana DOC",
+    "name": "Maremma Toscana",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省全境，托斯卡納南部沿海地區",
+    "style": ["紅酒", "白酒", "粉紅酒", "甜酒(Vin Santo)", "Novello", "Vendemmia tardiva"],
+    "grapes": ["Sangiovese", "Alicante", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Canaiolo Nero", "Ciliegiolo", "Chardonnay", "Ansonica", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Sauvignon", "Vermentino", "Viognier"],
+    "description": "Maremma Toscana DOC 位於托斯卡納南部 Grosseto 省，涵蓋沿海與內陸地區。主產 Sangiovese、Alicante、Cabernet Sauvignon、Merlot 等紅酒，白酒以 Vermentino、Chardonnay、Ansonica、Trebbiano 等為主，並有甜型 Vin Santo、Vendemmia tardiva。風格多元，紅酒結構豐富，白酒清新，甜酒香氣濃郁。",
+    "details": {
+      "introduction": "Maremma Toscana DOC 成立於 2011 年，涵蓋 Grosseto 省全境。產區葡萄品種多元，紅酒以 Sangiovese、Alicante、Cabernet Sauvignon、Merlot 為主，白酒以 Vermentino、Chardonnay、Ansonica、Trebbiano 等為主，並有甜型與遲摘酒款。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，沿海地區受海風調節，土壤多樣，適合多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Alicante", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Canaiolo Nero", "Ciliegiolo", "Chardonnay", "Ansonica", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Sauvignon", "Vermentino", "Viognier"]
+    }
+  },
+  {
+    "id": "Montecarlo DOC",
+    "name": "Montecarlo",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Lucca",
+    "zone": "Montecarlo、Altopascio、Capannori、Porcari（Lucca 省）",
+    "style": ["白酒", "紅酒", "Cabernet Sauvignon", "Merlot", "Sauvignon", "Spumante"],
+    "grapes": ["Trebbiano Toscano", "Sauvignon", "Semillon", "Pinot Bianco", "Pinot Grigio", "Roussanne", "Chardonnay", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Canaiolo Nero", "Ciliegiolo", "Colorino", "Malvasia Nera di Brindisi", "Malvasia Nera di Lecce"],
+    "description": "Montecarlo DOC 以白酒聞名，融合 Trebbiano、Sauvignon、Pinot Bianco、Chardonnay、Roussanne 等多種本地與法國品種，風格清新細緻。紅酒以 Sangiovese、Merlot、Cabernet Sauvignon、Cabernet Franc 為主，並有 Spumante。",
+    "details": {
+      "introduction": "Montecarlo DOC 成立於 1969 年，位於 Lucca 省 Montecarlo 及周邊地區。19 世紀末引入多種法國品種，白酒混釀比例高，風格細膩。紅酒以 Sangiovese、Merlot、Cabernet Sauvignon、Cabernet Franc 為主。",
+      "climate": "溫帶氣候，丘陵地形，日夜溫差大，土壤多砂質與石灰岩，適合多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Sauvignon", "Semillon", "Pinot Bianco", "Pinot Grigio", "Roussanne", "Chardonnay", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Canaiolo Nero", "Ciliegiolo", "Colorino", "Malvasia Nera di Brindisi", "Malvasia Nera di Lecce"]
+    }
+  },
+  {
+    "id": "Montecucco DOC",
+    "name": "Montecucco",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省南部 Monte Amiata 山麓及周邊多個市鎮",
+    "style": ["紅酒", "白酒", "Rosato", "Riserva", "Vermentino", "Vin Santo"],
+    "grapes": ["Sangiovese", "Ciliegiolo", "Trebbiano Toscano", "Vermentino", "Malvasia Bianca Lunga", "Grechetto", "Canaiolo Nero", "Colorino", "Syrah", "Alicante", "Merlot", "Cabernet Sauvignon", "Petit Verdot", "Montepulciano"],
+    "description": "Montecucco DOC 位於托斯卡納南部 Monte Amiata 山麓，主產 Sangiovese 紅酒、Rosato、Riserva，白酒以 Trebbiano、Vermentino、Malvasia、Grechetto 為主，並有 Vin Santo。紅酒結構豐富，白酒清新，甜酒香氣複雜。",
+    "details": {
+      "introduction": "Montecucco DOC 成立於 1998 年，涵蓋 Grosseto 省 Monte Amiata 山麓多個市鎮。以 Sangiovese 為主，輔以多種本地與國際品種，風格多元。白酒混釀比例高，Vin Santo 甜酒香氣濃郁。",
+      "climate": "溫帶大陸性氣候，山麓地形，日夜溫差大，土壤多黏土與石灰岩，適合多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Ciliegiolo", "Trebbiano Toscano", "Vermentino", "Malvasia Bianca Lunga", "Grechetto", "Canaiolo Nero", "Colorino", "Syrah", "Alicante", "Merlot", "Cabernet Sauvignon", "Petit Verdot", "Montepulciano"]
+    }
+  },
+  {
+    "id": "Montecucco Sangiovese DOCG",
+    "name": "Montecucco Sangiovese",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省 Monte Amiata 山麓多個市鎮（Cinigiano、Civitella Paganico、Campagnatico、Castel del Piano、Roccalbegna、Arcidosso、Seggiano）",
+    "style": ["紅酒", "Riserva"],
+    "grapes": ["Sangiovese (90%以上)", "其他本地紅葡萄品種（10%以內）"],
+    "description": "Montecucco Sangiovese DOCG 以 Sangiovese 為主（90%以上），產區位於 Monte Amiata 山麓，主產紅酒與 Riserva。酒體結構豐富，果香濃郁，帶有香料與成熟小紅果氣息，陳年潛力佳。",
+    "details": {
+      "introduction": "Montecucco Sangiovese DOCG 成立於 2011 年，涵蓋 Grosseto 省 Monte Amiata 山麓多個市鎮。僅允許 Sangiovese 為主釀造，分為 Rosso base 與 Riserva 兩種。",
+      "climate": "溫帶大陸性氣候，山麓地形，日夜溫差大，土壤多黏土與石灰岩，適合 Sangiovese 積累風味與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese (90%以上)", "其他本地紅葡萄品種（10%以內）"]
+    }
+  },
+  {
+    "id": "Monteregio di Massa Marittima DOC",
+    "name": "Monteregio di Massa Marittima",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省北部丘陵地帶，涵蓋 Massa Marittima、Follonica、Scarlino、Gavorrano、Roccastrada、Monterotondo Marittimo、Castiglione della Pescaia 等市鎮",
+    "style": ["紅酒", "白酒", "Rosato", "Vermentino", "Vin Santo", "Occhio di Pernice"],
+    "grapes": ["Sangiovese", "Syrah", "Trebbiano Toscano", "Vermentino", "Viognier"],
+    "description": "Monteregio di Massa Marittima DOC 位於托斯卡納南部 Grosseto 省北部丘陵地帶，主產 Sangiovese 紅酒、Rosato、白酒（以 Vermentino、Trebbiano Toscano、Viognier 為主），並有 Vin Santo 甜酒與 Occhio di Pernice。紅酒結構均衡，白酒清新，甜酒香氣複雜。",
+    "details": {
+      "introduction": "Monteregio di Massa Marittima DOC 成立於 1994 年，涵蓋 Grosseto 省北部多個市鎮，地形以丘陵為主，靠近地中海。產區以 Sangiovese 紅酒最具代表性，白酒以 Vermentino、Trebbiano Toscano、Viognier 為主，並有多款甜型 Vin Santo。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，土壤多變，適合多種葡萄品種生長。沿海地區受海風調節，日夜溫差大，有利於葡萄風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Syrah", "Trebbiano Toscano", "Vermentino", "Viognier"]
+    }
+  },
+  {
+    "id": "Montescudaio DOC",
+    "name": "Montescudaio",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Pisa",
+    "zone": "Pisa 省南部丘陵地帶，涵蓋 Casale Marittimo、Castellina Marittima、Guardistallo、Montecatini Val di Cecina、Montescudaio、Riparbella、Santa Luce 等市鎮",
+    "style": ["紅酒", "白酒", "Rosato", "Cabernet Franc", "Cabernet Sauvignon", "Merlot", "Chardonnay", "Sauvignon", "Vermentino"],
+    "grapes": ["Sangiovese", "Cabernet Franc", "Cabernet Sauvignon", "Merlot", "Chardonnay", "Sauvignon", "Trebbiano Toscano", "Vermentino"],
+    "description": "Montescudaio DOC 位於托斯卡納 Pisa 省南部丘陵地帶，主產 Sangiovese 紅酒、Rosato、Cabernet Franc、Cabernet Sauvignon、Merlot 等國際品種紅酒，白酒以 Trebbiano Toscano、Chardonnay、Sauvignon、Vermentino 為主。風格多元，紅酒結構均衡，白酒清新，Rosato 果香明亮。",
+    "details": {
+      "introduction": "Montescudaio DOC 成立於 1976 年，涵蓋 Pisa 省南部多個市鎮，地形以丘陵為主，靠近地中海。產區以 Sangiovese 紅酒最具代表性，並有多款國際品種紅酒與白酒。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，土壤多變，適合多種葡萄品種生長。沿海地區受海風調節，日夜溫差大，有利於葡萄風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Cabernet Franc", "Cabernet Sauvignon", "Merlot", "Chardonnay", "Sauvignon", "Trebbiano Toscano", "Vermentino"]
+    }
+  },
+  {
+    "id": "Morellino di Scansano DOCG",
+    "name": "Morellino di Scansano",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省南部丘陵地帶，涵蓋 Scansano、Manciano、Magliano in Toscana、Grosseto、Campagnatico、Semproniano、Roccalbegna 等市鎮",
+    "style": ["紅酒", "Riserva"],
+    "grapes": ["Sangiovese (Morellino，85%以上)", "其他本地紅葡萄品種（15%以內）"],
+    "description": "Morellino di Scansano DOCG 是托斯卡納南部 Maremma 地區最具代表性的紅酒，以 Sangiovese（當地稱 Morellino）為主，風格果香濃郁、結構均衡，適合早飲亦可陳年。Riserva 需陳年至少兩年，風味更複雜。",
+    "details": {
+      "introduction": "Morellino di Scansano DOCG 成立於 2006 年，涵蓋 Grosseto 省南部多個市鎮。以 Sangiovese（Morellino）為主釀造，並可混釀少量本地紅葡萄。分為一般紅酒與 Riserva 兩種。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，土壤多樣，沿海地區受海風調節，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese (Morellino，85%以上)", "其他本地紅葡萄品種（15%以內）"]
+    }
+  },
+  {
+    "id": "Moscadello di Montalcino DOC",
+    "name": "Moscadello di Montalcino",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 Montalcino 市鎮全境",
+    "style": ["白酒（靜態）", "氣泡酒（Frizzante）", "甜酒（Vendemmia tardiva）"],
+    "grapes": ["Moscato Bianco"],
+    "description": "Moscadello di Montalcino DOC 產自 Siena 省 Montalcino 市鎮，以 Moscato Bianco 為主釀造，包含靜態白酒、氣泡酒（Frizzante）與遲摘甜酒（Vendemmia tardiva）。風格芳香、甜美，適合搭配甜點或藍紋起司。",
+    "details": {
+      "introduction": "Moscadello di Montalcino DOC 成立於 1984 年，涵蓋 Siena 省 Montalcino 市鎮全境。以 Moscato Bianco 為主釀造，包含靜態、氣泡與遲摘甜酒三種風格。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，丘陵地形與多樣土壤有利於 Moscato Bianco 的芳香與糖分累積。",
+      "subregions": {},
+      "grape_varieties": ["Moscato Bianco"]
+    }
+  },
+  {
+    "id": "Orcia DOC",
+    "name": "Orcia",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省南部丘陵地帶，Orcia 河流域，涵蓋多個市鎮，介於 Montepulciano 與 Montalcino 之間",
+    "style": ["紅酒", "白酒", "Rosato"],
+    "grapes": ["Sangiovese", "Trebbiano Toscano", "Malvasia Bianca Lunga"],
+    "description": "Orcia DOC 位於 Siena 省南部 Orcia 河流域，主產 Sangiovese 紅酒、Rosato 及以 Trebbiano Toscano、Malvasia Bianca Lunga 為主的白酒。紅酒結構均衡，白酒清新，Rosato 果香明亮。",
+    "details": {
+      "introduction": "Orcia DOC 成立於 2000 年，涵蓋 Siena 省南部多個市鎮，地形以丘陵為主，位於 Montepulciano 與 Montalcino 之間。產區以 Sangiovese 紅酒最具代表性，並有白酒與 Rosato。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，丘陵地形與多樣土壤有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Trebbiano Toscano", "Malvasia Bianca Lunga"]
+    }
+  },
+  {
+    "id": "Parrina DOC",
+    "name": "Parrina",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省 Orbetello 市鎮東北部丘陵地帶",
+    "style": ["紅酒", "紅酒 Riserva", "Rosato", "白酒", "Vin Santo"],
+    "grapes": ["Sangiovese (紅酒/粉紅酒 70%以上)", "其他本地紅葡萄品種（30%以內）", "Trebbiano Toscano (白酒/甜酒 10-30%)", "Ansonica (30-50%)", "Vermentino (20-40%)", "Chardonnay/Sauvignon (最多20%)"],
+    "description": "Parrina DOC 位於托斯卡納南部 Orbetello 市鎮東北部，主產 Sangiovese 為主的紅酒、Rosato，白酒以 Ansonica、Vermentino、Trebbiano Toscano 為主，並有 Vin Santo 甜酒。紅酒結構均衡，白酒芳香，甜酒濃郁。",
+    "details": {
+      "introduction": "Parrina DOC 成立於 1971 年，涵蓋 Grosseto 省 Orbetello 市鎮東北部。紅酒與 Rosato 以 Sangiovese 為主，白酒與 Vin Santo 以 Ansonica、Vermentino、Trebbiano Toscano 為主，並可混釀 Chardonnay、Sauvignon。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Trebbiano Toscano", "Ansonica", "Vermentino", "Chardonnay", "Sauvignon", "Cabernet Sauvignon", "Merlot"]
+    }
+  },
+  {
+    "id": "Pomino DOC",
+    "name": "Pomino",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Firenze",
+    "zone": "Rufina（佛羅倫斯省東北部，Sieve 山谷中高海拔丘陵與山地）",
+    "style": ["白酒", "白酒 Riserva", "紅酒", "紅酒 Riserva", "Rosato", "Spumante"],
+    "grapes": ["Chardonnay", "Pinot Bianco", "Pinot Grigio", "Sauvignon", "Trebbiano Toscano", "Sangiovese", "Pinot Nero", "Merlot"],
+    "description": "Pomino DOC 位於托斯卡納佛羅倫斯省東北部的高海拔丘陵與山地，氣候涼爽，土壤多變。自19世紀中葉引入法國品種，白酒以 Chardonnay、Pinot Bianco、Pinot Grigio、Sauvignon、Trebbiano 為主，紅酒以 Sangiovese、Pinot Nero、Merlot 為主。白酒芳香細緻，紅酒優雅，Rosato 與氣泡酒亦具特色。",
+    "details": {
+      "introduction": "Pomino DOC 產區自1855年起引入法國品種，成為托斯卡納少數以國際品種為主的法定產區。地處 Sieve 山谷高地，氣候涼爽，適合釀造高雅細緻的白酒與紅酒。",
+      "climate": "高海拔山地與丘陵，氣候涼爽，晝夜溫差大，夏季溫和，利於芳香物質累積與酸度保持。",
+      "subregions": {},
+      "grape_varieties": ["Chardonnay", "Pinot Bianco", "Pinot Grigio", "Sauvignon", "Trebbiano Toscano", "Sangiovese", "Pinot Nero", "Merlot"]
+    }
+  },
+  {
+    "id": "Rosso della Val di Cornia Val di Cornia Rosso DOCG",
+    "name": "Rosso della Val di Cornia Val di Cornia Rosso",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Livorno, Pisa",
+    "zone": "Livorno 省 Suvereto、Sassetta、Campiglia Marittima、San Vincenzo、Piombino，Pisa 省 Monteverdi Marittimo",
+    "style": ["紅酒", "紅酒 Riserva"],
+    "grapes": ["Sangiovese (主體)", "Cabernet Sauvignon"],
+    "description": "Rosso della Val di Cornia DOCG 位於托斯卡納西南部沿海，涵蓋 Livorno 與 Pisa 兩省部分地區。以 Sangiovese 為主，混釀 Cabernet Sauvignon 等，僅生產紅酒與 Riserva。酒體結構豐富，果香濃郁，陳年潛力佳。Riserva 需長時間橡木桶熟成，風味更複雜。",
+    "details": {
+      "introduction": "Rosso della Val di Cornia DOCG 於2011年升格為 DOCG，產區橫跨 Livorno、Pisa 兩省，包含 Suvereto、Sassetta、Campiglia Marittima、San Vincenzo、Piombino、Monteverdi Marittimo 等地。以 Sangiovese 為主體，融合 Cabernet Sauvignon，展現沿海地區的成熟果香與結構。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，沿海地區受海風調節，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Cabernet Sauvignon"]
+    }
+  },
+  {
+    "id": "Rosso di Montalcino DOC",
+    "name": "Rosso di Montalcino",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 Montalcino 市鎮全境",
+    "style": ["紅酒"],
+    "grapes": ["Sangiovese"],
+    "description": "Rosso di Montalcino DOC 位於托斯卡納 Siena 省 Montalcino 市鎮全境，設立於 1983 年。僅允許 Sangiovese 單一品種釀造紅酒，風格清新、果香濃郁，結構均衡，適合早飲亦可短期陳年。色澤深紅，香氣以紅色水果為主，口感活潑。",
+    "details": {
+      "introduction": "Rosso di Montalcino DOC 產區涵蓋 Montalcino 全境，僅允許 Sangiovese 釀造。此酒被視為 Brunello di Montalcino 的年輕版，強調新鮮果香與活潑酸度，適合搭配多樣料理。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，丘陵地形與多樣土壤有利於 Sangiovese 積累風味與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese"]
+    }
+  },
+  {
+    "id": "San Gimignano DOC",
+    "name": "San Gimignano",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 San Gimignano 市鎮全境，丘陵地帶，海拔67-629公尺",
+    "style": ["紅酒", "紅酒 Riserva", "Cabernet Sauvignon 單一品種", "Cabernet Sauvignon Riserva", "Merlot 單一品種", "Pinot Nero 單一品種", "Syrah 單一品種", "Rosato", "白酒 Trebbiano Toscano 單一品種", "白酒 Malvasia Bianca Lunga 單一品種", "Vinsanto", "Vinsanto Occhio di Pernice"],
+    "grapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Pinot Nero", "Syrah", "Trebbiano Toscano", "Malvasia Bianca Lunga"],
+    "description": "San Gimignano DOC 位於 Siena 省 San Gimignano 市鎮全境，設立於 1996 年。主產多種紅酒（可為單一品種或混釀）、Rosato、白酒（Trebbiano Toscano、Malvasia Bianca Lunga）、Vinsanto 甜酒。紅酒以 Sangiovese、Cabernet Sauvignon、Merlot、Pinot Nero、Syrah 為主，風格多元，白酒清新，Vinsanto 甜美濃郁。",
+    "details": {
+      "introduction": "San Gimignano DOC 產區位於托斯卡納中部丘陵地帶，涵蓋 San Gimignano 市鎮全境。紅酒以 Sangiovese、Cabernet Sauvignon、Merlot、Pinot Nero、Syrah 為主，可為單一品種或混釀。白酒以 Trebbiano Toscano、Malvasia Bianca Lunga 為主，並有 Vinsanto 甜酒。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種葡萄品種生長與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Pinot Nero", "Syrah", "Trebbiano Toscano", "Malvasia Bianca Lunga"]
+    }
+  },
+  {
+    "id": "San Torpè DOC",
+    "name": "San Torpè",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Pisa, Livorno",
+    "zone": "Pisa、Livorno 兩省交界丘陵地帶多個市鎮",
+    "style": ["白酒", "白酒 Chardonnay 單一品種", "白酒 Sauvignon 單一品種", "白酒 Vermentino 單一品種", "白酒 Trebbiano Toscano 單一品種", "白酒 Malvasia Bianca Lunga 單一品種", "Rosato", "紅酒 Sangiovese 單一品種"],
+    "grapes": ["Trebbiano Toscano", "Chardonnay", "Sauvignon", "Vermentino", "Malvasia Bianca Lunga", "Sangiovese"],
+    "description": "San Torpè DOC 位於托斯卡納 Pisa、Livorno 兩省交界的丘陵地帶，設立於 1980 年。主產多種白酒（可為單一品種或混釀），並有 Rosato 及 Sangiovese 紅酒。白酒以 Trebbiano Toscano、Chardonnay、Sauvignon、Vermentino、Malvasia Bianca Lunga 為主，風格清新、果香明亮。Rosato 色澤淡雅，紅酒以 Sangiovese 為主，結構均衡。",
+    "details": {
+      "introduction": "San Torpè DOC 產區涵蓋 Pisa、Livorno 兩省多個丘陵市鎮，土壤多變。白酒以 Trebbiano Toscano、Chardonnay、Sauvignon、Vermentino、Malvasia Bianca Lunga 為主，可為單一品種或混釀。Rosato 以短暫浸皮釀造，紅酒僅限 Sangiovese。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Chardonnay", "Sauvignon", "Vermentino", "Malvasia Bianca Lunga", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Sant'Antimo DOC",
+    "name": "Sant'Antimo",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 Montalcino 市鎮全境",
+    "style": ["紅酒", "白酒", "Cabernet Sauvignon 單一品種", "Merlot 單一品種", "Pinot Nero 單一品種", "Chardonnay 單一品種", "Trebbiano Toscano 單一品種", "甜酒(Moscadello)", "Rosato"],
+    "grapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Pinot Nero", "Chardonnay", "Trebbiano Toscano"],
+    "description": "Sant'Antimo DOC 位於托斯卡納 Siena 省 Montalcino 市鎮全境，設立於 1996 年。允許多種國際與本地品種釀造紅、白、Rosato、單一品種酒款及 Moscadello 甜酒。紅酒以 Sangiovese、Cabernet Sauvignon、Merlot、Pinot Nero 為主，白酒以 Chardonnay、Trebbiano Toscano 為主。風格多元，適合搭配多樣料理。",
+    "details": {
+      "introduction": "Sant'Antimo DOC 產區涵蓋 Montalcino 全境，設立目的是讓當地酒莊可用多種國際與本地品種釀造多元風格。紅酒以 Sangiovese、Cabernet Sauvignon、Merlot、Pinot Nero 為主，白酒以 Chardonnay、Trebbiano Toscano 為主，並有 Moscadello 甜酒。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，丘陵地形與多樣土壤有利於多種葡萄品種生長與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Pinot Nero", "Chardonnay", "Trebbiano Toscano"]
+    }
+  },
+  {
+    "id": "Sovana DOC",
+    "name": "Sovana",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "zone": "Grosseto 省南部丘陵地帶，Pitigliano、Sorano、Manciano 等市鎮",
+    "style": ["紅酒", "紅酒 Superiore", "紅酒 Riserva", "Rosato", "Aleatico Passito", "Aleatico Passito Riserva"],
+    "grapes": ["Sangiovese", "Aleatico", "Ciliegiolo", "Cabernet Sauvignon", "Merlot"],
+    "description": "Sovana DOC 位於托斯卡納南部 Grosseto 省，涵蓋 Pitigliano、Sorano、Manciano 等丘陵地區。主產紅酒（Sangiovese 為主，可混釀 Ciliegiolo、Cabernet Sauvignon、Merlot）、Rosato，以及 Aleatico 甜型 Passito。紅酒色澤深紅，果香濃郁，結構均衡，Superiore 與 Riserva 需更高酒精度與陳年。Rosato 色澤淡雅，香氣清新。Aleatico Passito 甜美濃郁。",
+    "details": {
+      "introduction": "Sovana DOC 成立於 1999 年，產區地形以丘陵為主，土壤多變。紅酒以 Sangiovese 為主體，混釀 Ciliegiolo、Cabernet Sauvignon、Merlot，展現果香、香料與成熟紅果氣息。Superiore 與 Riserva 需更高酒精度與陳年，風味更複雜。Rosato 以短暫浸皮釀造，色澤淡雅。Aleatico Passito 以 Aleatico 風乾釀製，甜美濃郁。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Aleatico", "Ciliegiolo", "Cabernet Sauvignon", "Merlot"]
+    }
+  },
+  {
+    "id": "Suvereto DOCG",
+    "name": "Suvereto",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Livorno 省 Suvereto 全境（沿海丘陵地帶）",
+    "style": ["紅酒", "紅酒 Riserva", "Sangiovese 單一品種", "Merlot 單一品種", "Cabernet Sauvignon 單一品種"],
+    "grapes": ["Cabernet Sauvignon", "Merlot", "Sangiovese"],
+    "description": "Suvereto DOCG 位於托斯卡納西南部 Livorno 省 Suvereto 市鎮，僅生產紅酒。主力品種為 Cabernet Sauvignon、Merlot、Sangiovese，可為單一品種或混釀。酒體結構強勁，色澤深紅，香氣濃郁，陳年潛力佳。Riserva 需長時間橡木桶熟成。",
+    "details": {
+      "introduction": "Suvereto DOCG 於2011年升格為 DOCG，涵蓋 Suvereto 市鎮全境。以 Cabernet Sauvignon、Merlot、Sangiovese 為主，允許單一品種或混釀，展現沿海丘陵的成熟果香與結構。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，沿海地區受海風調節，日夜溫差大，有利於葡萄成熟與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Cabernet Sauvignon", "Merlot", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Terratico di Bibbona DOC",
+    "name": "Terratico di Bibbona",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Livorno",
+    "zone": "Rosignano Marittimo、Cecina、Bibbona、Collesalvetti（Livorno 省，沿海與內陸丘陵地帶）",
+    "style": ["紅酒", "白酒", "Rosato", "Cabernet Sauvignon 單一品種", "Merlot 單一品種", "Syrah 單一品種", "Vermentino 單一品種"],
+    "grapes": ["Merlot", "Sangiovese", "Cabernet Sauvignon", "Syrah", "Vermentino"],
+    "description": "Terratico di Bibbona DOC 位於托斯卡納西部沿海 Livorno 省，涵蓋 Rosignano Marittimo、Cecina、Bibbona、Collesalvetti 等地。產區以紅酒（Merlot、Sangiovese、Cabernet Sauvignon、Syrah）為主，並有白酒（Vermentino）與 Rosato。氣候受海風調節，酒款果香明亮、結構均衡。",
+    "details": {
+      "introduction": "Terratico di Bibbona DOC 成立於 2006 年，產區沿海與內陸丘陵交錯，葡萄園分布廣泛。紅酒以 Merlot、Sangiovese、Cabernet Sauvignon、Syrah 為主，白酒以 Vermentino 為主，並有多款單一品種酒款。",
+      "climate": "地中海型氣候，受利古里亞海影響，夏季有涼爽海風，日夜溫差大，有利於葡萄成熟與病害防治。",
+      "subregions": {},
+      "grape_varieties": ["Merlot", "Sangiovese", "Cabernet Sauvignon", "Syrah", "Vermentino"]
+    }
+  },
+  {
+    "id": "Terre di Casole DOC",
+    "name": "Terre di Casole",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 Casole d’Elsa 市鎮，主要為丘陵地帶",
+    "style": ["紅酒", "紅酒 Riserva", "白酒", "白酒 Riserva", "Vinsanto"],
+    "grapes": ["Sangiovese", "Canaiolo Nero", "Colorino", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Chardonnay"],
+    "description": "Terre di Casole DOC 位於托斯卡納 Siena 省 Casole d’Elsa 市鎮，設立於 2007 年。主產紅酒（Sangiovese 為主，可混釀 Canaiolo Nero、Colorino）、白酒（Trebbiano Toscano、Malvasia Bianca Lunga、Chardonnay）、Vinsanto 甜酒。紅酒結構均衡，白酒清新，Vinsanto 以白葡萄為主，甜美濃郁。",
+    "details": {
+      "introduction": "Terre di Casole DOC 產區涵蓋 Casole d’Elsa 市鎮，地形以丘陵為主。紅酒以 Sangiovese 為主，混釀 Canaiolo Nero、Colorino，白酒以 Trebbiano Toscano、Malvasia Bianca Lunga、Chardonnay 為主，並有 Vinsanto 甜酒。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Colorino", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Chardonnay"]
+    }
+  },
+  {
+    "id": "Terre di Pisa DOC",
+    "name": "Terre di Pisa",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Pisa",
+    "zone": "Pisa 省多個丘陵與平原市鎮（不含低窪濕地）",
+    "style": ["紅酒 Terre di Pisa Rosso", "紅酒 Sangiovese 單一品種"],
+    "grapes": ["Sangiovese", "Syrah", "Cabernet Sauvignon", "Merlot"],
+    "description": "Terre di Pisa DOC 位於托斯卡納 Pisa 省多個丘陵與平原市鎮，設立於 2011 年。主產紅酒（Terre di Pisa Rosso 及 Sangiovese 單一品種），可混釀 Syrah、Cabernet Sauvignon、Merlot。酒款均衡，果香濃郁，陳年後香氣更複雜。",
+    "details": {
+      "introduction": "Terre di Pisa DOC 產區涵蓋 Pisa 省多個市鎮，地形以丘陵和平原為主，排除低窪濕地。紅酒以 Sangiovese 為主，可混釀 Syrah、Cabernet Sauvignon、Merlot，展現平衡結構與成熟果香。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種紅葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Syrah", "Cabernet Sauvignon", "Merlot"]
+    }
+  },
+  {"id": "Toscano o Toscana IGP", "name": "Toscano o Toscana IGP", "type": "IGP",
+   "region": "Toscana",
+   "province": "Arezzo, Firenze, Grosseto, Livorno, Lucca, Massa-Carrara, Pisa, Pistoia, Prato, Siena",
+   "zone": "托斯卡納全區，涵蓋所有省份，允許多種葡萄品種與風格。",
+   "style": ["紅酒", "白酒", "Rosato 粉紅酒", "氣泡酒 Spumante", "甜酒 Passito"],
+   "grapes": ["Sangiovese", "Canaiolo Nero", "Colorino", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Syrah", "Pinot Nero", "Chardonnay", "Sauvignon", "Trebbiano Toscano", "Malvasia Bianca Lunga", "Vermentino", "Viognier"],
+   "description": "Toscano o Toscana IGT 是托斯卡納全區最大、最靈活的地理標示，允許多種本地與國際葡萄品種釀造紅、白、粉紅、氣泡與甜酒。風格多元，品質範圍廣，常見於創新混釀與國際化酒款。",
+   "details": {
+     "introduction": "Toscano o Toscana IGT 創立於 1995 年，涵蓋托斯卡納全區，允許多種葡萄品種與風格。是超級托斯卡納（Super Tuscan）等創新酒款的主要標示。",
+     "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵、平原與沿海地形多樣，適合多種葡萄品種生長。",
+     "subregions": {},
+     "grape_varieties": ["Sangiovese", "Canaiolo Nero", "Colorino", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Syrah", "Pinot Nero", "Chardonnay", "Sauvignon", "Trebbiano Toscano", "Malvasia Bianca Lunga", "Vermentino", "Viognier"],
+     "production_rules": "允許多種本地與國際葡萄品種，紅、白、粉紅、氣泡、甜酒皆可。釀造規範彈性高，適合創新混釀與國際化風格。",
+     "features": "風格多元，品質範圍廣，紅酒可濃郁有力，白酒清新芳香，亦有高品質創新混釀（如 Super Tuscan）。"
+   }
+  },
+  {
+    "id": "Val di Cornia DOC",
+    "name": "Val di Cornia",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Livorno, Pisa",
+    "zone": "Livorno、Pisa 兩省多個市鎮，包括 Suvereto、Sassetta、Monteverdi Marittimo、Piombino、San Vincenzo、Campiglia Marittima 等",
+    "style": ["紅酒", "白酒", "Rosato", "Aleatico Passito", "Ansonica 單一品種", "Cabernet Sauvignon 單一品種", "Merlot 單一品種", "Sangiovese 單一品種", "Vermentino 單一品種", "Viognier 單一品種"],
+    "grapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Ansonica", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Vermentino", "Viognier"],
+    "description": "Val di Cornia DOC 位於托斯卡納 Livorno、Pisa 兩省多個市鎮，設立於 1989 年。主產紅酒（Sangiovese、Cabernet Sauvignon、Merlot）、白酒（Ansonica、Malvasia、Trebbiano、Vermentino、Viognier）、Rosato 及 Aleatico Passito 甜酒。風格多元，紅酒結構均衡，白酒清新，甜酒濃郁。",
+    "details": {
+      "introduction": "Val di Cornia DOC 產區涵蓋 Livorno、Pisa 兩省多個市鎮，包括 Suvereto、Sassetta、Monteverdi Marittimo、Piombino、San Vincenzo、Campiglia Marittima 等。紅酒以 Sangiovese、Cabernet Sauvignon、Merlot 為主，白酒以 Ansonica、Malvasia、Trebbiano、Vermentino、Viognier 為主，並有 Rosato 與 Aleatico Passito 甜酒。",
+      "climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，沿海與丘陵地形有利於多種葡萄品種生長與風味發展。",
+      "subregions": {},
+      "grape_varieties": ["Sangiovese", "Cabernet Sauvignon", "Merlot", "Ansonica", "Malvasia Bianca Lunga", "Trebbiano Toscano", "Vermentino", "Viognier"]
+    }
+  },
+  {
+    "id": "Val d’Arbia DOC",
+    "name": "Val d’Arbia",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省多個丘陵市鎮，包括 Siena、Chianti 部分、Asciano、Buonconvento 等",
+    "style": ["白酒", "白酒 Chardonnay 單一品種", "白酒 Grechetto 單一品種", "白酒 Malvasia Bianca Lunga 單一品種", "白酒 Pinot Bianco 單一品種", "白酒 Sauvignon 單一品種", "白酒 Trebbiano Toscano 單一品種", "白酒 Vermentino 單一品種", "紅酒 Sangiovese 單一品種"],
+    "grapes": ["Chardonnay", "Grechetto", "Malvasia Bianca Lunga", "Pinot Bianco", "Sangiovese", "Sauvignon", "Trebbiano Toscano", "Vermentino"],
+    "description": "Val d'Arbia DOC 位於托斯卡納 Siena 省多個丘陵市鎮，設立於 1985 年。主產多種白酒（可為單一品種或混釀），並有 Sangiovese 紅酒。白酒以 Chardonnay、Grechetto、Malvasia、Pinot Bianco、Sauvignon、Trebbiano、Vermentino 為主，風格清新、果香明亮。紅酒以 Sangiovese 為主，結構均衡。",
+    "details": {
+      "introduction": "Val d'Arbia DOC 產區涵蓋 Siena 省多個丘陵市鎮，包括 Siena、Chianti 部分、Asciano、Buonconvento 等。白酒以多種本地與國際品種為主，可為單一品種或混釀。紅酒僅限 Sangiovese。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於多種葡萄品種生長。日夜溫差大，提升葡萄香氣與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Chardonnay", "Grechetto", "Malvasia Bianca Lunga", "Pinot Bianco", "Sangiovese", "Sauvignon", "Trebbiano Toscano", "Vermentino"]
+    }
+  },
+  {
+    "id": "Val d’Arno di Sopra  Valdarno di Sopra DOC",
+    "name": "Val d’Arno di Sopra  Valdarno di Sopra",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Arezzo",
+    "zone": "Arezzo 省阿爾諾河谷東西兩岸多個市鎮，含 Pietraviva、Pratomagno 兩個子區",
+    "style": ["紅酒", "紅酒 Riserva", "白酒", "白酒 Riserva", "Vendemmia Tardiva", "Passito"],
+    "grapes": ["Sangiovese", "Merlot", "Syrah", "Cabernet Sauvignon", "Chardonnay", "Sauvignon", "Malvasia Bianca Lunga", "Trebbiano Toscano"],
+    "description": "Val d'Arno di Sopra DOC 位於托斯卡納 Arezzo 省阿爾諾河谷東西兩岸，設立於 2011 年。主產紅酒（Sangiovese 為主，可混釀 Merlot、Syrah、Cabernet Sauvignon）、白酒（Chardonnay、Sauvignon、Malvasia、Trebbiano）、Vendemmia Tardiva 遲摘酒與 Passito 甜酒。紅酒結構均衡，白酒芳香，甜酒濃郁。",
+    "details": {
+      "introduction": "Val d'Arno di Sopra DOC 產區涵蓋 Arezzo 省阿爾諾河谷多個市鎮，含 Pietraviva、Pratomagno 兩個子區。紅酒以 Sangiovese 為主，混釀 Merlot、Syrah、Cabernet Sauvignon，白酒以 Chardonnay、Sauvignon、Malvasia、Trebbiano 為主，並有遲摘與 Passito 甜酒。",
+      "climate": "溫帶大陸性氣候，夏季炎熱乾燥，冬季寒冷，河谷與丘陵地形有利於多種葡萄品種生長與風味發展。",
+      "subregions": {"Pietraviva": {}, "Pratomagno": {}},
+      "grape_varieties": ["Sangiovese", "Merlot", "Syrah", "Cabernet Sauvignon", "Chardonnay", "Sauvignon", "Malvasia Bianca Lunga", "Trebbiano Toscano"]
+    }
+  },
+  {
+    "id": "Valdichiana toscana DOC",
+    "name": "Valdichiana toscana",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Arezzo, Siena",
+    "zone": "Arezzo、Siena 兩省 Valdichiana 地區多個市鎮（僅限托斯卡納境內）",
+    "style": ["白酒", "白酒 Spumante 氣泡酒", "白酒 Frizzante 微氣泡酒", "Vin Santo 甜酒", "Vin Santo Riserva 甜酒", "紅酒 Sangiovese 為主", "Rosato"],
+    "grapes": ["Chardonnay", "Grechetto", "Malvasia Bianca di Candia", "Malvasia Bianca Lunga", "Malvasia Istriana", "Pinot Bianco", "Pinot Grigio", "Sangiovese", "Trebbiano Toscano"],
+    "description": "Valdichiana Toscana DOC 位於托斯卡納 Arezzo、Siena 兩省 Valdichiana 地區，設立於 1972 年。主產多種白酒（可為靜態、氣泡、微氣泡）、Vin Santo 甜酒與 Riserva、紅酒（Sangiovese 為主）、Rosato。白酒以本地與國際品種為主，風格清新，Vin Santo 甜美濃郁，紅酒結構均衡。",
+    "details": {
+      "introduction": "Valdichiana Toscana DOC 產區涵蓋 Arezzo、Siena 兩省 Valdichiana 地區多個市鎮（僅限托斯卡納境內）。白酒以 Chardonnay、Grechetto、Malvasia、Pinot Bianco、Pinot Grigio、Trebbiano Toscano 為主，紅酒以 Sangiovese 為主，並有 Vin Santo 甜酒與 Riserva。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，平原與丘陵地形有利於多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Chardonnay", "Grechetto", "Malvasia Bianca di Candia", "Malvasia Bianca Lunga", "Malvasia Istriana", "Pinot Bianco", "Pinot Grigio", "Sangiovese", "Trebbiano Toscano"]
+    }
+  },
+  {
+    "id": "Valdinievole DOC",
+    "name": "Valdinievole",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Pistoia",
+    "zone": "Pistoia 省西南部 Nievole 河谷多個市鎮，鄰近 Montalbano、Montecarlo DOC",
+    "style": ["白酒", "白酒 Superiore", "Vin Santo 甜酒", "紅酒 Sangiovese 單一品種"],
+    "grapes": ["Trebbiano Toscano", "Canaiolo Nero", "Sangiovese"],
+    "description": "Valdinievole DOC 位於托斯卡納 Pistoia 省西南部 Nievole 河谷，設立於 1976 年。主產白酒（以 Trebbiano Toscano 為主）、紅酒（Sangiovese 為主）、Vin Santo 甜酒。白酒清新，紅酒結構均衡，甜酒以 Malvasia/Trebbiano 為主，風味濃郁。",
+    "details": {
+      "introduction": "Valdinievole DOC 產區涵蓋 Pistoia 省西南部多個市鎮，鄰近 Montalbano、Montecarlo DOC。白酒以 Trebbiano Toscano 為主，紅酒以 Sangiovese 為主，並有 Vin Santo 甜酒。當地以小型本地品種混釀為特色。",
+      "climate": "溫帶地中海型氣候，秋季多霧，夏季炎熱乾燥，冬季溫和，河谷與丘陵地形有利於多種葡萄品種生長。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Canaiolo Nero", "Sangiovese"]
+    }
+  },
+  {
+    "id": "Vernaccia di San Gimignano DOCG",
+    "name": "Vernaccia di San Gimignano",
+    "type": "DOCG",
+    "region": "Toscana",
+    "province": "Siena",
+    "zone": "Siena 省 San Gimignano 市鎮全境",
+    "style": ["白酒", "白酒 Riserva"],
+    "grapes": ["Vernaccia di San Gimignano"],
+    "description": "Vernaccia di San Gimignano DOCG 位於托斯卡納 Siena 省 San Gimignano 市鎮全境，設立於 1993 年。僅允許 Vernaccia di San Gimignano 單一品種釀造白酒，分為一般型與 Riserva。酒色稻草黃，香氣細緻，口感乾爽、礦物感明顯，陳年後帶有香料與杏仁餘韻。",
+    "details": {
+      "introduction": "Vernaccia di San Gimignano DOCG 產區涵蓋 San Gimignano 市鎮全境，僅允許 Vernaccia di San Gimignano 釀造。分為一般型與 Riserva，後者需更長陳年。此酒為義大利最早獲 DOCG 的白酒之一。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於 Vernaccia 積累風味與酸度。",
+      "subregions": {},
+      "grape_varieties": ["Vernaccia di San Gimignano"]
+    }
+  },
+  {
+    "id": "Vin Santo del Chianti Classico DOC",
+    "name": "Vin Santo del Chianti Classico",
+    "type": "DOC",
+    "region": "Toscana",
+    "province": "Firenze, Siena",
+    "zone": "Firenze、Siena 兩省 Chianti Classico 產區，包括 Greve in Chianti、Castellina in Chianti、Radda in Chianti、Gaiole in Chianti 等市鎮",
+    "style": ["Vin Santo 甜酒", "Vin Santo Occhio di Pernice 甜酒"],
+    "grapes": ["Trebbiano Toscano", "Malvasia del Chianti", "Canaiolo Bianco", "Pinot Bianco", "Pinot Grigio", "Sauvignon", "Chardonnay", "Sangiovese"],
+    "description": "Vin Santo del Chianti Classico DOC 位於托斯卡納 Chianti Classico 產區，涵蓋 Firenze、Siena 兩省多個市鎮。主產 Vin Santo 甜酒（以 Trebbiano Toscano、Malvasia del Chianti、Canaiolo Bianco 為主），並有 Occhio di Pernice（Sangiovese 為主）。採自然風乾法，酒色金黃至琥珀，香氣濃郁，口感甜美且酸度平衡。",
+    "details": {
+      "introduction": "Vin Santo del Chianti Classico DOC 產區涵蓋 Chianti Classico 主要市鎮，甜酒以 Trebbiano Toscano、Malvasia del Chianti、Canaiolo Bianco 為主，並有 Pinot Bianco、Pinot Grigio、Sauvignon、Chardonnay、Sangiovese（Occhio di Pernice）等。採自然風乾與小木桶陳年，風味濃郁。",
+      "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於葡萄風乾與糖分累積。",
+      "subregions": {},
+      "grape_varieties": ["Trebbiano Toscano", "Malvasia del Chianti", "Canaiolo Bianco", "Pinot Bianco", "Pinot Grigio", "Sauvignon", "Chardonnay", "Sangiovese"]
+    }
+  },
+  {"id": "Vin Santo del Chianti DOC", "name": "Vin Santo del Chianti", "type": "DOC",
+   "region": "Toscana",
+   "province": "Firenze, Siena, Pisa, Pistoia, Prato, Arezzo",
+   "zone": "托斯卡納中部，涵蓋 Firenze、Siena、Pisa、Pistoia、Prato、Arezzo 六省多個丘陵市鎮，緊鄰亞平寧山脈。",
+   "style": ["Vin Santo 甜型白酒", "Vin Santo Occhio di Pernice 甜型酒"],
+   "grapes": ["Trebbiano Toscano", "Malvasia Bianca Lunga", "Sangiovese"],
+   "description": "Vin Santo del Chianti DOC 是托斯卡納著名的甜型加強酒，產自 Chianti 主要產區，葡萄以 Trebbiano Toscano、Malvasia Bianca Lunga 為主，Occhio di Pernice 則以 Sangiovese 為主。採自然風乾法，於小型木桶（caratelli）中長期陳年，酒色金黃至琥珀，香氣濃郁，帶有乾果、蜂蜜、堅果等風味，口感甜美且酸度平衡。",
+   "details": {
+     "introduction": "Vin Santo del Chianti DOC 於 1997 年設立，涵蓋 Chianti 產區六省，主產 Vin Santo 甜酒與 Occhio di Pernice 風格。葡萄經自然風乾，糖分高，於小木桶中陳年至少三年，部分類型需四年以上。",
+     "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形有利於葡萄風乾與糖分累積。",
+     "subregions": {"Colli Aretini":{}, "Colli Fiorentini":{}, "Colli Senesi":{}, "Colline Pisane":{}, "Montalbano":{}, "Montespertoli":{}, "Rufina":{}},
+     "grape_varieties": ["Trebbiano Toscano", "Malvasia Bianca Lunga", "Sangiovese"],
+     "production_rules": "葡萄須經自然風乾，含糖量不低於 26%；發酵與陳年於容量不超過 5 百升的小型木桶（caratelli）中進行。酒液需陳年至少三年，Riserva 類型需四年以上。成酒得率不得超過鮮果重的 35%。",
+     "features": "色澤金黃至琥珀，香氣複雜，帶乾果、蜂蜜、堅果、香料等風味，口感甜美、酒體濃郁且酸度平衡，適合搭配甜點或單獨品飲。"
+   }
+  },
+  {"id": "Vin Santo di Carmignano DOC", "name": "Vin Santo di Carmignano", "type": "DOC",
+   "region": "Toscana",
+   "province": "Prato",
+   "zone": "Montalbano 小山脈地區，涵蓋 Prato 省 Carmignano、Poggio a Caiano 兩市鎮。",
+   "style": ["Vin Santo 甜型白酒", "Vin Santo Occhio di Pernice 甜型酒"],
+   "grapes": ["Trebbiano Toscano", "Malvasia Bianca Lunga", "Sangiovese"],
+   "description": "Vin Santo di Carmignano DOC 是托斯卡納傳統甜型加強酒，產自 Prato 省 Montalbano 地區。以 Trebbiano Toscano、Malvasia Bianca Lunga 為主，Occhio di Pernice 則以 Sangiovese 為主。葡萄經手工嚴選與自然風乾，於小型木桶（caratelli）中長期陳年，酒色金黃至琥珀，香氣濃郁，帶有乾果、蜂蜜、堅果等風味，口感甜美且酸度平衡。",
+   "details": {
+     "introduction": "Vin Santo di Carmignano DOC 創立於 1975 年，產區位於 Prato 省 Carmignano、Poggio a Caiano，主產 Vin Santo 甜酒與 Occhio di Pernice 風格。葡萄經手工嚴選與自然風乾，於小木桶中陳年至少三年。",
+     "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，山坡地形有利於葡萄風乾與糖分累積。",
+     "subregions": {},
+     "grape_varieties": ["Trebbiano Toscano", "Malvasia Bianca Lunga", "Sangiovese"],
+     "production_rules": "葡萄須手工嚴選並自然風乾，壓榨後於容量 20-300 公升的小型木桶（caratelli）中發酵與陳年，時間通常三年以上。Occhio di Pernice 以 Sangiovese 為主。",
+     "features": "色澤金黃至琥珀，香氣複雜，帶乾果、蜂蜜、堅果、香料等風味，口感甜美、酒體濃郁且酸度平衡，適合搭配甜點、藍紋起司或單獨品飲。"
+   }
+  },
+  {"id": "Vin Santo di Montepulciano DOC", "name": "Vin Santo di Montepulciano", "type": "DOC",
+   "region": "Toscana",
+   "province": "Siena",
+   "zone": "Siena 省 Montepulciano 市全境，海拔 250-600 公尺的丘陵地帶。",
+   "style": ["Vin Santo 甜型白酒", "Vin Santo Occhio di Pernice 甜型酒", "Riserva"],
+   "grapes": ["Malvasia Bianca Lunga", "Trebbiano Toscano", "Grechetto", "Sangiovese（Occhio di Pernice）"],
+   "description": "Vin Santo di Montepulciano DOC 是托斯卡納 Montepulciano 地區傳統甜型加強酒，主以 Malvasia Bianca Lunga、Trebbiano Toscano、Grechetto 為主，Occhio di Pernice 則以 Sangiovese 為主。葡萄經自然風乾，於小型木桶中長期陳年，酒色金黃至琥珀，香氣濃郁，帶有乾果、蜂蜜、香料等風味，口感甜美且酸度平衡。",
+   "details": {
+     "introduction": "Vin Santo di Montepulciano DOC 創立於 1996 年，產區僅限 Montepulciano 市，主產 Vin Santo 甜酒與 Occhio di Pernice 風格。葡萄經自然風乾，糖分高，於小木桶中陳年至少三年，Riserva 與 Occhio di Pernice 類型需更長時間。",
+     "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形有利於葡萄風乾與糖分累積。",
+     "subregions": {},
+     "grape_varieties": ["Malvasia Bianca Lunga", "Trebbiano Toscano", "Grechetto", "Sangiovese（Occhio di Pernice）"],
+     "production_rules": "葡萄經手工嚴選並自然風乾，含糖量基本型需達 28%，Riserva 與 Occhio di Pernice 類型需 33%。發酵與陳年於小型木桶（vinsantaia）中進行，基本型需陳年至少三年。",
+     "features": "色澤金黃至琥珀，香氣複雜，帶乾果、蜂蜜、香料等風味，口感甜美、酒體濃郁且酸度平衡，適合搭配甜點或單獨品飲。"
+   }
+  },
+  {"id": "Vino Nobile di Montepulciano DOCG", "name": "Vino Nobile di Montepulciano", "type": "DOCG",
+   "region": "Toscana",
+   "province": "Siena",
+   "zone": "Siena 省 Montepulciano 市全境，海拔 250-600 公尺的丘陵地帶。",
+   "style": ["紅葡萄酒", "紅葡萄酒 Riserva"],
+   "grapes": ["Sangiovese (當地稱 Prugnolo Gentile)", "Canaiolo Nero", "Mammolo", "其他本地或國際黑葡萄品種"],
+   "description": "Vino Nobile di Montepulciano DOCG 是托斯卡納最負盛名的紅酒之一，產自 Siena 省 Montepulciano 市。以 Sangiovese（當地稱 Prugnolo Gentile）為主，輔以 Canaiolo Nero、Mammolo 及其他品種。酒色深紅，陳年後呈石榴紅，香氣濃郁複雜，口感優雅、結構良好且餘韻悠長。",
+   "details": {
+     "introduction": "Vino Nobile di Montepulciano DOCG 創立於 1980 年，是義大利最早獲 DOCG 的紅酒之一。產區僅限 Montepulciano 市，主產 Sangiovese（Prugnolo Gentile）為主的高品質紅酒。",
+     "climate": "溫帶地中海型氣候，夏季炎熱乾燥，冬季溫和，丘陵地形與多樣土壤有利於葡萄成熟與風味發展。",
+     "subregions": {},
+     "grape_varieties": ["Sangiovese (Prugnolo Gentile)", "Canaiolo Nero", "Mammolo", "其他本地或國際黑葡萄品種"],
+     "production_rules": "Sangiovese（Prugnolo Gentile）比例不得低於 70%，可加入 Canaiolo Nero、Mammolo 及其他允許品種。標準型需陳年至少 2 年（其中 1 年於木桶），Riserva 至少 3 年（1 年於木桶，6 個月於瓶中）。",
+     "features": "色澤深紅，陳年後呈石榴紅，香氣濃郁複雜，帶有櫻桃、李子、香料、皮革等風味，口感優雅、單寧細緻、結構良好且餘韻悠長，適合陳年。"
+   }
+  }
+]

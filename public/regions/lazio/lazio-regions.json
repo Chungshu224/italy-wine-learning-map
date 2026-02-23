@@ -1,0 +1,411 @@
+[
+  {
+    "id": "Cannellino di Frascati DOCG",
+    "name": "Cannellino di Frascati",
+    "type": "DOCG",
+    "style": "甜酒",
+    "hectare": 50,
+    "description": "位於羅馬東南方的 Castelli Romani 地區，生產優雅的晚收甜白酒，帶有蜂蜜、杏桃和花香。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone", "Bombino Bianco"],
+    "details": {
+      "introduction": "Cannellino di Frascati 是 Frascati 產區的甜酒版本，於 2011 年升級為 DOCG。這款酒採用晚收或風乾葡萄釀造，展現出獨特的甜度和複雜度。",
+      "climate": "地中海氣候，受火山土壤影響，日夜溫差大，有利於保持葡萄的酸度和香氣。",
+      "soil": "火山凝灰岩土壤，富含礦物質，賦予葡萄酒獨特的礦物風味。",
+      "winemaking": "使用晚收或風乾葡萄，最低殘糖量 35 g/L，陳年至少 12 個月才能上市。"
+    }
+  },
+  {
+    "id": "Cesanese del Piglio Piglio DOCG",
+    "name": "Cesanese del Piglio",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": 180,
+    "description": "位於 Frosinone 省的山區產區，以本土品種 Cesanese 釀造的優質紅酒，帶有櫻桃、紫羅蘭和香料風味。",
+    "grapes": ["Cesanese di Affile", "Cesanese Comune"],
+    "details": {
+      "introduction": "Cesanese del Piglio 於 2008 年升級為 DOCG，是 Lazio 地區最重要的紅酒產區之一。Cesanese 是拉齊奧的本土品種，據說從羅馬時代就開始種植。",
+      "climate": "大陸性氣候，海拔 300-600 公尺，冷涼的夜晚有助於保持葡萄的酸度和芳香。",
+      "soil": "石灰岩和黏土土壤混合，排水良好，礦物質豐富。",
+      "winemaking": "需使用至少 90% Cesanese（Affile 或 Comune），陳年至少 13 個月，其中 6 個月需在橡木桶中。Riserva 需陳年至少 26 個月。"
+    }
+  },
+  {
+    "id": "Frascati Superiore DOCG",
+    "name": "Frascati Superiore",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": 250,
+    "description": "羅馬最著名的白酒產區，位於 Castelli Romani 火山丘陵，釀造清新爽口的白酒，帶有柑橘、白花和礦物質風味。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Greco"],
+    "details": {
+      "introduction": "Frascati Superiore 於 2011 年升級為 DOCG，是 Lazio 最具代表性的白酒。這款酒在羅馬帝國時期就已享有盛名，是教皇和貴族們喜愛的餐酒。",
+      "climate": "溫暖的地中海氣候，受 Albani 山的火山地形影響，日夜溫差顯著。",
+      "soil": "火山凝灰岩（pozzolan）土壤，富含礦物質，賦予葡萄酒獨特的礦物感。",
+      "winemaking": "需使用至少 70% Malvasia（Bianca di Candia 和/或 del Lazio），手工採收，酒精度至少 11.5%。Superiore 版本產量較低，品質更高。"
+    }
+  },
+  {
+    "id": "Aleatico di Gradoli DOC",
+    "name": "Aleatico di Gradoli",
+    "type": "DOC",
+    "style": "甜酒",
+    "hectare": 30,
+    "description": "位於 Bolsena 湖畔，使用芳香型紅葡萄品種 Aleatico 釀造的甜紅酒，帶有玫瑰、紫羅蘭和紅色漿果香氣。",
+    "grapes": ["Aleatico"],
+    "details": {
+      "introduction": "Aleatico 是一個古老的芳香型紅葡萄品種，在 Lazio 北部的火山土壤上表現出色。這款甜酒可以是自然甜或加烈酒。",
+      "climate": "溫和的湖區氣候，受 Bolsena 湖調節，夏季溫暖但不過熱。",
+      "soil": "火山土壤，富含礦物質，排水良好。"
+    }
+  },
+  {
+    "id": "Aprilia DOC",
+    "name": "Aprilia",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 400,
+    "description": "位於羅馬與海岸之間的平原產區，生產多種風格的葡萄酒，包括 Merlot、Sangiovese 和 Trebbiano。",
+    "grapes": ["Merlot", "Sangiovese", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Aprilia 是 20 世紀中葉開墾的農業區，以國際品種和本地品種並重，生產現代風格的葡萄酒。",
+      "climate": "溫暖的地中海氣候，受海洋影響，夏季炎熱乾燥。",
+      "soil": "沖積土和黏土為主，肥沃但需要良好的葡萄園管理。"
+    }
+  },
+  {
+    "id": "Atina DOC",
+    "name": "Atina",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 120,
+    "description": "位於 Frosinone 省山區，使用國際品種釀造的優質紅酒，以 Cabernet Sauvignon 和 Syrah 為主。",
+    "grapes": ["Cabernet Sauvignon", "Cabernet Franc", "Syrah", "Merlot", "Semillon"],
+    "details": {
+      "introduction": "Atina 以其涼爽的山區氣候適合種植國際品種，特別是 Cabernet 類品種表現優異。",
+      "climate": "山區氣候，海拔較高，日夜溫差大，生長季涼爽。",
+      "soil": "石灰岩和黏土土壤，排水良好，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Bianco Capena DOC",
+    "name": "Bianco Capena",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 80,
+    "description": "位於羅馬北部的 Tiberina 河谷，生產清新的白酒，以 Malvasia 和 Trebbiano 為主。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Capena 是羅馬北部的小產區，生產傳統風格的白酒，適合年輕時飲用。",
+      "climate": "溫暖的地中海氣候，受 Tiber 河影響。",
+      "soil": "黏土和火山土壤混合，保水性良好。"
+    }
+  },
+  {
+    "id": "Castelli Romani DOC",
+    "name": "Castelli Romani",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 800,
+    "description": "羅馬最大的 DOC 產區，涵蓋 Castelli Romani 地區的多個小鎮，生產傳統風格的白酒。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone", "Bombino Bianco"],
+    "details": {
+      "introduction": "Castelli Romani 是一個廣泛的 DOC，包括了許多著名的小產區，如 Frascati、Marino 等。可生產白酒、紅酒和氣泡酒。",
+      "climate": "溫暖的地中海氣候，受火山丘陵影響，日夜溫差明顯。",
+      "soil": "火山凝灰岩土壤，富含礦物質。"
+    }
+  },
+  {
+    "id": "Cerveteri DOC",
+    "name": "Cerveteri",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 350,
+    "description": "位於羅馬西北方的海岸產區，以 Sangiovese 和 Montepulciano 釀造的紅酒和 Trebbiano 白酒聞名。",
+    "grapes": ["Sangiovese", "Montepulciano", "Cesanese", "Trebbiano", "Malvasia"],
+    "details": {
+      "introduction": "Cerveteri 是伊特魯里亞文明的重鎮，葡萄種植歷史悠久。生產紅、白、粉紅多種風格的葡萄酒。",
+      "climate": "溫暖的地中海氣候，受海洋調節，夏季乾燥。",
+      "soil": "沖積土和火山土壤，排水良好。"
+    }
+  },
+  {
+    "id": "Cesanese di Olevano Romano Olevano Romano DOC",
+    "name": "Cesanese di Olevano Romano",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 60,
+    "description": "位於羅馬東南山區，以本地品種 Cesanese 釀造的紅酒，帶有櫻桃和紅果香氣。",
+    "grapes": ["Cesanese di Affile", "Cesanese Comune"],
+    "details": {
+      "introduction": "Olevano Romano 是 Cesanese 葡萄的傳統產區之一，生產風格多樣的 Cesanese 紅酒，包括乾型、半甜和氣泡酒。",
+      "climate": "山區氣候，海拔 300-500 公尺，日夜溫差大。",
+      "soil": "石灰岩和黏土土壤，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Circeo DOC",
+    "name": "Circeo",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 200,
+    "description": "位於 Latina 省的海岸產區，以 Merlot 和 Sangiovese 釀造的紅酒和 Trebbiano 白酒為主。",
+    "grapes": ["Merlot", "Sangiovese", "Trebbiano", "Malvasia"],
+    "details": {
+      "introduction": "以神話中的女巫 Circe 命名，是 Lazio 南部的重要產區，生產紅、白、粉紅多種風格的葡萄酒。",
+      "climate": "溫暖的地中海氣候，受 Circeo 山和海洋影響。",
+      "soil": "沖積土和沙土，排水良好。"
+    }
+  },
+  {
+    "id": "Colli Albani DOC",
+    "name": "Colli Albani",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 300,
+    "description": "位於 Albani 山區，生產傳統風格的白酒，帶有乾型和半甜版本。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Colli Albani 是 Castelli Romani 地區的核心產區，生產清新的白酒，是羅馬人喜愛的餐酒。",
+      "climate": "溫暖的火山丘陵氣候，日夜溫差明顯。",
+      "soil": "火山凝灰岩土壤，富含礦物質。"
+    }
+  },
+  {
+    "id": "Colli della Sabina DOC",
+    "name": "Colli della Sabina",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 150,
+    "description": "位於羅馬東北的 Sabina 山區，生產清新的白酒和優質的紅酒。",
+    "grapes": ["Trebbiano", "Malvasia", "Sangiovese", "Montepulciano"],
+    "details": {
+      "introduction": "Sabina 是古羅馬時代就以機櫊油聞名的地區，近年葡萄酒品質也不斷提升。",
+      "climate": "地中海氣候，受山區影響，涼爽的夜晚。",
+      "soil": "黏土和石灰岩土壤，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Colli Etruschi Viterbesi Tuscia DOC",
+    "name": "Colli Etruschi Viterbesi",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 250,
+    "description": "位於 Viterbo 省的伊特魯里亞歷史區域，生產多種風格的葡萄酒。",
+    "grapes": ["Sangiovese", "Montepulciano", "Merlot", "Trebbiano", "Malvasia"],
+    "details": {
+      "introduction": "Tuscia 地區是古伊特魯里亞文明的中心，葡萄種植歷史超過 2000 年。生產紅、白、粉紅和氣泡酒。",
+      "climate": "溫暖的地中海氣候，受 Viterbo 山區影響。",
+      "soil": "火山土壤和凝灰岩，富含礦物質。"
+    }
+  },
+  {
+    "id": "Colli Lanuvini DOC",
+    "name": "Colli Lanuvini",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 100,
+    "description": "位於 Albani 山區南坡，生產清新的白酒，帶有柑橘和白花香氣。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Lanuvio 是古羅馬時代的重要城鎮，以其火山土壤生產的白酒聞名。",
+      "climate": "溫暖的火山丘陵氣候，日夜溫差適中。",
+      "soil": "火山凝灰岩土壤，礦物質豐富，排水良好。"
+    }
+  },
+  {
+    "id": "Cori DOC",
+    "name": "Cori",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 140,
+    "description": "位於 Latina 省山區，以 Montepulciano 和 Nero Buono 釀造的紅酒聞名，也生產白酒。",
+    "grapes": ["Montepulciano", "Nero Buono", "Cesanese", "Bellone", "Trebbiano"],
+    "details": {
+      "introduction": "Cori 是一個古老的山城，其紅酒以本地品種 Nero Buono 為特色，帶有藍莓和香料風味。",
+      "climate": "地中海氣候，海拔 300-400 公尺，受山區影響。",
+      "soil": "石灰岩和黏土土壤，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Est! Est!! Est!!! di Montefiascone DOC",
+    "name": "Est! Est!! Est!!! di Montefiascone",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 180,
+    "description": "位於 Bolsena 湖畔，是義大利最著名的白酒之一，帶有有趣的歷史傳說。",
+    "grapes": ["Trebbiano Toscano", "Malvasia Bianca di Candia", "Rossetto"],
+    "details": {
+      "introduction": "此酒名來自 12 世紀一位德國主教，其僕人在羈好的酒館外寫上「Est!」（是這裡！），在 Montefiascone 寫了三次，表示這裡的酒最棒。",
+      "climate": "溫暖的湖區氣候，受 Bolsena 湖調節，涼爽的夜晚。",
+      "soil": "火山土壤，富含礦物質。"
+    }
+  },
+  {
+    "id": "Frascati DOC",
+    "name": "Frascati",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 1200,
+    "description": "Lazio 最著名的白酒產區，位於羅馬東南，生產清新的白酒，是羅馬人的日常餐酒。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Greco", "Bellone"],
+    "details": {
+      "introduction": "Frascati 是意大利最著名的白酒之一，在全球各地都有销售。傳統上是清新易飲的風格，近年也有高品質的版本出現。",
+      "climate": "溫暖的地中海氣候，受 Albani 山火山地形影響。",
+      "soil": "火山凝灰岩土壤，賦予葡萄酒礦物感。"
+    }
+  },
+  {
+    "id": "Genazzano DOC",
+    "name": "Genazzano",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 40,
+    "description": "位於羅馬東南山區，生產傳統風格的白酒，以 Bellone 品種為特色。",
+    "grapes": ["Bellone", "Malvasia", "Trebbiano", "Bombino Bianco"],
+    "details": {
+      "introduction": "Genazzano 是一個小型產區，以本地品種 Bellone（也稱為 Cacchione）為主，釀造帶有板栗和白花香氣的白酒。",
+      "climate": "地中海氣候，海拔 300-500 公尺，日夜溫差適中。",
+      "soil": "石灰岩和黏土土壤。"
+    }
+  },
+  {
+    "id": "Marino DOC",
+    "name": "Marino",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 450,
+    "description": "位於 Albani 湖畔，是 Castelli Romani 地區最傳統的白酒產區之一，每年舉辦葡萄酒節。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone", "Bombino Bianco"],
+    "details": {
+      "introduction": "Marino 是最古老的 Castelli Romani 白酒產區之一，其葡萄酒節（Sagra dell'Uva）每年 10 月舉辦，是 Lazio 地區最盛大的節慶。",
+      "climate": "溫暖的火山丘陵氣候，受 Albani 湖調節。",
+      "soil": "火山凝灰岩土壤，富含礦物質。"
+    }
+  },
+  {
+    "id": "Montecompatri Colonna Montecompatri Colonna DOC",
+    "name": "Montecompatri Colonna",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 90,
+    "description": "涵蓋兩個相鄰小鎮的白酒產區，生產傳統風格的 Castelli Romani 白酒。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Montecompatri 和 Colonna 是兩個相鄰的山城，共用一個 DOC，生產風格類似的白酒。",
+      "climate": "溫暖的火山丘陵氣候，海拔較高，涼爽的夜晚。",
+      "soil": "火山凝灰岩土壤。"
+    }
+  },
+  {
+    "id": "Nettuno DOC",
+    "name": "Nettuno",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 180,
+    "description": "位於羅馬南方海岸，生產紅、白、粉紅酒，以 Merlot 和 Sangiovese 紅酒為主。",
+    "grapes": ["Merlot", "Sangiovese", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Nettuno 是一個海岸城鎮，其葡萄園靠近海邊，受海洋氣候影響。",
+      "climate": "地中海氣候，受海風調節，夏季不過熱。",
+      "soil": "沖積土和沙土，排水良好。"
+    }
+  },
+  {
+    "id": "Orvieto DOC",
+    "name": "Orvieto",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 350,
+    "description": "跨越 Lazio 和 Umbria 兩區的著名白酒產區，生產乾型和半甜白酒。",
+    "grapes": ["Trebbiano Toscano", "Grechetto", "Verdello", "Malvasia"],
+    "details": {
+      "introduction": "Orvieto 是意大利最著名的白酒之一，產區主要在 Umbria，但也延伸到 Lazio 北部。傳統上以半甜版本聞名。",
+      "climate": "溫暖的地中海氣候，受山區影響。",
+      "soil": "火山土壤和黏土，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Roma DOC",
+    "name": "Roma",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 500,
+    "description": "涵蓋羅馬省大部分地區的廣泛 DOC，生產紅、白、粉紅和氣泡酒。",
+    "grapes": ["Montepulciano", "Sangiovese", "Cesanese", "Merlot", "Malvasia", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Roma DOC 於 2011 年成立，是一個很廣泛的產區名稱，允許使用多種葡萄品種和釀造多種風格的葡萄酒。",
+      "climate": "地中海氣候，從海岸到山區都有葡萄園。",
+      "soil": "多樣化，包括火山土壤、黏土和沖積土。"
+    }
+  },
+  {
+    "id": "Tarquinia DOC",
+    "name": "Tarquinia",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 160,
+    "description": "位於 Viterbo 省海岸，伊特魯里亞古城附近，生產紅和白葡萄酒。",
+    "grapes": ["Sangiovese", "Montepulciano", "Cesanese", "Trebbiano", "Malvasia"],
+    "details": {
+      "introduction": "Tarquinia 是伊特魯里亞文明的重要城市，其葡萄園在海岸附近，受海洋氣候影響。",
+      "climate": "溫暖的地中海氣候，受海風調節。",
+      "soil": "沖積土和火山土壤混合。"
+    }
+  },
+  {
+    "id": "Terracina Moscato di Terracina DOC",
+    "name": "Terracina Moscato di Terracina",
+    "type": "DOC",
+    "style": "甜酒",
+    "hectare": 25,
+    "description": "位於 Latina 省海岸，以 Moscato 釀造的芳香甜酒，帶有花香和柑橘風味。",
+    "grapes": ["Moscato di Terracina"],
+    "details": {
+      "introduction": "Terracina 使用當地特有的 Moscato 品種，釀造獨特的甜酒，可以是自然甜或加烈型。",
+      "climate": "溫暖的海岸氣候，陰明充足。",
+      "soil": "沖積土和沙土。"
+    }
+  },
+  {
+    "id": "Velletri DOC",
+    "name": "Velletri",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 220,
+    "description": "位於 Castelli Romani 地區，生產紅和白葡萄酒，紅酒以 Montepulciano 和 Sangiovese 為主。",
+    "grapes": ["Montepulciano", "Sangiovese", "Bombino Nero", "Malvasia", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Velletri 是 Castelli Romani 地區最南端的產區，以其紅酒聞名，特別是使用 Montepulciano 釀造的版本。",
+      "climate": "溫暖的火山丘陵氣候，日夜溫差適中。",
+      "soil": "火山凝灰岩土壤，礦物質豐富。"
+    }
+  },
+  {
+    "id": "Vignanello DOC",
+    "name": "Vignanello",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": 70,
+    "description": "位於 Viterbo 省，生產以 Sangiovese 為基礎的紅酒和白酒。",
+    "grapes": ["Sangiovese", "Ciliegiolo", "Trebbiano", "Malvasia"],
+    "details": {
+      "introduction": "Vignanello 是 Viterbo 地區的小產區，以其美麗的文藝復興花園和質量優良的葡萄酒聞名。",
+      "climate": "溫暖的地中海氣候，受山區影響。",
+      "soil": "火山土壤和黏土。"
+    }
+  },
+  {
+    "id": "Zagarolo DOC",
+    "name": "Zagarolo",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": 60,
+    "description": "位於 Castelli Romani 地區東側，生產傳統風格的白酒，風格類似 Frascati。",
+    "grapes": ["Malvasia Bianca di Candia", "Malvasia del Lazio", "Trebbiano", "Bellone"],
+    "details": {
+      "introduction": "Zagarolo 是 Castelli Romani 地區的小產區，生產風格傳統的白酒，適合年輕時飲用。",
+      "climate": "溫暖的火山丘陵氣候。",
+      "soil": "火山凝灰岩土壤。"
+    }
+  }
+]

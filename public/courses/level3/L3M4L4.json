@@ -1,0 +1,78 @@
+{
+  "id": "L3M4L4",
+  "title": "氣泡酒風格辨識",
+  "description": "在盲品中區分義大利三大氣泡酒：Prosecco (查馬法)、Franciacorta (傳統法) 與 Trento DOC (高山傳統法)，掌握氣泡質地、酵母自溶香氣與酸度結構的差異。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "義大利氣泡酒盲品核心：釀造法決定風格",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">在盲品氣泡酒時，最重要的第一步是判斷其<strong>釀造方法</strong>。義大利氣泡酒主要分為兩大陣營：以果香為主導的「查馬法 (Charmat Method)」與以酵母自溶香氣為主導的「傳統法 (Traditional Method)」。</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-8 mb-8\"><div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100\"><h4 class=\"text-blue-800 font-bold mb-4 flex items-center text-xl\"><span class=\"material-icons mr-2\">science</span> 查馬法 (Tank Method)</h4><ul class=\"space-y-3 text-gray-700\"><li><strong>代表酒款：</strong> Prosecco, Asti, Lambrusco。</li><li><strong>二次發酵容器：</strong> 大型不鏽鋼加壓槽。</li><li><strong>香氣特徵：</strong> 強調葡萄品種本身的<strong>一級香氣 (Primary Aromas)</strong>，如青蘋果、梨子、水蜜桃、花香。</li><li><strong>酵母自溶味：</strong> 幾乎沒有（無餅乾、麵包味）。</li><li><strong>氣泡質地：</strong> 氣泡較大，消散較快，口感清爽。</li></ul></div><div class=\"bg-amber-50 p-6 rounded-xl border border-amber-100\"><h4 class=\"text-amber-800 font-bold mb-4 flex items-center text-xl\"><span class=\"material-icons mr-2\">hourglass_bottom</span> 傳統法 (Traditional Method)</h4><ul class=\"space-y-3 text-gray-700\"><li><strong>代表酒款：</strong> Franciacorta, Trento DOC, Alta Langa。</li><li><strong>二次發酵容器：</strong> 瓶中發酵 (Bottle Fermentation)。</li><li><strong>香氣特徵：</strong> 強調與酒渣接觸產生的<strong>三級香氣 (Tertiary Aromas)</strong>，如烤麵包、布里歐 (Brioche)、餅乾、堅果。</li><li><strong>酵母自溶味：</strong> 非常明顯，帶來複雜度。</li><li><strong>氣泡質地：</strong> 氣泡細緻綿密，持久度高，口感圓潤。</li></ul></div></div><div class=\"bg-gray-50 p-6 rounded-xl border-l-4 border-gray-500\"><h4 class=\"text-gray-800 font-bold mb-2\">盲品第一問 (The First Question)</h4><p class=\"text-gray-700\">聞香時，問自己：「這杯酒聞起來像新鮮的水果沙拉，還是像剛出爐的麵包店？」這將立刻幫你排除一半的選項。</p></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "果香炸彈：Prosecco (Glera)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">Prosecco 是全球銷量最大的氣泡酒，主要產自威尼托 (Veneto) 與弗留利 (Friuli)。它使用 Glera 葡萄，透過查馬法釀造，旨在保留最純粹的果香。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-green-200 to-yellow-100 mb-4 shadow-inner flex items-center justify-center\"><span class=\"material-icons text-4xl text-green-600 opacity-50\">bubble_chart</span></div><h3 class=\"text-xl font-bold text-gray-800\">Prosecco</h3><p class=\"text-gray-500\">普羅塞克</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-green-600\">中高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-green-500 h-2 rounded-full\" style=\"width: 70%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>殘糖量 (Dosage)</span><span class=\"font-bold text-blue-600\">通常偏高 (Extra Dry)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-blue-500 h-2 rounded-full\" style=\"width: 60%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酵母自溶味</span><span class=\"font-bold text-gray-400\">無</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-gray-300 h-2 rounded-full\" style=\"width: 5%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">盲品關鍵字 (Key Descriptors)</h4><div class=\"grid grid-cols-2 gap-4 mb-6\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">非常淺的檸檬黃，氣泡較大且活躍。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">青蘋果、西洋梨 (Pear Drop)、白桃、哈密瓜、白花。極度純淨的果香。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度清脆，但常帶有明顯的殘糖（微甜感），酒體輕盈，無複雜度。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">易混淆酒款</span><span class=\"text-gray-600\">Asti (更甜，帶有明顯的麝香葡萄/荔枝味)。</span></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>💡 演繹邏輯：</strong> 如果氣泡酒聞起來像新鮮的梨子汁或青蘋果，完全沒有烤麵包味，且入口帶有一絲討喜的甜味 (Extra Dry 標示通常含 12-17g/L 糖)，這就是標準的 Prosecco。</p></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "義大利的香檳：Franciacorta",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">Franciacorta 產自倫巴底 (Lombardy)，是義大利最頂級的傳統法氣泡酒。它使用與香檳相同的品種（Chardonnay, Pinot Nero, Pinot Bianco），但氣候較溫暖，因此果香更成熟。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-yellow-200 to-amber-300 mb-4 shadow-inner flex items-center justify-center\"><span class=\"material-icons text-4xl text-amber-700 opacity-50\">bakery_dining</span></div><h3 class=\"text-xl font-bold text-gray-800\">Franciacorta</h3><p class=\"text-gray-500\">弗朗齊亞柯達</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-amber-600\">高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-amber-500 h-2 rounded-full\" style=\"width: 80%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>果香成熟度</span><span class=\"font-bold text-amber-600\">高 (溫暖氣候)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-amber-500 h-2 rounded-full\" style=\"width: 85%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酵母自溶味</span><span class=\"font-bold text-amber-800\">明顯</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-amber-700 h-2 rounded-full\" style=\"width: 90%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">盲品關鍵字 (Key Descriptors)</h4><div class=\"grid grid-cols-2 gap-4 mb-6\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">中等檸檬黃至金黃色，氣泡極其細緻綿密。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">成熟的黃蘋果、桃子，伴隨強烈的烤麵包、布里歐 (Brioche)、烤杏仁香氣。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度高但不如香檳尖銳，口感圓潤飽滿，質地如奶油般滑順 (Creamy)。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">易混淆酒款</span><span class=\"text-gray-600\">Champagne (香檳通常酸度更高，果香偏向青蘋果/柑橘，礦物感更強)。</span></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>💡 演繹邏輯：</strong> 如果你聞到了明顯的「烤麵包」味（確認是傳統法），但果香比香檳更成熟（黃蘋果而非青蘋果），且酸度較為柔和圓潤，這很可能是一款來自溫暖產區的 Franciacorta。</p></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "高山上的冷冽：Trento DOC",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">Trento DOC 產自北部的特倫蒂諾 (Trentino)，葡萄種植在阿爾卑斯山腳下的高海拔坡地上。同樣使用傳統法，但高山氣候賦予了它極高的酸度與冷冽的礦物感。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-blue-100 to-gray-200 mb-4 shadow-inner flex items-center justify-center\"><span class=\"material-icons text-4xl text-blue-400 opacity-50\">ac_unit</span></div><h3 class=\"text-xl font-bold text-gray-800\">Trento DOC</h3><p class=\"text-gray-500\">特倫托</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-blue-600\">極高 (高海拔)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-blue-500 h-2 rounded-full\" style=\"width: 95%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>果香成熟度</span><span class=\"font-bold text-blue-600\">低 (冷涼氣候)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-blue-500 h-2 rounded-full\" style=\"width: 40%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酵母自溶味</span><span class=\"font-bold text-gray-600\">中等至明顯</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 75%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">盲品關鍵字 (Key Descriptors)</h4><div class=\"grid grid-cols-2 gap-4 mb-6\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">淺檸檬黃，帶有綠色反光，氣泡細緻。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">青蘋果、檸檬皮、白花，伴隨餅乾、酵母味，以及明顯的碎石礦物感。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度極高且具穿透力 (Linear)，酒體較 Franciacorta 輕盈，結構緊實。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">易混淆酒款</span><span class=\"text-gray-600\">Blanc de Blancs Champagne (兩者非常相似，Trento DOC 有時帶有更多高山草本氣息)。</span></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>💡 演繹邏輯：</strong> 如果有烤麵包味（傳統法），但酸度像刀片一樣銳利，果香偏向未成熟的青蘋果與柑橘，且帶有冷冽的礦物感，這通常是來自高海拔的 Trento DOC。</p></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "綜合對比：盲品決策樹",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">在盲品義大利氣泡酒時，可以遵循以下決策樹來快速定位酒款：</p><div class=\"bg-gray-900 p-6 rounded-xl text-white mb-8\"><div class=\"flex flex-col space-y-4\"><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-yellow-400 font-bold mb-2\">步驟 1：是否有明顯的酵母自溶味（烤麵包、餅乾）？</h4><div class=\"flex flex-col md:flex-row gap-4 mt-2\"><div class=\"flex-1 bg-gray-700 p-3 rounded border-l-4 border-red-500\"><span class=\"font-bold text-red-300\">否 (純粹果香) ➔ 查馬法</span><p class=\"text-sm text-gray-300 mt-1\">進入步驟 2A</p></div><div class=\"flex-1 bg-gray-700 p-3 rounded border-l-4 border-green-500\"><span class=\"font-bold text-green-300\">是 (麵包/餅乾) ➔ 傳統法</span><p class=\"text-sm text-gray-300 mt-1\">進入步驟 2B</p></div></div></div><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\"><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-red-400 font-bold mb-2\">步驟 2A：果香類型與甜度？</h4><ul class=\"text-sm text-gray-300 space-y-2\"><li><strong class=\"text-white\">青蘋果/梨子 + 微甜：</strong> <span class=\"text-blue-300\">Prosecco</span></li><li><strong class=\"text-white\">荔枝/玫瑰/葡萄 + 極甜：</strong> <span class=\"text-blue-300\">Asti (Moscato)</span></li><li><strong class=\"text-white\">紅色水果 + 微氣泡 (Frizzante)：</strong> <span class=\"text-blue-300\">Lambrusco</span></li></ul></div><div class=\"bg-gray-800 p-4 rounded-lg border border-gray-700\"><h4 class=\"text-green-400 font-bold mb-2\">步驟 2B：酸度與果香成熟度？</h4><ul class=\"text-sm text-gray-300 space-y-2\"><li><strong class=\"text-white\">酸度柔和 + 成熟黃蘋果/桃子：</strong> <span class=\"text-amber-300\">Franciacorta (溫暖)</span></li><li><strong class=\"text-white\">酸度極高 + 青蘋果/冷冽礦物：</strong> <span class=\"text-blue-300\">Trento DOC (高山)</span></li></ul></div></div></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在盲品氣泡酒時，如果你聞到明顯的「烤麵包、布里歐 (Brioche) 與餅乾」香氣，這代表該酒款使用了哪種釀造法？",
+      "options": [
+        "查馬法 (Charmat Method)",
+        "傳統法 (Traditional Method)",
+        "阿斯蒂法 (Asti Method)",
+        "二氧化碳注入法"
+      ],
+      "correctAnswer": 1,
+      "explanation": "烤麵包與餅乾香氣來自「酵母自溶 (Yeast Autolysis)」，這是傳統法（瓶中二次發酵並與酒渣接觸）的標誌性特徵。"
+    },
+    {
+      "question": "如果你盲品到一款氣泡酒，香氣充滿純淨的「青蘋果與西洋梨 (Pear Drop)」，完全沒有烤麵包味，且入口帶有微甜感，這最可能是：",
+      "options": [
+        "Franciacorta",
+        "Trento DOC",
+        "Prosecco",
+        "Champagne"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Prosecco 使用查馬法釀造，強調純淨的果香（青蘋果、梨子），且通常帶有較高的殘糖量（如 Extra Dry）。"
+    },
+    {
+      "question": "Franciacorta 與 Trento DOC 同樣使用傳統法釀造，但在盲品中，Trento DOC 通常具有什麼明顯的結構特徵？",
+      "options": [
+        "酸度極低，口感甜美",
+        "帶有強烈的荔枝與玫瑰花香",
+        "酸度極高，帶有冷冽的礦物感",
+        "顏色呈現深紅色"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Trento DOC 產自阿爾卑斯山腳下的高海拔地區，冷涼氣候賦予了它極高的酸度與冷冽的礦物感，比 Franciacorta 更為銳利。"
+    },
+    {
+      "question": "在盲品中，Franciacorta 的果香通常比法國香檳 (Champagne) 表現得更為：",
+      "options": [
+        "青澀（如未成熟的青蘋果）",
+        "成熟（如黃蘋果、水蜜桃）",
+        "中性（幾乎沒有果香）",
+        "草本（如青椒、蘆筍）"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Franciacorta 所在的倫巴底產區氣候比香檳區溫暖，因此葡萄成熟度較高，果香偏向成熟的黃蘋果與核果類，酸度也相對較柔和。"
+    }
+  ]
+}

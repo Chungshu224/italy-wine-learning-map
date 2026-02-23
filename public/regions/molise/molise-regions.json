@@ -1,0 +1,100 @@
+[
+  {
+    "id": "Biferno DOC",
+    "name": "Biferno",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "600",
+    "description": "Molise 最重要的 DOC，1983年建立，位於 Biferno 河谷地區，生產紅酒、白酒和粉紅酒。",
+    "grapes": ["Montepulciano", "Aglianico", "Trebbiano Toscano", "Bombino Bianco", "Malvasia Bianca"],
+    "details": {
+      "introduction": "Biferno DOC 位於 Molise 大區東部，沿著 Biferno 河谷分布，從亞得里亞海沿岸延伸至內陸丘陵地帶。這個產區於 1983 年獲得 DOC 認證，是 Molise 最具代表性和產量最大的法定產區。",
+      "climate": "地中海氣候，受亞得里亞海影響顯著。夏季炎熱乾燥，冬季溫和多雨。海風帶來晝夜溫差，有助於葡萄保持良好的酸度和風味集中度。",
+      "wineTypes": {
+        "紅酒": "以 Montepulciano（至少70%）為主，可混調 Aglianico 和 Trebbiano Toscano。酒體中等至飽滿，帶有紅色漿果、香料和泥土氣息。",
+        "白酒": "使用 Trebbiano Toscano（60-70%）和 Bombino Bianco（15-30%），可添加 Malvasia Bianca。清新爽口，帶有柑橘和花香。",
+        "粉紅酒": "使用與紅酒相同的葡萄品種，採用短時間浸皮。清爽宜人，適合年輕時飲用。"
+      },
+      "subregions": {
+        "Campomarino": "靠近海岸的子產區，氣候較為溫暖，出產果味豐富的葡萄酒。"
+      }
+    }
+  },
+  {
+    "id": "Tintilia del Molise DOC",
+    "name": "Tintilia del Molise",
+    "type": "DOC",
+    "style": ["紅酒", "粉紅酒"],
+    "hectare": "180",
+    "description": "2011年獲得 DOC 認證，專門保護和推廣 Molise 本土葡萄品種 Tintilia，是該產區的驕傲。",
+    "grapes": ["Tintilia"],
+    "details": {
+      "introduction": "Tintilia 是 Molise 的本土紅葡萄品種，曾一度瀕臨絕種，在 1990 年代重新被發掘並復興。2011 年正式獲得 DOC 認證。Tintilia 葡萄皮厚、顏色深（Tintilia 意為「深色染料」），能釀造出結構良好、單寧豐富的紅酒。",
+      "climate": "主要種植於 Molise 中部的丘陵地帶，海拔 200-600 公尺。氣候受到亞得里亞海和亞平寧山脈的雙重影響，日夜溫差大，有利於葡萄的酚類物質發展。",
+      "wineTypes": {
+        "紅酒": "Tintilia 至少 95%。酒體飽滿，單寧緊實，帶有黑櫻桃、黑莓、香料、煙燻和礦物質氣息。陳年潛力佳。",
+        "Riserva": "需陳年至少 2 年，展現更複雜的香氣和柔順的單寧。",
+        "粉紅酒": "呈現深粉紅色，比一般粉紅酒更具結構和深度。"
+      },
+      "characteristics": "Tintilia 葡萄酒通常呈現深紫紅色，香氣複雜，帶有野生漿果、紫羅蘭、地中海香草、甘草和胡椒的氣息。口感強勁但優雅，酸度活潑，礦物質感明顯，反映出 Molise 的石灰岩土壤特性。"
+    }
+  },
+  {
+    "id": "Molise del Molise DOC",
+    "name": "Molise (或 Molise del Molise)",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "400",
+    "description": "1998年建立的 DOC，涵蓋整個 Molise 大區，允許使用多種國際和本土葡萄品種，提供釀酒師更大的創作彈性。",
+    "grapes": ["Montepulciano", "Aglianico", "Sangiovese", "Cabernet Sauvignon", "Merlot", "Chardonnay", "Falanghina", "Greco Bianco", "Pinot Bianco", "Sauvignon Blanc", "Trebbiano"],
+    "details": {
+      "introduction": "Molise DOC（也稱 Molise del Molise）於 1998 年建立，是一個涵蓋整個 Molise 大區的 DOC。這個產區規範相對寬鬆，允許使用多種葡萄品種，包括國際品種和義大利本土品種，讓釀酒師有更大的實驗和創新空間。",
+      "climate": "由於涵蓋整個大區，氣候多樣化。東部沿海地區為地中海氣候，西部內陸山區則較為涼爽，呈現大陸性氣候特徵。海拔從海平面到 600 公尺以上。",
+      "wineTypes": {
+        "紅酒": "可使用單一品種或混調。常見有 Montepulciano、Aglianico、Sangiovese 或國際品種如 Cabernet Sauvignon 和 Merlot。",
+        "白酒": "可使用 Falanghina、Greco、Trebbiano、Chardonnay 或 Sauvignon Blanc 等品種。風格從清新爽口到更具結構的類型。",
+        "品種酒": "如果標示單一品種，該品種需佔 85% 以上。"
+      },
+      "特色": "這個 DOC 為現代釀酒師提供了展現創意的平台，許多優質的品種酒和創新混調都在這個產區規範下生產。"
+    }
+  },
+  {
+    "id": "Pentro di Isernia DOC",
+    "name": "Pentro di Isernia (或 Pentro d'Isernia)",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "120",
+    "description": "1983年建立，位於 Molise 西部山區 Isernia 省，是該產區海拔最高、氣候最涼爽的 DOC，出產優雅細緻的葡萄酒。",
+    "grapes": ["Montepulciano", "Sangiovese", "Trebbiano Toscano", "Bombino Bianco"],
+    "details": {
+      "introduction": "Pentro di Isernia DOC（也稱 Pentro d'Isernia 或簡稱 Pentro）位於 Molise 西部的 Isernia 省，與 Biferno DOC 同年（1983）獲得認證。這個產區地處亞平寧山脈，海拔較高（300-700 公尺），是 Molise 氣候最涼爽的葡萄酒產區。",
+      "climate": "大陸性山地氣候，受亞平寧山脈影響顯著。夏季溫暖但夜晚涼爽，日夜溫差可達 15-20°C。冬季寒冷，降雨量比沿海地區多。這樣的氣候有利於葡萄保持高酸度和優雅的風格。",
+      "wineTypes": {
+        "紅酒": "Montepulciano（45-55%）和 Sangiovese（45-55%）混調。相比 Biferno 的紅酒，Pentro 紅酒更為優雅細緻，單寧較柔和，酸度更明亮。",
+        "白酒": "Trebbiano Toscano（60-70%）和 Bombino Bianco（30-40%）。清新爽口，礦物質感強，帶有青蘋果、檸檬和白花香氣。",
+        "粉紅酒": "使用與紅酒相同的葡萄品種，呈現淺粉紅色，清新宜人。"
+      },
+      "terroir": "土壤主要為石灰岩和黏土，富含礦物質。較高的海拔和涼爽的氣候使得這裡的葡萄酒展現出更多的優雅和礦物質特性，而非濃郁的果味。",
+      "特色": "Pentro 葡萄酒以其優雅、平衡和良好的酸度著稱，適合搭配傳統 Molise 山區料理。"
+    }
+  },
+  {
+    "id": "Molise IGT",
+    "name": "Molise",
+    "type": "IGT",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "800",
+    "description": "Molise IGT 涵蓋整個大區，提供最大的釀酒彈性，許多創新和實驗性的葡萄酒都在這個產區規範下生產。",
+    "grapes": ["幾乎所有義大利和國際品種"],
+    "details": {
+      "introduction": "Molise IGT（Indicazione Geografica Tipica）是 Molise 大區的地域性標示，涵蓋整個大區範圍。相比 DOC 規範，IGT 提供了更大的彈性，允許使用幾乎任何葡萄品種，且對釀酒技術的限制較少。許多高品質的創新葡萄酒選擇使用 IGT 標示，以獲得更多的創作自由。",
+      "climate": "從亞得里亞海沿岸的地中海氣候，到內陸山區的大陸性氣候，多樣化的氣候條件適合種植各種葡萄品種。",
+      "commonGrapes": {
+        "紅葡萄": "Montepulciano、Aglianico、Tintilia、Sangiovese、Cabernet Sauvignon、Merlot、Syrah、Primitivo",
+        "白葡萄": "Falanghina、Greco、Fiano、Trebbiano、Chardonnay、Sauvignon Blanc、Vermentino"
+      },
+      "wineStyles": "從年輕易飲的日常餐酒，到雄心勃勃的陳年型精品酒款。許多釀酒師利用 IGT 的彈性，釀造單一葡萄園酒款、國際品種酒或創新混調。",
+      "特色": "Molise IGT 為該產區的創新和品質提升提供了重要平台。一些最令人興奮的 Molise 葡萄酒都選擇使用 IGT 標示，以突破傳統 DOC 規範的限制。"
+    }
+  }
+]

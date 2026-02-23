@@ -1,0 +1,78 @@
+{
+  "id": "L3M4L3",
+  "title": "義大利白葡萄酒盲品技巧",
+  "description": "學習如何透過香氣特徵、酸度結構與酒體重量，在盲品中辨識義大利經典白葡萄品種，如 Pinot Grigio, Garganega, Verdicchio, Fiano 等。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "義大利白酒盲品核心要素",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利白酒在盲品中往往比紅酒更具挑戰性，因為許多品種屬於「中性香氣 (Neutral)」，且多數不經過橡木桶陳年。然而，它們擁有幾個極具辨識度的共同特徵。</p><div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\"><div class=\"bg-green-50 p-6 rounded-xl border border-green-100\"><h4 class=\"text-green-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">water_drop</span> 結構特徵 (Structure)</h4><ul class=\"space-y-2 text-gray-700\"><li><strong>酸度 (Acidity)：</strong> 普遍偏高，帶來清脆爽口的感覺。</li><li><strong>酒體 (Body)：</strong> 從輕盈（北部）到飽滿（南部）皆有，但通常不會像加州 Chardonnay 那樣厚重。</li><li><strong>質地 (Texture)：</strong> 許多品種（如 Fiano, Verdicchio）帶有蠟質 (Waxy) 或油潤感。</li></ul></div><div class=\"bg-yellow-50 p-6 rounded-xl border border-yellow-100\"><h4 class=\"text-yellow-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">local_florist</span> 香氣特徵 (Aromas)</h4><ul class=\"space-y-2 text-gray-700\"><li><strong>果香：</strong> 青蘋果、檸檬、白桃、梨子。</li><li><strong>花香/草本：</strong> 洋甘菊 (Chamomile)、茴香 (Fennel)、白花。</li><li><strong>堅果/礦物：</strong> 杏仁 (Almond)、榛果、濕石頭、海鹽。</li></ul></div><div class=\"bg-gray-50 p-6 rounded-xl border border-gray-200\"><h4 class=\"text-gray-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">restaurant</span> 尾韻特徵 (Finish)</h4><ul class=\"space-y-2 text-gray-700\"><li><strong>苦杏仁 (Bitter Almond)：</strong> 這是義大利白酒最經典的盲品標誌，許多品種在尾韻都會帶有微苦的堅果氣息。</li><li><strong>鹹鮮感 (Salinity)：</strong> 來自火山岩或沿海產區的礦物感。</li></ul></div></div><div class=\"bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500\"><h4 class=\"text-blue-800 font-bold mb-2\">盲品提示 (Tasting Tip)</h4><p class=\"text-gray-700\">當你在盲品中遇到一杯<strong>香氣中性、酸度高、沒有橡木桶味，且尾韻帶有明顯「苦杏仁」或「鹹鮮感」</strong>的白酒時，首先應該想到義大利。</p></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "北部清爽型：Pinot Grigio & Cortese",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利北部的白酒以清脆、高酸、輕盈的酒體著稱，是夏日飲用的首選。在盲品中，它們通常表現為「中性香氣」。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/2 border-r border-gray-200 pr-6\"><div class=\"flex items-center mb-4\"><div class=\"w-12 h-12 rounded-full bg-gradient-to-br from-yellow-100 to-green-100 mr-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Pinot Grigio (灰皮諾)</h3></div><p class=\"text-sm text-gray-500 mb-4\">主要產區：Veneto, Friuli, Trentino</p><div class=\"space-y-3\"><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">結構：</span> 高酸度，輕盈至中等酒體。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">香氣：</span> 檸檬、青蘋果、梨子、白花。香氣通常較為內斂 (Neutral)。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">盲品辨識：</span> 乾淨、清脆，沒有太多複雜度，尾韻短促乾淨。易與 Chablis 混淆，但通常酸度稍低且缺乏礦物感。</div></div></div><div class=\"w-full md:w-1/2\"><div class=\"flex items-center mb-4\"><div class=\"w-12 h-12 rounded-full bg-gradient-to-br from-yellow-200 to-green-200 mr-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Cortese (Gavi)</h3></div><p class=\"text-sm text-gray-500 mb-4\">主要產區：Piedmont (Gavi DOCG)</p><div class=\"space-y-3\"><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">結構：</span> 極高酸度，輕盈酒體。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">香氣：</span> 青蘋果、檸檬皮、白桃、洋甘菊、濕石頭。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">盲品辨識：</span> 比 Pinot Grigio 酸度更高、更具穿透力，帶有明顯的礦物感與花香，尾韻常有微苦的杏仁味。</div></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "東北芳香與結構：Garganega (Soave)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">Garganega 是威尼托 (Veneto) 產區 Soave DOC 的主要品種。它在盲品中展現出比 Pinot Grigio 更豐富的香氣與更圓潤的口感。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-100 mb-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Garganega</h3><p class=\"text-gray-500\">卡爾卡耐卡</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-yellow-600\">中高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-yellow-500 h-2 rounded-full\" style=\"width: 75%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酒體</span><span class=\"font-bold text-gray-600\">中等</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 60%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>香氣濃郁度</span><span class=\"font-bold text-yellow-600\">中等</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-yellow-500 h-2 rounded-full\" style=\"width: 65%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">盲品關鍵字 (Key Descriptors)</h4><div class=\"grid grid-cols-2 gap-4 mb-6\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">中等檸檬黃，陳年後轉為金黃色。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">洋甘菊 (Chamomile)、白桃、甜瓜、烤杏仁、白花。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度柔和但足夠支撐，口感圓潤，尾韻帶有經典的苦杏仁味。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">易混淆品種</span><span class=\"text-gray-600\">Chenin Blanc (通常酸度更高，帶有濕羊毛味)、Viognier (香氣更濃郁，酸度較低)。</span></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>💡 演繹邏輯：</strong> 尋找「洋甘菊」與「白桃」的香氣組合。如果口感比 Pinot Grigio 圓潤，且尾韻有明顯的「烤杏仁」微苦感，Soave (Garganega) 是極佳的猜測。</p></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "中部陳年潛力：Verdicchio",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">Verdicchio 是馬爾凱 (Marche) 產區的驕傲，被認為是義大利最具陳年潛力的白葡萄品種之一。它在盲品中展現出強大的結構與獨特的草本氣息。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-green-300 to-yellow-200 mb-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Verdicchio</h3><p class=\"text-gray-500\">維迪奇奧</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-green-600\">高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-green-500 h-2 rounded-full\" style=\"width: 90%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酒體</span><span class=\"font-bold text-gray-600\">中等至飽滿</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 75%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>陳年潛力</span><span class=\"font-bold text-green-600\">極高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-green-500 h-2 rounded-full\" style=\"width: 95%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">盲品關鍵字 (Key Descriptors)</h4><div class=\"grid grid-cols-2 gap-4 mb-6\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">淺檸檬黃，常帶有明顯的綠色反光 (Verde 意為綠色)。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">青蘋果、檸檬、茴香 (Fennel)、松子、海鹽礦物感。陳年後發展出蜂蜜與堅果香。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">高酸度，結構緊實，帶有蠟質 (Waxy) 口感，尾韻有強烈的苦杏仁味。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">易混淆品種</span><span class=\"text-gray-600\">Grüner Veltliner (通常帶有白胡椒味)、Chablis (缺乏茴香與苦杏仁味)。</span></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>💡 演繹邏輯：</strong> 看到帶有綠色反光的酒液，聞到「茴香/草本」與「青蘋果」，入口酸度極高且結構緊實，尾韻的「苦杏仁」非常明顯，這幾乎可以確定是 Verdicchio。</p></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "南部飽滿型：Fiano & Greco",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利南部的坎帕尼亞 (Campania) 產區以火山土壤著稱，這裡的白酒通常酒體飽滿、香氣濃郁，且帶有獨特的煙燻與礦物感。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/2 border-r border-gray-200 pr-6\"><div class=\"flex items-center mb-4\"><div class=\"w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-200 mr-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Fiano (菲亞諾)</h3></div><p class=\"text-sm text-gray-500 mb-4\">主要產區：Campania (Fiano di Avellino DOCG)</p><div class=\"space-y-3\"><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">結構：</span> 中高酸度，中等至飽滿酒體，蠟質口感。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">香氣：</span> 蜂蜜、榛果 (Hazelnut)、花香、熱帶水果、煙燻礦物。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">盲品辨識：</span> 尋找「蜂蜜」與「烤榛果」的香氣組合，口感圓潤且帶有蠟質包覆感，陳年潛力極佳。</div></div></div><div class=\"w-full md:w-1/2\"><div class=\"flex items-center mb-4\"><div class=\"w-12 h-12 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-300 mr-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Greco (格雷克)</h3></div><p class=\"text-sm text-gray-500 mb-4\">主要產區：Campania (Greco di Tufo DOCG)</p><div class=\"space-y-3\"><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">結構：</span> 高酸度，飽滿酒體，帶有單寧感 (Phenolic grip)。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">香氣：</span> 桃子、杏桃、百香果、強烈的硫磺/火山灰礦物感。</div><div class=\"bg-gray-50 p-3 rounded\"><span class=\"font-bold text-gray-700\">盲品辨識：</span> 顏色通常較深（金黃色），入口有明顯的酚類物質（微澀感），酸度極高且帶有強烈的火山礦物氣息。</div></div></div></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在盲品中，哪一個義大利白酒特徵最常被用來作為辨識義大利產區的標誌？",
+      "options": [
+        "強烈的橡木桶香草味",
+        "尾韻帶有微苦的杏仁味 (Bitter Almond)",
+        "極低的酸度與甜美的口感",
+        "明顯的荔枝與玫瑰花香"
+      ],
+      "correctAnswer": 1,
+      "explanation": "苦杏仁 (Bitter Almond) 尾韻是許多義大利白葡萄品種（如 Garganega, Verdicchio, Cortese）的經典共同特徵。"
+    },
+    {
+      "question": "如果你在盲品中聞到「洋甘菊 (Chamomile)」與「白桃」香氣，口感圓潤且尾韻有烤杏仁味，這最可能是哪一個品種？",
+      "options": [
+        "Pinot Grigio",
+        "Garganega (Soave)",
+        "Sauvignon Blanc",
+        "Greco"
+      ],
+      "correctAnswer": 1,
+      "explanation": "洋甘菊、白桃與烤杏仁是 Garganega (Soave) 最經典的香氣組合，其口感比 Pinot Grigio 更圓潤。"
+    },
+    {
+      "question": "哪一個義大利白葡萄品種常帶有「綠色反光」，香氣中帶有「茴香 (Fennel)」與青蘋果，且具有極高的陳年潛力？",
+      "options": [
+        "Verdicchio",
+        "Fiano",
+        "Cortese",
+        "Pinot Grigio"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Verdicchio 的名字源自 Verde (綠色)，常帶有綠色反光。茴香、高酸度與強大的陳年潛力是它的標誌。"
+    },
+    {
+      "question": "來自南部坎帕尼亞 (Campania) 的 Fiano 品種，在盲品中最具辨識度的香氣特徵通常是什麼？",
+      "options": [
+        "青椒與蘆筍",
+        "蜂蜜與烤榛果 (Hazelnut)",
+        "荔枝與玫瑰",
+        "黑醋栗與雪松"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fiano 以其獨特的蜂蜜、烤榛果香氣以及蠟質口感著稱，陳年後這些特徵會更加明顯。"
+    }
+  ]
+}

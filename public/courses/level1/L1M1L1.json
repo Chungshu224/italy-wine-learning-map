@@ -1,0 +1,31 @@
+{
+  "lessonId": "L1M1L1",
+  "title": "義大利葡萄酒簡介",
+  "content": "<div class='slides'><section class='slide-cover'><h1>🍷 義大利葡萄酒簡介</h1><p class='subtitle'>探索世界上最多樣化的葡萄酒國度</p></section><section class='slide'><h2>🌍 義大利 = 葡萄酒王國</h2><div class='highlight-box'><ul class='big-points'><li>🥇 世界第一大葡萄酒生產國</li><li>🍇 超過 <strong>350 種</strong>本土葡萄品種</li><li>🏛️ <strong>4000 年</strong>釀酒歷史</li><li>🗺️ <strong>20 個</strong>行政區都產酒</li><li>📜 <strong>74 個 DOCG</strong> + <strong>334 個 DOC</strong></li></ul></div></section><section class='slide'><h2>📊 產量數據一覽</h2><div class='stats-grid'><div class='stat-card'><div class='stat-number'>45-50</div><div class='stat-label'>億公升/年</div></div><div class='stat-card red'><div class='stat-number'>60%</div><div class='stat-label'>紅葡萄酒</div></div><div class='stat-card white'><div class='stat-number'>35%</div><div class='stat-label'>白葡萄酒</div></div><div class='stat-card sparkling'><div class='stat-number'>5%</div><div class='stat-label'>氣泡酒</div></div></div></section><section class='slide'><h2>🗺️ 三大區域劃分</h2><table class='region-table'><tr><th>區域</th><th>代表產區</th><th>特色</th></tr><tr><td><strong>北部</strong></td><td>Piemonte, Veneto, Lombardy</td><td>🏔️ 高品質紅酒、氣泡酒</td></tr><tr><td><strong>中部</strong></td><td>Toscana, Umbria, Marche</td><td>🌿 Sangiovese 為王</td></tr><tr><td><strong>南部 + 島嶼</strong></td><td>Campania, Puglia, Sicily</td><td>☀️ 濃郁風格、本土品種</td></tr></table></section><section class='slide'><h2>🎯 課程目標</h2><div class='objectives'><div class='objective-item'>✓ 認識義大利葡萄酒的獨特性</div><div class='objective-item'>✓ 了解基本產區分布</div><div class='objective-item'>✓ 掌握分級制度概念</div><div class='objective-item'>✓ 建立進一步學習的基礎</div></div></section></div><style>.slides{font-family:sans-serif}.slide-cover{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:80px 40px;text-align:center;border-radius:12px;margin-bottom:30px}.slide-cover h1{font-size:3rem;margin:0 0 20px}.slide-cover .subtitle{font-size:1.3rem;opacity:.9}.slide{background:#fff;padding:40px;margin-bottom:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}.slide h2{color:#2c3e50;margin:0 0 25px;font-size:1.8rem;border-bottom:3px solid #667eea;padding-bottom:10px}.highlight-box{background:linear-gradient(135deg,#f6f8fc,#eef2f7);padding:30px;border-radius:10px;border-left:5px solid #667eea}.big-points{list-style:none;padding:0;margin:0}.big-points li{padding:15px 0;font-size:1.15rem;border-bottom:1px solid #e0e0e0}.big-points li:last-child{border:none}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:20px 0}.stat-card{background:#f8f9fa;padding:30px 20px;border-radius:12px;text-align:center;border-top:4px solid #667eea}.stat-card.red{border-top-color:#c0392b}.stat-card.white{border-top-color:#f39c12}.stat-card.sparkling{border-top-color:#16a085}.stat-number{font-size:2.5rem;font-weight:700;color:#2c3e50;margin-bottom:8px}.stat-label{font-size:1rem;color:#7f8c8d}.region-table{width:100%;border-collapse:collapse;margin:20px 0}.region-table th{background:#667eea;color:#fff;padding:15px;text-align:left}.region-table td{padding:15px;border-bottom:1px solid #e0e0e0}.region-table tr:hover{background:#f8f9fa}.objectives{display:grid;gap:15px}.objective-item{background:linear-gradient(90deg,#e8f5e9,transparent);padding:18px 25px;border-left:4px solid #4caf50;font-size:1.1rem;font-weight:600;color:#2c3e50}</style>",
+  "quiz": [
+    {
+      "question": "義大利大約有多少個本土葡萄品種？",
+      "options": ["約 100 個", "約 200 個", "約 350 個", "約 500 個"],
+      "answer": 2,
+      "explanation": "義大利擁有超過 350 個本土葡萄品種，是世界上葡萄品種最多樣化的國家之一。"
+    },
+    {
+      "question": "義大利的 DOCG 和 DOC 總數約有多少個？",
+      "options": ["約 200 個", "約 300 個", "約 400 個", "約 500 個"],
+      "answer": 2,
+      "explanation": "義大利有 74 個 DOCG 和 334 個 DOC，總計超過 400 個法定產區。"
+    },
+    {
+      "question": "義大利紅葡萄酒產量約佔總產量的多少比例？",
+      "options": ["約 30%", "約 45%", "約 60%", "約 75%"],
+      "answer": 2,
+      "explanation": "義大利紅葡萄酒產量約佔 60%，白葡萄酒約 35%，氣泡酒約 5%。"
+    },
+    {
+      "question": "以下哪個不是義大利北部的主要產區？",
+      "options": ["Piemonte", "Veneto", "Sicily", "Lombardy"],
+      "answer": 2,
+      "explanation": "Sicily（西西里）是義大利南部的島嶼產區，不屬於北部。"
+    }
+  ]
+}

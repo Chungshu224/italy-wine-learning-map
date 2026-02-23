@@ -1,0 +1,1011 @@
+[
+	{
+		"id": "Piemonte",
+		"name": "Piemonte",
+		"type": "Piemonte區域",
+		"region": "Piemonte",
+		"province": "Torino, Cuneo, Asti, Alessandria, Novara, Vercelli, Biella, Verbano-Cusio-Ossola",
+		"zone": "全區",
+		"style": [
+			"紅酒",
+			"白酒",
+			"氣泡酒"
+		],
+		"grapes": [
+			"Nebbiolo",
+			"Barbera",
+			"Dolcetto",
+			"Moscato Bianco",
+			"Cortese",
+			"Arneis"
+		],
+		"description": "Piemonte 是義大利最著名的葡萄酒產區之一，擁有最多 DOCG、DOC 法定產區。以 Nebbiolo、Barbera、Dolcetto 等紅葡萄酒聞名，白酒如 Moscato d'Asti、Gavi 也極具代表性。",
+		"details": {
+			"introduction": "Piemonte 位於義大利西北部，阿爾卑斯山環繞，氣候多變，適合多種葡萄品種生長。以 Nebbiolo、Barbera、Dolcetto 等紅葡萄為主，白葡萄如 Moscato Bianco、Cortese 也極具代表性。",
+			"climate": "溫帶大陸型氣候，冬季寒冷，夏季溫暖，晝夜溫差大，有利於葡萄風味發展。",
+			"subregions": {
+				"Langhe": "以 Barolo、Barbaresco 等世界級紅酒聞名。",
+				"Monferrato": "Barbera d'Asti、Grignolino 等產區。",
+				"Roero": "以 Arneis 白酒和 Nebbiolo 紅酒著稱。"
+			}
+		}
+	},
+		{
+			"id": "Alta Langa DOCG",
+			"name": "Alta Langa",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Asti, Alessandria, Cuneo",
+			"zone": "部分 Asti、Alessandria、Cuneo 省的丘陵地帶",
+			"style": ["氣泡酒", "白酒", "粉紅酒"],
+			"grapes": ["Pinot Nero", "Chardonnay"],
+			"description": "Alta Langa DOCG 是 Piemonte 地區的高品質傳統瓶中二次發酵氣泡酒，主要以 Pinot Nero 和 Chardonnay 為主，分為白與粉紅兩種風格，需在酒渣上熟成至少30個月。",
+			"details": {
+				"introduction": "Alta Langa DOCG 產自 Piemonte 南部丘陵地帶，是義大利最早生產傳統法氣泡酒的區域之一。產區嚴格規定葡萄來源與釀造工藝，展現出優雅細緻的氣泡與複雜香氣。",
+				"climate": "溫帶大陸型，海拔較高，晝夜溫差大，有利於酸度與香氣保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Asti DOCG",
+			"name": "Asti",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Asti, Alessandria, Cuneo",
+			"zone": "Asti、Alessandria、Cuneo 省多個市鎮",
+			"style": ["氣泡酒", "白酒", "甜酒"],
+			"grapes": ["Moscato Bianco"],
+			"description": "Asti DOCG 是義大利最著名的 Moscato 氣泡甜白酒產區，採用 Moscato Bianco 葡萄釀造，具有明顯花果香與天然甜味，分為 Asti Spumante 及 Moscato d'Asti 兩種主要風格。",
+			"details": {
+				"introduction": "Asti DOCG 產自 Piemonte 南部丘陵地帶，是世界知名的 Moscato 氣泡酒產區，釀造工藝以保留葡萄天然香氣與甜度為主。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於香氣與酸度保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Barbaresco DOCG",
+			"name": "Barbaresco",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Cuneo",
+			"zone": "Barbaresco, Neive, Treiso, Alba 部分地區",
+			"style": ["紅酒"],
+			"grapes": ["Nebbiolo"],
+			"description": "Barbaresco DOCG 是 Piemonte 最著名的 Nebbiolo 紅酒產區之一，風格優雅、單寧細緻，陳年潛力佳。",
+			"details": {
+				"introduction": "Barbaresco DOCG 產自 Langhe 地區，僅限 Barbaresco、Neive、Treiso 及 Alba 部分地區生產。以 Nebbiolo 釀造，法定最低陳年時間為 26 個月（Riserva 為 50 個月）。",
+				"climate": "溫帶大陸型，靠近 Tanaro 河，氣候較溫和，有利於葡萄成熟與香氣發展。",
+				"subregions": {
+					"Barbaresco": "產區核心，酒體結構均衡。",
+					"Neive": "以細緻優雅著稱。",
+					"Treiso": "果香明顯，口感柔順。"
+				}
+			}
+		},
+		{
+			"id": "Barbera d'Asti DOCG",
+			"name": "Barbera d'Asti",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Asti, Alessandria",
+			"zone": "Asti、Alessandria 省多個市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Barbera"],
+			"description": "Barbera d'Asti DOCG 是 Piemonte 最具代表性的 Barbera 紅酒產區，酒體豐滿、果香濃郁，酸度明亮，部分酒款可陳年。",
+			"details": {
+				"introduction": "Barbera d'Asti DOCG 產自 Monferrato 丘陵地帶，是 Barbera 葡萄的經典代表。法定最低 Barbera 含量為 90%，可混釀 Freisa、Grignolino、Dolcetto。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於酸度與果香保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Barbera del Monferrato Superiore DOCG",
+			"name": "Barbera del Monferrato Superiore",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Asti, Alessandria",
+			"zone": "Asti、Alessandria 省多個市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Barbera"],
+			"description": "Barbera del Monferrato Superiore DOCG 是 Piemonte 以 Barbera 為主的高品質紅酒，酒體豐滿、果香濃郁，部分酒款帶有微氣泡。",
+			"details": {
+				"introduction": "Barbera del Monferrato Superiore DOCG 產自 Monferrato 丘陵地帶，Barbera 含量須達 85%，可混釀 Freisa、Grignolino、Dolcetto 等。法定最低陳年 14 個月（其中 6 個月於木桶）。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於酸度與果香保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Barolo DOCG",
+			"name": "Barolo",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Cuneo",
+			"zone": "Barolo, La Morra, Castiglione Falletto, Serralunga d'Alba, Monforte d'Alba 等11個村莊",
+			"style": ["紅酒"],
+			"grapes": ["Nebbiolo"],
+			"description": "Barolo DOCG 是義大利最負盛名的紅酒之一，100% Nebbiolo 釀造，單寧強勁、陳年潛力極佳，被譽為『酒中之王』。",
+			"details": {
+				"introduction": "Barolo DOCG 產自 Langhe 地區11個指定村莊，法定最低陳年38個月（Riserva為62個月），展現出複雜香氣與強勁結構。",
+				"climate": "溫帶大陸型，秋季晨霧有助於葡萄成熟，晝夜溫差大。",
+				"subregions": {
+					"Serralunga d'Alba": "以結構強勁、陳年力強著稱。",
+					"La Morra": "風格較柔和、香氣細緻。",
+					"Barolo": "產區核心，均衡且經典。"
+				}
+			}
+		},
+		{
+			"id": "Brachetto d'Acqui DOCG",
+			"name": "Brachetto d'Acqui",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Alessandria, Asti",
+			"zone": "Acqui Terme、Strevi、Alice Bel Colle 等市鎮",
+			"style": ["甜酒", "紅酒", "氣泡酒"],
+			"grapes": ["Brachetto"],
+			"description": "Brachetto d'Acqui DOCG 是 Piemonte 特色的甜型紅氣泡酒，100% Brachetto 葡萄釀造，帶有明顯玫瑰花香與紅色水果香氣，適合搭配甜點。",
+			"details": {
+				"introduction": "Brachetto d'Acqui DOCG 產自 Acqui Terme 周邊地區，是義大利少數以紅葡萄釀造的甜型氣泡酒，分為微氣泡與氣泡兩種風格。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於香氣與酸度保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Cortese di Gavi Gavi DOCG",
+			"name": "Gavi (Cortese di Gavi)",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Alessandria",
+			"zone": "Gavi、Novi Ligure、Serravalle Scrivia 等市鎮",
+			"style": ["白酒"],
+			"grapes": ["Cortese"],
+			"description": "Gavi DOCG（Cortese di Gavi）是 Piemonte 最著名的白葡萄酒產區，100% Cortese 釀造，風格清新、礦物感明顯，適合搭配海鮮。",
+			"details": {
+				"introduction": "Gavi DOCG 產自 Piemonte 南部靠近利古里亞的丘陵地帶，是義大利最具代表性的清新白酒之一。",
+				"climate": "溫帶大陸型，受地中海微氣候影響，夏季溫暖，晝夜溫差大。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Dogliani DOCG",
+			"name": "Dogliani",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Cuneo",
+			"zone": "Dogliani、Farigliano、Clavesana 等市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Dolcetto"],
+			"description": "Dogliani DOCG 是 Piemonte 以 Dolcetto 葡萄釀造的經典紅酒，酒體中等至豐滿，果香濃郁，單寧柔和。",
+			"details": {
+				"introduction": "Dogliani DOCG 產自 Langhe 南部丘陵地帶，是 Dolcetto 葡萄的代表產區，法定最低 Dolcetto 含量為 100%。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於果香與酸度保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Dolcetto di Diano d'Alba DOCG",
+			"name": "Dolcetto di Diano d'Alba (Diano d'Alba)",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Cuneo",
+			"zone": "Diano d'Alba 及周邊市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Dolcetto"],
+			"description": "Dolcetto di Diano d'Alba (Diano d'Alba) DOCG 是 Piemonte 以 Dolcetto 葡萄釀造的經典紅酒，酒體中等，果香濃郁，單寧柔和，適合年輕飲用。",
+			"details": {
+				"introduction": "Dolcetto di Diano d'Alba DOCG 產自 Langhe 地區 Diano d'Alba 村及其周邊，是 Dolcetto 葡萄的優質產區，法定最低 Dolcetto 含量為 100%。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於果香與酸度保存。",
+				"subregions": {}
+			}
+		},
+		{
+			"id": "Dolcetto di Ovada Superiore DOCG",
+			"name": "Dolcetto di Ovada Superiore (Ovada)",
+			"type": "DOCG",
+			"region": "Piemonte",
+			"province": "Alessandria",
+			"zone": "Ovada 及周邊市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Dolcetto"],
+			"description": "Dolcetto di Ovada Superiore DOCG 是 Piemonte 以 Dolcetto 葡萄釀造的高品質紅酒，酒體中等至豐滿，果香濃郁，單寧柔和，適合陳年。",
+			"details": {
+				"introduction": "Dolcetto di Ovada Superiore DOCG 產自 Piemonte 南部 Ovada 及其周邊地區，是 Dolcetto 葡萄的優質產區，法定最低 Dolcetto 含量為 100%，需陳年至少12個月。",
+				"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於果香與酸度保存。",
+				"subregions": {}
+			}
+		},
+	{
+		"id": "Erbaluce di Caluso Caluso DOCG",
+		"name": "Erbaluce di Caluso (Caluso)",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Torino, Vercelli, Biella",
+		"zone": "Caluso、Candia Canavese、Mazzè 等市鎮及周邊地區",
+		"style": ["白酒", "甜酒", "氣泡酒"],
+		"grapes": ["Erbaluce"],
+		"description": "Erbaluce di Caluso DOCG（又稱 Caluso DOCG）是 Piemonte 以 Erbaluce 白葡萄釀造的經典白酒，包含靜態白酒、氣泡酒與 Passito 甜酒三種風格，酸度明亮、果香清新，甜酒則濃郁複雜。",
+		"details": {
+			"introduction": "Erbaluce di Caluso DOCG 產自 Torino、Vercelli、Biella 三省的 Canavese 地區，是 Piemonte 代表性的原生白葡萄酒。法定分為靜態白酒、Spumante 氣泡酒與 Passito 甜酒，展現 Erbaluce 葡萄的高酸度與清新果香。",
+			"climate": "溫帶大陸型，湖泊與山地影響，晝夜溫差大，有利於酸度與香氣保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Gattinara DOCG",
+		"name": "Gattinara",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Vercelli",
+		"zone": "Gattinara 市鎮及周邊地區",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Bonarda di Gattinara"],
+		"description": "Gattinara DOCG 是 Piemonte 北部最著名的 Nebbiolo 紅酒產區之一，酒體結構緊實、酸度明亮，具備極佳陳年潛力。",
+		"details": {
+			"introduction": "Gattinara DOCG 產自 Vercelli 省 Gattinara 市鎮及其周邊，是北 Piemonte 代表性的 Nebbiolo 紅酒。法定規定 Nebbiolo（當地稱 Spanna）須達 90%，可混釀 Vespolina 及 Bonarda di Gattinara。最低陳年 35 個月（Riserva 為 47 個月）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山影響，晝夜溫差大，有利於酸度與香氣保存。土壤多火山岩，賦予酒款礦物感。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Nizza DOCG",
+		"name": "Nizza",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Nizza Monferrato 及周邊 18 個市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Barbera"],
+		"description": "Nizza DOCG 是 Piemonte 以 Barbera 葡萄釀造的高品質紅酒，僅限 Nizza Monferrato 及周邊特定市鎮生產，酒體豐滿、果香濃郁，具備極佳陳年潛力。",
+		"details": {
+			"introduction": "Nizza DOCG 產自 Asti 省 Nizza Monferrato 及其周邊 18 個市鎮，是 Barbera 葡萄的頂級代表。法定規定 100% Barbera，最低陳年 18 個月（Riserva 為 30 個月），部分酒款可於木桶熟成。",
+			"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，有利於酸度與果香保存。土壤多為石灰質與黏土，賦予酒款結構與複雜度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Roero DOCG",
+		"name": "Roero",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Roero 地區（主要為 Tanaro 河左岸多個市鎮）",
+		"style": ["紅酒", "白酒"],
+		"grapes": ["Nebbiolo", "Arneis"],
+		"description": "Roero DOCG 是 Piemonte 著名的雙品種產區，生產以 Nebbiolo 釀造的紅酒（Roero Rosso）及以 Arneis 釀造的白酒（Roero Arneis），紅酒優雅細緻，白酒清新芳香。",
+		"details": {
+			"introduction": "Roero DOCG 產自 Cuneo 省 Tanaro 河左岸的 Roero 地區，法定分為 Roero（紅酒，100% Nebbiolo）與 Roero Arneis（白酒，100% Arneis）。紅酒需陳年至少 20 個月（Riserva 為 32 個月），白酒則以新鮮果香為主。",
+			"climate": "溫帶大陸型，沙質土壤，晝夜溫差大，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Ruché di Castagnole Monferrato DOCG",
+		"name": "Ruché di Castagnole Monferrato",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Castagnole Monferrato、Grana、Montemagno、Portacomaro、Refrancore、Scurzolengo、Viarigi 等市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Ruché"],
+		"description": "Ruché di Castagnole Monferrato DOCG 是 Piemonte 特色原生品種 Ruché 釀造的紅酒，香氣濃郁、帶有花香與香料氣息，口感柔順，產量稀少。",
+		"details": {
+			"introduction": "Ruché di Castagnole Monferrato DOCG 產自 Asti 省 Castagnole Monferrato 及周邊 6 個市鎮，是 Piemonte 罕見的原生紅葡萄品種 Ruché 的代表產區。法定規定 Ruché 含量須達 90%，可混釀 Barbera 或 Brachetto。",
+			"climate": "溫帶大陸型，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於香氣與結構發展。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Terre Alfieri DOCG",
+		"name": "Terre Alfieri",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Asti, Cuneo",
+		"zone": "Asti、Cuneo 兩省交界的多個市鎮（如 San Damiano d'Asti、Govone 等）",
+		"style": ["紅酒", "白酒"],
+		"grapes": ["Nebbiolo", "Arneis"],
+		"description": "Terre Alfieri DOCG 是 Piemonte 新晉法定產區，生產以 Nebbiolo 釀造的紅酒與 Arneis 釀造的白酒，紅酒結構細緻，白酒清新芳香。",
+		"details": {
+			"introduction": "Terre Alfieri DOCG 產自 Asti、Cuneo 兩省交界地區，法定分為 Terre Alfieri Nebbiolo（紅酒，100% Nebbiolo）與 Terre Alfieri Arneis（白酒，100% Arneis）。紅酒需陳年至少 20 個月（Riserva 為 30 個月），白酒則以新鮮果香為主。",
+			"climate": "溫帶大陸型，土壤多為石灰質與黏土，晝夜溫差大，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Alba DOC",
+		"name": "Alba",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Alba 及周邊多個市鎮（Langhe 地區）",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo", "Barbera"],
+		"description": "Alba DOC 是 Piemonte Langhe 地區的法定紅酒產區，允許生產 Nebbiolo、Barbera 兩種單一品種紅酒，以及兩者混釀，展現出果香、結構與陳年潛力。",
+		"details": {
+			"introduction": "Alba DOC 產自 Cuneo 省 Langhe 地區的 Alba 及周邊市鎮，法定可生產 Alba Nebbiolo、Alba Barbera 及 Alba（Nebbiolo+Barbera 混釀）三種紅酒。Nebbiolo 需達 70-85%，Barbera 15-30%。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，有利於葡萄香氣與酸度保存。土壤多為石灰質與黏土。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Albugnano DOC",
+		"name": "Albugnano",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Albugnano、Pino d'Asti、Castelnuovo Don Bosco、Passerano Marmorito 等市鎮",
+		"style": ["紅酒", "粉紅酒"],
+		"grapes": ["Nebbiolo"],
+		"description": "Albugnano DOC 是 Piemonte Asti 省以 Nebbiolo 為主釀造的紅酒與粉紅酒產區，酒體優雅、果香細緻，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Albugnano DOC 產自 Asti 省 Albugnano 及周邊 3 個市鎮，是 Piemonte 罕見以 Nebbiolo 為主的 DOC 級產區。法定規定 Nebbiolo 含量須達 85%，可混釀 Freisa、Barbera、Bonarda。分為紅酒與 Rosato（粉紅酒）兩種風格。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Barbera d'Alba DOC",
+		"name": "Barbera d'Alba",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Alba 及周邊 Langhe、Roero 多個市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Barbera"],
+		"description": "Barbera d'Alba DOC 是 Piemonte Langhe、Roero 地區以 Barbera 釀造的經典紅酒，果香濃郁、酸度明亮，部分酒款可陳年。",
+		"details": {
+			"introduction": "Barbera d'Alba DOC 產自 Cuneo 省 Alba 及周邊 Langhe、Roero 地區，是 Piemonte 代表性的 Barbera 紅酒產區。法定規定 Barbera 含量須達 85%，可混釀 Nebbiolo（最多 15%）。分為一般型與 Superiore（陳年至少 12 個月）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Barbera del Monferrato DOC",
+		"name": "Barbera del Monferrato",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Alessandria",
+		"zone": "Monferrato 地區（Asti、Alessandria 省多個市鎮）",
+		"style": ["紅酒", "微氣泡紅酒"],
+		"grapes": ["Barbera"],
+		"description": "Barbera del Monferrato DOC 是 Piemonte Monferrato 地區以 Barbera 釀造的紅酒，部分酒款帶有微氣泡（Frizzante），果香濃郁、酸度明亮。",
+		"details": {
+			"introduction": "Barbera del Monferrato DOC 產自 Asti、Alessandria 兩省的 Monferrato 丘陵地帶，是 Barbera 葡萄的經典產區。法定規定 Barbera 含量須達 85%，可混釀 Freisa、Grignolino、Dolcetto 等。分為靜態紅酒與 Frizzante（微氣泡）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Boca DOC",
+		"name": "Boca",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Novara",
+		"zone": "Boca、Maggiora、Cavallirio、Prato Sesia、Grignasco 等市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Uva Rara"],
+		"description": "Boca DOC 是 Piemonte 北部 Novara 省以 Nebbiolo 為主釀造的紅酒產區，酒體結構緊實、礦物感明顯，具備極佳陳年潛力。",
+		"details": {
+			"introduction": "Boca DOC 產自 Novara 省 Boca 及周邊 4 個市鎮，是 Piemonte 北部最古老的紅酒產區之一。法定規定 Nebbiolo（Spanna）含量須達 70-90%，可混釀 Vespolina 及 Uva Rara。最低陳年 34 個月（其中 18 個月於木桶）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與湖泊影響，晝夜溫差大，土壤多火山岩，賦予酒款礦物感。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Bramaterra DOC",
+		"name": "Bramaterra",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Biella, Vercelli",
+		"zone": "Sostegno、Villa del Bosco、Curino、Masserano、Brusnengo、Roasio、Lozzolo、Gattinara 部分地區",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Croatina", "Vespolina", "Uva Rara"],
+		"description": "Bramaterra DOC 是 Piemonte 北部 Biella、Vercelli 兩省以 Nebbiolo 為主釀造的紅酒產區，酒體結構緊實、礦物感明顯，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Bramaterra DOC 產自 Biella、Vercelli 兩省交界的 7 個市鎮，是 Piemonte 北部火山岩土壤的代表產區。法定規定 Nebbiolo（Spanna）含量須達 50-80%，Croatina 20-30%，可混釀 Vespolina、Uva Rara。最低陳年 22 個月（Riserva 為 34 個月）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與火山岩土壤影響，晝夜溫差大，賦予酒款礦物感與結構。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Calosso DOC",
+		"name": "Calosso",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Cuneo",
+		"zone": "Calosso、Castagnole delle Lanze、Costigliole d'Asti、Santo Stefano Belbo 等市鎮",
+		"style": ["紅酒", "甜酒"],
+		"grapes": ["Gamba di Pernice"],
+		"description": "Calosso DOC 是 Piemonte Asti 省以 Gamba di Pernice 原生品種釀造的紅酒與甜酒產區，酒體中等，果香濃郁，帶有香料與花香。",
+		"details": {
+			"introduction": "Calosso DOC 產自 Asti 省 Calosso 及周邊市鎮，是 Piemonte 罕見以 Gamba di Pernice 為主的法定產區。法定規定 Gamba di Pernice 含量須達 90%，可混釀其他非芳香型紅葡萄。分為紅酒與 Passito（甜酒）兩種風格。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Canavese DOC",
+		"name": "Canavese",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Canavese 地區（Caluso、Ivrea、Cuorgnè、Rivarolo Canavese 等市鎮）",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒", "氣泡酒"],
+		"grapes": ["Barbera", "Bonarda", "Freisa", "Nebbiolo", "Erbaluce", "Chardonnay", "Pinot Nero", "Merlot", "Cabernet Sauvignon"],
+		"description": "Canavese DOC 是 Piemonte 北部以多元葡萄品種釀造的法定產區，涵蓋紅、白、玫瑰紅酒及新酒、氣泡酒等多種風格，展現 Canavese 地區的多樣性。",
+		"details": {
+			"introduction": "Canavese DOC 產自 Torino 省北部的 Canavese 地區，法定涵蓋多種葡萄品種與酒款，包括 Canavese Rosso、Bianco、Rosato、Novello、新酒及 Spumante 氣泡酒。紅酒以 Barbera、Bonarda、Freisa、Nebbiolo 為主，白酒以 Erbaluce、Chardonnay、Pinot Nero 等。",
+			"climate": "溫帶大陸型，湖泊與山地影響，晝夜溫差大，有利於葡萄香氣與酸度保存。土壤多為冰磧石與黏土。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Carema DOC",
+		"name": "Carema",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Carema 市鎮及周邊地區（Valle d'Aosta 交界）",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Picotener, Pugnet)"],
+		"description": "Carema DOC 是 Piemonte 最北端、以 Nebbiolo 原生變種釀造的紅酒產區，酒體優雅、礦物感明顯，具備極佳陳年潛力。",
+		"details": {
+			"introduction": "Carema DOC 產自 Torino 省最北端的 Carema 市鎮，與 Valle d'Aosta 接壤，是義大利最北的 Nebbiolo 產區之一。法定規定 Nebbiolo（當地稱 Picotener、Pugnet）須達 85%，可混釀其他當地紅葡萄。最低陳年 36 個月（Riserva 為 48 個月）。",
+			"climate": "高山氣候，海拔高，晝夜溫差大，石牆梯田有助於葡萄成熟，土壤多為冰磧石與砂礫，賦予酒款礦物感。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Cisterna d'Asti DOC",
+		"name": "Cisterna d'Asti",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Cuneo",
+		"zone": "Cisterna d'Asti、Canale、San Damiano d'Asti、Ferrere、Montà、Antignano、Cellarengo、Montà、Santo Stefano Roero、Valfenera、Sanfrè、Sommariva Perno 等市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Croatina (Vespolina)", "Barbera", "Bonarda"],
+		"description": "Cisterna d'Asti DOC 是 Piemonte Asti、Cuneo 兩省以 Croatina（當地稱 Vespolina）為主釀造的紅酒產區，酒體中等至豐滿，果香濃郁，帶有香料與花香。",
+		"details": {
+			"introduction": "Cisterna d'Asti DOC 產自 Asti、Cuneo 兩省交界的多個市鎮，是 Piemonte 罕見以 Croatina（Vespolina）為主的法定產區。法定規定 Croatina 含量須達 80%，可混釀 Barbera、Bonarda。最低陳年 8 個月（Superiore 為 20 個月）。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Colli Tortonesi DOC",
+		"name": "Colli Tortonesi",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Tortona 及周邊丘陵地區（Alessandria 省東南部）",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒", "氣泡酒"],
+		"grapes": ["Barbera", "Cortese", "Timorasso", "Dolcetto", "Freisa", "Croatina", "Pinot Nero", "Moscato Bianco", "其他本地品種"],
+		"description": "Colli Tortonesi DOC 是 Piemonte 東南部 Tortona 丘陵地區多元葡萄品種的法定產區，涵蓋紅、白、玫瑰紅酒及新酒、氣泡酒等多種風格，Timorasso 白酒尤為著名。",
+		"details": {
+			"introduction": "Colli Tortonesi DOC 產自 Alessandria 省東南部 Tortona 及周邊丘陵地區，法定涵蓋多種葡萄品種與酒款，包括 Barbera、Cortese、Timorasso、Dolcetto、Freisa、Croatina、Pinot Nero、Moscato Bianco 等。Timorasso 白酒（Derthona）為產區代表。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Collina Torinese DOC",
+		"name": "Collina Torinese",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Torino 省東北部丘陵地區（Collina Torinese）",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒"],
+		"grapes": ["Barbera", "Bonarda", "Freisa", "Malvasia di Schierano", "Cari", "Chatus", "其他本地品種"],
+		"description": "Collina Torinese DOC 是 Piemonte 都靈東北部丘陵地區多元葡萄品種的法定產區，涵蓋紅、白、玫瑰紅酒及新酒等多種風格，Freisa、Malvasia di Schierano 等本地品種具代表性。",
+		"details": {
+			"introduction": "Collina Torinese DOC 產自 Torino 省東北部丘陵地區，法定涵蓋多種葡萄品種與酒款，包括 Barbera、Bonarda、Freisa、Malvasia di Schierano、Cari、Chatus 等。Freisa、Malvasia di Schierano 為產區代表。",
+			"climate": "溫帶大陸型，丘陵地形，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Colline Novaresi DOC",
+		"name": "Colline Novaresi",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Novara",
+		"zone": "Novara 省多個市鎮，包括 Briona、Cavaglio d'Agogna、Cureggio、Fara、Gattico、Ghemme、Maggiora、Romagnano Sesia、Sizzano、Suno 等",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒"],
+		"grapes": [
+			"Nebbiolo (Spanna)",
+			"Barbera",
+			"Vespolina",
+			"Uva Rara",
+			"Croatina",
+			"Erbaluce"
+		],
+		"description": "Colline Novaresi DOC 是 Piemonte 北部 Novara 省的多元葡萄酒產區，涵蓋紅、白、玫瑰紅酒及新酒，Nebbiolo（當地稱 Spanna）為主，Barbera、Vespolina、Uva Rara、Croatina、Erbaluce 等本地品種亦具代表性。",
+		"details": {
+			"introduction": "Colline Novaresi DOC 產自 Novara 省丘陵地帶，法定涵蓋多種葡萄品種與酒款，包括 Colline Novaresi Rosso（紅酒）、Bianco（白酒）、Rosato（玫瑰紅酒）、Novello（新酒）及多種單一品種酒款。紅酒以 Nebbiolo（Spanna）為主，白酒以 Erbaluce 為主。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與湖泊影響，晝夜溫差大，土壤多火山岩與黏土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Colline Saluzzesi DOC",
+		"name": "Colline Saluzzesi",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Cuneo 省西南部 Saluzzo、Verzuolo、Revello、Costigliole Saluzzo、Lagnasco、Manta、Pagno、Piasco、Torre San Giorgio、Villafalletto、Villar San Costanzo 等市鎮",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒"],
+		"grapes": [
+			"Barbera",
+			"Nebbiolo",
+			"Pelaverga Piccolo",
+			"Chatus",
+			"Dolcetto",
+			"Pinot Nero",
+			"Quagliano",
+			"其他本地品種"
+		],
+		"description": "Colline Saluzzesi DOC 是 Piemonte 西南部 Cuneo 省 Saluzzo 丘陵地區的多元葡萄酒產區，涵蓋紅、白、玫瑰紅酒及新酒，Pelaverga、Chatus、Quagliano 等本地品種具代表性。",
+		"details": {
+			"introduction": "Colline Saluzzesi DOC 產自 Cuneo 省西南部 Saluzzo 及周邊丘陵地區，法定涵蓋多種葡萄品種與酒款，包括 Rosso（紅酒）、Bianco（白酒）、Rosato（玫瑰紅酒）、Novello（新酒）及多種單一品種酒款。Pelaverga、Chatus、Quagliano 為產區代表性本地品種。",
+			"climate": "溫帶大陸型，受阿爾卑斯山影響，海拔較高，晝夜溫差大，土壤多為沖積土與黏土，賦予酒款新鮮酸度與礦物感。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Cortese dell'Alto Monferrato DOC",
+		"name": "Cortese dell'Alto Monferrato",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Alessandria",
+		"zone": "Asti、Alessandria 兩省南部多個市鎮，包括 Acqui Terme、Alice Bel Colle、Bistagno、Cassine、Castelletto d'Erro、Cremolino、Fontanile、Mombaruzzo、Nizza Monferrato、Ovada、Ricaldone、Strevi 等",
+		"style": ["白酒", "氣泡酒"],
+		"grapes": ["Cortese"],
+		"description": "Cortese dell'Alto Monferrato DOC 是 Piemonte 南部 Asti、Alessandria 兩省以 Cortese 白葡萄釀造的法定產區，包含靜態白酒與氣泡酒兩種風格，風格清新、果香明顯。",
+		"details": {
+			"introduction": "Cortese dell'Alto Monferrato DOC 產自 Asti、Alessandria 兩省南部丘陵地帶，是 Piemonte 代表性的 Cortese 白葡萄酒產區之一。法定分為靜態白酒與 Spumante（氣泡酒）兩種風格，展現出清新果香與明亮酸度。",
+			"climate": "溫帶大陸型，受丘陵地形與地中海微氣候影響，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Coste della Sesia DOC",
+		"name": "Coste della Sesia",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Biella, Vercelli",
+		"zone": "Biella、Vercelli 兩省多個市鎮，包括 Biella、Lessona、Massazza、Mottalciata、Roppolo、Viverone、Brusnengo、Cossato、Curino、Gattinara、Roasio、Sostegno、Villa del Bosco 等",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒"],
+		"grapes": [
+			"Nebbiolo (Spanna)",
+			"Barbera",
+			"Vespolina",
+			"Bonarda",
+			"Croatina",
+			"Uva Rara",
+			"Erbaluce",
+			"其他本地品種"
+		],
+		"description": "Coste della Sesia DOC 是 Piemonte 北部 Biella、Vercelli 兩省的多元葡萄酒產區，涵蓋紅、白、玫瑰紅酒及新酒，Nebbiolo（Spanna）、Barbera、Vespolina、Erbaluce 等本地品種具代表性。",
+		"details": {
+			"introduction": "Coste della Sesia DOC 產自 Biella、Vercelli 兩省交界的 Sesia 河沿岸丘陵地帶，法定涵蓋多種葡萄品種與酒款，包括 Rosso（紅酒）、Bianco（白酒）、Rosato（玫瑰紅酒）、Novello（新酒）及多種單一品種酒款。Nebbiolo（Spanna）、Barbera、Vespolina、Erbaluce 為產區代表。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與 Sesia 河影響，晝夜溫差大，土壤多火山岩與黏土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Dolcetto d'Acqui DOC",
+		"name": "Dolcetto d'Acqui",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria, Asti",
+		"zone": "Alessandria、Asti 兩省南部多個市鎮，包括 Acqui Terme、Alice Bel Colle、Bistagno、Cartosio、Cavatore、Grognardo、Melazzo、Montabone、Monastero Bormida、Morsasco、Ovada、Ponti、Ricaldone、Strevi 等",
+		"style": ["紅酒"],
+		"grapes": ["Dolcetto"],
+		"description": "Dolcetto d'Acqui DOC 是 Piemonte 南部 Alessandria、Asti 兩省以 Dolcetto 葡萄釀造的經典紅酒產區，酒體中等，果香濃郁，單寧柔和，適合年輕飲用。",
+		"details": {
+			"introduction": "Dolcetto d'Acqui DOC 產自 Alessandria、Asti 兩省南部丘陵地帶，是 Piemonte 代表性的 Dolcetto 紅酒產區之一。法定規定 Dolcetto 含量須達 100%，展現出新鮮果香與柔和單寧。",
+			"climate": "溫帶大陸型，受丘陵地形與地中海微氣候影響，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Dolcetto d'Alba DOC",
+		"name": "Dolcetto d'Alba",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Cuneo 省 Langhe 地區多個市鎮，包括 Alba、Barolo、Castiglione Falletto、Diano d'Alba、Dogliani、Grinzane Cavour、La Morra、Monforte d'Alba、Monchiero、Monforte d'Alba、Montelupo Albese、Roddi、Roddino、Serralunga d'Alba、Sinio、Verduno 等",
+		"style": ["紅酒"],
+		"grapes": ["Dolcetto"],
+		"description": "Dolcetto d'Alba DOC 是 Piemonte Langhe 地區以 Dolcetto 葡萄釀造的經典紅酒產區，酒體中等，果香濃郁，單寧柔和，適合年輕飲用。",
+		"details": {
+			"introduction": "Dolcetto d'Alba DOC 產自 Cuneo 省 Langhe 地區多個市鎮，是 Piemonte 代表性的 Dolcetto 紅酒產區之一。法定規定 Dolcetto 含量須達 100%，展現出新鮮果香與柔和單寧。分為一般型與 Superiore（陳年至少 12 個月）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Dolcetto d'Asti DOC",
+		"name": "Dolcetto d'Asti",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Alessandria",
+		"zone": "Asti、Alessandria 兩省多個市鎮，包括 Agliano Terme、Antignano、Belveglio、Calamandrana、Castelnuovo Calcea、Costigliole d'Asti、Incisa Scapaccino、Mombercelli、Nizza Monferrato、Vigliano d'Asti 等",
+		"style": ["紅酒"],
+		"grapes": ["Dolcetto"],
+		"description": "Dolcetto d'Asti DOC 是 Piemonte 南部 Asti、Alessandria 兩省以 Dolcetto 葡萄釀造的經典紅酒產區，酒體中等，果香濃郁，單寧柔和，適合年輕飲用。",
+		"details": {
+			"introduction": "Dolcetto d'Asti DOC 產自 Asti、Alessandria 兩省多個市鎮，是 Piemonte 代表性的 Dolcetto 紅酒產區之一。法定規定 Dolcetto 含量須達 100%，展現出新鮮果香與柔和單寧。",
+			"climate": "溫帶大陸型，受丘陵地形與地中海微氣候影響，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Dolcetto di Ovada DOC",
+		"name": "Dolcetto di Ovada",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Ovada 及周邊市鎮，包括 Belforte Monferrato、Cremolino、Molare、Rocca Grimalda、Silvano d'Orba、Tagliolo Monferrato、Trisobbio 等",
+		"style": ["紅酒"],
+		"grapes": ["Dolcetto"],
+		"description": "Dolcetto di Ovada DOC 是 Piemonte 南部 Alessandria 省以 Dolcetto 葡萄釀造的經典紅酒產區，酒體中等，果香濃郁，單寧柔和，適合年輕飲用。",
+		"details": {
+			"introduction": "Dolcetto di Ovada DOC 產自 Alessandria 省 Ovada 及其周邊市鎮，是 Piemonte 代表性的 Dolcetto 紅酒產區之一。法定規定 Dolcetto 含量須達 100%，展現出新鮮果香與柔和單寧。",
+			"climate": "溫帶大陸型，受丘陵地形與地中海微氣候影響，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Fara DOC",
+		"name": "Fara",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Novara, Vercelli",
+		"zone": "Fara Novarese、Briona 兩市鎮及周邊地區",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Uva Rara"],
+		"description": "Fara DOC 是 Piemonte 北部 Novara、Vercelli 兩省以 Nebbiolo（當地稱 Spanna）為主釀造的紅酒產區，酒體結構緊實，果香細緻，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Fara DOC 產自 Novara、Vercelli 兩省交界的 Fara Novarese、Briona 兩市鎮，是北 Piemonte 代表性的 Nebbiolo 紅酒產區。法定規定 Nebbiolo（Spanna）須達 50-70%，Vespolina 及 Uva Rara 30-50%。最低陳年 22 個月（Riserva 為 34 個月）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與湖泊影響，晝夜溫差大，土壤多火山岩與黏土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Freisa d'Asti DOC",
+		"name": "Freisa d'Asti",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Asti 省多個市鎮，包括 Agliano Terme、Antignano、Asti、Calosso、Castagnole delle Lanze、Castelnuovo Calcea、Costigliole d'Asti、Isola d'Asti、Monale、Montegrosso d'Asti、San Damiano d'Asti、Vigliano d'Asti 等",
+		"style": ["紅酒", "微氣泡紅酒", "甜酒"],
+		"grapes": ["Freisa"],
+		"description": "Freisa d'Asti DOC 是 Piemonte Asti 省以 Freisa 葡萄釀造的紅酒產區，包含靜態紅酒、微氣泡（Frizzante）及甜型等多種風格，果香濃郁，帶有微辛辣感。",
+		"details": {
+			"introduction": "Freisa d'Asti DOC 產自 Asti 省多個市鎮，是 Piemonte 代表性的 Freisa 紅酒產區。法定規定 Freisa 含量須達 100%，可生產靜態紅酒、Frizzante（微氣泡）及 Dolce（甜型）等多種風格。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Freisa di Chieri DOC",
+		"name": "Freisa di Chieri",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Torino 省 Chieri、Baldissero Torinese、Pino Torinese、Pecetto Torinese、Cambiano、Santena、Andezeno、Marentino、Montaldo Torinese、Riva presso Chieri、Sciolze 等市鎮",
+		"style": ["紅酒", "微氣泡紅酒", "甜酒"],
+		"grapes": ["Freisa"],
+		"description": "Freisa di Chieri DOC 是 Piemonte Torino 省以 Freisa 葡萄釀造的紅酒產區，包含靜態紅酒、微氣泡（Frizzante）及甜型等多種風格，果香濃郁，帶有微辛辣感。",
+		"details": {
+			"introduction": "Freisa di Chieri DOC 產自 Torino 省 Chieri 及周邊多個市鎮，是 Piemonte 代表性的 Freisa 紅酒產區。法定規定 Freisa 含量須達 100%，可生產靜態紅酒、Frizzante（微氣泡）及 Dolce（甜型）等多種風格。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Gabiano DOC",
+		"name": "Gabiano",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Gabiano、Moncestino 兩市鎮及周邊地區（Po 河沿岸）",
+		"style": ["紅酒"],
+		"grapes": ["Barbera", "Grignolino", "Freisa"],
+		"description": "Gabiano DOC 是 Piemonte 東部 Alessandria 省以 Barbera 為主釀造的紅酒產區，酒體中等，果香濃郁，帶有香料與花香，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Gabiano DOC 產自 Alessandria 省 Gabiano、Moncestino 兩市鎮及周邊地區，是 Piemonte 罕見的 Barbera 為主紅酒產區。法定規定 Barbera 含量須達 90-95%，可混釀 Grignolino、Freisa。最低陳年 12 個月。",
+			"climate": "溫帶大陸型，受 Po 河影響，夏季溫暖，晝夜溫差大，土壤多為黏土與砂質，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Grignolino d'Asti DOC",
+		"name": "Grignolino d'Asti",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Asti 省多個市鎮，包括 Asti、Castagnole Monferrato、Castelnuovo Don Bosco、Costigliole d'Asti、Grana、Moncalvo、Montemagno、Portacomaro、Refrancore、Soglio、Viarigi 等",
+		"style": ["紅酒"],
+		"grapes": ["Grignolino"],
+		"description": "Grignolino d'Asti DOC 是 Piemonte Asti 省以 Grignolino 葡萄釀造的特色紅酒產區，酒體輕盈，果香細緻，單寧明顯，帶有微辛辣感。",
+		"details": {
+			"introduction": "Grignolino d'Asti DOC 產自 Asti 省多個市鎮，是 Piemonte 代表性的 Grignolino 紅酒產區。法定規定 Grignolino 含量須達 90%，可混釀 Freisa（最多 10%）。分為一般型與 Superiore（陳年至少 14 個月）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Grignolino del Monferrato Casalese DOC",
+		"name": "Grignolino del Monferrato Casalese",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Alessandria 省 Monferrato 地區多個市鎮，包括 Casale Monferrato、Camagna Monferrato、Conzano、Lu e Cuccaro Monferrato、Odalengo Piccolo、Ozzano Monferrato、Rosignano Monferrato、Sala Monferrato、San Giorgio Monferrato、Terruggia、Vignale Monferrato 等",
+		"style": ["紅酒"],
+		"grapes": ["Grignolino"],
+		"description": "Grignolino del Monferrato Casalese DOC 是 Piemonte Alessandria 省 Monferrato 地區以 Grignolino 葡萄釀造的特色紅酒產區，酒體輕盈，果香細緻，單寧明顯，帶有微辛辣感。",
+		"details": {
+			"introduction": "Grignolino del Monferrato Casalese DOC 產自 Alessandria 省 Monferrato 地區多個市鎮，是 Piemonte 代表性的 Grignolino 紅酒產區。法定規定 Grignolino 含量須達 90%，可混釀 Freisa（最多 10%）。分為一般型與 Superiore（陳年至少 14 個月）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Langhe DOC",
+		"name": "Langhe",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Cuneo 省 Langhe 地區多個市鎮，包括 Alba、Barbaresco、Barolo、Castiglione Falletto、Diano d'Alba、Dogliani、Grinzane Cavour、La Morra、Monforte d'Alba、Neive、Novello、Roddi、Serralunga d'Alba、Treiso、Verduno 等",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒", "氣泡酒"],
+		"grapes": ["Nebbiolo", "Barbera", "Dolcetto", "Freisa", "Pelaverga", "Chardonnay", "Sauvignon Blanc", "Favorita", "Arneis", "Nascetta", "Pinot Nero", "Merlot", "Cabernet Sauvignon", "Pinot Grigio", "Riesling", "其他本地品種"],
+		"description": "Langhe DOC 是 Piemonte Cuneo 省 Langhe 地區多元葡萄品種的法定產區，涵蓋紅、白、玫瑰紅酒及新酒、氣泡酒等多種風格，Nebbiolo、Barbera、Dolcetto、Arneis 等為代表品種。",
+		"details": {
+			"introduction": "Langhe DOC 產自 Cuneo 省 Langhe 地區多個市鎮，是 Piemonte 最具代表性的多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Langhe Rosso、Bianco、Rosato、Novello、新酒及 Spumante 氣泡酒，以及多種單一品種酒款。Nebbiolo、Barbera、Dolcetto、Arneis、Chardonnay、Sauvignon Blanc 等為代表。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Lessona DOC",
+		"name": "Lessona",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Biella",
+		"zone": "Biella 省 Lessona、Cossato、Castellengo、Masserano、Brusnengo、Casapinta、Masserano 部分地區",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Bonarda"],
+		"description": "Lessona DOC 是 Piemonte 北部 Biella 省以 Nebbiolo（當地稱 Spanna）為主釀造的紅酒產區，酒體優雅，礦物感明顯，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Lessona DOC 產自 Biella 省 Lessona 及周邊多個市鎮，是北 Piemonte 代表性的 Nebbiolo 紅酒產區。法定規定 Nebbiolo（Spanna）須達 85%，可混釀 Vespolina、Bonarda。最低陳年 22 個月（Riserva 為 46 個月）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與火山岩土壤影響，晝夜溫差大，土壤多火山岩與黏土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Loazzolo DOC",
+		"name": "Loazzolo",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Asti 省 Loazzolo 市鎮及周邊地區（Langhe 南部丘陵地帶）",
+		"style": ["甜酒"],
+		"grapes": ["Moscato Bianco"],
+		"description": "Loazzolo DOC 是 Piemonte Asti 省以 Moscato Bianco 葡萄釀造的稀有甜型白酒產區，僅限 Loazzolo 市鎮生產，採用遲摘與貴腐葡萄，酒體濃郁，香氣複雜。",
+		"details": {
+			"introduction": "Loazzolo DOC 產自 Asti 省 Loazzolo 市鎮，是 Piemonte 罕見的貴腐甜白酒產區。法定規定 Moscato Bianco 含量須達 100%，葡萄需遲摘並經貴腐菌感染，最低陳年 24 個月（其中 6 個月於木桶）。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，利於貴腐菌生長，土壤多為石灰質與黏土。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Malvasia di Casorzo d'Asti DOC",
+		"name": "Malvasia di Casorzo d'Asti",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Alessandria",
+		"zone": "Asti、Alessandria 兩省多個市鎮，包括 Casorzo、Grana、Montemagno、Vignale Monferrato、Altavilla Monferrato、Odalengo Grande 等",
+		"style": ["甜酒", "紅酒", "氣泡酒"],
+		"grapes": ["Malvasia di Casorzo"],
+		"description": "Malvasia di Casorzo d'Asti DOC 是 Piemonte Asti、Alessandria 兩省以 Malvasia di Casorzo 葡萄釀造的甜型紅氣泡酒產區，酒色鮮明，帶有花香與紅色水果香氣，適合搭配甜點。",
+		"details": {
+			"introduction": "Malvasia di Casorzo d'Asti DOC 產自 Asti、Alessandria 兩省多個市鎮，是 Piemonte 罕見的甜型紅氣泡酒產區。法定規定 Malvasia di Casorzo 含量須達 90%，可混釀 Freisa、Grignolino、Barbera。分為微氣泡（Frizzante）與氣泡（Spumante）兩種風格。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Malvasia di Castelnuovo Don Bosco DOC",
+		"name": "Malvasia di Castelnuovo Don Bosco",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti",
+		"zone": "Asti 省 Castelnuovo Don Bosco、Albugnano、Castelnuovo Don Bosco、Passerano Marmorito、Pino d'Asti、Berzano di San Pietro 等市鎮",
+		"style": ["甜酒", "紅酒", "氣泡酒"],
+		"grapes": ["Malvasia di Schierano", "Freisa"],
+		"description": "Malvasia di Castelnuovo Don Bosco DOC 是 Piemonte Asti 省以 Malvasia di Schierano 為主釀造的甜型紅氣泡酒產區，酒色鮮明，帶有花香與紅色水果香氣，適合搭配甜點。",
+		"details": {
+			"introduction": "Malvasia di Castelnuovo Don Bosco DOC 產自 Asti 省 Castelnuovo Don Bosco 及周邊多個市鎮，是 Piemonte 罕見的甜型紅氣泡酒產區。法定規定 Malvasia di Schierano 含量須達 85%，可混釀 Freisa。分為微氣泡（Frizzante）與氣泡（Spumante）兩種風格。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Monferrato DOC",
+		"name": "Monferrato",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Asti, Alessandria",
+		"zone": "Asti、Alessandria 兩省 Monferrato 地區多個市鎮，包括 Casale Monferrato、Nizza Monferrato、Acqui Terme、Canelli、Asti、Alessandria 等",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒", "氣泡酒"],
+		"grapes": ["Barbera", "Dolcetto", "Freisa", "Grignolino", "Brachetto", "Cortese", "Chardonnay", "Sauvignon Blanc", "Pinot Nero", "Cabernet Sauvignon", "Merlot", "Syrah", "Malvasia di Schierano", "Viognier", "Albarossa", "Ruché", "Nebbiolo", "其他本地品種"],
+		"description": "Monferrato DOC 是 Piemonte Asti、Alessandria 兩省 Monferrato 地區多元葡萄品種的法定產區，涵蓋紅、白、玫瑰紅酒及新酒、氣泡酒等多種風格，Barbera、Dolcetto、Cortese、Chardonnay 等為代表品種。",
+		"details": {
+			"introduction": "Monferrato DOC 產自 Asti、Alessandria 兩省 Monferrato 地區多個市鎮，是 Piemonte 最具代表性的多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Monferrato Rosso、Bianco、Rosato、Novello、新酒及 Spumante 氣泡酒，以及多種單一品種酒款。Barbera、Dolcetto、Cortese、Chardonnay、Sauvignon Blanc 等為代表。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Nebbiolo d'Alba DOC",
+		"name": "Nebbiolo d'Alba",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo, Torino",
+		"zone": "Cuneo 省 Langhe、Roero 地區及部分 Torino 省多個市鎮，包括 Alba、Barbaresco、Barolo、Bra、Canale、Castagnito、Castellinaldo、Castelletto、Cherasco、Corneliano d'Alba、Diano d'Alba、Govone、Grinzane Cavour、La Morra、Magliano Alfieri、Monchiero、Monforte d'Alba、Montà、Monticello d'Alba、Neive、Novello、Piobesi d'Alba、Pocapaglia、Priocca、Roddi、Roddino、Santa Vittoria d'Alba、Serralunga d'Alba、Sinio、Treiso、Verduno 等",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo"],
+		"description": "Nebbiolo d'Alba DOC 是 Piemonte Cuneo、Torino 兩省 Langhe、Roero 地區以 Nebbiolo 葡萄釀造的經典紅酒產區，酒體結構緊實，果香細緻，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Nebbiolo d'Alba DOC 產自 Cuneo、Torino 兩省 Langhe、Roero 地區多個市鎮，是 Piemonte 代表性的 Nebbiolo 紅酒產區。法定規定 Nebbiolo 含量須達 100%，分為一般型與 Superiore（陳年至少 18 個月）兩種。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Piemonte DOC",
+		"name": "Piemonte",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "全區",
+		"zone": "Piemonte 全區，包括 Torino、Cuneo、Asti、Alessandria、Novara、Vercelli、Biella、Verbano-Cusio-Ossola 等省多個市鎮",
+		"style": ["紅酒", "白酒", "玫瑰紅酒", "新酒", "氣泡酒"],
+		"grapes": ["Barbera", "Dolcetto", "Nebbiolo", "Freisa", "Grignolino", "Brachetto", "Cortese", "Chardonnay", "Sauvignon Blanc", "Pinot Nero", "Cabernet Sauvignon", "Merlot", "Syrah", "Malvasia di Schierano", "Viognier", "Albarossa", "Ruché", "Arneis", "Favorita", "Nascetta", "其他本地品種"],
+		"description": "Piemonte DOC 是 Piemonte 全區多元葡萄品種的法定產區，涵蓋紅、白、玫瑰紅酒及新酒、氣泡酒等多種風格，Barbera、Dolcetto、Nebbiolo、Cortese、Chardonnay 等為代表品種。",
+		"details": {
+			"introduction": "Piemonte DOC 產自 Piemonte 全區多個市鎮，是 Piemonte 最具代表性的多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Piemonte Rosso、Bianco、Rosato、Novello、新酒及 Spumante 氣泡酒，以及多種單一品種酒款。Barbera、Dolcetto、Nebbiolo、Cortese、Chardonnay、Sauvignon Blanc 等為代表。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Pinerolese DOC",
+		"name": "Pinerolese",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Torino 省西部 Pinerolo、Bricherasio、Cavour、Bibiana、Osasco、San Secondo di Pinerolo、Vigone、Bagnolo Piemonte、Barge、Campiglione Fenile、Cercenasco、Cavour、Cumiana、Frossasco、Garzigliana、Luserna San Giovanni、Lusernetta、Macello、Pinasca、Pinerolo、Prarostino、Roletto、Scalenghe、Torre Pellice、Villar Pellice、Villar Perosa 等市鎮",
+		"style": ["紅酒", "玫瑰紅酒", "新酒"],
+		"grapes": ["Barbera", "Bonarda", "Chatus", "Dolcetto", "Freisa", "Nebbiolo", "Neretta Cuneese", "Pinot Nero", "其他本地品種"],
+		"description": "Pinerolese DOC 是 Piemonte Torino 省西部以多元葡萄品種釀造的法定產區，涵蓋紅、玫瑰紅酒及新酒等多種風格，Barbera、Chatus、Neretta Cuneese 等為代表品種。",
+		"details": {
+			"introduction": "Pinerolese DOC 產自 Torino 省西部 Pinerolo 及周邊多個市鎮，是 Piemonte 罕見的多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Pinerolese Rosso、Rosato、新酒及多種單一品種酒款。Barbera、Chatus、Neretta Cuneese、Dolcetto、Freisa、Nebbiolo、Pinot Nero 等為代表。",
+			"climate": "溫帶大陸型，受阿爾卑斯山影響，海拔較高，晝夜溫差大，土壤多為沖積土與黏土，賦予酒款新鮮酸度與礦物感。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Rubino di Cantavenna DOC",
+		"name": "Rubino di Cantavenna",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Alessandria 省 Cantavenna、Gabiano、Moncestino 三市鎮及周邊地區（Po 河沿岸）",
+		"style": ["紅酒"],
+		"grapes": ["Barbera", "Grignolino", "Freisa"],
+		"description": "Rubino di Cantavenna DOC 是 Piemonte 東部 Alessandria 省以 Barbera 為主釀造的紅酒產區，酒體中等，果香濃郁，帶有香料與花香，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Rubino di Cantavenna DOC 產自 Alessandria 省 Cantavenna、Gabiano、Moncestino 三市鎮及周邊地區，是 Piemonte 罕見的 Barbera 為主紅酒產區。法定規定 Barbera 含量須達 75-90%，可混釀 Grignolino、Freisa。最低陳年 6 個月。",
+			"climate": "溫帶大陸型，受 Po 河影響，夏季溫暖，晝夜溫差大，土壤多為黏土與砂質，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Sizzano DOC",
+		"name": "Sizzano",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Novara",
+		"zone": "Novara 省 Sizzano 市鎮及周邊地區",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Uva Rara"],
+		"description": "Sizzano DOC 是 Piemonte 北部 Novara 省以 Nebbiolo（當地稱 Spanna）為主釀造的紅酒產區，酒體結構緊實，果香細緻，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Sizzano DOC 產自 Novara 省 Sizzano 市鎮及周邊地區，是北 Piemonte 代表性的 Nebbiolo 紅酒產區。法定規定 Nebbiolo（Spanna）須達 50-70%，Vespolina 及 Uva Rara 30-50%。最低陳年 22 個月（Riserva 為 34 個月）。",
+			"climate": "溫帶大陸型，受阿爾卑斯山與湖泊影響，晝夜溫差大，土壤多火山岩與黏土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Strevi DOC",
+		"name": "Strevi",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Alessandria",
+		"zone": "Alessandria 省 Strevi 市鎮及周邊地區",
+		"style": ["甜酒"],
+		"grapes": ["Moscato Bianco"],
+		"description": "Strevi DOC 是 Piemonte Alessandria 省以 Moscato Bianco 葡萄釀造的稀有甜型白酒產區，僅限 Strevi 市鎮生產，採用遲摘葡萄，酒體濃郁，香氣複雜。",
+		"details": {
+			"introduction": "Strevi DOC 產自 Alessandria 省 Strevi 市鎮，是 Piemonte 罕見的甜型白酒產區。法定規定 Moscato Bianco 含量須達 100%，葡萄需遲摘，最低陳年 24 個月（其中 6 個月於木桶）。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，利於葡萄成熟與糖分累積，土壤多為石灰質與黏土。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Valli Ossolane DOC",
+		"name": "Valli Ossolane",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Verbano-Cusio-Ossola",
+		"zone": "Verbano-Cusio-Ossola 省 Ossola 山谷地區，包括 Domodossola、Crevoladossola、Montecrestese、Trontano、Vogogna、Villadossola、Masera、Piedimulera、Pallanzeno、Beura-Cardezza、Mergozzo、Premosello-Chiovenda、Bognanco、Crodo、Druogno、Malesco、Re、Santa Maria Maggiore、Vanzone con San Carlo、Varzo 等市鎮",
+		"style": ["紅酒", "白酒", "新酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Croatina", "Merlot", "Chardonnay", "其他本地品種"],
+		"description": "Valli Ossolane DOC 是 Piemonte 最北端 Verbano-Cusio-Ossola 省 Ossola 山谷地區的多元葡萄酒產區，涵蓋紅、白、新酒等多種風格，Nebbiolo、Croatina、Merlot、Chardonnay 等為代表品種。",
+		"details": {
+			"introduction": "Valli Ossolane DOC 產自 Verbano-Cusio-Ossola 省 Ossola 山谷地區多個市鎮，是 Piemonte 最北端的多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Valli Ossolane Rosso、Bianco、新酒及多種單一品種酒款。Nebbiolo（Spanna）、Croatina、Merlot、Chardonnay 等為代表。",
+			"climate": "高山氣候，海拔高，晝夜溫差大，土壤多為冰磧石與砂礫，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Valsusa DOC",
+		"name": "Valsusa",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Torino",
+		"zone": "Torino 省西部 Susa 山谷地區，包括 Almese、Avigliana、Bruzolo、Bussoleno、Caprie、Caselette、Chianocco、Chiusa di San Michele、Condove、Giaglione、Gravere、Mattie、Meana di Susa、Mompantero、Moncenisio、Novalesa、Rubiana、San Didero、San Giorio di Susa、Sant'Ambrogio di Torino、Sant'Antonino di Susa、Susa、Vaie、Venaus、Villar Focchiardo 等市鎮",
+		"style": ["紅酒", "新酒"],
+		"grapes": ["Avanà", "Barbera", "Becuet", "Chatus", "Dolcetto", "Nebbiolo", "Neretta Cuneese", "其他本地品種"],
+		"description": "Valsusa DOC 是 Piemonte Torino 省西部 Susa 山谷地區的多元葡萄酒產區，涵蓋紅、新酒等多種風格，Avanà、Barbera、Becuet、Chatus、Dolcetto、Nebbiolo 等為代表品種。",
+		"details": {
+			"introduction": "Valsusa DOC 產自 Torino 省西部 Susa 山谷地區多個市鎮，是 Piemonte 罕見的高山多品種法定產區。法定涵蓋多種葡萄品種與酒款，包括 Valsusa Rosso、新酒及多種單一品種酒款。Avanà、Barbera、Becuet、Chatus、Dolcetto、Nebbiolo、Neretta Cuneese 等為代表。",
+			"climate": "高山氣候，海拔高，晝夜溫差大，土壤多為冰磧石與砂礫，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Verduno Pelaverga Verduno DOC",
+		"name": "Verduno Pelaverga (Verduno)",
+		"type": "DOC",
+		"region": "Piemonte",
+		"province": "Cuneo",
+		"zone": "Cuneo 省 Verduno、La Morra、Roddi 三市鎮及周邊地區（Langhe 地區）",
+		"style": ["紅酒"],
+		"grapes": ["Pelaverga Piccolo"],
+		"description": "Verduno Pelaverga DOC（又稱 Verduno DOC）是 Piemonte Cuneo 省 Langhe 地區以 Pelaverga Piccolo 葡萄釀造的特色紅酒產區，酒體輕盈，果香細緻，帶有辛香料與花香，具備良好陳年潛力。",
+		"details": {
+			"introduction": "Verduno Pelaverga DOC 產自 Cuneo 省 Verduno、La Morra、Roddi 三市鎮及周邊地區，是 Piemonte 罕見的 Pelaverga Piccolo 單一品種紅酒產區。法定規定 Pelaverga Piccolo 含量須達 100%。",
+			"climate": "溫帶大陸型，丘陵地形，夏季溫暖，晝夜溫差大，土壤多為石灰質與黏土，有利於葡萄香氣與酸度保存。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Ghemme DOCG",
+		"name": "Ghemme DOCG",
+		"type": "DOCG",
+		"region": "Piemonte",
+		"province": "Novara",
+		"zone": "Novara 省 Ghemme 市鎮及相鄰的 Romagnano Sesia 市鎮。",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Spanna)", "Vespolina", "Uva Rara"],
+		"description": "Ghemme DOCG 是 Piemonte 北部 Novara 省的頂級紅酒，以 Nebbiolo（當地稱 Spanna）為主要品種，可混釀少量 Vespolina 和 Uva Rara。酒體飽滿，單寧豐富，具備優秀的陳年潛力，風格上與 Gattinara DOCG 相似，是北 Piemonte 的代表性 DOCG 之一。",
+		"details": {
+			"introduction": "Ghemme DOCG 於 1997 年升格，位於北 Novara 丘陵的 Alto Piemonte 產區。土壤以砂質礫石為主（火山礦物土壤），賦予酒款精緻的香氣與良好的礦物感。法定規定 Nebbiolo（Spanna）含量至少 75%。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山脈的調節，冬季寒冷，夏季溫暖而少雨，秋季成熟期長，有利於 Nebbiolo 完全成熟。",
+			"winemaking": "最少需在橡木桶中陳年 25 個月，整體最少熟成 3 年（Riserva 為 4 年）。酒液呈石榴紅色，帶有玫瑰、焦油、皮革、松露與紅果香，骨幹強健，適合長期窖藏。",
+			"subregions": {}
+		}
+	}
+]

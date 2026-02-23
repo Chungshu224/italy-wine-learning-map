@@ -1,0 +1,73 @@
+{
+  "id": "L3M4L5",
+  "title": "實戰盲品練習 (互動)",
+  "description": "透過模擬真實盲品情境，綜合運用 SAT 系統化品鑑法，挑戰辨識義大利經典紅、白、氣泡酒款，測試你的演繹邏輯與品種辨識能力。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "盲品實戰：如何進行這堂課",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">這是一堂互動式的盲品模擬課程。我們將提供三款「神秘酒款 (Mystery Wines)」的詳細品飲筆記（外觀、香氣、口感）。你需要根據這些線索，運用前幾堂課學到的演繹邏輯，推斷出正確的葡萄品種與產區。</p><div class=\"bg-indigo-50 p-6 rounded-xl border border-indigo-100 mb-8\"><h4 class=\"text-indigo-800 font-bold mb-4 flex items-center text-xl\"><span class=\"material-icons mr-2\">psychology</span> 盲品演繹三步法</h4><ol class=\"list-decimal list-inside space-y-3 text-gray-700\"><li><strong>結構定生死 (Structure First)：</strong> 先看酸度、單寧、酒體。高酸高單寧？低酸高單寧？這能立刻幫你排除 80% 的選項。</li><li><strong>香氣找標誌 (Aroma Markers)：</strong> 尋找關鍵字。酸櫻桃？番茄葉？焦油？苦杏仁？烤麵包？</li><li><strong>綜合推論 (Conclusion)：</strong> 將結構與香氣結合，得出最合理的結論。</li></ol></div><div class=\"bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500\"><h4 class=\"text-yellow-800 font-bold mb-2\">準備好了嗎？</h4><p class=\"text-gray-700\">請仔細閱讀接下來每一款酒的品飲筆記，並在最後的測驗中選出你的答案。記住，盲品不是猜謎，而是邏輯推理！</p></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "神秘酒款 1 號 (Mystery Wine 1)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">請仔細閱讀以下品飲筆記，並在心中推演可能的品種。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-red-400 to-orange-300 mb-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Wine 1</h3><p class=\"text-gray-500\">紅葡萄酒</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-red-600\">高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-red-500 h-2 rounded-full\" style=\"width: 95%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>單寧</span><span class=\"font-bold text-red-600\">高 (抓舌感強)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-red-500 h-2 rounded-full\" style=\"width: 95%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酒體</span><span class=\"font-bold text-gray-600\">中等至飽滿</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 80%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">品飲筆記 (Tasting Notes)</h4><div class=\"space-y-4\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">顏色偏淺，呈現寶石紅，但邊緣有非常明顯的<strong>橘紅色 (Garnet/Orange rim)</strong>。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">香氣濃郁且複雜。明顯的<strong>玫瑰花瓣 (Dried Roses)</strong>、紅櫻桃、覆盆子，伴隨著<strong>焦油 (Tar)</strong>、甘草、皮革與一絲松露的氣息。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">入口酸度極高，令人流口水。單寧非常強烈且緊實，覆蓋整個口腔。尾韻悠長，帶有乾燥花與香料味。</span></div></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "神秘酒款 2 號 (Mystery Wine 2)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">請仔細閱讀以下品飲筆記，並在心中推演可能的品種。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-100 mb-4 shadow-inner\"></div><h3 class=\"text-xl font-bold text-gray-800\">Wine 2</h3><p class=\"text-gray-500\">白葡萄酒</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-yellow-600\">中高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-yellow-500 h-2 rounded-full\" style=\"width: 75%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酒體</span><span class=\"font-bold text-gray-600\">中等</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 60%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>橡木桶影響</span><span class=\"font-bold text-gray-400\">無</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-gray-300 h-2 rounded-full\" style=\"width: 0%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">品飲筆記 (Tasting Notes)</h4><div class=\"space-y-4\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">中等檸檬黃，清澈明亮。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">香氣中等濃郁。帶有明顯的<strong>洋甘菊 (Chamomile)</strong>、白桃、甜瓜，以及一絲<strong>烤杏仁 (Roasted Almond)</strong> 的氣息。沒有任何香草或奶油味。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度柔和但足夠支撐，口感圓潤。果香在口中延續，尾韻帶有非常經典的<strong>微苦杏仁味 (Bitter Almond finish)</strong>。</span></div></div></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "神秘酒款 3 號 (Mystery Wine 3)",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">請仔細閱讀以下品飲筆記，並在心中推演可能的品種。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-24 h-24 rounded-full bg-gradient-to-br from-yellow-200 to-amber-300 mb-4 shadow-inner flex items-center justify-center\"><span class=\"material-icons text-4xl text-amber-700 opacity-50\">bakery_dining</span></div><h3 class=\"text-xl font-bold text-gray-800\">Wine 3</h3><p class=\"text-gray-500\">氣泡酒</p><div class=\"mt-4 w-full\"><div class=\"flex justify-between text-sm mb-1\"><span>酸度</span><span class=\"font-bold text-amber-600\">高</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-amber-500 h-2 rounded-full\" style=\"width: 80%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>甜度</span><span class=\"font-bold text-gray-600\">極乾 (Brut)</span></div><div class=\"w-full bg-gray-200 rounded-full h-2 mb-3\"><div class=\"bg-gray-500 h-2 rounded-full\" style=\"width: 10%\"></div></div><div class=\"flex justify-between text-sm mb-1\"><span>酵母自溶味</span><span class=\"font-bold text-amber-800\">明顯</span></div><div class=\"w-full bg-gray-200 rounded-full h-2\"><div class=\"bg-amber-700 h-2 rounded-full\" style=\"width: 90%\"></div></div></div></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">品飲筆記 (Tasting Notes)</h4><div class=\"space-y-4\"><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">外觀 (Sight)</span><span class=\"text-gray-600\">中等金黃色，氣泡極其細緻綿密，持續上升。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">香氣 (Aroma)</span><span class=\"text-gray-600\">香氣濃郁。成熟的<strong>黃蘋果、水蜜桃</strong>，伴隨強烈的<strong>烤麵包、布里歐 (Brioche)</strong> 與烤榛果香氣。</span></div><div class=\"bg-gray-50 p-4 rounded-lg\"><span class=\"block font-bold text-gray-700 mb-1\">口感 (Palate)</span><span class=\"text-gray-600\">酸度高但口感圓潤飽滿，質地如奶油般滑順 (Creamy)。成熟的果香與酵母味完美融合，尾韻悠長。</span></div></div></div></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "根據「神秘酒款 1 號」的品飲筆記（顏色淺帶橘邊、玫瑰與焦油香氣、極高酸度與單寧），這款酒最可能是：",
+      "options": [
+        "Sangiovese (Chianti Classico)",
+        "Nebbiolo (Barolo)",
+        "Aglianico (Taurasi)",
+        "Barbera (Barbera d'Alba)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "「玫瑰與焦油 (Roses and Tar)」是 Nebbiolo 最經典的香氣標誌，加上淺色橘邊與極高酸度/單寧的結構，完美符合 Barolo 的特徵。"
+    },
+    {
+      "question": "根據「神秘酒款 2 號」的品飲筆記（洋甘菊、白桃、圓潤口感、苦杏仁尾韻），這款酒最可能是：",
+      "options": [
+        "Pinot Grigio (Delle Venezie)",
+        "Verdicchio (Castelli di Jesi)",
+        "Garganega (Soave)",
+        "Sauvignon Blanc (Alto Adige)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "洋甘菊與白桃香氣，加上圓潤的口感與經典的苦杏仁尾韻，是 Garganega (Soave) 的標準盲品特徵。Pinot Grigio 通常更清淡，Verdicchio 酸度更高且帶有茴香。"
+    },
+    {
+      "question": "根據「神秘酒款 3 號」的品飲筆記（細緻氣泡、成熟黃蘋果、強烈烤麵包/布里歐香氣、圓潤口感），這款酒最可能是：",
+      "options": [
+        "Prosecco (Valdobbiadene)",
+        "Asti (Moscato d'Asti)",
+        "Trento DOC",
+        "Franciacorta"
+      ],
+      "correctAnswer": 3,
+      "explanation": "強烈的烤麵包味排除了查馬法的 Prosecco 和 Asti。成熟的黃蘋果果香與圓潤奶油般的口感，指向氣候較溫暖的 Franciacorta，而非高酸冷冽的 Trento DOC。"
+    },
+    {
+      "question": "在盲品中，如果你遇到一款紅酒，顏色深邃不透光，帶有黑莓、火山灰與煙燻香氣，且單寧極其強烈厚實，這最可能是哪一個品種？（此題為加碼題）",
+      "options": [
+        "Nebbiolo",
+        "Sangiovese",
+        "Aglianico",
+        "Corvina"
+      ],
+      "correctAnswer": 2,
+      "explanation": "深邃的顏色、黑色水果、火山煙燻氣息以及極其強烈的單寧，是南部霸主 Aglianico（如 Taurasi）的經典特徵。"
+    }
+  ]
+}

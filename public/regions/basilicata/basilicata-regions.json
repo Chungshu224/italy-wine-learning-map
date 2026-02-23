@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Aglianico del Vulture DOC",
+    "name": "Aglianico del Vulture DOC",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "1,500",
+    "description": "Basilicata 最著名且歷史悠久的產區，位於火山地區，出產以 Aglianico 葡萄釀造的高品質紅酒，風格優雅富有結構。",
+    "grapes": ["Aglianico"],
+    "details": {
+      "introduction": "Aglianico del Vulture 是 Basilicata 大區最重要的 DOC 產區，位於 Monte Vulture 火山周圍，火山土壤賦予葡萄酒獨特的礦物質特性。此產區以 100% Aglianico 葡萄釀造的紅酒聞名，被譽為南義最優質的紅酒之一。",
+      "climate": "大陸性氣候，夏季炎熱乾燥，冬季寒冷，日夜溫差大。火山土壤排水良好，富含礦物質，海拔 200-700 公尺。",
+      "winemaking": "需要最少 1 年陳年，其中至少 3 個月在瓶中。Riserva 需要至少 3 年陳年。酒體飽滿，單寧豐富，具有黑櫻桃、紫羅蘭、香料和礦物質的香氣。"
+    }
+  },
+  {
+    "id": "Aglianico del Vulture Superiore DOCG",
+    "name": "Aglianico del Vulture Superiore DOCG",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": "800",
+    "description": "Aglianico del Vulture 的優質版本，採用精選葡萄園的果實，需要更長時間陳年，展現更高的複雜度與陳年潛力。",
+    "grapes": ["Aglianico"],
+    "details": {
+      "introduction": "Aglianico del Vulture Superiore DOCG 是 Basilicata 唯一的 DOCG 等級產區（2011 年升級），代表該地區最高品質的 Aglianico 紅酒。僅使用最優質葡萄園的果實，產量限制更嚴格。",
+      "climate": "與 Aglianico del Vulture DOC 相同，但葡萄園位於最佳地塊，通常海拔較高，日照更充足。",
+      "winemaking": "需要最少 3 年陳年，其中至少 1 年在橡木桶中。Riserva 需要至少 5 年陳年。酒體更加飽滿，結構複雜，陳年潛力可達 15-20 年。"
+    }
+  },
+  {
+    "id": "Grottino di Roccanova DOC",
+    "name": "Grottino di Roccanova DOC",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "50",
+    "description": "位於 Basilicata 南部的小型傳統產區，出產採用多種本地葡萄品種混釀的傳統風格紅酒，產量稀少但具有地方特色。",
+    "grapes": ["Aglianico", "Sangiovese", "Malvasia Nera", "Montepulciano"],
+    "details": {
+      "introduction": "Grottino di Roccanova 是一個小型且較不為人知的 DOC 產區，位於 Basilicata 南部山區。這裡保留了傳統的混釀方式，主要使用 Aglianico 搭配其他本地品種。",
+      "climate": "地中海氣候，受內陸山區影響，日夜溫差顯著。葡萄園多位於山坡地，海拔 300-600 公尺，土壤以黏土和石灰岩為主。",
+      "winemaking": "混釀紅酒通常包含至少 45% 的 Aglianico，搭配 Sangiovese、Malvasia Nera 和 Montepulciano。酒體中等至飽滿，帶有紅色水果和香料香氣。"
+    }
+  },
+  {
+    "id": "Matera DOC",
+    "name": "Matera DOC",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "300",
+    "description": "以世界遺產古城 Matera 命名的產區，出產多種風格的葡萄酒，包括紅、白、粉紅酒，展現該地區的葡萄酒多樣性。",
+    "grapes": ["Aglianico", "Primitivo", "Sangiovese", "Greco", "Malvasia Bianca"],
+    "details": {
+      "introduction": "Matera DOC 以著名的石窟古城 Matera（UNESCO 世界遺產）命名，2005 年獲得 DOC 認證。此產區允許釀造多種風格的葡萄酒，包括紅酒（Rosso）、白酒（Bianco）、粉紅酒（Rosato）和氣泡酒（Spumante）。",
+      "climate": "地中海氣候，夏季炎熱乾燥，冬季溫和。葡萄園位於海拔 200-500 公尺的丘陵地帶，土壤為石灰質黏土。",
+      "winemaking": "紅酒主要使用 Primitivo 和 Aglianico，白酒使用 Greco 和 Malvasia。產區允許多種釀造方式，從新鮮果香型到結構複雜的陳年型皆有。"
+    }
+  },
+  {
+    "id": "Terre dell'Alta Val d'Agri DOC",
+    "name": "Terre dell'Alta Val d'Agri DOC",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "100",
+    "description": "位於 Val d'Agri 高海拔谷地的新興產區，結合傳統本地品種與國際品種，出產風格現代且多樣化的葡萄酒。",
+    "grapes": ["Aglianico", "Merlot", "Cabernet Sauvignon", "Malvasia Bianca", "Chardonnay"],
+    "details": {
+      "introduction": "Terre dell'Alta Val d'Agri 是 Basilicata 較新的 DOC 產區（2003 年認證），位於該大區西南部的高海拔谷地。此產區允許使用國際品種與本地品種混釀，展現現代化的釀酒風格。",
+      "climate": "高海拔山地氣候，海拔 600-900 公尺，是義大利海拔最高的葡萄酒產區之一。夏季涼爽，日夜溫差極大，有利於葡萄的香氣發展和酸度保持。",
+      "winemaking": "產區允許多種混釀方式，紅酒可使用 Aglianico、Merlot、Cabernet Sauvignon 等，白酒可使用 Malvasia、Chardonnay 等。酒體優雅，酸度活潑，具有清新的果香和礦物質特性。"
+    }
+  }
+]

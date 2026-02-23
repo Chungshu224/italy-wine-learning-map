@@ -1,0 +1,134 @@
+[
+  {
+    "id": "Cinque Terre Cinque Terre Sciacchetrà DOC",
+    "name": "Cinque Terre Sciacchetrà",
+    "type": "DOC",
+    "style": "甜酒",
+    "hectare": "約 50",
+    "description": "五漁村的珍稀甜酒產區，以風乾葡萄釀造而成",
+    "grapes": ["Bosco", "Albarola", "Vermentino"],
+    "details": {
+      "introduction": "Sciacchetrà 是五漁村最珍貴的葡萄酒，使用風乾的葡萄釀造，產量極為稀少。這種甜酒具有琥珀色澤，帶有濃郁的乾果、蜂蜜、杏桃和香料風味。釀造過程需要將葡萄在通風良好的房間中風乾數月，使糖分濃縮，酒精度通常達到 17-18%。傳統上作為冥想酒或搭配甜點享用。",
+      "climate": "地中海型氣候，受海洋影響明顯，陡峭的梯田葡萄園面向大海，海拔從海平面到 500 公尺不等。強烈的陽光和海風有利於葡萄的成熟和風乾。",
+      "subregions": {
+        "Monterosso": "最西邊的村莊，擁有最多的葡萄園面積",
+        "Vernazza": "陡峭的梯田，生產最優質的 Sciacchetrà",
+        "Corniglia": "唯一不臨海的村莊，海拔最高的葡萄園",
+        "Manarola": "擁有古老的風乾葡萄房",
+        "Riomaggiore": "最東邊的村莊，梯田景觀最為壯觀"
+      }
+    }
+  },
+  {
+    "id": "Colli di Luni DOC",
+    "name": "Colli di Luni",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "約 300",
+    "description": "位於 Liguria 和 Toscana 交界處的產區，以 Vermentino 白酒聞名",
+    "grapes": ["Vermentino", "Sangiovese", "Pollera Nera", "Canaiolo", "Ciliegiolo"],
+    "details": {
+      "introduction": "Colli di Luni 橫跨 Liguria 和 Toscana 邊界，以 Vermentino 白酒最為著名，當地稱為「Vermentino dei Colli di Luni」。產區位於古羅馬城市 Luna 遺址附近，葡萄種植歷史可追溯至羅馬時代。Vermentino 佔總產量的 80%，特色是礦物質感和清新的酸度。紅酒主要使用 Sangiovese 釀造，展現 Toscana 風格。",
+      "climate": "受海洋影響的溫和氣候，日夜溫差適中。Apuan Alps 山脈提供屏障，創造出適合種植的微氣候。土壤以砂質黏土和石灰岩為主。",
+      "subregions": {
+        "Luni (SP)": "產區核心，歷史最悠久",
+        "Ortonovo": "品質優異的 Vermentino",
+        "Sarzana": "產區最大的生產中心",
+        "Castelnuovo Magra": "山丘上的優質葡萄園"
+      }
+    }
+  },
+  {
+    "id": "Colline di Levanto DOC",
+    "name": "Colline di Levanto",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "約 100",
+    "description": "位於五漁村北部的山丘產區，梯田葡萄園景觀壯麗",
+    "grapes": ["Vermentino", "Albarola", "Bosco", "Sangiovese", "Ciliegiolo"],
+    "details": {
+      "introduction": "Levanto 山丘的葡萄園位於陡峭的梯田上，與五漁村相連。這裡生產清新的白酒和輕盈的紅酒，風格與五漁村相似但更為柔和。白酒以 Vermentino 為主，展現海洋風味和礦物質感。紅酒則使用 Sangiovese 和 Ciliegiolo，酒體輕盈，適合搭配海鮮。",
+      "climate": "地中海型氣候，海風帶來清爽的微氣候。葡萄園海拔 100-400 公尺，面向大海，日照充足。土壤為砂質和片岩。",
+      "subregions": {
+        "Levanto": "產區中心，擁有最多葡萄園",
+        "Bonassola": "小型但品質優秀",
+        "Framura": "陡峭梯田，產量稀少"
+      }
+    }
+  },
+  {
+    "id": "Dolceacqua Rossese di Dolceacqua DOC",
+    "name": "Rossese di Dolceacqua",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "約 50",
+    "description": "Liguria 最負盛名的紅酒產區，據傳是拿破崙最愛的葡萄酒",
+    "grapes": ["Rossese"],
+    "details": {
+      "introduction": "Rossese di Dolceacqua 是 Liguria 最負盛名的紅酒之一，產自靠近法國邊界的 Dolceacqua 中世紀小鎮。這種酒以其優雅、芳香和細緻的單寧著稱，帶有紅色水果、紫羅蘭和香料的香氣。據說是拿破崙在義大利戰役期間最喜愛的葡萄酒之一。Rossese 葡萄皮薄，釀出的酒色澤明亮，酒體中等，適合年輕時飲用，但優質的也能陳年 5-10 年。",
+      "climate": "地中海型氣候，受阿爾卑斯山腳和海洋的雙重影響，日夜溫差大。Nervia 河谷提供理想的微氣候，葡萄園海拔 100-500 公尺。土壤為砂質和片岩。",
+      "subregions": {
+        "Dolceacqua": "產區核心，歷史悠久的中世紀小鎮",
+        "Ventimiglia": "靠近法國邊界",
+        "Camporosso": "山谷中的優質葡萄園",
+        "Perinaldo": "海拔較高，酸度更高"
+      }
+    }
+  },
+  {
+    "id": "Golfo del Tigullio - Portofino Portofino DOC",
+    "name": "Golfo del Tigullio Portofino",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "約 80",
+    "description": "環繞 Portofino 海灣的葡萄酒產區，完美搭配利古里亞海鮮料理",
+    "grapes": ["Vermentino", "Bianchetta Genovese", "Ciliegiolo", "Dolcetto"],
+    "details": {
+      "introduction": "這個產區位於著名的 Portofino 度假勝地周圍，環繞美麗的 Tigullio 海灣。生產清新的白酒和輕盈的紅酒，完美搭配當地海鮮料理如 trofie al pesto 和新鮮魚類。白酒以 Vermentino 和當地特有的 Bianchetta Genovese 釀造，展現海洋風味。紅酒使用 Ciliegiolo 為主，酒體輕盈，果味豐富。",
+      "climate": "典型的地中海氣候，溫和而陽光充足。海灣的庇護作用創造出理想的種植環境。葡萄園多位於面海的山坡上，海拔 50-300 公尺。",
+      "subregions": {
+        "Portofino": "最著名的海灣度假勝地",
+        "Santa Margherita Ligure": "產區最大的生產中心",
+        "Rapallo": "傳統的葡萄酒產區",
+        "Chiavari": "海灣東側的重要產區"
+      }
+    }
+  },
+  {
+    "id": "Ormeasco di Pornassio Pornassio DOC",
+    "name": "Ormeasco di Pornassio",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "約 60",
+    "description": "以 Ormeasco（Dolcetto）葡萄釀造的內陸山區紅酒產區",
+    "grapes": ["Ormeasco"],
+    "details": {
+      "introduction": "Ormeasco 是 Dolcetto 葡萄在 Liguria 的地方名稱，據信源自 Piedmont 的 Ormea 鎮。Pornassio 產區位於內陸山區的 Arroscia 河谷，生產果味豐富、結構良好的紅酒。與 Piedmont 的 Dolcetto 相比，這裡的 Ormeasco 通常更輕盈，酸度更突出。產區也生產少量的 Sciac-trà（淺紅色或粉紅色的輕盈葡萄酒）和 Superiore 版本。",
+      "climate": "山區氣候，涼爽且日夜溫差大，有利於保持葡萄的酸度和香氣。葡萄園海拔 400-700 公尺，是 Liguria 海拔最高的產區之一。土壤為砂質片岩。",
+      "subregions": {
+        "Pornassio": "產區核心，歷史悠久的山區小鎮",
+        "Pieve di Teco": "河谷中的主要生產中心",
+        "Ormea": "據信 Ormeasco 葡萄名稱的起源地"
+      }
+    }
+  },
+  {
+    "id": "Val Polcèvera DOC",
+    "name": "Val Polcèvera",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "約 150",
+    "description": "Genova 北部的歷史山谷產區，保存當地特有葡萄品種",
+    "grapes": ["Vermentino", "Bianchetta Genovese", "Albarola", "Ciliegiolo", "Dolcetto"],
+    "details": {
+      "introduction": "Val Polcèvera 位於 Genova 的後山，是一個歷史悠久的葡萄酒產區，曾為 Genova 城市供應大部分的葡萄酒。當地特有的 Bianchetta Genovese 白葡萄最具特色，這種葡萄幾乎只在這個河谷種植。產區生產多種風格的白酒和紅酒，包括傳統的 Coronata（當地最著名的葡萄酒）。由於城市擴張，葡萄園面積曾大幅減少，近年逐漸復興。",
+      "climate": "受海洋影響的山谷氣候，較為涼爽。Polcèvera 河谷從海岸延伸至內陸山區，創造出多樣的微氣候。葡萄園海拔 100-500 公尺。",
+      "subregions": {
+        "Coronata": "產區最著名的葡萄酒村",
+        "Sant'Olcese": "傳統的葡萄種植區",
+        "Serra Riccò": "山谷上游的產區",
+        "Campomorone": "北部的葡萄酒生產中心"
+      }
+    }
+  }
+]

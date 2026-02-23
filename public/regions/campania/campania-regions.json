@@ -1,0 +1,326 @@
+[
+		{
+			"id": "Aglianico del Taburno DOCG",
+			"name": "Aglianico del Taburno",
+			"type": "DOCG",
+			"region": "Campania",
+			"province": "Benevento",
+			"zone": "Taburno 山及其周邊丘陵（主要位於 Benevento 省，含 Solopaca、Guardia Sanframondi、Sant'Agata de' Goti 等鄰近市鎮）",
+			"style": ["紅酒"],
+			"grapes": ["Aglianico"],
+			"description": "Aglianico del Taburno DOCG 來自 Campania Taburno 山區，以 Aglianico 葡萄釀造，酒體結實、單寧明顯，常帶黑色水果、香料與礦物感，具有良好陳年潛力。",
+			"details": {
+				"introduction": "本產區集中在 Taburno 山與鄰近丘陵地帶，葡萄園多分布於中低海拔坡地，Aglianico 為主要品種。葡萄成熟期受夜間降溫影響，能保留酸度並發展集中風味，成就結構型紅酒。",
+				"climate": "屬地中海型但受內陸山區影響，夏季乾熱、夜間較涼爽，日夜溫差明顯，有助於風味累積與酸度保持。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico"]
+			},
+			"file": "Aglianico del Taburno DOCG.geojson"
+		},
+		{
+			"id": "Aversa DOC",
+			"name": "Aversa Asprinio",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Caserta, Napoli",
+			"zone": "Comuni di Aversa e altri comuni in provincia di Caserta e Napoli",
+			"style": ["白酒", "氣泡酒"],
+			"grapes": ["Asprinio"],
+			"description": "Aversa DOC（Aversa Asprinio）是坎帕尼亞地區以 Asprinio 葡萄釀造的白酒與氣泡酒，特色為高酸度、清新、果香明顯，常見於傳統高樹葡萄園。",
+			"details": {
+				"introduction": "Aversa DOC 主要產自坎帕尼亞的 Aversa 及周邊地區，以 Asprinio 葡萄為主，釀造出清爽高酸的白酒與氣泡酒。此地區葡萄園多採用高樹栽培法，風格獨特。",
+				"climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，適合高樹葡萄園生長。",
+				"subregions": {},
+				"grape_varieties": ["Asprinio"]
+			},
+			"file": "Aversa DOC.geojson"
+		},
+		{
+			"id": "Campi Flegrei DOC",
+			"name": "Campi Flegrei",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Napoli",
+			"zone": "Campi Flegrei 區域，包括 Pozzuoli、Bacoli、Monte di Procida 等地",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Piedirosso", "Falanghina"],
+			"description": "Campi Flegrei DOC 是坎帕尼亞地區火山土壤釀造的特色葡萄酒，紅酒以 Piedirosso 為主，白酒則以 Falanghina 為主，風格清新、礦物感強烈。",
+			"details": {
+				"introduction": "Campi Flegrei DOC 產自那不勒斯西部的火山地帶，葡萄園多分布於火山丘陵，土壤礦物質豐富。紅酒以 Piedirosso 為主，白酒以 Falanghina 為主，展現出獨特的礦物感與清新口感。",
+				"climate": "地中海型氣候，受海洋與火山影響，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Piedirosso", "Falanghina"]
+			},
+			"file": "Campi Flegrei DOC.geojson"
+		},
+		{
+			"id": "Capri DOC",
+			"name": "Capri",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Napoli",
+			"zone": "Isola di Capri (Napoli)",
+			"style": ["紅酒", "白酒"],
+			"grapes": ["Piedirosso", "Sciascinoso", "Aglianico", "Greco", "Falaghina"],
+			"description": "Capri DOC 是坎帕尼亞地區 Capri 島的法定產區，紅酒以 Piedirosso、Sciascinoso、Aglianico 為主，白酒則以 Greco、Falaghina 為主，風格清新、果香、礦物感。",
+			"details": {
+				"introduction": "Capri DOC 產自那不勒斯灣 Capri 島，葡萄園多分布於丘陵地形，紅白酒皆有生產。紅酒以 Piedirosso、Sciascinoso、Aglianico 為主，白酒以 Greco、Falaghina 為主，展現出清新果香與礦物感。",
+				"climate": "地中海型氣候，受海洋影響，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Piedirosso", "Sciascinoso", "Aglianico", "Greco", "Falaghina"]
+			},
+			"file": "Capri DOC.geojson"
+		},
+		{
+			"id": "Casavecchia di Pontelatone DOC",
+			"name": "Casavecchia di Pontelatone",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Caserta",
+			"zone": "Pontelatone、Castel di Sasso、Formicola、Liberi、Piana di Monte Verna、Roccaromana、Giano Vetusto、Calvi Risorta、Teverola、Capua、Bellona、Camigliano、Pastorano、Vitulazio、Sparanise、Francolise、Grazzanise、Santa Maria la Fossa、San Tammaro、Caserta、San Nicola la Strada、San Marco Evangelista、Maddaloni、Valle di Maddaloni、Santa Maria Capua Vetere、San Prisco、Curti、Casapulla、Casagiove、Recale、Portico di Caserta、Macere、Casal di Principe、San Cipriano d'Aversa、Villa di Briano、Villa Literno、Cesa、Carinaro、Gricignano di Aversa、Succivo、Sant'Arpino、Trentola-Ducenta、Lusciano、Aversa、Frignano、San Marcellino、Teverola、Orta di Atella、Caivano、Cardito、Crispano、Frattaminore、Frattamaggiore、Grumo Nevano、Sant'Antimo、San Pietro a Patierno、Casoria、Afragola、Arzano、Casavatore、Napoli",
+			"style": ["紅酒"],
+			"grapes": ["Casavecchia"],
+			"description": "Casavecchia di Pontelatone DOC 是坎帕尼亞地區以 Casavecchia 葡萄釀造的紅酒，特色為色澤深、單寧明顯、果香濃郁，適合陳年。",
+			"details": {
+				"introduction": "Casavecchia di Pontelatone DOC 主要產自 Caserta 省的 Pontelatone 及周邊地區，以 Casavecchia 葡萄為主，釀造出結構紮實、適合陳年的紅酒。",
+				"climate": "地中海型氣候，夏季炎熱乾燥，冬季溫和，適合紅葡萄品種生長。",
+				"subregions": {},
+				"grape_varieties": ["Casavecchia"]
+			},
+			"file": "Casavecchia di Pontelatone DOC.geojson"
+		},
+		{
+			"id": "Castel San Lorenzo DOC",
+			"name": "Castel San Lorenzo",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Salerno",
+			"zone": "Castel San Lorenzo、Felitto、Magliano Vetere、Monteforte Cilento、Roccadaspide、Aquara、Castelcivita、Corleto Monforte、Ottati、Sacco、Sant'Angelo a Fasanella、Stio、Trentinara、Bellosguardo、Cicerale、Giungano、Perito、Postiglione、Serre",
+			"style": ["紅酒", "白酒", "粉紅酒", "甜酒"],
+			"grapes": ["Barbera", "Trebbiano", "Malvasia", "Coda di Volpe", "Aglianico", "Piedirosso", "Sciascinoso"],
+			"description": "Castel San Lorenzo DOC 是坎帕尼亞地區以多種葡萄釀造的紅、白、粉紅及甜酒，風格多元，產區位於 Salerno 省的山區。",
+			"details": {
+				"introduction": "Castel San Lorenzo DOC 主要產自 Salerno 省的 Castel San Lorenzo 及周邊地區，葡萄品種多元，釀造出多種風格的葡萄酒，包括紅、白、粉紅及甜酒。",
+				"climate": "地中海型氣候，山區涼爽，日夜溫差大，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Barbera", "Trebbiano", "Malvasia", "Coda di Volpe", "Aglianico", "Piedirosso", "Sciascinoso"]
+			},
+			"file": "Castel San Lorenzo DOC.geojson"
+		},
+		{
+			"id": "Cilento DOC",
+			"name": "Cilento",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Salerno",
+			"zone": "Cilento 地區，包括 Agropoli、Alfano、Ascea、Camerota、Cannalonga、Capaccio、Casal Velino、Castellabate、Castelnuovo Cilento、Celle di Bulgheria、Ceraso、Corleto Monforte、Cuccaro Vetere、Futani、Gioi、Laurino、Laurito、Magliano Vetere、Moio della Civitella、Montano Antilia、Montecorice、Monteforte Cilento、Novi Velia、Ogliastro Cilento、Omignano、Orria、Perdifumo、Perito、Pisciotta、Pollica、Prignano Cilento、Roccagloriosa、Rofrano、Rutino、Sanza、Sapri、Serramezzana、Stella Cilento、Stio、Torraca、Torchiara、Torre Orsaia、Trentinara、Vallo della Lucania、Valle dell'Angelo",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Aglianico", "Piedirosso", "Barbera", "Fiano", "Greco"],
+			"description": "Cilento DOC 是坎帕尼亞南部以多種葡萄釀造的紅、白、粉紅酒，紅酒以 Aglianico 為主，白酒以 Fiano、Greco 為主，風格清新、果香、礦物感。",
+			"details": {
+				"introduction": "Cilento DOC 主要產自 Salerno 省的 Cilento 地區，葡萄品種多元，釀造出多種風格的葡萄酒，包括紅、白、粉紅酒。紅酒以 Aglianico 為主，白酒以 Fiano、Greco 為主。",
+				"climate": "地中海型氣候，靠海，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Piedirosso", "Barbera", "Fiano", "Greco"]
+			},
+			"file": "Cilento DOC.geojson"
+		},
+		{
+			"id": "Costa d'Amalfi DOC",
+			"name": "Costa d'Amalfi",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Salerno",
+			"zone": "Amalfi 海岸地區，包括 Amalfi、Atrani、Cetara、Conca dei Marini、Furore、Maiori、Minori、Positano、Praiano、Ravello、Scala、Tramonti、Vietri sul Mare",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Piedirosso", "Aglianico", "Sciascinoso", "Biancolella", "Falanghina", "Pepella", "Ginestra"],
+			"description": "Costa d'Amalfi DOC 是坎帕尼亞地區著名的 Amalfi 海岸產區，紅酒以 Piedirosso、Aglianico、Sciascinoso 為主，白酒以 Biancolella、Falanghina、Pepella、Ginestra 為主，風格清新、果香、礦物感。",
+			"details": {
+				"introduction": "Costa d'Amalfi DOC 主要產自 Salerno 省的 Amalfi 海岸地區，葡萄品種多元，釀造出多種風格的葡萄酒，包括紅、白、粉紅酒。紅酒以 Piedirosso、Aglianico、Sciascinoso 為主，白酒以 Biancolella、Falanghina、Pepella、Ginestra 為主。",
+				"climate": "地中海型氣候，靠海，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Piedirosso", "Aglianico", "Sciascinoso", "Biancolella", "Falanghina", "Pepella", "Ginestra"]
+			},
+			"file": "Costa d'Amalfi DOC.geojson"
+		},
+		{
+			"id": "Falerno del Massico DOC",
+			"name": "Falerno del Massico",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Caserta",
+			"zone": "Massico 山區，包括 Sessa Aurunca、Cellole、Falciano del Massico、Carinola、Mondragone",
+			"style": ["紅酒", "白酒"],
+			"grapes": ["Aglianico", "Piedirosso", "Primitivo", "Falanghina"],
+			"description": "Falerno del Massico DOC 是坎帕尼亞地區 Massico 山區的法定產區，紅酒以 Aglianico、Piedirosso、Primitivo 為主，白酒以 Falanghina 為主，風格濃郁、酒體飽滿。",
+			"details": {
+				"introduction": "Falerno del Massico DOC 主要產自 Caserta 省的 Massico 山區，葡萄品種多元，釀造出紅、白酒。紅酒以 Aglianico、Piedirosso、Primitivo 為主，白酒以 Falanghina 為主。",
+				"climate": "地中海型氣候，山區涼爽，日夜溫差大，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Piedirosso", "Primitivo", "Falanghina"]
+			},
+			"file": "Falerno del Massico DOC.geojson"
+		},
+		{
+			"id": "Fiano di Avellino DOCG",
+			"name": "Fiano di Avellino",
+			"type": "DOCG",
+			"region": "Campania",
+			"province": "Avellino",
+			"zone": "Avellino 省指定區域，包括 Lapio、Avellino、Montefredane、Summonte、等地",
+			"style": ["白酒"],
+			"grapes": ["Fiano"],
+			"description": "Fiano di Avellino DOCG 是坎帕尼亞地區最著名的白葡萄酒之一，以 Fiano 葡萄釀造，風格優雅、果香、礦物感明顯，適合陳年。",
+			"details": {
+				"introduction": "Fiano di Avellino DOCG 主要產自 Avellino 省的指定區域，以 Fiano 葡萄為主，釀造出優雅、果香、礦物感明顯的白酒，具有良好陳年潛力。",
+				"climate": "地中海型氣候，山區涼爽，日夜溫差大，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Fiano"]
+			},
+			"file": "Fiano di Avellino DOCG.geojson"
+		},
+		{
+			"id": "Galluccio DOC",
+			"name": "Galluccio",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Caserta",
+			"zone": "Galluccio、Roccamonfina、Tora e Piccilli、Conca della Campania、Santi Cosma e Damiano、Marzano Appio、Presenzano、Caianello、Teano、Sessa Aurunca、Cellole、Pietravairano、Vairano Patenora、Ailano、Prata Sannita、Fontegreca、Gioia Sannitica、Letino、Raviscanina、San Gregorio Matese、Valle Agricola、Castello del Matese、San Potito Sannitico、Sant'Angelo d'Alife、Alife、Piedimonte Matese、San Lorenzello、San Salvatore Telesino、Telese Terme、Cerreto Sannita、Cusano Mutri、Faicchio、Puglianello、Solopaca、Castelvenere、Guardia Sanframondi、San Lupo、San Lorenzo Maggiore、San Marco dei Cavoti、Santa Croce del Sannio、Sassinoro、Circello、Colle Sannita、Morcone、Pontelandolfo、Campolattaro、Casalduni、Castelpoto、Fragneto Monforte、Fragneto l'Abate、Pesco Sannita、Pietrelcina、Reino、San Giorgio La Molara、San Martino Sannita、San Nazzaro、San Nicola Manfredi、Sant'Arcangelo Trimonte、Tocco Caudio、Torrecuso、Vitulano",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Aglianico", "Piedirosso", "Falanghina"],
+			"description": "Galluccio DOC 是坎帕尼亞地區以多種葡萄釀造的紅、白、粉紅酒，紅酒以 Aglianico、Piedirosso 為主，白酒以 Falanghina 為主，風格清新、果香、礦物感。",
+			"details": {
+				"introduction": "Galluccio DOC 主要產自 Caserta 省的 Galluccio 及周邊地區，葡萄品種多元，釀造出多種風格的葡萄酒，包括紅、白、粉紅酒。紅酒以 Aglianico、Piedirosso 為主，白酒以 Falanghina 為主。",
+				"climate": "地中海型氣候，山區涼爽，日夜溫差大，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Piedirosso", "Falanghina"]
+			},
+			"file": "Galluccio DOC.geojson"
+		},
+		{
+			"id": "Greco di Tufo DOCG",
+			"name": "Greco di Tufo",
+			"type": "DOCG",
+			"region": "Campania",
+			"province": "Avellino",
+			"zone": "Comuni di Tufo, Altavilla Irpina, Chianche, Montefusco, Prata di Principato Ultra, Santa Paolina, Torrioni (Avellino)",
+			"style": ["白酒", "氣泡酒"],
+			"grapes": ["Greco di Tufo"],
+			"description": "Greco di Tufo DOCG 是坎帕尼亞地區最具代表性的白葡萄酒之一，以 Greco 葡萄釀造，特色為礦物感強烈、果香豐富、酸度明顯，適合陳年。也有 Spumante 氣泡酒型。",
+			"details": {
+				"introduction": "Greco di Tufo DOCG 主要產自 Avellino 省的 Tufo 及周邊指定地區，以 Greco 葡萄為主，釀造出具有礦物感、果香、酸度明顯的白酒。此酒歷史悠久，源自古希臘人引入的葡萄品種。",
+				"climate": "內陸山區氣候，日夜溫差大，土壤富含硫磺和礦物質，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Greco di Tufo"]
+			},
+			"file": "Greco di Tufo DOCG.geojson"
+		},
+		{
+			"id": "Irpinia DOC",
+			"name": "Irpinia",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Avellino",
+			"zone": "Avellino 省指定區域，包括多個市鎮，如 Taurasi、Tufo、Lapio、Montefusco、Summonte、Montemarano 等",
+			"style": ["紅酒", "白酒", "粉紅酒", "氣泡酒"],
+			"grapes": ["Aglianico", "Fiano", "Greco", "Coda di Volpe", "Piedirosso", "Sciascinoso", "Barbera", "Cabernet Sauvignon", "Merlot"],
+			"description": "Irpinia DOC 是坎帕尼亞地區 Avellino 省的多元葡萄酒產區，涵蓋紅、白、粉紅及氣泡酒，主要品種有 Aglianico、Fiano、Greco 等，風格多元，展現山區特色。",
+			"details": {
+				"introduction": "Irpinia DOC 產自坎帕尼亞 Avellino 省，涵蓋多個市鎮，葡萄品種多元，釀造出紅、白、粉紅及氣泡酒。紅酒以 Aglianico 為主，白酒以 Fiano、Greco、Coda di Volpe 為主，風格清新、果香、礦物感。",
+				"climate": "山區氣候，日夜溫差大，土壤多為火山和石灰岩，有利於葡萄品質提升。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Fiano", "Greco", "Coda di Volpe", "Piedirosso", "Sciascinoso", "Barbera", "Cabernet Sauvignon", "Merlot"]
+			},
+			"file": "Irpinia DOC.geojson"
+		},
+		{
+			"id": "Ischia DOC",
+			"name": "Ischia",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Napoli",
+			"zone": "Isola d'Ischia (Napoli)",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Biancolella", "Forastera", "Piedirosso", "Guarnaccia", "Barbera", "Roccamonfina", "San Lunardo", "Uva Rara"],
+			"description": "Ischia DOC 是坎帕尼亞地區 Ischia 島的法定產區，紅酒以 Piedirosso、Guarnaccia 為主，白酒以 Biancolella、Forastera 為主，風格清新、果香、礦物感明顯。",
+			"details": {
+				"introduction": "Ischia DOC 產自那不勒斯灣的 Ischia 島，葡萄園多分布於火山丘陵，土壤礦物質豐富。紅酒以 Piedirosso、Guarnaccia 為主，白酒以 Biancolella、Forastera 為主，展現出清新果香與礦物感。",
+				"climate": "地中海型氣候，受海洋與火山影響，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Biancolella", "Forastera", "Piedirosso", "Guarnaccia", "Barbera", "Roccamonfina", "San Lunardo", "Uva Rara"]
+			},
+			"file": "Ischia DOC.geojson"
+		},
+		{
+			"id": "Penisola Sorrentina DOC",
+			"name": "Penisola Sorrentina",
+			"type": "DOC",
+			"region": "Campania",
+			"province": "Napoli",
+			"zone": "Sorrento 半島，包括 Sorrento、Sant'Agnello、Piano di Sorrento、Meta、Vico Equense、Massa Lubrense、Castellammare di Stabia、Gragnano、Lettere、Pimonte、Santa Maria la Carità、Sant'Antonio Abate、Scafati、Agerola、Furore、Praiano、Positano",
+			"style": ["紅酒", "白酒", "粉紅酒"],
+			"grapes": ["Aglianico", "Piedirosso", "Sciascinoso", "Falaghina", "Biancolella", "Greco"],
+			"description": "Penisola Sorrentina DOC 是坎帕尼亞地區 Sorrento 半島的法定產區，紅酒以 Piedirosso、Aglianico 為主，白酒以 Falaghina、Biancolella、Greco 為主，風格清新、果香、礦物感。",
+			"details": {
+				"introduction": "Penisola Sorrentina DOC 產自那不勒斯灣的 Sorrento 半島及周邊地區，葡萄園多分布於丘陵地形，紅酒以 Piedirosso、Aglianico 為主，白酒以 Falaghina、Biancolella、Greco 為主，展現出清新果香與礦物感。",
+				"climate": "地中海型氣候，靠海，夏季炎熱乾燥，冬季溫和。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Piedirosso", "Sciascinoso", "Falaghina", "Biancolella", "Greco"]
+			},
+			"file": "Penisola Sorrentina DOC.geojson"
+		},
+		{
+			"id": "Taurasi DOCG",
+			"name": "Taurasi",
+			"type": "DOCG",
+			"region": "Campania",
+			"province": "Avellino",
+			"zone": "Avellino 省指定區域，包括 Taurasi、Bonito、Castelfranci、Lapio、Montemarano、Paternopoli、Pietradefusi、Sant'Angelo all'Esca、Torre le Nocelle、及周邊市鎮",
+			"style": ["紅酒"],
+			"grapes": ["Aglianico"],
+			"description": "Taurasi DOCG 是坎帕尼亞地區最著名的紅葡萄酒之一，以 Aglianico 葡萄釀造，特色為酒體厚實、單寧強勁、陳年潛力極佳，被譽為“南方的巴羅洛”。",
+			"details": {
+				"introduction": "Taurasi DOCG 主要產自 Avellino 省的 Taurasi 及周邊指定區域，以 Aglianico 葡萄為主，釀造出酒體厚實、單寧強勁、陳年潛力極佳的紅酒。此酒常需長時間陳年，展現複雜香氣與結構。",
+				"climate": "山區氣候，日夜溫差大，土壤多為火山和石灰岩，有利於葡萄品質提升與陳年。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico"]
+			},
+			"file": "Taurasi DOCG.geojson"
+		},
+				{
+					"id": "Vesuvio DOC",
+					"name": "Vesuvio",
+					"type": "DOC",
+					"region": "Campania",
+					"province": "Napoli",
+					"zone": "Vesuvio 火山周邊，包括 Ercolano、Torre Annunziata、Torre del Greco、Boscoreale、Boscotrecase、San Sebastiano al Vesuvio、Somma Vesuviana、Pollena Trocchia、Cercola、Massa di Somma、Ottaviano、San Giuseppe Vesuviano、Terzigno、Scafati、Pompei、Castellammare di Stabia、Sant'Anastasia、San Giorgio a Cremano、Portici、San Sebastiano al Vesuvio、San Vitaliano、Marigliano、Mariglianella、Brusciano、Volla、Casalnuovo di Napoli、Acerra、Nola、Palma Campania、Poggiomarino、Striano、San Valentino Torio、Sarno、San Marzano sul Sarno、Angri、Sant'Antonio Abate、Lettere、Santa Maria la Carità、Gragnano、Pimonte、Agerola、Furore、Praiano、Positano",
+					"style": ["紅酒", "白酒", "粉紅酒"],
+					"grapes": ["Piedirosso", "Aglianico", "Sciascinoso", "Coda di Volpe", "Falanghina", "Greco"],
+					"description": "Vesuvio DOC 是坎帕尼亞地區 Vesuvio 火山周邊的法定產區，紅酒以 Piedirosso、Aglianico 為主，白酒以 Coda di Volpe、Falanghina、Greco 為主，風格清新、礦物感明顯。著名的 Lacryma Christi 屬於此產區。",
+					"details": {
+						"introduction": "Vesuvio DOC 產自那不勒斯 Vesuvio 火山周邊地區，葡萄園多分布於火山丘陵，土壤礦物質豐富。紅酒以 Piedirosso、Aglianico 為主，白酒以 Coda di Volpe、Falanghina、Greco 為主，展現出清新果香與礦物感。著名的 Lacryma Christi 屬於此產區。",
+						"climate": "地中海型氣候，受火山影響，夏季炎熱乾燥，冬季溫和，土壤礦物感強烈。",
+						"subregions": {},
+						"grape_varieties": ["Piedirosso", "Aglianico", "Sciascinoso", "Coda di Volpe", "Falanghina", "Greco"]
+					},
+					"file": "Vesuvio DOC.geojson"
+				},
+		{
+			"id": "Campania IGP",
+			"name": "Campania IGP",
+			"type": "IGP",
+			"region": "Campania",
+			"province": "Avellino, Benevento, Caserta, Napoli, Salerno",
+			"zone": "Intera regione Campania (Avellino, Benevento, Caserta, Napoli, Salerno)",
+			"style": ["紅酒", "白酒", "粉紅酒", "加強酒", "甜酒", "氣泡酒"],
+			"grapes": ["Aglianico", "Piedirosso", "Fiano", "Greco", "Falanghina", "Coda di Volpe", "Primitivo", "Cabernet Sauvignon", "Merlot"],
+			"description": "Campania IGP（Campania Indicazione Geografica Protetta）覆蓋整個坎帕尼亞大區，生產多樣風格的葡萄酒，從清新白酒到結構性紅酒與加強酒，結合本土與國際品種。",
+			"details": {
+				"introduction": "Campania IGT 包含整個坎帕尼亞地區，允許酒莊以更靈活的釀造方式混合本地與國際品種，呈現多樣風格和試驗性作品。產區地形多樣，從沿海至內陸山坡皆有葡萄園分布。",
+				"climate": "以地中海型氣候為主，沿海地區溫暖、內陸山區較涼爽，日夜溫差有利於風味與酸度保持。土壤類型多變，包括火山灰、石灰岩與沖積土。",
+				"subregions": {},
+				"grape_varieties": ["Aglianico", "Piedirosso", "Fiano", "Greco", "Falanghina", "Coda di Volpe", "Primitivo", "Cabernet Sauvignon", "Merlot"]
+			},
+			"file": "Campania.geojson"
+		}
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "Verdicchio dei Castelli di Jesi DOC",
+    "name": "Verdicchio dei Castelli di Jesi",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "2000",
+    "grapes": ["Verdicchio"],
+    "description": "Marche 最著名的白葡萄酒產區之一，以清新的 Verdicchio 白酒聞名。",
+    "details": {
+      "introduction": "位於 Ancona 省，是義大利最重要的白葡萄酒產區之一。",
+      "climate": "溫和的地中海氣候，受亞得里亞海影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Verdicchio di Matelica DOC",
+    "name": "Verdicchio di Matelica",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "400",
+    "grapes": ["Verdicchio"],
+    "description": "較內陸的 Verdicchio 產區，酒體更飽滿。",
+    "details": {
+      "introduction": "位於較內陸的山區，氣候較涼爽。",
+      "climate": "較大的日夜溫差，適合釀造結構感強的白酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Bianchello del Metauro DOC",
+    "name": "Bianchello del Metauro",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "350",
+    "grapes": ["Bianchello"],
+    "description": "位於北部沿海地區的白葡萄酒產區，清新爽口。",
+    "details": {
+      "introduction": "Pesaro-Urbino 省的沿海產區。",
+      "climate": "受亞得里亞海調節的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Maceratesi DOC",
+    "name": "Colli Maceratesi",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "150",
+    "grapes": ["Maceratino"],
+    "description": "Macerata 省的白葡萄酒產區，以當地品種 Maceratino 為主。",
+    "details": {
+      "introduction": "Macerata 市周邊的丘陵產區。",
+      "climate": "溫和的丘陵氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Colli Pesaresi DOC",
+    "name": "Colli Pesaresi",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "200",
+    "grapes": ["Sangiovese"],
+    "description": "Pesaro 省的紅葡萄酒產區。",
+    "details": {
+      "introduction": "位於 Pesaro 市周邊的丘陵地帶。",
+      "climate": "溫和的地中海氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Esino DOC",
+    "name": "Esino",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "180",
+    "grapes": ["Verdicchio"],
+    "description": "Esino 河谷的葡萄酒產區。",
+    "details": {
+      "introduction": "位於 Esino 河流域。",
+      "climate": "河谷的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Falerio DOC",
+    "name": "Falerio",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "500",
+    "grapes": ["Pecorino", "Passerina", "Trebbiano"],
+    "description": "南部的白葡萄酒產區，混釀風格，清新優雅。",
+    "details": {
+      "introduction": "Ascoli Piceno 和 Fermo 省的廣闊產區。",
+      "climate": "丘陵地帶的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "I Terreni di Sanseverino DOC",
+    "name": "I Terreni di Sanseverino",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "120",
+    "grapes": ["Vernaccia Nera"],
+    "description": "Sanseverino 地區的特色產區，以 Vernaccia Nera 為主。",
+    "details": {
+      "introduction": "位於 Macerata 省的 Sanseverino Marche 鎮。",
+      "climate": "內陸丘陵氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Lacrima di Morro  Lacrima di Morro d'Alba DOC",
+    "name": "Lacrima di Morro d'Alba",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "250",
+    "grapes": ["Lacrima"],
+    "description": "以獨特的 Lacrima 葡萄釀造的芳香型紅酒，帶有玫瑰和紫羅蘭香氣。",
+    "details": {
+      "introduction": "位於 Ancona 省，以稀有的 Lacrima 品種聞名。",
+      "climate": "溫和的丘陵氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Pergola DOC",
+    "name": "Pergola",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "80",
+    "grapes": ["Aleatico"],
+    "description": "以 Aleatico 葡萄為主的甜紅酒產區。",
+    "details": {
+      "introduction": "位於 Ancona 省的小型特色產區。",
+      "climate": "丘陵地帶的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Rosso Cònero DOC",
+    "name": "Rosso Cònero",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "450",
+    "grapes": ["Montepulciano"],
+    "description": "Conero 山區的紅葡萄酒產區，以 Montepulciano 為主。",
+    "details": {
+      "introduction": "位於 Ancona 市附近的 Conero 山麓。",
+      "climate": "受海洋影響的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Rosso Piceno Piceno DOC",
+    "name": "Rosso Piceno",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "1500",
+    "grapes": ["Montepulciano", "Sangiovese"],
+    "description": "南部最大的紅葡萄酒產區，混釀風格。",
+    "details": {
+      "introduction": "橫跨多個省份的廣闊產區，是 Marche 最大的紅酒產區。",
+      "climate": "多樣化的丘陵氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "San Ginesio DOC",
+    "name": "San Ginesio",
+    "type": "DOC",
+    "style": "紅酒",
+    "hectare": "100",
+    "grapes": ["Sangiovese", "Vernaccia Nera"],
+    "description": "San Ginesio 鎮周邊的紅葡萄酒產區。",
+    "details": {
+      "introduction": "位於 Macerata 省的山區小鎮。",
+      "climate": "較高海拔的涼爽氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Serrapetrona DOC",
+    "name": "Serrapetrona",
+    "type": "DOC",
+    "style": "氣泡酒",
+    "hectare": "90",
+    "grapes": ["Vernaccia Nera"],
+    "description": "以 Vernaccia Nera 釀造的紅色氣泡酒產區。",
+    "details": {
+      "introduction": "位於 Macerata 省，生產獨特的紅色氣泡酒。",
+      "climate": "丘陵地帶的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Terre di Offida DOC",
+    "name": "Terre di Offida",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "300",
+    "grapes": ["Pecorino", "Passerina"],
+    "description": "Offida 地區的白葡萄酒產區，以 Pecorino 和 Passerina 為主。",
+    "details": {
+      "introduction": "位於 Ascoli Piceno 省，生產優質白葡萄酒。",
+      "climate": "丘陵地帶的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Offida DOCG",
+    "name": "Offida",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": "250",
+    "grapes": ["Pecorino", "Passerina"],
+    "description": "Offida 地區的多樣化產區，生產優質白葡萄酒。",
+    "details": {
+      "introduction": "位於 Ascoli Piceno 省的 Offida 鎮周邊。",
+      "climate": "丘陵地帶的溫和氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Cònero DOCG",
+    "name": "Cònero",
+    "type": "DOCG",
+    "style": "紅酒",
+    "hectare": "600",
+    "grapes": ["Montepulciano", "Sangiovese"],
+    "description": "以 Montepulciano 葡萄為主的優質紅酒產區，Marche 最頂級的紅酒之一。",
+    "details": {
+      "introduction": "位於 Ancona 附近的 Conero 山區，生產高品質的紅葡萄酒。Conero DOCG 是 Rosso Conero DOC 的升級版本。",
+      "climate": "溫和的海洋性氣候，受亞得里亞海影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Verdicchio di Matelica Riserva DOCG",
+    "name": "Verdicchio di Matelica Riserva",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": "200",
+    "grapes": ["Verdicchio"],
+    "description": "經過陳年的 Verdicchio 優質白酒，酒體更飽滿複雜。",
+    "details": {
+      "introduction": "Matelica 產區的頂級白酒，需經過至少 18 個月陳年。",
+      "climate": "較大的日夜溫差，適合釀造結構感強的白酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Castelli di Jesi Verdicchio Riserva DOCG",
+    "name": "Castelli di Jesi Verdicchio Riserva",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": "500",
+    "grapes": ["Verdicchio"],
+    "description": "經過陳年的 Verdicchio 優質白酒，展現更優雅的風格。",
+    "details": {
+      "introduction": "Castelli di Jesi 產區的頂級白酒，需經過至少 18 個月陳年。",
+      "climate": "溫和的地中海氣候，受亞得里亞海影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Vernaccia di Serrapetrona DOCG",
+    "name": "Vernaccia di Serrapetrona",
+    "type": "DOCG",
+    "style": "氣泡酒",
+    "hectare": "100",
+    "grapes": ["Vernaccia Nera"],
+    "description": "稀有的紅色氣泡甜酒，義大利獨一無二的葡萄酒類型。",
+    "details": {
+      "introduction": "義大利少數以紅葡萄釀造的氣泡甜酒產區，採用獨特的釀造工藝。",
+      "climate": "丘陵地帶的溫和氣候，適合 Vernaccia Nera 生長。",
+      "subregions": {}
+    }
+  }
+]

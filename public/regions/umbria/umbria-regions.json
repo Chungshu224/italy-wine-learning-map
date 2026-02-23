@@ -1,0 +1,255 @@
+[
+  {
+    "id": "DOCG/Montefalco Sagrantino DOCG",
+    "name": "Montefalco Sagrantino",
+    "type": "DOCG",
+    "hectare": "600",
+    "style": "紅酒",
+    "grapes": ["Sagrantino"],
+    "description": "Umbria 最著名的 DOCG 產區，以 Sagrantino 葡萄釀造的強勁紅酒聞名",
+    "details": {
+      "introduction": "Montefalco Sagrantino 是 Umbria 最負盛名的紅酒，1992 年獲得 DOCG 認證。Sagrantino 是一種單寧含量極高的本土葡萄品種，釀造出的葡萄酒具有強勁的結構和優異的陳年潛力。",
+      "climate": "產區位於海拔 220-472 公尺的丘陵地帶，享有溫和的地中海氣候，夏季炎熱乾燥，冬季溫和多雨。晝夜溫差大，有利於葡萄積累風味物質。",
+      "grapes": {
+        "Sagrantino": "100% Sagrantino 葡萄，是 Umbria 的原生品種，具有極高的單寧和優異的陳年能力"
+      },
+      "wineCharacteristics": "深邃的紅寶石色澤，濃郁的黑莓、李子、香料和巧克力香氣，口感強勁有力，單寧豐富但優雅，酸度活潑，陳年後可發展出複雜的皮革、煙草和乾果香氣。",
+      "pairingFood": "適合搭配野味、烤肉、燉煮紅肉，以及陳年起司如 Pecorino。"
+    }
+  },
+  {
+    "id": "DOCG/Torgiano Rosso Riserva DOCG",
+    "name": "Torgiano Rosso Riserva",
+    "type": "DOCG",
+    "hectare": "50",
+    "style": "紅酒",
+    "grapes": ["Sangiovese", "Canaiolo"],
+    "description": "以 Sangiovese 為主的陳年紅酒產區，1990 年獲得 DOCG 認證",
+    "details": {
+      "introduction": "Torgiano Rosso Riserva 於 1990 年成為 DOCG，是 Umbria 第一個獲此榮譽的葡萄酒。產區以 Lungarotti 家族的卓越釀酒傳統而聞名。",
+      "climate": "位於 Perugia 附近的丘陵地帶，氣候溫和，受 Tiber 河流影響，形成獨特的微氣候。",
+      "grapes": {
+        "Sangiovese": "至少 70% Sangiovese",
+        "Canaiolo": "最多 30% Canaiolo 或其他本地紅葡萄品種"
+      },
+      "wineCharacteristics": "寶石紅色，散發櫻桃、紅色莓果、紫羅蘭和香料香氣，口感優雅平衡，單寧柔順，酸度清新，陳年後發展出皮革和煙草的複雜香氣。必須陳年至少 3 年（其中至少 6 個月在瓶中）才能上市。",
+      "pairingFood": "適合搭配烤羊肉、牛排、野豬料理和 Umbria 傳統菜餚。"
+    }
+  },
+  {
+    "id": "DOC/Amelia DOC",
+    "name": "Amelia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Merlot", "Grechetto", "Trebbiano"],
+    "description": "位於 Umbria 西南部的 DOC 產區，靠近 Lazio 邊界",
+    "details": {
+      "introduction": "Amelia DOC 於 1989 年建立，以古老的 Amelia 城市命名。產區生產多種風格的葡萄酒，包括紅酒、白酒和甜酒。",
+      "climate": "溫和的地中海氣候，受丘陵地形保護，擁有良好的通風和日照條件。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Merlot, Ciliegiolo, Montepulciano",
+        "白葡萄": "Grechetto, Trebbiano, Malvasia"
+      }
+    }
+  },
+  {
+    "id": "DOC/Assisi DOC",
+    "name": "Assisi",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Merlot", "Grechetto", "Trebbiano"],
+    "description": "以著名的朝聖城市 Assisi 命名的產區，1997 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Assisi DOC 圍繞著聖方濟各的故鄉 Assisi 城，該城是世界文化遺產。產區生產優質的紅、白、粉紅葡萄酒。",
+      "climate": "受 Subasio 山保護的溫和氣候，土壤以石灰岩和黏土為主。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Merlot, Cabernet Sauvignon",
+        "白葡萄": "Grechetto, Pinot Bianco, Chardonnay, Trebbiano"
+      }
+    }
+  },
+  {
+    "id": "DOC/Colli Altotiberini DOC",
+    "name": "Colli Altotiberini",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Merlot", "Trebbiano Toscano"],
+    "description": "位於 Tiber 河上游的丘陵產區，1980 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Colli Altotiberini（Alto Tiber 丘陵）是 Umbria 最早獲得 DOC 認證的產區之一。產區位於 Umbria 北部，與 Tuscany 接壤。",
+      "climate": "大陸性氣候特徵明顯，冬季較冷，夏季溫暖，晝夜溫差大。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Merlot",
+        "白葡萄": "Trebbiano Toscano, Malvasia"
+      }
+    }
+  },
+  {
+    "id": "DOC/Colli del Trasimeno  Trasimeno DOC",
+    "name": "Colli del Trasimeno / Trasimeno",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Ciliegiolo", "Gamay", "Grechetto", "Trebbiano"],
+    "description": "環繞 Trasimeno 湖的產區，受湖泊調節的微氣候影響",
+    "details": {
+      "introduction": "Colli del Trasimeno DOC 環繞著義大利第四大湖 Trasimeno 湖。湖泊的溫度調節作用創造了獨特的微氣候，有利於葡萄種植。",
+      "climate": "溫和的氣候，受 Trasimeno 湖的溫度調節，霜害風險較低，葡萄成熟期穩定。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Ciliegiolo, Merlot, Gamay",
+        "白葡萄": "Grechetto, Trebbiano, Chardonnay, Pinot Grigio"
+      }
+    }
+  },
+  {
+    "id": "DOC/Colli Martani DOC",
+    "name": "Colli Martani",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Grechetto", "Trebbiano", "Sangiovese"],
+    "description": "位於 Umbria 中部的丘陵產區，以 Grechetto 白葡萄酒聞名",
+    "details": {
+      "introduction": "Colli Martani DOC 於 1988 年建立，是 Umbria 重要的白葡萄酒產區，特別是以 Grechetto 葡萄釀造的白酒。",
+      "climate": "溫和的氣候，丘陵地形提供良好的排水和日照，土壤富含石灰岩。",
+      "grapes": {
+        "白葡萄": "Grechetto（主要品種）, Trebbiano, Chardonnay",
+        "紅葡萄": "Sangiovese, Merlot"
+      },
+      "wineCharacteristics": "以 Grechetto 為主的白酒清新優雅，帶有白花、柑橘和杏仁香氣。"
+    }
+  },
+  {
+    "id": "DOC/Colli Perugini DOC",
+    "name": "Colli Perugini",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Montepulciano", "Grechetto", "Trebbiano"],
+    "description": "圍繞 Perugia 城市的丘陵產區，1981 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Colli Perugini DOC 環繞著 Umbria 首府 Perugia，是該區域歷史悠久的葡萄酒產區。",
+      "climate": "溫和的丘陵氣候，海拔 200-500 公尺，排水良好的土壤。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Montepulciano, Ciliegiolo, Merlot",
+        "白葡萄": "Grechetto, Trebbiano, Chardonnay, Pinot Grigio"
+      }
+    }
+  },
+  {
+    "id": "DOC/Lago di Corbara DOC",
+    "name": "Lago di Corbara",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Cabernet Sauvignon", "Merlot", "Pinot Nero", "Chardonnay", "Sauvignon Blanc"],
+    "description": "位於 Corbara 湖周邊的產區，1998 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Lago di Corbara DOC 是較新的產區，以 Corbara 人工湖命名。湖泊創造的微氣候有利於生產優質葡萄酒。",
+      "climate": "受 Corbara 湖影響的溫和氣候，火山土壤賦予葡萄酒獨特的礦物質特徵。",
+      "grapes": {
+        "紅葡萄": "Cabernet Sauvignon, Merlot, Pinot Nero, Sangiovese",
+        "白葡萄": "Chardonnay, Sauvignon Blanc, Grechetto"
+      }
+    }
+  },
+  {
+    "id": "DOC/Montefalco DOC",
+    "name": "Montefalco",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Sagrantino", "Grechetto", "Trebbiano Toscano"],
+    "description": "Montefalco 地區的 DOC 級葡萄酒產區，與 DOCG 區域重疊",
+    "details": {
+      "introduction": "Montefalco DOC 於 1979 年建立，涵蓋與 Montefalco Sagrantino DOCG 相同的區域。DOC 級別包括紅酒（Rosso）和白酒（Bianco）。",
+      "climate": "與 Sagrantino DOCG 相同的優越丘陵氣候條件。",
+      "grapes": {
+        "Rosso": "60-70% Sangiovese, 10-15% Sagrantino, 其他本地紅葡萄品種",
+        "Bianco": "Grechetto, Trebbiano Toscano, Chardonnay"
+      },
+      "wineCharacteristics": "Montefalco Rosso 是優雅的日常紅酒，帶有紅色莓果香氣和適度的單寧，比 Sagrantino 更易飲。"
+    }
+  },
+  {
+    "id": "DOC/Orvietano Rosso Rosso Orvietano DOC",
+    "name": "Orvietano Rosso / Rosso Orvietano",
+    "type": "DOC",
+    "style": "紅酒",
+    "grapes": ["Sangiovese", "Merlot", "Cabernet Sauvignon", "Ciliegiolo"],
+    "description": "Orvieto 地區的紅葡萄酒產區，與著名的 Orvieto 白酒互補",
+    "details": {
+      "introduction": "Rosso Orvietano 於 1998 年獲得 DOC 認證，是 Orvieto 產區對紅葡萄酒的延伸，補充了該地區以白酒為主的傳統。",
+      "grapes": {
+        "主要品種": "Aleatico, Cabernet Franc, Cabernet Sauvignon, Canaiolo, Ciliegiolo, Merlot, Montepulciano, Pinot Nero, Sangiovese"
+      }
+    }
+  },
+  {
+    "id": "DOC/Orvieto DOC",
+    "name": "Orvieto",
+    "type": "DOC",
+    "hectare": "1800",
+    "style": ["白酒", "甜酒"],
+    "grapes": ["Grechetto", "Trebbiano Toscano", "Verdello", "Canaiolo Bianco"],
+    "description": "Umbria 最著名的白葡萄酒產區，以清新的白酒和甜酒（Muffato）聞名",
+    "details": {
+      "introduction": "Orvieto 是義大利最古老和最著名的白葡萄酒產區之一，歷史可追溯到伊特魯里亞時代。1971 年獲得 DOC 認證。以火山土壤和獨特的凝灰岩酒窖聞名。",
+      "climate": "溫和的氣候，火山土壤（凝灰岩）賦予葡萄酒獨特的礦物質特徵。",
+      "grapes": {
+        "主要品種": "Grechetto（40-60%）, Trebbiano Toscano（15-25%）",
+        "其他品種": "Verdello, Canaiolo Bianco, Malvasia Toscana"
+      },
+      "subregions": {
+        "Classico": "歷史核心產區，品質更高",
+        "Superiore": "酒精度更高、陳年更久的版本"
+      },
+      "wineCharacteristics": "清新優雅的白酒，帶有白花、杏仁、青蘋果和礦物質香氣。Orvieto Muffato 是貴腐甜酒，風味濃郁複雜。",
+      "pairingFood": "適合搭配淡水魚、海鮮、家禽肉，以及 Umbria 的傳統白松露料理。"
+    }
+  },
+  {
+    "id": "DOC/Spoleto DOC",
+    "name": "Spoleto",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Trebbiano Spoletino", "Grechetto"],
+    "description": "以歷史悠久的 Spoleto 城市命名，2011 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Spoleto DOC 是較新的產區，2011 年才獲得認證。以著名的 Spoleto 音樂節城市命名。",
+      "climate": "位於 Umbria 東南部，氣候溫和，土壤多樣，從石灰岩到黏土。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Merlot, Cabernet Sauvignon",
+        "白葡萄": "Trebbiano Spoletino（本地特色品種）, Grechetto"
+      }
+    }
+  },
+  {
+    "id": "DOC/Todi DOC",
+    "name": "Todi",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Grechetto", "Chardonnay"],
+    "description": "Todi 周邊的葡萄酒產區，2010 年獲得 DOC 認證",
+    "details": {
+      "introduction": "Todi DOC 以美麗的山城 Todi 命名，是 Umbria 較新的 DOC 產區之一。",
+      "climate": "丘陵氣候，海拔適中，排水良好，適合多種葡萄品種生長。",
+      "grapes": {
+        "紅葡萄": "Sangiovese, Merlot, Cabernet Sauvignon",
+        "白葡萄": "Grechetto, Chardonnay, Malvasia"
+      }
+    }
+  },
+  {
+    "id": "DOC/Torgiano DOC",
+    "name": "Torgiano",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "grapes": ["Sangiovese", "Canaiolo", "Trebbiano Toscano", "Grechetto"],
+    "description": "Torgiano 地區的 DOC 級葡萄酒，1968 年獲得認證",
+    "details": {
+      "introduction": "Torgiano DOC 是 Umbria 最早的 DOC 之一（1968），主要因 Lungarotti 家族而聞名。涵蓋紅、白、粉紅葡萄酒，而 Riserva 紅酒則屬於 DOCG。",
+      "climate": "位於 Tiber 河谷，氣候溫和，土壤肥沃。",
+      "grapes": {
+        "紅葡萄": "Sangiovese（50-70%）, Canaiolo, Ciliegiolo, Montepulciano",
+        "白葡萄": "Trebbiano Toscano（50-70%）, Grechetto, Malvasia, Chardonnay"
+      },
+      "wineCharacteristics": "Torgiano Rosso 是平易近人的日常紅酒，Torgiano Bianco 則是清新的白酒。"
+    }
+  }
+]

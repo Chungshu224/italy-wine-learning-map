@@ -1,0 +1,338 @@
+[
+  {
+    "id": "Etna DOC",
+    "name": "Etna",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "1100",
+    "description": "埃特納火山周邊的產區，以獨特的火山土壤聞名，生產優質的紅白葡萄酒。",
+    "grapes": ["Nerello Mascalese", "Nerello Cappuccio", "Carricante", "Catarratto"],
+    "details": {
+      "introduction": "位於埃特納火山斜坡上的葡萄園，海拔從400米到1000米以上，擁有獨特的火山土壤和微氣候。這是西西里最重要的產區之一，葡萄園呈階梯狀分布在火山斜坡上。",
+      "climate": "地中海氣候，受火山影響，日夜溫差大，有利於葡萄的風味發展。海拔高度帶來清新的酸度。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Marsala DOC",
+    "name": "Marsala",
+    "type": "DOC",
+    "style": ["甜酒"],
+    "hectare": "2500",
+    "description": "西西里最著名的加烈葡萄酒產區，生產各種風格的Marsala甜酒。",
+    "grapes": ["Grillo", "Catarratto", "Inzolia", "Damaschino"],
+    "details": {
+      "introduction": "位於西西里西部，以生產加烈甜酒聞名，歷史悠久。Marsala酒自18世紀以來享譽國際，是義大利最重要的加烈酒之一。",
+      "climate": "溫暖乾燥的地中海氣候，夏季炎熱，非常適合葡萄成熟。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Cerasuolo di Vittoria DOCG",
+    "name": "Cerasuolo di Vittoria",
+    "type": "DOCG",
+    "style": ["紅酒"],
+    "hectare": "350",
+    "description": "西西里唯一的DOCG產區，以Nero d'Avola和Frappato混釀而聞名。",
+    "grapes": ["Nero d'Avola", "Frappato"],
+    "details": {
+      "introduction": "位於西西里東南部，是該島最負盛名的紅酒產區。",
+      "climate": "溫暖的地中海氣候，充足的陽光。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Alcamo DOC",
+    "name": "Alcamo",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "600",
+    "description": "西西里西北部產區，生產清新的白葡萄酒和紅葡萄酒。",
+    "grapes": ["Catarratto", "Nero d'Avola", "Damaschino", "Grecanico"],
+    "details": {
+      "introduction": "位於特拉帕尼省，以Catarratto白葡萄酒聞名，釀造清新易飲的葡萄酒。",
+      "climate": "溫暖的地中海氣候，受海洋調節。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Faro DOC",
+    "name": "Faro",
+    "type": "DOC",
+    "style": ["紅酒"],
+    "hectare": "35",
+    "description": "位於墨西拿附近的小產區，生產優雅的紅葡萄酒。",
+    "grapes": ["Nerello Mascalese", "Nerello Cappuccio", "Nocera", "Nero d'Avola"],
+    "details": {
+      "introduction": "西西里最小的產區之一，位於墨西拿海峽附近的丘陵地帶，以精緻優雅的紅酒聞名。",
+      "climate": "受海洋影響的溫和氣候，涼爽的海風有助於保持葡萄的酸度。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Noto DOC",
+    "name": "Noto",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "甜酒"],
+    "hectare": "180",
+    "description": "位於東南部的產區，以Nero d'Avola和Moscato聞名。",
+    "grapes": ["Nero d'Avola", "Moscato", "Nerello Mascalese"],
+    "details": {
+      "introduction": "位於錫拉庫薩省，以強勁的Nero d'Avola紅酒和芳香的Moscato甜酒著稱。",
+      "climate": "溫暖的地中海氣候，充足的陽光。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Pantelleria DOC",
+    "name": "Pantelleria",
+    "type": "DOC",
+    "style": ["甜酒", "白酒"],
+    "hectare": "400",
+    "description": "位於離島上的產區，以Moscato甜酒（Passito di Pantelleria）聞名。",
+    "grapes": ["Zibibbo"],
+    "details": {
+      "introduction": "位於西西里與突尼西亞之間的小島，以風乾葡萄釀造的甜酒聞名世界。島上的葡萄園採用傳統的低矮藤架栽培法（alberello）。",
+      "climate": "炎熱乾燥，受非洲熱風影響，降雨量極少。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Vittoria DOC",
+    "name": "Vittoria",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "1200",
+    "description": "東南部產區，生產多種風格的葡萄酒，也是Cerasuolo di Vittoria DOCG的所在地。",
+    "grapes": ["Nero d'Avola", "Frappato", "Inzolia", "Catarratto"],
+    "details": {
+      "introduction": "位於拉古薩省，是西西里最重要的紅酒產區之一。",
+      "climate": "溫暖乾燥，夏季炎熱。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sicilia DOC",
+    "name": "Sicilia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒", "粉紅酒"],
+    "hectare": "18000",
+    "description": "涵蓋整個西西里島的產區，可以使用多種葡萄品種。這是最靈活的DOC級別。",
+    "grapes": ["Nero d'Avola", "Nerello Mascalese", "Frappato", "Catarratto", "Grillo", "Inzolia", "Carricante"],
+    "details": {
+      "introduction": "2011年設立，取代了原有的IGT Sicilia，涵蓋整個西西里島，允許使用本地和國際葡萄品種。",
+      "climate": "整體為地中海氣候，內陸較熱，沿海和高海拔地區較涼爽。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Malvasia delle Lipari DOC",
+    "name": "Malvasia delle Lipari",
+    "type": "DOC",
+    "style": ["甜酒"],
+    "hectare": "80",
+    "description": "利帕里群島的甜酒產區，生產芳香馥郁的Malvasia甜酒。",
+    "grapes": ["Malvasia", "Corinto Nero"],
+    "details": {
+      "introduction": "位於西西里北部海域的火山群島，以生產優質的Passito風乾甜酒聞名。",
+      "climate": "溫暖的海島氣候，火山土壤帶來特殊的礦物質。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Contessa Entellina DOC",
+    "name": "Contessa Entellina",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "300",
+    "description": "西部產區，生產清新的白葡萄酒和紅葡萄酒，同時也使用國際品種。",
+    "grapes": ["Catarratto", "Chardonnay", "Grecanico", "Inzolia", "Nero d'Avola", "Cabernet Sauvignon", "Merlot"],
+    "details": {
+      "introduction": "位於巴勒莫省，是西西里現代葡萄酒業的代表，成功結合了本地和國際品種。",
+      "climate": "溫暖的內陸氣候，日夜溫差適中。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Menfi DOC",
+    "name": "Menfi",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "450",
+    "description": "西南部沿海產區，以清新的白葡萄酒和現代風格的紅葡萄酒聞名。",
+    "grapes": ["Catarratto", "Chardonnay", "Grecanico", "Nero d'Avola", "Syrah", "Sangiovese"],
+    "details": {
+      "introduction": "位於阿格里真托省西南部，靠近地中海，以現代化的釀造技術聞名。",
+      "climate": "典型的地中海氣候，受海風調節，夏季炎熱但不過分。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Monreale DOC",
+    "name": "Monreale",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "650",
+    "description": "位於巴勒莫附近的產區，生產多樣化的葡萄酒。",
+    "grapes": ["Catarratto", "Inzolia", "Grecanico", "Nero d'Avola", "Perricone", "Syrah"],
+    "details": {
+      "introduction": "位於巴勒莫省西南部，在高質量白葡萄酒和紅葡萄酒方面都有傑出表現。",
+      "climate": "內陸和沿海的混合氣候，有一定的海拔變化。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Erice DOC",
+    "name": "Erice",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "220",
+    "description": "西北部山區產區，以優雅的白酒和紅酒聞名。",
+    "grapes": ["Catarratto", "Grecanico", "Nero d'Avola", "Nerello Mascalese"],
+    "details": {
+      "introduction": "位於特拉帕尼省的山區，Erice山周圍的葡萄園海拔較高，釀造具有優雅風格的葡萄酒。",
+      "climate": "山區氣候，比沿海地區涼爽，日夜溫差大。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Eloro DOC",
+    "name": "Eloro",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "150",
+    "description": "東南部產區，以強勁的Nero d'Avola紅酒聞名。",
+    "grapes": ["Nero d'Avola", "Frappato", "Pignatello"],
+    "details": {
+      "introduction": "位於錫拉庫薩省，緊邻著名的Noto產區，以出産高品質的Nero d'Avola聞名。",
+      "climate": "溫暖乾燥，充足的日照。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Riesi DOC",
+    "name": "Riesi",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "100",
+    "description": "中南部產區，生產結構良好的紅白葡萄酒。",
+    "grapes": ["Nero d'Avola", "Cabernet Sauvignon", "Catarratto", "Chardonnay"],
+    "details": {
+      "introduction": "位於卡爾塔尼塞塔省中南部，產區以出産高酸度的紅葡萄酒聞名。",
+      "climate": "內陸氣候，夏季炎熱，冬季涼爽。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sambuca di Sicilia DOC",
+    "name": "Sambuca di Sicilia",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "140",
+    "description": "西南部產區，生產白酒和紅酒。",
+    "grapes": ["Catarratto", "Chardonnay", "Grecanico", "Nero d'Avola", "Sangiovese"],
+    "details": {
+      "introduction": "位於阿格里真托省，在白葡萄酒和紅葡萄酒生產上都有好表現。",
+      "climate": "地中海氣候，受內陸影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Salaparuta DOC",
+    "name": "Salaparuta",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "120",
+    "description": "西南部產區，生產優質的白葡萄酒。",
+    "grapes": ["Catarratto", "Grecanico", "Inzolia", "Nero d'Avola"],
+    "details": {
+      "introduction": "位於特拉帕尼省，以出產清新的白葡萄酒聞名。",
+      "climate": "溫暖的地中海氣候。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Sciacca DOC",
+    "name": "Sciacca",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "180",
+    "description": "西南部沿海產區，生產芳香清新的白葡萄酒。",
+    "grapes": ["Catarratto", "Grecanico", "Chardonnay", "Nero d'Avola", "Merlot"],
+    "details": {
+      "introduction": "位於阿格里真托省西南部沿海，以白葡萄酒為主。",
+      "climate": "沿海地中海氣候，受海風影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Siracusa DOC",
+    "name": "Siracusa",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "200",
+    "description": "東南部產區，以Nero d'Avola和Moscato聞名。",
+    "grapes": ["Nero d'Avola", "Moscato", "Nerello Mascalese"],
+    "details": {
+      "introduction": "位於錫拉庫薩省，歷史悠久的葡萄酒產區，生產強勁的紅酒和芳香的白酒。",
+      "climate": "熱帶地中海氣候，充足的陽光和適度的降雨。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Delia Nivolelli DOC",
+    "name": "Delia Nivolelli",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "90",
+    "description": "西部內陸產區，生產結構良好的紅白葡萄酒。",
+    "grapes": ["Nero d'Avola", "Cabernet Sauvignon", "Catarratto", "Grecanico"],
+    "details": {
+      "introduction": "位於阿格里真托省西部內陸，在本地和國際品種上都有好表現。",
+      "climate": "內陸氣候，熱而乾燥。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Contea di Sclafani  Valledolmo-Contea di Sclafani DOC",
+    "name": "Contea di Sclafani - Valledolmo",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "280",
+    "description": "中北部產區，生產優質的紅葡萄酒和白葡萄酒。",
+    "grapes": ["Nero d'Avola", "Catarratto", "Inzolia", "Perricone", "Nerello Mascalese"],
+    "details": {
+      "introduction": "位於巴勒莫省內陸，海拔較高，以生產結構良好、風味集中的葡萄酒聞名。",
+      "climate": "內陸氣候，海拔較高，日夜溫差大。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Santa Margherita di Belice  DOC",
+    "name": "Santa Margherita di Belice",
+    "type": "DOC",
+    "style": ["白酒", "紅酒"],
+    "hectare": "160",
+    "description": "西南部產區，生產清新的白葡萄酒。",
+    "grapes": ["Catarratto", "Grecanico", "Inzolia", "Nero d'Avola", "Sangiovese"],
+    "details": {
+      "introduction": "位於阿格里真托省，以出産高品質的白葡萄酒聞名。",
+      "climate": "溫暖的地中海氣候，受內陸和海洋影響。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "Mamertino Mamertino di Milazzo DOC",
+    "name": "Mamertino di Milazzo",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "110",
+    "description": "東北部沿海產區，歷史悠久，生產優質的紅白葡萄酒。",
+    "grapes": ["Nero d'Avola", "Nocera", "Nerello Mascalese", "Catarratto", "Inzolia", "Grillo"],
+    "details": {
+      "introduction": "位於墨西拿省東北部，是西西里歷史最悠久的葡萄酒產區之一，可追溯到古羅馬時代。",
+      "climate": "沿海地中海氣候，受海風調節，涼爽宜人。",
+      "subregions": {}
+    }
+  }
+]

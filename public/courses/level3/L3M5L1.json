@@ -1,0 +1,73 @@
+{
+  "id": "L3M5L1",
+  "title": "義大利葡萄酒產業結構",
+  "description": "深入了解義大利葡萄酒產業的經濟規模、生產模式（合作社、獨立酒莊、大型酒商）以及全球出口市場的現況與挑戰。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "全球最大的葡萄酒生產國",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利長期與法國爭奪「全球最大葡萄酒生產國」的寶座，近年來多數年份由義大利拔得頭籌。其產業結構龐大且複雜，對國家經濟具有舉足輕重的地位。</p><div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\"><div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100 text-center\"><span class=\"material-icons text-4xl text-blue-500 mb-2\">public</span><h4 class=\"text-blue-800 font-bold mb-2\">全球佔比</h4><p class=\"text-3xl font-black text-blue-600 mb-2\">~18-20%</p><p class=\"text-sm text-gray-600\">義大利葡萄酒產量佔全球總產量的近五分之一。</p></div><div class=\"bg-green-50 p-6 rounded-xl border border-green-100 text-center\"><span class=\"material-icons text-4xl text-green-500 mb-2\">agriculture</span><h4 class=\"text-green-800 font-bold mb-2\">葡萄園面積</h4><p class=\"text-3xl font-black text-green-600 mb-2\">~70萬</p><p class=\"text-sm text-gray-600\">公頃 (Hectares)，遍佈全國 20 個大區。</p></div><div class=\"bg-purple-50 p-6 rounded-xl border border-purple-100 text-center\"><span class=\"material-icons text-4xl text-purple-500 mb-2\">euro_symbol</span><h4 class=\"text-purple-800 font-bold mb-2\">出口總值</h4><p class=\"text-3xl font-black text-purple-600 mb-2\">>70億</p><p class=\"text-sm text-gray-600\">歐元 (Euros)，是義大利最重要的農產品出口項目。</p></div></div><div class=\"bg-gray-50 p-6 rounded-xl border-l-4 border-gray-500\"><h4 class=\"text-gray-800 font-bold mb-2\">產業多樣性 (Diversity)</h4><p class=\"text-gray-700\">與法國波爾多或勃根地高度集中的商業模式不同，義大利的產業特徵是「極度碎片化」。從年產數千萬瓶的跨國集團，到年產僅數千瓶的車庫酒莊，共同構成了這個充滿活力的生態系。</p></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "三大生產模式解析",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利的葡萄酒生產主要由三種截然不同的商業模式組成，它們各自在市場中扮演著關鍵角色。</p><div class=\"space-y-6\"><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-orange-600\">groups</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">1. 合作社 (Cantina Sociale / Cooperatives)</h4><p class=\"text-gray-600 mb-2\"><strong>產業基石：</strong> 佔義大利總產量超過 50%。由眾多小農組成，將葡萄交由合作社統一釀造與行銷。</p><p class=\"text-sm text-gray-500\"><strong>優勢：</strong> 規模經濟、技術設備先進、提供高性價比的日常餐酒。<br><strong>代表產區：</strong> Trentino-Alto Adige (如 Cavit, Mezzacorona)、Emilia-Romagna、Sicily。</p></div></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-red-600\">home_work</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">2. 獨立酒莊 (Azienda Agricola / Independent Estates)</h4><p class=\"text-gray-600 mb-2\"><strong>品質先鋒：</strong> 佔產量比例較小，但貢獻了絕大多數的頂級名酒 (Fine Wines)。酒莊自己種植葡萄、釀造並裝瓶。</p><p class=\"text-sm text-gray-500\"><strong>優勢：</strong> 展現極致的風土 (Terroir)、品質控管嚴格、品牌價值高。<br><strong>代表產區：</strong> Piedmont (Barolo), Tuscany (Brunello di Montalcino)。</p></div></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-blue-600\">factory</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">3. 大型酒商/裝瓶商 (Casa Vinicola / Négociants)</h4><p class=\"text-gray-600 mb-2\"><strong>商業引擎：</strong> 向果農購買葡萄、葡萄汁或散裝酒，進行調配、裝瓶與全球行銷。</p><p class=\"text-sm text-gray-500\"><strong>優勢：</strong> 強大的全球分銷網絡、品牌行銷能力、產品線廣泛。<br><strong>代表品牌：</strong> Antinori, Zonin, Ruffino, Santa Margherita。</p></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "出口市場與全球佈局",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利生產的葡萄酒有超過一半用於出口。了解其主要出口市場，有助於掌握全球葡萄酒消費趨勢。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><h4 class=\"text-xl font-bold text-gray-800 mb-6 text-center\">義大利葡萄酒三大出口市場 (依價值)</h4><div class=\"flex flex-col md:flex-row justify-around items-end h-64 gap-4 mb-6\"><div class=\"w-full md:w-1/3 flex flex-col items-center\"><div class=\"w-full bg-blue-500 rounded-t-lg flex items-end justify-center pb-2 text-white font-bold\" style=\"height: 100%;\">#1</div><div class=\"mt-4 text-center\"><h5 class=\"font-bold text-gray-800\">美國 (USA)</h5><p class=\"text-sm text-gray-600\">最大價值市場。偏好 Pinot Grigio, Prosecco, Chianti 及頂級 Super Tuscans。</p></div></div><div class=\"w-full md:w-1/3 flex flex-col items-center\"><div class=\"w-full bg-blue-400 rounded-t-lg flex items-end justify-center pb-2 text-white font-bold\" style=\"height: 75%;\">#2</div><div class=\"mt-4 text-center\"><h5 class=\"font-bold text-gray-800\">德國 (Germany)</h5><p class=\"text-sm text-gray-600\">最大體積市場。主要進口大量平價散裝酒與日常餐酒。</p></div></div><div class=\"w-full md:w-1/3 flex flex-col items-center\"><div class=\"w-full bg-blue-300 rounded-t-lg flex items-end justify-center pb-2 text-white font-bold\" style=\"height: 60%;\">#3</div><div class=\"mt-4 text-center\"><h5 class=\"font-bold text-gray-800\">英國 (UK)</h5><p class=\"text-sm text-gray-600\">成熟且穩定的市場。對 Prosecco 與傳統紅酒需求強勁。</p></div></div></div><div class=\"bg-yellow-50 p-4 rounded-lg border border-yellow-200\"><p class=\"text-sm text-yellow-800\"><strong>📈 新興市場趨勢：</strong> 亞洲市場（特別是中國、日本、韓國）雖然目前佔比不如歐美，但被視為未來最具成長潛力的區域。義大利酒業正積極推廣其本土品種與餐酒搭配文化以拓展亞洲版圖。</p></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "當前產業面臨的挑戰",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">儘管義大利葡萄酒在全球市場佔有重要地位，但該產業目前也面臨著幾個重大的結構性與環境挑戰。</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\"><div class=\"bg-red-50 p-6 rounded-xl border border-red-100\"><h4 class=\"text-red-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">trending_down</span> 國內消費量下降</h4><p class=\"text-gray-700 text-sm\">過去幾十年來，義大利國內的人均葡萄酒消費量大幅下降（從 1970 年代的 100 公升/年降至目前的約 40 公升/年）。年輕一代更傾向於飲用啤酒、烈酒或減少酒精攝取。這迫使酒莊必須更加依賴出口市場。</p></div><div class=\"bg-orange-50 p-6 rounded-xl border border-orange-100\"><h4 class=\"text-orange-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">thermostat</span> 氣候變遷 (Climate Change)</h4><p class=\"text-gray-700 text-sm\">極端天氣（乾旱、熱浪、春季霜凍）變得更加頻繁。這不僅影響產量，也改變了葡萄的成熟度（糖分過高、酸度不足），威脅到傳統產區的典型風格。許多酒莊開始往高海拔或更涼爽的區域尋找新葡萄園。</p></div><div class=\"bg-yellow-50 p-6 rounded-xl border border-yellow-100\"><h4 class=\"text-yellow-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">people_outline</span> 勞動力短缺</h4><p class=\"text-gray-700 text-sm\">葡萄園工作（特別是陡峭坡地的手工採收，如 Valtellina 或 Cinque Terre）極度依賴勞動力。隨著農村人口老化與年輕人外流，尋找足夠且熟練的農業勞工成為許多酒莊的痛點。</p></div><div class=\"bg-purple-50 p-6 rounded-xl border border-purple-100\"><h4 class=\"text-purple-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">account_tree</span> 碎片化與行銷資源</h4><p class=\"text-gray-700 text-sm\">義大利擁有數以萬計的小型酒莊，雖然保證了多樣性，但也意味著多數酒莊缺乏足夠的資金與專業知識進行國際行銷。如何在全球市場中建立清晰的品牌形象，是中小型酒莊的共同難題。</p></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在義大利的葡萄酒生產模式中，哪一種模式貢獻了全國超過 50% 的總產量，是產業的基石？",
+      "options": [
+        "獨立酒莊 (Azienda Agricola)",
+        "合作社 (Cantina Sociale)",
+        "跨國烈酒集團",
+        "車庫酒莊 (Garage Wineries)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "合作社 (Cantina Sociale) 匯集了眾多小農的葡萄進行統一釀造，佔義大利總產量的一半以上，特別是在 Trentino-Alto Adige 和 Sicily 等產區非常發達。"
+    },
+    {
+      "question": "以「出口價值 (Value)」來計算，哪一個國家是義大利葡萄酒最大的出口市場？",
+      "options": [
+        "德國",
+        "英國",
+        "中國",
+        "美國"
+      ],
+      "correctAnswer": 3,
+      "explanation": "美國是義大利葡萄酒最大的價值市場，對高價位的 Super Tuscans、Barolo 以及受歡迎的 Prosecco 和 Pinot Grigio 有龐大的需求。"
+    },
+    {
+      "question": "酒標上標示「Azienda Agricola」通常代表什麼意義？",
+      "options": [
+        "這是一款由大型酒商收購散裝酒調配而成的酒",
+        "這是一款氣泡酒",
+        "這是一家獨立酒莊，使用自己種植的葡萄釀造並裝瓶",
+        "這是一款專門用於出口的廉價酒"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Azienda Agricola 意指「農業莊園」或獨立酒莊，代表該酒莊自己種植葡萄、釀造並裝瓶，通常與較高的品質控管和風土展現有關。"
+    },
+    {
+      "question": "近年來，義大利葡萄酒產業面臨的內部市場挑戰主要為何？",
+      "options": [
+        "國內人均葡萄酒消費量大幅下降",
+        "政府禁止在國內銷售葡萄酒",
+        "義大利人只喝法國酒",
+        "葡萄園面積擴張過快導致供過於求"
+      ],
+      "correctAnswer": 0,
+      "explanation": "過去幾十年來，義大利國內的人均葡萄酒消費量大幅下降，年輕一代的飲酒習慣改變，迫使義大利酒業必須更加依賴出口市場。"
+    }
+  ]
+}

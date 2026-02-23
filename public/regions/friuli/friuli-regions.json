@@ -1,0 +1,215 @@
+[
+  {
+    "id": "DOCG/Colli Orientali del Friuli Picolit DOCG",
+    "name": "Colli Orientali del Friuli Picolit",
+    "type": "DOCG",
+    "style": "甜酒",
+    "hectare": "50",
+    "description": "以稀有的 Picolit 葡萄釀造的珍貴甜酒，產量稀少，風味優雅細膩。",
+    "grapes": ["Picolit"],
+    "details": {
+      "introduction": "Colli Orientali del Friuli Picolit 是義大利最珍貴的甜酒之一，使用獨特的 Picolit 葡萄品種釀造。這種葡萄因花期異常授粉困難而產量極低，使得此酒款極為稀有珍貴。",
+      "climate": "受到阿爾卑斯山和亞得里亞海的雙重影響，擁有溫和的大陸性氣候，晝夜溫差大，有利於葡萄糖分累積和香氣發展。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOCG/Lison DOCG",
+    "name": "Lison",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": "350",
+    "description": "以 Friulano 葡萄釀造的經典白酒，展現杏仁和花香的獨特風味。",
+    "grapes": ["Friulano"],
+    "details": {
+      "introduction": "Lison DOCG 是 Friuli Venezia Giulia 和 Veneto 共享的 DOCG 產區，專門生產由 Friulano（前稱 Tocai Friulano）釀造的白酒。此酒款以其特有的杏仁和白花香氣聞名。",
+      "climate": "受亞得里亞海影響的溫和氣候，配合沖積土壤，為 Friulano 葡萄提供理想的生長環境。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOCG/Ramandolo DOCG",
+    "name": "Ramandolo",
+    "type": "DOCG",
+    "style": "甜酒",
+    "hectare": "80",
+    "description": "使用 Verduzzo Friulano 葡萄釀造的甜酒，帶有蜂蜜和乾果香氣。",
+    "grapes": ["Verduzzo Friulano"],
+    "details": {
+      "introduction": "Ramandolo 是 Friuli 地區最著名的甜酒產區之一，位於 Colli Orientali 的山坡上。使用晾乾的 Verduzzo Friulano 葡萄釀造，呈現豐富的蜂蜜、杏桃乾和香料風味。",
+      "climate": "山坡地形提供良好的日照和排水，加上海拔高度帶來的晝夜溫差，使葡萄能夠達到理想的成熟度和糖分濃度。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOCG/Rosazzo DOCG",
+    "name": "Rosazzo",
+    "type": "DOCG",
+    "style": "白酒",
+    "hectare": "120",
+    "description": "以混釀白葡萄釀造的優質白酒，結構複雜，陳年潛力佳。",
+    "grapes": ["Friulano", "Ribolla Gialla", "Sauvignon Blanc", "Chardonnay", "Pinot Bianco"],
+    "details": {
+      "introduction": "Rosazzo DOCG 位於 Colli Orientali del Friuli 的心臟地帶，以生產高品質的混釀白酒著稱。此產區要求至少使用 50% 的 Friulano、Ribolla Gialla、Sauvignon 或 Pinot Bianco。",
+      "climate": "丘陵地形配合 Ponca 土壤（泥灰岩和砂岩混合），為葡萄提供優良的礦物質和排水條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Carso  Carso - Kras DOC",
+    "name": "Carso / Carso - Kras",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "270",
+    "description": "位於斯洛維尼亞邊境的獨特產區，以 Terrano 紅酒和 Vitovska 白酒聞名。",
+    "grapes": ["Terrano", "Vitovska", "Malvasia Istriana", "Refosco"],
+    "details": {
+      "introduction": "Carso（或 Kras）是一個獨特的喀斯特高原產區，位於 Trieste 附近，靠近斯洛維尼亞邊境。以紅色的紅土石灰岩土壤和強勁的 Bora 風著稱，生產具有鮮明個性的葡萄酒。",
+      "climate": "受到強勁的 Bora 北風影響，氣候涼爽乾燥，日照充足，喀斯特地形提供獨特的土壤條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Collio Goriziano Collio DOC",
+    "name": "Collio Goriziano / Collio",
+    "type": "DOC",
+    "style": "白酒",
+    "hectare": "1600",
+    "description": "Friuli 最負盛名的白酒產區，以優雅精緻的白酒享譽國際。",
+    "grapes": ["Friulano", "Ribolla Gialla", "Malvasia Istriana", "Pinot Grigio", "Sauvignon Blanc", "Chardonnay"],
+    "details": {
+      "introduction": "Collio 是義大利最著名的白酒產區之一，位於與斯洛維尼亞接壤的丘陵地帶。以其獨特的 Ponca 土壤（泥灰岩和砂岩混合）和優質白酒聞名於世，生產的葡萄酒展現卓越的礦物質特性和陳年潛力。",
+      "climate": "溫和的大陸性氣候，受到阿爾卑斯山和亞得里亞海的影響，丘陵地形提供良好的微氣候變化。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli Annia DOC",
+    "name": "Friuli Annia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "450",
+    "description": "位於潟湖附近的平原產區，生產清新易飲的紅白酒款。",
+    "grapes": ["Friulano", "Chardonnay", "Sauvignon Blanc", "Merlot", "Cabernet Sauvignon", "Refosco"],
+    "details": {
+      "introduction": "Friuli Annia 位於 Friuli 南部，靠近 Grado 和 Marano 潟湖區域。這個相對年輕的 DOC 產區以生產清新易飲的葡萄酒為主。",
+      "climate": "受亞得里亞海影響明顯，氣候溫和濕潤，海風調節溫度，適合生產芳香型白酒。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli Aquileia DOC",
+    "name": "Friuli Aquileia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "850",
+    "description": "古羅馬城市 Aquileia 週邊的產區，釀造平衡優雅的紅白酒款。",
+    "grapes": ["Friulano", "Pinot Grigio", "Sauvignon Blanc", "Merlot", "Cabernet Franc", "Refosco"],
+    "details": {
+      "introduction": "Friuli Aquileia 以古羅馬城市 Aquileia 命名，位於 Friuli 南部平原地區。擁有悠久的葡萄酒釀造歷史，生產多樣化的紅白酒款。",
+      "climate": "溫和的海洋性氣候，受亞得里亞海調節，夏季溫暖，冬季溫和，適合多種葡萄品種生長。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli Colli Orientali DOC",
+    "name": "Friuli Colli Orientali",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "1500",
+    "description": "Friuli 最重要的 DOC 產區之一，生產高品質的紅白酒款和本地品種。",
+    "grapes": ["Friulano", "Ribolla Gialla", "Verduzzo Friulano", "Picolit", "Refosco dal Peduncolo Rosso", "Schioppettino", "Pignolo"],
+    "details": {
+      "introduction": "Friuli Colli Orientali 是 Friuli 最具聲望的產區之一，位於 Udine 以東的丘陵地帶。以生產高品質的白酒和獨特的本地紅葡萄品種（Schioppettino、Pignolo、Refosco）聞名。",
+      "climate": "受阿爾卑斯山和亞得里亞海雙重影響，溫和的大陸性氣候配合理想的丘陵地形，造就卓越的葡萄酒品質。",
+      "subregions": {
+        "Cialla": "以生產 Schioppettino 和 Refosco 等本地品種聞名",
+        "Prepotto": "優質的白酒產區，特別是 Friulano 和 Ribolla Gialla"
+      }
+    }
+  },
+  {
+    "id": "DOC/Friuli Grave DOC",
+    "name": "Friuli Grave",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "6500",
+    "description": "Friuli 最大的 DOC 產區，以沖積土壤和高品質的 Pinot Grigio 著稱。",
+    "grapes": ["Pinot Grigio", "Friulano", "Chardonnay", "Sauvignon Blanc", "Merlot", "Cabernet Sauvignon", "Refosco"],
+    "details": {
+      "introduction": "Friuli Grave 是 Friuli Venezia Giulia 面積最大的 DOC 產區，涵蓋 Tagliamento 河流域的沖積平原。名稱中的「Grave」指的是礫石土壤，為葡萄提供良好的排水和礦物質特性。",
+      "climate": "大陸性氣候，受阿爾卑斯山和亞得里亞海影響，晝夜溫差大，有利於芳香物質的發展和酸度保持。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli Isonzo Isonzo del Friuli DOC",
+    "name": "Friuli Isonzo / Isonzo del Friuli",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "1200",
+    "description": "位於 Isonzo 河谷的產區，生產優雅細膩的白酒和結構平衡的紅酒。",
+    "grapes": ["Friulano", "Pinot Grigio", "Sauvignon Blanc", "Malvasia Istriana", "Merlot", "Cabernet Sauvignon"],
+    "details": {
+      "introduction": "Friuli Isonzo 位於 Gorizia 週邊，沿著 Isonzo 河谷延伸。這個產區結合了平原和丘陵地形，生產品質穩定的紅白酒款，近年來品質顯著提升。",
+      "climate": "溫和的氣候，受到來自亞得里亞海的海風影響，礫石土壤提供良好的排水和熱量儲存。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli Latisana DOC",
+    "name": "Friuli Latisana",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "650",
+    "description": "靠近 Veneto 邊界的產區，釀造清新果味的紅白酒款。",
+    "grapes": ["Friulano", "Pinot Grigio", "Chardonnay", "Merlot", "Cabernet Franc", "Refosco"],
+    "details": {
+      "introduction": "Friuli Latisana 位於 Friuli 南部，靠近 Veneto 邊界，是該區域最南端的 DOC 產區。以生產清新易飲的葡萄酒為主。",
+      "climate": "溫和的海洋性氣候，受亞得里亞海影響，夏季溫暖但不炎熱，適合芳香型白葡萄品種。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Friuli o Friuli Venezia Giulia Furlanija o Furlanija Julijska krajina DOC",
+    "name": "Friuli / Friuli Venezia Giulia",
+    "type": "DOC",
+    "style": ["紅酒", "白酒"],
+    "hectare": "3000",
+    "description": "涵蓋整個 Friuli Venezia Giulia 大區的 DOC，允許使用多種葡萄品種。",
+    "grapes": ["Friulano", "Ribolla Gialla", "Malvasia Istriana", "Pinot Grigio", "Chardonnay", "Sauvignon Blanc", "Merlot", "Cabernet Sauvignon", "Refosco"],
+    "details": {
+      "introduction": "這是一個涵蓋整個 Friuli Venezia Giulia 大區的 DOC，允許酒莊在符合品質標準的前提下，使用多種本地和國際葡萄品種釀造紅白酒款。",
+      "climate": "橫跨不同的微氣候區域，從阿爾卑斯山麓到亞得里亞海岸，提供多樣化的風土條件。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Prosecco DOC",
+    "name": "Prosecco",
+    "type": "DOC",
+    "style": "氣泡酒",
+    "hectare": "2500",
+    "description": "義大利最著名的氣泡酒之一，以 Glera 葡萄釀造，呈現清新的果香和花香。",
+    "grapes": ["Glera", "Verdiso", "Bianchetta Trevigiana", "Perera"],
+    "details": {
+      "introduction": "Prosecco DOC 涵蓋 Friuli Venezia Giulia 和 Veneto 兩個大區，是世界上最受歡迎的氣泡酒之一。使用 Charmat 法（罐中二次發酵）釀造，保留葡萄的新鮮果香。",
+      "climate": "溫和的氣候配合良好的通風，使 Glera 葡萄能夠保持清新的酸度和芳香特性。",
+      "subregions": {}
+    }
+  },
+  {
+    "id": "DOC/Trevenezie Tri Benečije IGP",
+    "name": "Trevenezie / Tri Benečije",
+    "type": "IGP",
+    "style": ["紅酒", "白酒"],
+    "hectare": "15000",
+    "description": "涵蓋 Friuli、Veneto 和 Trentino 三個產區的大區級 IGP。",
+    "grapes": ["Pinot Grigio", "Chardonnay", "Garganega", "Merlot", "Cabernet Sauvignon", "Corvina"],
+    "details": {
+      "introduction": "Trevenezie IGP 是一個跨區域的大區級產區標示，涵蓋 Friuli Venezia Giulia、Veneto 和 Trentino-Alto Adige 三個大區。允許釀酒師使用多種葡萄品種，提供更大的釀造彈性。",
+      "climate": "橫跨從阿爾卑斯山區到亞得里亞海岸的廣大區域，氣候條件多樣，從高山氣候到溫和的海洋性氣候。",
+      "subregions": {}
+    }
+  }
+]

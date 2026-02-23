@@ -1,0 +1,653 @@
+[
+		{
+			"id": "Arcole DOC",
+			"name": "Arcole DOC",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Verona, Vicenza",
+			"zone": "Comuni di Arcole, Cologna Veneta, Albaredo d’Adige, Veronella, Zimella, Pressana, Roveredo di Guà, Belfiore, Bonavigo, Caldiero, Colognola ai Colli, Monteforte d’Alpone, San Bonifacio, Soave (Verona); Lonigo (Vicenza)",
+			"style": ["白酒", "紅酒"],
+			"grapes": ["Garganega", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon"],
+			"description": "Arcole DOC 是位於義大利 Veneto 大區、Verona 和 Vicenza 省份的法定產區，涵蓋 Arcole 及周邊多個市鎮。此產區以生產新鮮果香型白酒（主要為 Garganega、Chardonnay、Pinot Grigio）和柔順易飲的紅酒（Merlot、Cabernet Sauvignon）為主，風格清新、易於搭餐。",
+			"details": {
+				"introduction": "Arcole DOC 產區成立於 2000 年，地處威尼托南部平原，土壤以沖積土和黏土為主，適合白葡萄與紅葡萄的栽培。白酒以新鮮、果香、酸度明亮為特色，紅酒則以柔順、果味為主。",
+				"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，全年降雨適中，有利於葡萄成熟與酸度保持。",
+				"subregions": {},
+				"grape_varieties": ["Garganega", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon"]
+			}
+		},
+		{
+			"id": "Asolo - Prosecco o Colli Asolani - Prosecco DOCG",
+			"name": "Asolo - Prosecco o Colli Asolani - Prosecco DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Treviso",
+			"zone": "Treviso 省 Montello 丘陵與 Asolo 周邊，包括 Crocetta del Montello, Giavera del Montello, Montebelluna, Nervesa della Battaglia, Pederobba, Volpago del Montello, Caerano di San Marco, Cornuda, Maser, Asolo, Castelcucco, Cavaso del Tomba, Fonte, Monfumo 等市鎮。",
+			"style": ["氣泡酒 (Spumante)", "靜態白酒 (Tranquillo)", "微氣泡酒 (Frizzante)"],
+			"grapes": ["Glera", "最多 15% Verdiso", "最多 15% Bianchetta Trevigiana", "最多 15% Perera", "最多 15% Chardonnay", "最多 15% Pinot Bianco", "最多 15% Pinot Grigio", "最多 15% Pinot Nero (僅限 vinified in white)"],
+			"description": "Asolo Prosecco（Colli Asolani Prosecco）DOCG 是 Veneto 重要的高品質氣泡酒產區，位於 Treviso 省 Montello 丘陵與 Asolo 地區。以 Glera 為主釀造 Spumante，風格優雅、果香濃郁，並有少量靜態白酒與微氣泡酒。",
+			"details": {
+				"introduction": "Asolo Prosecco DOCG（原 Colli Asolani Prosecco DOCG）於 2009 年升格為 DOCG，專注於高品質 Glera 氣泡酒。產區地形多丘陵，土壤多樣，賦予酒款細膩的礦物感與清新酸度。",
+				"climate": "溫帶大陸型氣候，受阿爾卑斯山與亞得里亞海調節，日夜溫差大，有利於葡萄香氣發展。",
+				"subregions": {},
+				"grape_varieties": ["Glera", "Verdiso", "Bianchetta Trevigiana", "Perera", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Pinot Nero (vinified in white)"]
+			}
+		},
+		{
+			"id": "Bagnoli Bagnoli di Sopra DOC",
+			"name": "Bagnoli di Sopra DOC (Bagnoli)",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Padova",
+			"zone": "Bagnoli di Sopra, Agna, Anguillara Veneta, Arre, Arzergrande, Barbona, Boara Pisani, Candiana, Correzzola, Granze, Monselice, Piacenza d’Adige, Polverara, Pontelongo, Pozzonovo, San Pietro Viminario, Sant’Elena, Tribano",
+			"style": ["紅酒", "白酒", "氣泡酒"],
+			"grapes": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Carmenère", "Friularo", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Sauvignon Blanc", "Tocai Italico"],
+			"description": "Bagnoli di Sopra DOC（又稱 Bagnoli DOC）位於 Veneto 大區 Padova 省南部，涵蓋多個市鎮。以 Friularo（Raboso Piave）為代表，產區以紅、白、氣泡酒為主，紅酒結構紮實、酸度明亮，白酒清新，氣泡酒果香豐富。",
+			"details": {
+				"introduction": "Bagnoli di Sopra DOC 歷史悠久，地勢平坦、土壤肥沃，適合多種葡萄品種。紅酒以 Friularo（Raboso Piave）為主，白酒與氣泡酒則以國際與在地品種混釀。",
+				"climate": "溫帶大陸型氣候，夏季溫暖，冬季寒冷，全年降雨適中，有利於葡萄成熟與酸度保持。",
+				"subregions": {},
+				"grape_varieties": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Carmenère", "Friularo", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Sauvignon Blanc", "Tocai Italico"]
+			}
+		},
+		{
+			"id": "Bardolino DOC",
+			"name": "Bardolino DOC",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "Bardolino, Affi, Cavaion Veronese, Costermano, Garda, Lazise, Pastrengo, Peschiera del Garda, Rivoli Veronese, Sommacampagna, Sona, Torri del Benaco, Valeggio sul Mincio, Castelnuovo del Garda, Bussolengo",
+			"style": ["紅酒", "粉紅酒"],
+			"grapes": ["Corvina Veronese", "Rondinella", "Molinara", "Merlot", "Cabernet Sauvignon"],
+			"description": "Bardolino DOC 位於義大利 Veneto 大區 Verona 省加爾達湖東岸，是著名的清新紅酒與粉紅酒產區。以 Corvina、Rondinella、Molinara 為主，酒體輕盈、果香明亮，適合搭配義式料理與夏日飲用。",
+			"details": {
+				"introduction": "Bardolino DOC 產區緊鄰加爾達湖，受湖泊調節氣候影響，適合釀造清新易飲的紅酒與 Chiaretto（粉紅酒）。主要品種為 Corvina Veronese、Rondinella、Molinara，並可混釀少量國際品種。",
+				"climate": "溫帶大陸型氣候，受加爾達湖調節，夏季溫暖、冬季溫和，降雨適中，有利於葡萄成熟與酸度保持。",
+				"subregions": {},
+				"grape_varieties": ["Corvina Veronese", "Rondinella", "Molinara", "Merlot", "Cabernet Sauvignon"]
+			}
+		},
+		{
+			"id": "Bardolino Superiore DOCG",
+			"name": "Bardolino Superiore DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "Bardolino, Affi, Cavaion Veronese, Costermano, Garda, Lazise, Pastrengo, Peschiera del Garda, Rivoli Veronese, Sommacampagna, Sona, Torri del Benaco, Valeggio sul Mincio, Castelnuovo del Garda, Bussolengo",
+			"style": ["紅酒"],
+			"grapes": ["Corvina Veronese", "Rondinella", "Molinara", "Merlot", "Cabernet Sauvignon"],
+			"description": "Bardolino Superiore DOCG 是 Veneto 大區 Verona 省加爾達湖東岸的優質紅酒，需經一年以上陳年。以 Corvina、Rondinella、Molinara 為主，酒體中等、果香濃郁、單寧柔順，適合搭配義式肉類料理。",
+			"details": {
+				"introduction": "Bardolino Superiore DOCG 產區與 Bardolino DOC 相同，但需更嚴格的產量與品質規範，並強制陳年至少一年。主要品種為 Corvina Veronese、Rondinella、Molinara，並可混釀少量國際品種。",
+				"climate": "溫帶大陸型氣候，受加爾達湖調節，夏季溫暖、冬季溫和，降雨適中，有利於葡萄成熟與酸度保持。",
+				"subregions": {},
+				"grape_varieties": ["Corvina Veronese", "Rondinella", "Molinara", "Merlot", "Cabernet Sauvignon"]
+			}
+		},
+		{
+			"id": "Bianco di Custoza Custoza DOC",
+			"name": "Bianco di Custoza DOC (Custoza)",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "Valeggio sul Mincio, Villafranca di Verona, Sommacampagna, Sona, Bussolengo, Peschiera del Garda, Castelnuovo del Garda, Lazise, Bardolino, Pastrengo, Verona (部分)",
+			"style": ["白酒", "氣泡酒"],
+			"grapes": ["Garganega", "Trebbiano Toscano (Ugni Blanc)", "Trebbianello (Friulano)", "Cortese", "Chardonnay", "Malvasia", "Pinot Bianco", "Riesling Italico", "Manzoni Bianco"],
+			"description": "Bianco di Custoza DOC（Custoza DOC）位於 Veneto 大區 Verona 省加爾達湖東南，專產新鮮果香型白酒與氣泡酒。以 Garganega、Trebbiano Toscano、Trebbianello 等多品種混釀，酒體輕盈、酸度明亮，適合搭配海鮮、沙拉等清爽料理。",
+			"details": {
+				"introduction": "Custoza DOC 產區地勢平緩，土壤多為冰河沖積與黏土，適合多種白葡萄混釀。主要品種為 Garganega、Trebbiano Toscano、Trebbianello，並可混釀 Chardonnay、Malvasia、Pinot Bianco 等。",
+				"climate": "溫帶大陸型氣候，受加爾達湖調節，夏季溫暖、冬季溫和，降雨適中，有利於白葡萄品種保持新鮮酸度。",
+				"subregions": {},
+				"grape_varieties": ["Garganega", "Trebbiano Toscano (Ugni Blanc)", "Trebbianello (Friulano)", "Cortese", "Chardonnay", "Malvasia", "Pinot Bianco", "Riesling Italico", "Manzoni Bianco"]
+			}
+		},
+	{
+		"id": "Breganze DOC",
+		"name": "Breganze DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Vicenza",
+		"zone": "Breganze, Bassano del Grappa, Fara Vicentino, Lugo di Vicenza, Marostica, Mason Vicentino, Molvena, Montecchio Precalcino, Pianezze, Salcedo, Sandrigo, Sarcedo, Schiavon, Zugliano",
+		"style": ["白酒", "紅酒", "甜酒", "氣泡酒"],
+		"grapes": ["Vespaiola", "Tai", "Pinot Bianco", "Pinot Grigio", "Chardonnay", "Sauvignon", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Marzemino", "Carmenère", "Groppello", "Pinot Nero"],
+		"description": "Breganze DOC 位於 Veneto 大區 Vicenza 省北部，以 Vespaiola 白葡萄聞名，產區涵蓋多種風格，包括新鮮白酒、結構紅酒、甜型 Torcolato 及氣泡酒。土壤多為火山性與沖積土，賦予葡萄酒獨特礦物感。",
+		"details": {
+			"introduction": "Breganze DOC 於 1969 年設立，橫跨 Vicenza 省多個市鎮。最具代表性的是以 Vespaiola 釀造的 Torcolato 甜白酒，此外也生產多種國際與在地品種的白、紅、氣泡酒。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與波河平原影響，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄香氣與酸度發展。",
+			"subregions": {},
+			"grape_varieties": ["Vespaiola", "Tai", "Pinot Bianco", "Pinot Grigio", "Chardonnay", "Sauvignon", "Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Marzemino", "Carmenère", "Groppello", "Pinot Nero"]
+		}
+	},
+	{
+		"id": "Colli Berici DOC",
+		"name": "Colli Berici DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Vicenza",
+		"zone": "Vicenza 南部丘陵地帶，包括 Alonte, Arcugnano, Barbarano Vicentino, Brendola, Castegnero, Longare, Lonigo, Mossano, Nanto, Orgiano, Sossano, Villaga, Zovencedo 等市鎮",
+		"style": ["紅酒", "白酒", "氣泡酒"],
+		"grapes": ["Tai Rosso", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Nero", "Chardonnay", "Garganega", "Pinot Bianco", "Sauvignon"],
+		"description": "Colli Berici DOC 位於 Veneto 大區 Vicenza 省南部的 Berici 丘陵，是 Tai Rosso（Grenache）在義大利的代表產區。紅酒以 Tai Rosso、Merlot、Cabernet 等為主，白酒則以 Garganega、Chardonnay、Pinot Bianco 等釀造，風格多元，結構良好且富有礦物感。",
+		"details": {
+			"introduction": "Colli Berici DOC 產區自 1973 年設立，地形以石灰岩丘陵為主，土壤礦物質豐富。Tai Rosso（Grenache）為本地特色紅葡萄，釀造出果香濃郁、單寧柔和的紅酒。白酒則以國際與在地品種混釀，氣泡酒產量較少。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，適合葡萄香氣與酸度發展。丘陵地形有助於排水與葡萄成熟。",
+			"subregions": {},
+			"grape_varieties": ["Tai Rosso", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Nero", "Chardonnay", "Garganega", "Pinot Bianco", "Sauvignon"]
+		}
+	},
+	{
+		"id": "Colli di Conegliano DOCG",
+		"name": "Colli di Conegliano DOCG",
+		"type": "DOCG",
+		"region": "Veneto",
+		"province": "Treviso",
+		"zone": "Conegliano, Vittorio Veneto, San Pietro di Feletto, Cappella Maggiore, Colle Umberto, Cordignano, Fregona, San Fior, Sarmede, Susegana",
+		"style": ["紅酒", "白酒", "甜酒"],
+		"grapes": ["Glera", "Pinot Bianco", "Chardonnay", "Manzoni Bianco", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Marzemino", "Incrocio Manzoni 6.0.13"],
+		"description": "Colli di Conegliano DOCG 位於 Veneto 大區 Treviso 省 Conegliano 丘陵地帶，是高品質紅、白、甜酒的產區。紅酒以 Merlot、Cabernet Sauvignon、Cabernet Franc、Marzemino 為主，白酒以 Pinot Bianco、Chardonnay、Manzoni Bianco 等混釀，甜酒 Refrontolo 及 Torchiato di Fregona 以特殊工藝釀造。",
+		"details": {
+			"introduction": "Colli di Conegliano DOCG 於 2011 年升格，涵蓋 Conegliano 及周邊丘陵。產區以多樣化的葡萄品種和風格著稱，紅酒結構豐富，白酒香氣細緻，甜酒則以風乾葡萄釀造，風味濃郁。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與亞得里亞海影響，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄香氣與酸度發展。",
+			"subregions": {"Refrontolo": "以 Marzemino 為主的甜紅酒", "Torchiato di Fregona": "以 Glera、Verdiso、Boschera 為主的風乾甜白酒"},
+			"grape_varieties": ["Glera", "Pinot Bianco", "Chardonnay", "Manzoni Bianco", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Marzemino", "Incrocio Manzoni 6.0.13"]
+		}
+	},
+	{
+		"id": "Colli Euganei DOC",
+		"name": "Colli Euganei DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Padova",
+		"zone": "Euganei 火山丘陵，包括 Abano Terme, Arquà Petrarca, Baone, Battaglia Terme, Cinto Euganeo, Galzignano Terme, Lozzo Atestino, Monselice, Montegrotto Terme, Rovolon, Teolo, Torreglia, Vò 等市鎮",
+		"style": ["紅酒", "白酒", "甜酒", "氣泡酒"],
+		"grapes": ["Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Nero", "Raboso", "Moscato Bianco", "Fior d'Arancio (Moscato Giallo)", "Pinot Bianco", "Chardonnay", "Garganega", "Pinot Grigio", "Sauvignon"],
+		"description": "Colli Euganei DOC 位於 Veneto 大區 Padova 省的火山丘陵地帶，產區以多樣化的紅、白、甜、氣泡酒著稱。紅酒以國際品種為主，白酒與甜酒則以 Moscato、Fior d'Arancio 等釀造，風格多元且富有礦物感。",
+		"details": {
+			"introduction": "Colli Euganei DOC 於 1969 年設立，涵蓋 Euganei 火山丘陵。土壤以火山岩和黏土為主，賦予葡萄酒獨特礦物風味。紅酒以 Merlot、Cabernet 等國際品種為主，白酒與甜酒則以 Moscato Bianco、Fior d'Arancio 等釀造。",
+			"climate": "溫帶大陸型氣候，受丘陵地形與火山土壤影響，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄香氣與酸度發展。",
+			"subregions": {"Fior d'Arancio": "以 Moscato Giallo 為主的甜型與氣泡酒"},
+			"grape_varieties": ["Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Nero", "Raboso", "Moscato Bianco", "Fior d'Arancio (Moscato Giallo)", "Pinot Bianco", "Chardonnay", "Garganega", "Pinot Grigio", "Sauvignon"]
+		}
+	},
+	{
+		"id": "Conegliano Valdobbiadene Prosecco DOCG",
+		"name": "Conegliano Valdobbiadene Prosecco DOCG",
+		"type": "DOCG",
+		"region": "Veneto",
+		"province": "Treviso",
+		"zone": "Conegliano, Valdobbiadene 及其周邊 15 個市鎮，包括 Vidor, Farra di Soligo, Miane, Follina, Cison di Valmarino, Tarzo, San Pietro di Feletto, Refrontolo, Pieve di Soligo, Susegana, Colle Umberto, Vittorio Veneto, San Vendemiano, Godega di Sant'Urbano, Cappella Maggiore",
+		"style": ["氣泡酒", "白酒"],
+		"grapes": ["Glera", "Verdiso", "Perera", "Bianchetta Trevigiana", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Pinot Nero"],
+		"description": "Conegliano Valdobbiadene Prosecco DOCG 是義大利最著名的高品質氣泡酒產區，位於 Veneto 大區 Treviso 省的丘陵地帶。以 Glera 葡萄為主釀造，Spumante（氣泡酒）為主流，風格清新、果香濃郁、氣泡細緻，並有 Superiore di Cartizze、Rive 等特殊分級。",
+		"details": {
+			"introduction": "Conegliano Valdobbiadene Prosecco DOCG 於 2009 年升格，涵蓋 Conegliano、Valdobbiadene 及其間的丘陵地帶。產區以 Glera 為主，允許少量 Verdiso、Perera、Bianchetta Trevigiana、Chardonnay、Pinot Bianco、Pinot Grigio、Pinot Nero 混釀。以 Charmat（密閉槽）法釀造，保留葡萄新鮮果香。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與亞得里亞海影響，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄香氣與酸度發展。",
+			"subregions": {"Superiore di Cartizze": "產自 Valdobbiadene 的 Cartizze 丘陵，品質最高，氣泡酒風格細膩。", "Rive": "產自 43 個特定村莊的單一葡萄園，展現各地風土特色。"},
+			"grape_varieties": ["Glera", "Verdiso", "Perera", "Bianchetta Trevigiana", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Pinot Nero"]
+		}
+	},
+	{
+		"id": "Corti Benedettine del Padovano DOC",
+		"name": "Corti Benedettine del Padovano DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Padova",
+		"zone": "Padova 省南部平原，包括 Agna, Anguillara Veneta, Arre, Bagnoli di Sopra, Candiana, Cartura, Conselve, Correzzola, Granze, Monselice, Pernumia, Piacenza d’Adige, Ponso, Pozzonovo, San Pietro Viminario, Sant’Elena, Tribano 等市鎮",
+		"style": ["白酒", "紅酒", "氣泡酒"],
+		"grapes": ["Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Raboso Piave", "Raboso Veronese", "Carmenère", "Pinot Bianco", "Chardonnay", "Garganega", "Pinot Grigio", "Sauvignon"],
+		"description": "Corti Benedettine del Padovano DOC 位於 Veneto 大區 Padova 省南部平原，涵蓋多個市鎮。產區以國際與在地品種釀造多樣化的白、紅、氣泡酒，風格清新易飲，適合日常搭餐。",
+		"details": {
+			"introduction": "Corti Benedettine del Padovano DOC 於 2011 年設立，名稱源自中世紀本篤會修道院對當地農業的影響。土壤以沖積土和黏土為主，適合多種葡萄品種。紅酒以 Merlot、Cabernet 等為主，白酒以 Pinot Bianco、Chardonnay、Garganega 等釀造。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，全年降雨適中，有利於葡萄成熟與酸度保持。",
+			"subregions": {},
+			"grape_varieties": ["Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Raboso Piave", "Raboso Veronese", "Carmenère", "Pinot Bianco", "Chardonnay", "Garganega", "Pinot Grigio", "Sauvignon"]
+		}
+	},
+	{
+		"id": "Gambellara DOC",
+		"name": "Gambellara DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Vicenza",
+		"zone": "Gambellara, Montebello Vicentino, Montorso Vicentino, Zermeghedo",
+		"style": ["白酒", "甜酒", "氣泡酒"],
+		"grapes": ["Garganega", "Trebbiano di Soave", "Chardonnay", "Pinot Bianco", "Durella"],
+		"description": "Gambellara DOC 位於 Veneto 大區 Vicenza 省西部，以 Garganega 為主釀造高品質白酒、甜酒與氣泡酒。產區土壤多為火山岩，賦予酒款獨特礦物感。代表性酒款包括 Gambellara Classico、Recioto di Gambellara（甜酒）及 Spumante。",
+		"details": {
+			"introduction": "Gambellara DOC 於 1970 年設立，涵蓋 Gambellara 及周邊三個市鎮。以 Garganega 為主，釀造新鮮、果香型白酒與風乾甜酒（Recioto di Gambellara），並有少量氣泡酒。火山土壤賦予酒款明顯礦物感。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，有利於葡萄香氣與酸度發展。",
+			"subregions": {"Classico": "Gambellara 村周邊的歷史核心區，品質最佳。", "Recioto di Gambellara": "以風乾 Garganega 釀造的甜型白酒。"},
+			"grape_varieties": ["Garganega", "Trebbiano di Soave", "Chardonnay", "Pinot Bianco", "Durella"]
+		}
+	},
+	{
+		"id": "Lessini Durello DOC",
+		"name": "Lessini Durello DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona, Vicenza",
+		"zone": "Lessini 山區，包括 Roncà, Montecchia di Crosara, San Giovanni Ilarione, Vestenanova, Cazzano di Tramigna, Badia Calavena, Tregnago, Arzignano, Chiampo, Nogarole Vicentino, San Pietro Mussolino, Altissimo, Crespadoro, Gambugliano, Trissino, Brogliano, Castelgomberto, Cornedo Vicentino, Valdagno, Recoaro Terme, Valli del Pasubio, Torrebelvicino, Schio, Malo, Monte di Malo, San Vito di Leguzzano, Marano Vicentino, Santorso, Piovene Rocchette, Arsiero, Tonezza del Cimone, Lastebasse, Pedemonte, Velo d'Astico, Laghi, Posina, Valdastico, Rotzo, Roana, Asiago, Conco, Lusiana, Foza, Enego, Gallio, Solagna, Cismon del Grappa, San Nazario, Campolongo sul Brenta, Valstagna, Crespadoro, Altissimo, Nogarole Vicentino, San Pietro Mussolino, Arzignano, Chiampo, Trissino, Brogliano, Castelgomberto, Cornedo Vicentino, Valdagno, Recoaro Terme, Valli del Pasubio, Torrebelvicino, Schio, Malo, Monte di Malo, San Vito di Leguzzano, Marano Vicentino, Santorso, Piovene Rocchette, Arsiero, Tonezza del Cimone, Lastebasse, Pedemonte, Velo d'Astico, Laghi, Posina, Valdastico, Rotzo, Roana, Asiago, Conco, Lusiana, Foza, Enego, Gallio, Solagna, Cismon del Grappa, San Nazario, Campolongo sul Brenta, Valstagna",
+		"style": ["氣泡酒", "白酒"],
+		"grapes": ["Durella"],
+		"description": "Lessini Durello DOC 位於 Veneto 大區 Verona 與 Vicenza 省的 Lessini 山區，是義大利最具代表性的 Durella 氣泡酒產區。以 Durella 為主釀造 Spumante（氣泡酒）與少量靜態白酒，風格清新、酸度高、礦物感明顯，適合搭配多種料理。",
+		"details": {
+			"introduction": "Lessini Durello DOC 於 1987 年設立，涵蓋 Lessini 山區多個市鎮。Durella 為當地原生白葡萄，適合釀造高酸度、清新風格的氣泡酒。產區以傳統瓶中二次發酵（Metodo Classico）與密閉槽法（Charmat）並行。",
+			"climate": "溫帶大陸型氣候，山區日夜溫差大，夏季溫暖，冬季較冷，有利於葡萄酸度與香氣發展。火山土壤賦予酒款明顯礦物感。",
+			"subregions": {},
+			"grape_varieties": ["Durella"]
+		}
+	},
+	{
+		"id": "Lison DOCG",
+		"name": "Lison DOCG",
+		"type": "DOCG",
+		"region": "Veneto, Friuli Venezia Giulia",
+		"province": "Venezia, Treviso, Pordenone",
+		"zone": "Lison-Pramaggiore 地區，包括 Pramaggiore, Annone Veneto, Cinto Caomaggiore, Concordia Sagittaria, Fossalta di Portogruaro, Gruaro, Portogruaro, Teglio Veneto, San Stino di Livenza, Caorle, Chions, Cordovado, Morsano al Tagliamento, Pravisdomini, Sesto al Reghena, Azzano Decimo, Fiume Veneto, San Vito al Tagliamento, Casarsa della Delizia, San Michele al Tagliamento 等市鎮",
+		"style": ["白酒"],
+		"grapes": ["Tai (Friulano)"],
+		"description": "Lison DOCG（原 Lison-Pramaggiore DOC 的頂級分級）位於 Veneto 與 Friuli Venezia Giulia 交界地區，是義大利著名的 Tai（Friulano）單一品種白酒產區。酒款以新鮮果香、花香、礦物感和良好結構著稱，適合搭配海鮮、白肉等料理。",
+		"details": {
+			"introduction": "Lison DOCG 於 2010 年升格，涵蓋 Veneto 東部與 Friuli Venezia Giulia 西部的 Lison-Pramaggiore 地區。僅允許 Tai（Friulano）單一品種釀造，展現產區風土與品種特色。",
+			"climate": "溫帶大陸型氣候，受亞得里亞海影響，夏季溫暖，冬季較冷，年降雨量適中，適合白葡萄品種生長。土壤多為沖積土與黏土，賦予酒款礦物感。",
+			"subregions": {},
+			"grape_varieties": ["Tai (Friulano)"]
+		}
+	},
+	{
+		"id": "Lugana DOC",
+		"name": "Lugana DOC",
+		"type": "DOC",
+		"region": "Lombardia, Veneto",
+		"province": "Brescia, Verona",
+		"zone": "加爾達湖南岸，包括 Sirmione, Desenzano del Garda, Pozzolengo, Lonato del Garda（Brescia 省）及 Peschiera del Garda（Verona 省）",
+		"style": ["白酒", "氣泡酒", "甜酒"],
+		"grapes": ["Turbiana (Trebbiano di Lugana)"],
+		"description": "Lugana DOC 位於加爾達湖南岸，橫跨 Lombardia 與 Veneto 兩大區，是義大利最著名的單一品種白酒產區之一。以 Turbiana（Trebbiano di Lugana）釀造，酒體結構良好、果香花香明顯，並有陳年型、氣泡型與甜型等多種風格。",
+		"details": {
+			"introduction": "Lugana DOC 於 1967 年設立，涵蓋加爾達湖南岸五個市鎮。Turbiana 為當地原生白葡萄，釀造出新鮮、礦物感強、可陳年的白酒。產區分為基本型、Superiore、Riserva、Vendemmia Tardiva（遲摘）、Spumante（氣泡酒）等。",
+			"climate": "溫帶大陸型氣候，受加爾達湖調節，夏季溫暖，冬季溫和，日夜溫差大，有利於葡萄香氣與酸度發展。土壤多為黏土與石灰岩，賦予酒款礦物感。",
+			"subregions": {"Superiore": "需陳年至少一年，結構更豐富。", "Riserva": "需陳年至少 24 個月，適合長期陳年。", "Vendemmia Tardiva": "遲摘型，帶有甜感。", "Spumante": "氣泡型，採傳統法或密閉槽法釀造。"},
+			"grape_varieties": ["Turbiana (Trebbiano di Lugana)"]
+		}
+	},
+	{
+		"id": "Malanotte del Piave DOCG",
+		"name": "Malanotte del Piave DOCG",
+		"type": "DOCG",
+		"region": "Veneto",
+		"province": "Treviso, Venezia",
+		"zone": "Piave 河流域，包括 Oderzo, Ponte di Piave, Salgareda, San Polo di Piave, Vazzola, Zenson di Piave, Chiarano, Cimadolmo, Coderre, Fontanelle, Gorgo al Monticano, Mansuè, Meduna di Livenza, Monastier di Treviso, Motta di Livenza, Ormelle, Portobuffolè, San Biagio di Callalta, San Stino di Livenza, Santa Lucia di Piave, Susegana, Villorba, Zenson di Piave, Zoppè di San Vendemiano, Fossalta di Piave, Meolo, Musile di Piave, Noventa di Piave, Quarto d'Altino, San Donà di Piave 等市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Raboso Piave"],
+		"description": "Malanotte del Piave DOCG（又稱 Piave Malanotte）位於 Veneto 大區 Piave 河流域，是以 Raboso Piave 為主釀造的高品質紅酒產區。酒體結構強勁、單寧豐富，部分葡萄經風乾處理，賦予酒款濃郁果香與陳年潛力。",
+		"details": {
+			"introduction": "Malanotte del Piave DOCG 於 2010 年升格，涵蓋 Piave 河流域多個市鎮。以 Raboso Piave 為主，規定部分葡萄需經風乾處理，提升酒款濃郁度與複雜性。適合長期陳年。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，全年降雨適中，Piave 河流域土壤多為沖積土，適合 Raboso Piave 生長。",
+			"subregions": {},
+			"grape_varieties": ["Raboso Piave"]
+		}
+	},
+	{
+		"id": "Merlara DOC",
+		"name": "Merlara DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Padova, Verona",
+		"zone": "Padova 省南部與 Verona 省東部，包括 Merlara, Urbana, Casale di Scodosia, Castelbaldo, Masi, Montagnana, Saletto, Santa Margherita d’Adige, Terrazzo, Bevilacqua, Boschi Sant’Anna, Minerbe, Pressana, Roveredo di Guà, Villa Bartolomea 等市鎮",
+		"style": ["紅酒", "白酒", "甜酒"],
+		"grapes": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Carmenère", "Pinot Grigio", "Chardonnay", "Tai", "Friulano"],
+		"description": "Merlara DOC 位於 Veneto 大區 Padova 省南部與 Verona 省東部，涵蓋 Merlara 及周邊多個市鎮。產區以 Raboso Piave、Merlot、Cabernet Sauvignon 等釀造結構豐富的紅酒，白酒則以 Pinot Grigio、Chardonnay、Tai 等為主，並有甜型酒款。",
+		"details": {
+			"introduction": "Merlara DOC 於 2000 年設立，地勢平坦、土壤肥沃，適合多種葡萄品種。紅酒以 Raboso Piave、Merlot、Cabernet Sauvignon 為主，白酒以 Pinot Grigio、Chardonnay、Tai 等釀造，並有甜型酒款。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，全年降雨適中，土壤多為沖積土與黏土，適合葡萄生長。",
+			"subregions": {},
+			"grape_varieties": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Carmenère", "Pinot Grigio", "Chardonnay", "Tai", "Friulano"]
+		}
+	},
+	{
+		"id": "Montello e Colli Asolani DOC",
+		"name": "Montello e Colli Asolani DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Treviso",
+		"zone": "Treviso 省 Montello 丘陵與 Asolo 周邊，包括 Crocetta del Montello, Giavera del Montello, Montebelluna, Nervesa della Battaglia, Pederobba, Volpago del Montello, Caerano di San Marco, Cornuda, Maser, Asolo, Castelcucco, Cavaso del Tomba, Fonte, Monfumo 等市鎮",
+		"style": ["紅酒", "白酒", "氣泡酒"],
+		"grapes": ["Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Carmenère", "Pinot Nero", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Manzoni Bianco", "Glera"],
+		"description": "Montello e Colli Asolani DOC 位於 Veneto 大區 Treviso 省 Montello 丘陵與 Asolo 地區，涵蓋多個市鎮。產區以 Cabernet、Merlot 等釀造結構豐富的紅酒，白酒以 Chardonnay、Pinot Bianco、Manzoni Bianco 等為主，並有氣泡酒款。",
+		"details": {
+			"introduction": "Montello e Colli Asolani DOC 於 1977 年設立，地形以 Montello 丘陵與 Asolo 周邊為主。紅酒以 Cabernet Sauvignon、Merlot、Carmenère 等為主，白酒以 Chardonnay、Pinot Bianco、Manzoni Bianco 等釀造，並有 Glera 氣泡酒。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，土壤多為沖積土與黏土，適合多種葡萄品種。",
+			"subregions": {},
+			"grape_varieties": ["Cabernet Sauvignon", "Cabernet Franc", "Merlot", "Carmenère", "Pinot Nero", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Manzoni Bianco", "Glera"]
+		}
+	},
+	{
+		"id": "Monti Lessini DOC",
+		"name": "Monti Lessini DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona, Vicenza",
+		"zone": "Lessini 山區，包括 Roncà, Montecchia di Crosara, San Giovanni Ilarione, Vestenanova, Cazzano di Tramigna, Badia Calavena, Tregnago, Arzignano, Chiampo, Nogarole Vicentino, San Pietro Mussolino, Altissimo, Crespadoro, Gambugliano, Trissino, Brogliano, Castelgomberto, Cornedo Vicentino, Valdagno, Recoaro Terme, Valli del Pasubio, Torrebelvicino, Schio, Malo, Monte di Malo, San Vito di Leguzzano, Marano Vicentino, Santorso, Piovene Rocchette, Arsiero, Tonezza del Cimone, Lastebasse, Pedemonte, Velo d'Astico, Laghi, Posina, Valdastico, Rotzo, Roana, Asiago, Conco, Lusiana, Foza, Enego, Gallio, Solagna, Cismon del Grappa, San Nazario, Campolongo sul Brenta, Valstagna 等市鎮",
+		"style": ["白酒", "氣泡酒", "甜酒"],
+		"grapes": ["Durella", "Pinot Bianco", "Chardonnay", "Pinot Nero", "Garganega", "Moscato Bianco"],
+		"description": "Monti Lessini DOC 位於 Veneto 大區 Verona 與 Vicenza 省的 Lessini 山區，是以 Durella 為主釀造的高酸度白酒與氣泡酒產區，並有 Moscato 甜酒。土壤多為火山岩，賦予酒款明顯礦物感。",
+		"details": {
+			"introduction": "Monti Lessini DOC 於 1987 年設立，涵蓋 Lessini 山區多個市鎮。以 Durella 為主釀造新鮮、酸度高的白酒與氣泡酒，並有 Moscato Bianco 甜酒。火山土壤賦予酒款獨特礦物感。",
+			"climate": "溫帶大陸型氣候，山區日夜溫差大，夏季溫暖，冬季較冷，火山土壤適合 Durella 等品種生長。",
+			"subregions": {},
+			"grape_varieties": ["Durella", "Pinot Bianco", "Chardonnay", "Pinot Nero", "Garganega", "Moscato Bianco"]
+		}
+	},
+	{
+		"id": "Piave DOC",
+		"name": "Piave DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Treviso, Venezia",
+		"zone": "Piave 河流域，包括 Oderzo, Ponte di Piave, Salgareda, San Polo di Piave, Vazzola, Zenson di Piave, Chiarano, Cimadolmo, Coderre, Fontanelle, Gorgo al Monticano, Mansuè, Meduna di Livenza, Monastier di Treviso, Motta di Livenza, Ormelle, Portobuffolè, San Biagio di Callalta, San Stino di Livenza, Santa Lucia di Piave, Susegana, Villorba, Zenson di Piave, Zoppè di San Vendemiano, Fossalta di Piave, Meolo, Musile di Piave, Noventa di Piave, Quarto d'Altino, San Donà di Piave 等市鎮",
+		"style": ["紅酒", "白酒", "氣泡酒"],
+		"grapes": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Grigio", "Chardonnay", "Tai", "Verduzzo Trevigiano", "Glera"],
+		"description": "Piave DOC 位於 Veneto 大區 Piave 河流域，涵蓋 Treviso 與 Venezia 省多個市鎮。產區以 Raboso Piave、Merlot、Cabernet Sauvignon 等釀造結構豐富的紅酒，白酒以 Pinot Grigio、Chardonnay、Tai 等為主，並有氣泡酒款。",
+		"details": {
+			"introduction": "Piave DOC 於 1971 年設立，涵蓋 Piave 河流域多個市鎮。紅酒以 Raboso Piave、Merlot、Cabernet Sauvignon 為主，白酒以 Pinot Grigio、Chardonnay、Tai 等釀造，並有 Glera 氣泡酒。Raboso Piave 是產區代表性品種。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，全年降雨適中，Piave 河流域土壤多為沖積土，適合多種葡萄品種。",
+			"subregions": {},
+			"grape_varieties": ["Raboso Piave", "Merlot", "Cabernet Sauvignon", "Cabernet Franc", "Carmenère", "Pinot Grigio", "Chardonnay", "Tai", "Verduzzo Trevigiano", "Glera"]
+		}
+	},
+		{
+			"id": "Prosecco DOC",
+			"name": "Prosecco DOC",
+			"type": "DOC",
+			"region": "Veneto, Friuli Venezia Giulia",
+			"province": "Treviso, Venezia, Vicenza, Padova, Belluno, Gorizia, Pordenone, Trieste, Udine",
+			"zone": "多個市鎮，涵蓋威尼托與弗留利-威尼斯朱利亞兩大區，主要集中於 Treviso 省及其周邊",
+			"style": ["氣泡酒", "白酒"],
+			"grapes": ["Glera", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Pinot Nero", "Verdiso", "Perera", "Bianchetta Trevigiana"],
+			"description": "Prosecco DOC 是義大利最著名的氣泡酒產區，橫跨 Veneto 及 Friuli Venezia Giulia 兩大區。以 Glera 葡萄為主釀造，風格清新、果香濃郁、氣泡細緻，適合搭配多種料理或作為開胃酒。",
+			"details": {
+				"introduction": "Prosecco DOC 產區於 2009 年升格，涵蓋威尼托與弗留利-威尼斯朱利亞兩區的廣大平原與丘陵地帶。主要生產 Spumante（氣泡酒）、Frizzante（微氣泡）及少量靜態白酒。以 Charmat（密閉槽）法釀造，保留葡萄新鮮果香。",
+				"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，年降雨量適中，適合 Glera 等白葡萄品種生長。",
+				"subregions": {},
+				"grape_varieties": ["Glera", "Chardonnay", "Pinot Bianco", "Pinot Grigio", "Pinot Nero", "Verdiso", "Perera", "Bianchetta Trevigiana"]
+			}
+		},
+	{
+		"id": "San Martino della Battaglia DOC",
+		"name": "San Martino della Battaglia DOC",
+		"type": "DOC",
+		"region": "Lombardia, Veneto",
+		"province": "Brescia, Verona",
+		"zone": "加爾達湖南岸，包括 Desenzano del Garda, Lonato del Garda（Brescia 省）及 Peschiera del Garda, Pozzolengo, Sirmione（Verona 省）",
+		"style": ["白酒", "甜酒"],
+		"grapes": ["Turbiana (Trebbiano di Lugana)"],
+		"description": "San Martino della Battaglia DOC 位於加爾達湖南岸，橫跨 Lombardia 與 Veneto 兩大區。以 Turbiana（Trebbiano di Lugana）釀造新鮮白酒與甜型酒款，風格細緻、果香花香明顯，適合搭配海鮮、白肉等料理。",
+		"details": {
+			"introduction": "San Martino della Battaglia DOC 於 1970 年設立，涵蓋加爾達湖南岸五個市鎮。以 Turbiana（Trebbiano di Lugana）為主釀造新鮮白酒與甜型酒款（San Martino della Battaglia Liquoroso）。",
+			"climate": "溫帶大陸型氣候，受加爾達湖調節，夏季溫暖，冬季溫和，日夜溫差大，土壤多為黏土與石灰岩，適合白葡萄品種生長。",
+			"subregions": {"Liquoroso": "以 Turbiana 釀造的加強型甜白酒。"},
+			"grape_varieties": ["Turbiana (Trebbiano di Lugana)"]
+		}
+	},
+	{
+		"id": "Serenissima o Vigneti della Serenissima DOC",
+		"name": "Serenissima o Vigneti della Serenissima DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona, Vicenza, Padova, Treviso, Venezia",
+		"zone": "Veneto 大區多省，包括 Verona, Vicenza, Padova, Treviso, Venezia 部分市鎮，主要為丘陵地帶",
+		"style": ["氣泡酒"],
+		"grapes": ["Chardonnay", "Pinot Bianco", "Pinot Nero"],
+		"description": "Serenissima DOC（又稱 Vigneti della Serenissima DOC）位於 Veneto 大區多省丘陵地帶，專產高品質傳統法氣泡酒。以 Chardonnay、Pinot Bianco、Pinot Nero 為主釀造，氣泡細緻、果香優雅，適合慶祝與搭配多種料理。",
+		"details": {
+			"introduction": "Serenissima DOC 於 2011 年設立，涵蓋 Veneto 多省丘陵地帶。僅允許 Chardonnay、Pinot Bianco、Pinot Nero 釀造傳統法（Metodo Classico）氣泡酒，展現 Veneto 丘陵風土與釀造技藝。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，丘陵地形有助於葡萄成熟與酸度保持。",
+			"subregions": {},
+			"grape_varieties": ["Chardonnay", "Pinot Bianco", "Pinot Nero"]
+		}
+	},
+	{
+		"id": "Soave DOC",
+		"name": "Soave DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona",
+		"zone": "Verona 省東部，包括 Soave, Monteforte d'Alpone, San Martino Buon Albergo, Mezzane di Sotto, Illasi, Colognola ai Colli, Caldiero, Lavagno, Roncà, Cazzano di Tramigna, Montecchia di Crosara, San Giovanni Ilarione, Belfiore, Zevio, Palù, Roverè Veronese, San Bonifacio, Arcole, Pressana, Zimella, Albaredo d'Adige, Veronella, Gambellara (部分)",
+		"style": ["白酒", "氣泡酒"],
+		"grapes": ["Garganega", "Trebbiano di Soave", "Chardonnay", "Pinot Bianco"],
+		"description": "Soave DOC 是義大利最著名的白酒產區之一，位於 Veneto 大區 Verona 省東部。以 Garganega 為主釀造，酒體輕盈、果香花香明顯、酸度清新，適合搭配海鮮、白肉等料理。產區分為 Soave、Soave Classico、Soave Colli Scaligeri 等子區，並有 Spumante（氣泡酒）型。",
+		"details": {
+			"introduction": "Soave DOC 於 1931 年設立，是義大利歷史最悠久的 DOC 產區之一。涵蓋 Verona 省東部多個市鎮，分為平原區（Soave DOC）、丘陵區（Soave Classico）、Colli Scaligeri 等。以 Garganega 為主，允許少量 Trebbiano di Soave、Chardonnay、Pinot Bianco 混釀。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，土壤多為火山岩、石灰岩與沖積土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {"Classico": "Soave 與 Monteforte d'Alpone 丘陵核心區，品質最佳。", "Colli Scaligeri": "Verona 東部丘陵地帶，展現不同風土特色。"},
+			"grape_varieties": ["Garganega", "Trebbiano di Soave", "Chardonnay", "Pinot Bianco"]
+		}
+	},
+	{
+		"id": "Soave Superiore DOCG",
+		"name": "Soave Superiore DOCG",
+		"type": "DOCG",
+		"region": "Veneto",
+		"province": "Verona",
+		"zone": "Verona 省東部 Soave 與 Monteforte d'Alpone 丘陵核心區（Classico），以及周邊部分市鎮",
+		"style": ["白酒"],
+		"grapes": ["Garganega", "Trebbiano di Soave", "Chardonnay"],
+		"description": "Soave Superiore DOCG 是 Soave 產區的頂級分級，僅限丘陵核心區（Classico）及部分周邊地區。以 Garganega 為主釀造，酒體結構更豐富、陳年潛力佳，果香花香明顯，酸度新鮮，適合搭配海鮮、白肉等料理。必須經過最低陳年，展現更複雜的風味。",
+		"details": {
+			"introduction": "Soave Superiore DOCG 於 2001 年設立，僅限 Soave 與 Monteforte d'Alpone 丘陵核心區（Classico）及部分周邊地區。以 Garganega 為主，允許少量 Trebbiano di Soave、Chardonnay 混釀。必須經過最低 1 年陳年，部分酒款可長期陳年。",
+			"climate": "溫帶大陸型氣候，夏季溫暖，冬季較冷，日夜溫差大，土壤多為火山岩、石灰岩與沖積土，賦予酒款礦物感與新鮮酸度。",
+			"subregions": {"Classico": "Soave 與 Monteforte d'Alpone 丘陵核心區，品質最佳。"},
+			"grape_varieties": ["Garganega", "Trebbiano di Soave", "Chardonnay"]
+		}
+	},
+	{
+		"id": "Terradeiforti Valdadige Terradeiforti DOC",
+		"name": "Terradeiforti / Valdadige Terradeiforti DOC",
+		"type": "DOC",
+		"region": "Veneto, Trentino-Alto Adige",
+		"province": "Verona, Trento",
+		"zone": "Adige 河谷（Valdadige），涵蓋 Veneto 大區 Verona 省北部與 Trentino 省南部，主要包括 Dolcè, Brentino Belluno, Avio, Rivoli Veronese, Sabbionara d'Avio 等市鎮",
+		"style": ["紅酒", "白酒"],
+		"grapes": ["Enantio (Lambrusco a Foglia Frastagliata)", "Casetta (Foja Tonda)", "Merlot", "Cabernet Sauvignon", "Chardonnay", "Pinot Grigio", "Pinot Bianco", "Traminer"],
+		"description": "Terradeiforti Valdadige Terradeiforti DOC 位於 Adige 河谷，橫跨 Veneto 與 Trentino 兩大區。以 Enantio、Casetta 等在地紅葡萄為特色，並生產國際品種紅、白酒。紅酒結構紮實、果香濃郁，白酒新鮮清爽，展現河谷特殊風土。",
+		"details": {
+			"introduction": "Terradeiforti Valdadige Terradeiforti DOC 於 2006 年設立，涵蓋 Adige 河谷的 Terra dei Forti 地區。紅酒以 Enantio、Casetta、Merlot、Cabernet Sauvignon 為主，白酒以 Chardonnay、Pinot Grigio、Pinot Bianco、Traminer 等釀造。Enantio 與 Casetta 為當地原生品種，具獨特個性。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與 Adige 河調節，夏季溫暖，冬季較冷，日夜溫差大，土壤多為沖積礫石與砂質，適合多種葡萄品種。",
+			"subregions": {},
+			"grape_varieties": ["Enantio (Lambrusco a Foglia Frastagliata)", "Casetta (Foja Tonda)", "Merlot", "Cabernet Sauvignon", "Chardonnay", "Pinot Grigio", "Pinot Bianco", "Traminer"]
+		}
+	},
+	{
+		"id": "Valdadige Etschtaler DOC",
+		"name": "Valdadige / Etschtaler DOC",
+		"type": "DOC",
+		"region": "Veneto, Trentino-Alto Adige",
+		"province": "Verona, Trento, Bolzano",
+		"zone": "Adige 河谷（Valdadige），涵蓋 Veneto 大區 Verona 省北部、Trentino 省、南蒂羅爾（Bolzano）部分地區，主要沿 Adige 河流域市鎮",
+		"style": ["白酒", "紅酒", "粉紅酒"],
+		"grapes": ["Pinot Grigio", "Chardonnay", "Pinot Bianco", "Schiava (Vernatsch)", "Lambrusco a Foglia Frastagliata (Enantio)", "Merlot", "Cabernet Sauvignon", "Lagrein", "Müller-Thurgau", "Traminer"],
+		"description": "Valdadige Etschtaler DOC 位於 Adige 河谷，橫跨 Veneto、Trentino、南蒂羅爾三大區。以 Pinot Grigio、Chardonnay、Schiava、Enantio 等多品種釀造新鮮白酒、紅酒與粉紅酒，展現河谷多元風土與品種特色。",
+		"details": {
+			"introduction": "Valdadige Etschtaler DOC 於 1975 年設立，涵蓋 Adige 河谷自 Verona 至 Bolzano 的廣大地區。白酒以 Pinot Grigio、Chardonnay、Pinot Bianco、Müller-Thurgau、Traminer 為主，紅酒以 Schiava、Enantio、Merlot、Cabernet Sauvignon、Lagrein 等釀造，並有粉紅酒（Rosato）。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與 Adige 河調節，夏季溫暖，冬季較冷，日夜溫差大，土壤多為沖積礫石與砂質，適合多種葡萄品種。",
+			"subregions": {},
+			"grape_varieties": ["Pinot Grigio", "Chardonnay", "Pinot Bianco", "Schiava (Vernatsch)", "Lambrusco a Foglia Frastagliata (Enantio)", "Merlot", "Cabernet Sauvignon", "Lagrein", "Müller-Thurgau", "Traminer"]
+		}
+	},
+	{
+		"id": "Valpolicella DOC",
+		"name": "Valpolicella DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona",
+		"zone": "Verona 省北部 Valpolicella 山谷，包括 Negrar, Marano di Valpolicella, Fumane, Sant'Ambrogio di Valpolicella, San Pietro in Cariano, Pescantina, Verona（部分）等市鎮，分為 Classica、Valpantena、Estesa 等子區",
+		"style": ["紅酒", "粉紅酒"],
+		"grapes": ["Corvina Veronese", "Corvinone", "Rondinella", "Molinara", "Oseleta", "Croatina", "Dindarella"],
+		"description": "Valpolicella DOC 是義大利最著名的紅酒產區之一，位於 Veneto 大區 Verona 省北部山谷。以 Corvina、Corvinone、Rondinella 為主釀造，酒體輕盈至中等，果香明顯，並有 Classico、Valpantena、Superiore 等分級。也生產粉紅酒（Valpolicella Rosato）。",
+		"details": {
+			"introduction": "Valpolicella DOC 於 1968 年設立，涵蓋 Verona 省北部 Valpolicella 山谷。分為 Classica（歷史核心區）、Valpantena（東部山谷）、Estesa（擴大區）。主要品種為 Corvina Veronese、Corvinone、Rondinella，並可混釀 Molinara、Oseleta、Croatina、Dindarella。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與加爾達湖調節，夏季溫暖，冬季較冷，日夜溫差大，土壤多為石灰岩、黏土與沖積土，適合紅葡萄生長。",
+			"subregions": {"Classico": "Negrar, Marano, Fumane, Sant'Ambrogio, San Pietro in Cariano 等歷史核心區。", "Valpantena": "Verona 東北部山谷，風格細緻。", "Estesa": "擴大區，涵蓋更多市鎮。"},
+			"grape_varieties": ["Corvina Veronese", "Corvinone", "Rondinella", "Molinara", "Oseleta", "Croatina", "Dindarella"]
+		}
+	},
+	{
+		"id": "Valpolicella ripasso DOC",
+		"name": "Valpolicella Ripasso DOC",
+		"type": "DOC",
+		"region": "Veneto",
+		"province": "Verona",
+		"zone": "Verona 省北部 Valpolicella 山谷，包括 Negrar, Marano di Valpolicella, Fumane, Sant'Ambrogio di Valpolicella, San Pietro in Cariano, Pescantina, Verona（部分）等市鎮，分為 Classico、Valpantena、Estesa 等子區",
+		"style": ["紅酒"],
+		"grapes": ["Corvina Veronese", "Corvinone", "Rondinella", "Molinara", "Oseleta", "Croatina", "Dindarella"],
+		"description": "Valpolicella Ripasso DOC 是 Veneto 大區 Valpolicella 產區的特色紅酒，以 Valpolicella 基酒與 Amarone 或 Recioto 酒渣二次浸泡發酵，提升酒體結構、香氣與複雜度。酒色深紅，果乾、香料、巧克力等風味明顯，單寧柔順，適合陳年。",
+		"details": {
+			"introduction": "Valpolicella Ripasso DOC 於 2010 年獨立分級，僅限 Valpolicella 產區生產。以 Corvina、Corvinone、Rondinella 為主，Ripasso 工藝將 Valpolicella 基酒與 Amarone 或 Recioto 酒渣二次發酵，賦予酒款更濃郁的果香與結構。分為 Classico、Valpantena、Estesa 等子區。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山與加爾達湖調節，夏季溫暖，冬季較冷，日夜溫差大，土壤多為石灰岩、黏土與沖積土，適合紅葡萄生長。",
+			"subregions": {"Classico": "Negrar, Marano, Fumane, Sant'Ambrogio, San Pietro in Cariano 等歷史核心區。", "Valpantena": "Verona 東北部山谷，風格細緻。", "Estesa": "擴大區，涵蓋更多市鎮。"},
+			"grape_varieties": ["Corvina Veronese", "Corvinone", "Rondinella", "Molinara", "Oseleta", "Croatina", "Dindarella"]
+		}
+	},
+	{
+		"id": "Veneto IGP",
+		"name": "Veneto IGP",
+		"type": "IGP",
+		"region": "Veneto",
+		"province": "Verona, Vicenza, Padova, Treviso, Venezia, Belluno, Rovigo",
+		"zone": "整個 Veneto 大區，包括所有省份，涵蓋平原、丘陵與山區多樣地形",
+		"style": ["白酒", "紅酒", "粉紅酒", "氣泡酒"],
+		"grapes": ["Garganega", "Glera", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon", "Raboso Piave", "Carmenère", "Tai", "Pinot Nero", "Sauvignon", "Malvasia", "Trebbiano", "其他本地與國際品種"],
+		"description": "Veneto IGT（Indicazione Geografica Tipica，或 IGP）涵蓋整個 Veneto 大區，是最具彈性的地理標示分級。允許多種本地與國際葡萄品種釀造白、紅、粉紅、氣泡酒，風格多元，展現 Veneto 各地風土與創新。",
+		"details": {
+			"introduction": "Veneto IGT 於 1995 年設立，涵蓋 Veneto 全區。允許多種本地與國際品種釀造，酒款風格從新鮮易飲到結構豐富皆有，適合日常飲用與創新釀造。",
+			"climate": "溫帶大陸型氣候，受阿爾卑斯山、亞得里亞海、加爾達湖等多重影響，地形多樣，適合多種葡萄品種。",
+			"subregions": {},
+			"grape_varieties": ["Garganega", "Glera", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon", "Raboso Piave", "Carmenère", "Tai", "Pinot Nero", "Sauvignon", "Malvasia", "Trebbiano", "其他本地與國際品種"]
+		}
+	},
+		{
+			"id": "Venezia DOC",
+			"name": "Venezia DOC",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Venezia, Treviso, Padova",
+			"zone": "涵蓋威尼斯、特雷維索、帕多瓦三省的部分地區，主要分布於威尼托東部平原，鄰近亞得里亞海。",
+			"style": ["白酒", "紅酒", "粉紅酒", "氣泡酒"],
+			"grapes": ["Glera", "Pinot Grigio", "Chardonnay", "Merlot", "Cabernet Sauvignon", "Raboso Piave", "Refosco dal Peduncolo Rosso", "Tai", "Pinot Nero", "Sauvignon", "Verduzzo Trevigiano", "Carmenère", "Malvasia", "Trebbiano"],
+			"description": "Venezia DOC 是 Veneto 東部重要的法定產區，涵蓋威尼斯、特雷維索、帕多瓦三省部分地區。以生產新鮮、果香明顯的白、紅、粉紅及氣泡酒為主，葡萄品種多元，展現亞得里亞海沿岸的風土特色。",
+			"details": {
+				"introduction": "Venezia DOC 成立於 2011 年，旨在提升威尼托東部葡萄酒的品質與形象。產區允許多種本地與國際品種釀造，酒款風格新鮮、易飲，適合搭配當地海鮮與傳統料理。",
+				"climate": "受亞得里亞海調節，屬溫和大陸型氣候，夏季溫暖，冬季較溫和，適合多種葡萄品種生長。",
+				"subregions": {},
+				"grape_varieties": ["Glera", "Pinot Grigio", "Chardonnay", "Merlot", "Cabernet Sauvignon", "Raboso Piave", "Refosco dal Peduncolo Rosso", "Tai", "Pinot Nero", "Sauvignon", "Verduzzo Trevigiano", "Carmenère", "Malvasia", "Trebbiano"]
+			}
+		},
+		{
+			"id": "Vicenza DOC",
+			"name": "Vicenza DOC",
+			"type": "DOC",
+			"region": "Veneto",
+			"province": "Vicenza",
+			"zone": "Vicenza 省內多個市鎮，主要分布於丘陵和平原地帶，涵蓋 Colli Berici、Colli Vicentini 等區域。",
+			"style": ["白酒", "紅酒", "粉紅酒", "氣泡酒"],
+			"grapes": ["Garganega", "Tai", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon", "Carmenère", "Pinot Nero", "Sauvignon", "Tocai Friulano", "Raboso Piave", "Trebbiano di Soave", "其他本地與國際品種"],
+			"description": "Vicenza DOC 是 Veneto 重要的法定產區，涵蓋 Vicenza 省多個市鎮。以生產新鮮、果香明顯的白、紅、粉紅及氣泡酒為主，葡萄品種多元，展現當地丘陵和平原的風土特色。",
+			"details": {
+				"introduction": "Vicenza DOC 成立於 2000 年，整合 Vicenza 省多個傳統產區。允許多種本地與國際品種釀造，酒款風格新鮮、易飲，適合日常餐飲。",
+				"climate": "溫帶大陸型氣候，受阿爾卑斯山和波河平原影響，夏季溫暖，冬季較冷，適合多種葡萄品種生長。",
+				"subregions": {},
+				"grape_varieties": ["Garganega", "Tai", "Chardonnay", "Pinot Grigio", "Merlot", "Cabernet Sauvignon", "Carmenère", "Pinot Nero", "Sauvignon", "Tocai Friulano", "Raboso Piave", "Trebbiano di Soave", "其他本地與國際品種"]
+			}
+		},
+		{
+			"id": "Amarone della Valpolicella DOCG",
+			"name": "Amarone della Valpolicella DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "Valpolicella 傳統產區，包含 Negrar, Sant'Ambrogio di Valpolicella, San Pietro in Cariano, Fumane, Marano di Valpolicella 等市鎮；並延伸至 Valpolicella Classico 和東擴區域。",
+			"style": ["紅酒"],
+			"grapes": ["Corvina Veronese", "Corvinone", "Rondinella", "Molinara", "Oseleta"],
+			"description": "Amarone della Valpolicella DOCG 是義大利最著名的頂級干紅葡萄酒之一，以風乾葡萄（Appassimento 技術）釀造，酒體飽滿、結構複雜，酒精度高（15-17%）、單寧豐富，具極佳陳年潛力。",
+			"details": {
+				"introduction": "Amarone della Valpolicella DOCG 於 2010 年正式升格為 DOCG（原為 Valpolicella DOC 子類型）。葡萄採收後在通風木架上風乾 90-120 天，使水分蒸發約 30%，濃縮糖分與風味，再以長時間浸皮發酵釀造。",
+				"climate": "Valpolicella 地區屬溫和大陸型氣候，受加爾達湖調節，冬季不過寒，夏季溫暖。丘陵地形有利於葡萄風乾。",
+				"winemaking": "採摘後風乾 3-4 個月，再入橡木桶陳年最少 2 年（Riserva 需 4 年）。成品呈深石榴紅色，帶有黑莓、乾果、巧克力、咖啡、香料氣息，餘韻悠長。",
+				"subregions": {},
+				"grape_varieties": ["Corvina Veronese (45-95%)", "Corvinone（可取代最多 50% Corvina）", "Rondinella (5-30%)", "其他核准品種最多 15%"]
+			}
+		},
+		{
+			"id": "Recioto della Valpolicella DOCG",
+			"name": "Recioto della Valpolicella DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "與 Amarone 相同的 Valpolicella 產區，包含 Valpolicella Classico 及延伸區域。",
+			"style": ["甜紅酒"],
+			"grapes": ["Corvina Veronese", "Corvinone", "Rondinella"],
+			"description": "Recioto della Valpolicella DOCG 是 Valpolicella 的傳統甜紅酒，與 Amarone 同樣使用風乾葡萄技術，但發酵在殘糖尚高時即停止，保留天然甜度，酒體豐盈，帶有黑莓果醬、巧克力與香料風味。",
+			"details": {
+				"introduction": "Recioto 是 Valpolicella 最古老的酒款之一，歷史可追溯至古羅馬時代。Recioto 一詞源自方言「recia」（耳朵），指葡萄串肩部最成熟、糖度最高的部位，傳統上優先選用這些葡萄製酒。",
+				"climate": "與 Amarone 相同的 Valpolicella 丘陵氣候。",
+				"winemaking": "葡萄風乾後殘糖停止發酵，保留甜度 50 g/l 以上。氣泡版本（Spumante）亦有生產。",
+				"subregions": {},
+				"grape_varieties": ["Corvina Veronese", "Corvinone", "Rondinella"]
+			}
+		},
+		{
+			"id": "Recioto di Soave DOCG",
+			"name": "Recioto di Soave DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Verona",
+			"zone": "Soave 產區，涵蓋 Soave, Monteforte d'Alpone 全境及周邊市鎮。",
+			"style": ["甜白酒"],
+			"grapes": ["Garganega", "Trebbiano di Soave"],
+			"description": "Recioto di Soave DOCG 是 Soave 產區的傳統甜白酒，以風乾 Garganega 葡萄釀造，葡萄酒呈金黃色，帶有蜂蜜、杏桃、桃子及花香，口感甜潤且酸度平衡，是義大利最優雅的甜白酒之一。",
+			"details": {
+				"introduction": "Recioto di Soave DOCG 於 1998 年升格為 DOCG，是 Soave Classico DOC 的甜型版本。葡萄採收後在通風架上風乾數個月，使風味高度濃縮。",
+				"climate": "Soave 位於 Verona 東部，火山玄武岩和石灰岩土壤賦予酒款礦物感與獨特的花香風格。",
+				"winemaking": "Garganega 至少佔 70%，可添加 Trebbiano di Soave 和其他核准白葡萄品種。需在瓶中或橡木桶中短期熟成。",
+				"subregions": {},
+				"grape_varieties": ["Garganega (最少 70%)", "Trebbiano di Soave", "其他核准白葡萄品種"]
+			}
+		},
+		{
+			"id": "Recioto di Gambellara DOCG",
+			"name": "Recioto di Gambellara DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Vicenza",
+			"zone": "Gambellara 市鎮及周邊，位於 Vicenza 省西南部，與 Soave 產區相鄰。",
+			"style": ["甜白酒"],
+			"grapes": ["Garganega"],
+			"description": "Recioto di Gambellara DOCG 是 Gambellara 產區的傳統甜白酒，以 100% Garganega 葡萄風乾後釀造，風格與 Recioto di Soave 相似但更為稀有，帶有蜂蜜、杏桃乾與花香，是義大利最小眾的 DOCG 之一。",
+			"details": {
+				"introduction": "Recioto di Gambellara DOCG 於 2008 年升格，是 Gambellara DOC 的甜型頂級版本。Gambellara 以玄武岩火山土壤聞名，賦予 Garganega 葡萄獨特的礦物感。",
+				"climate": "Vicenza 省西南部丘陵氣候，火山土壤保暖性佳，葡萄成熟度高。",
+				"winemaking": "採用 100% Garganega 風乾後手工釀造，產量極少，為珍稀甜白酒款。",
+				"subregions": {},
+				"grape_varieties": ["Garganega (100%)"]
+			}
+		},
+		{
+			"id": "Colli Euganei Fior d'Arancio DOCG",
+			"name": "Colli Euganei Fior d'Arancio DOCG",
+			"type": "DOCG",
+			"region": "Veneto",
+			"province": "Padova",
+			"zone": "Colli Euganei（歐加內丘陵）火山丘陵地帶，涵蓋 Abano Terme, Arquà Petrarca, Baone, Battaglia Terme, Cinto Euganeo, Este, Galzignano Terme, Lozzo Atestino, Monselice, Montegrotto Terme, Ospedaletto Euganeo, Teolo, Torreglia 等市鎮。",
+			"style": ["甜白酒", "氣泡甜白酒"],
+			"grapes": ["Moscato Giallo"],
+			"description": "Colli Euganei Fior d'Arancio DOCG 是 Padova 省歐加內火山丘陵的甜白酒，以 Moscato Giallo（黃麝香）釀造，帶有橙花、桃子、荔枝的芬芳，有靜態甜酒（Passito）和氣泡版本（Spumante / Frizzante）。",
+			"details": {
+				"introduction": "Colli Euganei Fior d'Arancio DOCG 於 2010 年升格，是 Veneto 最年輕的 DOCG 之一。產區位於 Padova 省南部的古火山丘陵，火山岩土壤富含礦物質，賦予 Moscato Giallo 獨特的芳香複雜度。",
+				"climate": "溫和的丘陵微氣候，火山丘陵擋住北方冷風，日照充足，有利於 Moscato 葡萄的芳香成分積累。",
+				"winemaking": "靜態甜酒（Passito）以風乾葡萄釀造；氣泡版本（Spumante）採用 Charmat 法或傳統法。",
+				"subregions": {},
+				"grape_varieties": ["Moscato Giallo (最少 95%)"]
+			}
+		}
+]

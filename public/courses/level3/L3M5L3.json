@@ -1,0 +1,73 @@
+{
+  "id": "L3M5L3",
+  "title": "自然酒與有機趨勢",
+  "description": "探討義大利在有機、生物動力法與自然酒運動中的領導地位，分析這些永續農業實踐如何改變葡萄園管理、釀酒哲學以及全球消費者的選擇。",
+  "slides": [
+    {
+      "type": "content",
+      "title": "義大利：歐洲有機葡萄栽培的領頭羊",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利不僅是全球最大的葡萄酒生產國，也是推動永續農業的先驅。其得天獨厚的氣候條件（特別是中南部乾燥、通風的環境）使得減少化學藥劑的使用比歐洲其他潮濕產區更為容易。</p><div class=\"grid grid-cols-1 md:grid-cols-3 gap-6 mb-8\"><div class=\"bg-green-50 p-6 rounded-xl border border-green-100 text-center\"><span class=\"material-icons text-4xl text-green-600 mb-2\">eco</span><h4 class=\"text-green-800 font-bold mb-2\">有機認證比例</h4><p class=\"text-3xl font-black text-green-700 mb-2\">>18%</p><p class=\"text-sm text-gray-600\">義大利超過 18% 的葡萄園已獲得有機認證，遠高於全球平均水準。</p></div><div class=\"bg-teal-50 p-6 rounded-xl border border-teal-100 text-center\"><span class=\"material-icons text-4xl text-teal-600 mb-2\">nature_people</span><h4 class=\"text-teal-800 font-bold mb-2\">生物動力法先驅</h4><p class=\"text-3xl font-black text-teal-700 mb-2\">Demeter</p><p class=\"text-sm text-gray-600\">越來越多頂級酒莊（如 Foradori, Alois Lageder）採用嚴格的生物動力法 (Biodynamic) 認證。</p></div><div class=\"bg-lime-50 p-6 rounded-xl border border-lime-100 text-center\"><span class=\"material-icons text-4xl text-lime-600 mb-2\">local_florist</span><h4 class=\"text-lime-800 font-bold mb-2\">自然酒運動發源地</h4><p class=\"text-3xl font-black text-lime-700 mb-2\">Vini Veri</p><p class=\"text-sm text-gray-600\">義大利是全球自然酒 (Natural Wine) 運動最重要的推手與展會中心之一。</p></div></div><div class=\"bg-gray-50 p-6 rounded-xl border-l-4 border-gray-500\"><h4 class=\"text-gray-800 font-bold mb-2\">從「小眾」到「主流」</h4><p class=\"text-gray-700\">過去，有機或自然酒常被視為嬉皮或邊緣市場的產物。如今，隨著消費者對健康、環境保護與風土真實性的重視，這些理念已深刻影響了義大利最傳統、最頂級的產區（如 Barolo, Brunello, Chianti Classico）。</p></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "三種永續理念的差異",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">在市場上，我們常聽到「有機」、「生物動力」與「自然酒」，這三者雖然理念相近，但在法規與實踐上有著明確的界線。</p><div class=\"space-y-6\"><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-green-600\">check_circle</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">1. 有機葡萄酒 (Organic Wine / Vino Biologico)</h4><p class=\"text-gray-600 mb-2\"><strong>核心規範：</strong> 葡萄園內禁止使用合成化學肥料、除草劑與殺蟲劑。釀酒過程中，允許使用的添加物（如二氧化硫 SO2）上限比常規葡萄酒更嚴格。</p><p class=\"text-sm text-gray-500\"><strong>認證：</strong> 歐盟綠葉標誌 (Euro Leaf)。這是目前法規最明確、普及率最高的類別。</p></div></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-teal-600\">brightness_3</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">2. 生物動力法 (Biodynamic Wine)</h4><p class=\"text-gray-600 mb-2\"><strong>核心規範：</strong> 基於 Rudolf Steiner 的哲學，將葡萄園視為一個自給自足的生態系統。除了符合有機標準，還必須使用特定的「配方 (Preparations)」（如牛角糞 500）來活化土壤，並根據月亮與星象週期進行農事操作。</p><p class=\"text-sm text-gray-500\"><strong>認證：</strong> Demeter 或 Biodyvin。強調增強植物自身的免疫力與風土表現。</p></div></div><div class=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6 items-center\"><div class=\"w-16 h-16 rounded-full bg-lime-100 flex items-center justify-center flex-shrink-0\"><span class=\"material-icons text-3xl text-lime-600\">water_drop</span></div><div class=\"flex-1\">><h4 class=\"text-xl font-bold text-gray-800 mb-2\">3. 自然酒 (Natural Wine / Vino Naturale)</h4><p class=\"text-gray-600 mb-2\"><strong>核心規範：</strong> 「無添加，無去除 (Nothing added, nothing taken away)」。葡萄必須是有機或生物動力種植，僅使用野生酵母發酵，不澄清、不過濾，且極少或完全不添加二氧化硫 (SO2)。</p><p class=\"text-sm text-gray-500\"><strong>認證：</strong> 缺乏統一的官方國際法規，多由民間組織（如 Vinnatur）推動。風格常帶有渾濁感、酵母味或些微的揮發性酸 (VA)。</p></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "義大利自然酒的靈魂人物與產區",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">義大利的自然酒運動並非近年才興起，而是源自於一群對現代工業化釀酒感到反感的先驅者，他們試圖找回葡萄酒最原始、最純粹的樣貌。</p><div class=\"bg-white p-8 rounded-xl shadow-sm border border-gray-200 mb-8\"><div class=\"flex flex-col md:flex-row gap-8\"><div class=\"w-full md:w-1/3 flex flex-col items-center justify-center border-r border-gray-200 pr-6\"><div class=\"w-32 h-32 rounded-full bg-orange-200 mb-4 shadow-inner flex items-center justify-center\"><span class=\"material-icons text-5xl text-orange-600 opacity-70\">wine_bar</span></div><h3 class=\"text-xl font-bold text-gray-800 text-center\">橘酒 (Orange Wine)</h3><p class=\"text-gray-500 text-center\">自然酒的代名詞</p></div><div class=\"w-full md:w-2/3\"><h4 class=\"text-lg font-bold text-gray-800 mb-4 border-b pb-2\">Friuli-Venezia Giulia：橘酒復興之地</h4><p class=\"text-gray-700 mb-4\">位於義大利東北部與斯洛維尼亞交界的 Friuli (特別是 Collio 與 Carso 產區)，是現代橘酒（帶皮發酵的白酒）復興的發源地。這裡的釀酒師復刻了古代高加索地區的陶甕 (Amphora) 釀造法。</p><ul class=\"space-y-3 text-gray-700\"><li><strong>先驅者 Josko Gravner：</strong> 捨棄了現代不鏽鋼槽，遠赴喬治亞共和國引進大型陶甕 (Qvevri)，將 Ribolla Gialla 白葡萄連皮浸泡數月，釀造出顏色深邃、帶有單寧與複雜氧化香氣的橘酒。</li><li><strong>Radikon：</strong> 另一位傳奇人物 Stanko Radikon，堅持長時間浸皮、無二氧化硫添加，並使用特製的 500ml 或 1000ml 窄頸瓶裝瓶，以減少氧氣接觸。</li><li><strong>風格特徵：</strong> 琥珀色澤，香氣帶有乾杏桃、紅茶、蜂蜜、堅果與香料，口感具有紅酒般的單寧結構與白酒的酸度。</li></ul></div></div></div></div>"
+    },
+    {
+      "type": "content",
+      "title": "市場影響與未來展望",
+      "content": "<div class=\"prose max-w-none\"><p class=\"text-lg text-gray-700 mb-6\">永續農業與自然酒的理念，正深刻地改變義大利葡萄酒產業的商業模式與全球消費者的選擇。</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\"><div class=\"bg-blue-50 p-6 rounded-xl border border-blue-100\"><h4 class=\"text-blue-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">restaurant_menu</span> 餐飲市場的推力</h4><p class=\"text-gray-700 text-sm\">全球頂級餐廳（特別是米其林星級餐廳與北歐料理 Noma 等）的侍酒師，越來越傾向於在酒單中加入有機、生物動力或自然酒。這些酒款通常具有較低的酒精度、更高的酸度與獨特的風味，非常適合搭配現代強調食材原味的料理。</p></div><div class=\"bg-purple-50 p-6 rounded-xl border border-purple-100\"><h4 class=\"text-purple-800 font-bold mb-3 flex items-center\"><span class=\"material-icons mr-2\">gavel</span> 法規與品質的挑戰</h4><p class=\"text-gray-700 text-sm\">自然酒由於缺乏統一法規，市場上品質參差不齊。有些酒款因為過度氧化或嚴重的微生物污染（如 Brettanomyces 揮發性酸、Mousey 鼠臭味）而失去平衡。如何在「極簡干預」與「無瑕疵品質」之間取得平衡，是自然酒莊面臨的最大挑戰。</p></div></div></div>"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "在義大利，哪一種永續農業實踐的法規最為明確，且擁有歐盟統一的「綠葉標誌 (Euro Leaf)」認證？",
+      "options": [
+        "自然酒 (Natural Wine)",
+        "生物動力法 (Biodynamic)",
+        "有機葡萄酒 (Organic Wine)",
+        "橘酒 (Orange Wine)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "有機葡萄酒 (Vino Biologico) 擁有歐盟統一的法規與綠葉標誌認證，規範了葡萄園內禁止使用合成化學藥劑，以及釀酒過程中二氧化硫的添加上限。"
+    },
+    {
+      "question": "生物動力法 (Biodynamic) 除了要求有機種植外，還強調什麼核心理念？",
+      "options": [
+        "必須使用陶甕 (Amphora) 進行發酵",
+        "將葡萄園視為一個自給自足的生態系統，並根據星象週期與特定配方（如牛角糞）進行農事",
+        "完全禁止在裝瓶時添加任何二氧化硫 (SO2)",
+        "只能種植義大利原生葡萄品種"
+      ],
+      "correctAnswer": 1,
+      "explanation": "生物動力法基於 Rudolf Steiner 的哲學，強調宇宙星象對植物的影響，並使用特定的配方（Preparations）來活化土壤與增強植物免疫力。"
+    },
+    {
+      "question": "義大利東北部的 Friuli (弗留利) 產區，特別是 Josko Gravner 等先驅者，以復興哪一種古老的釀酒技術而聞名全球？",
+      "options": [
+        "使用查馬法 (Charmat Method) 釀造氣泡酒",
+        "使用風乾葡萄 (Appassimento) 釀造甜酒",
+        "將白葡萄連皮浸泡在陶甕 (Qvevri/Amphora) 中發酵，釀造橘酒 (Orange Wine)",
+        "使用 100% 全新法國小橡木桶陳年白酒"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Josko Gravner 等人引進了喬治亞共和國的陶甕，將白葡萄（如 Ribolla Gialla）連皮長時間浸泡發酵，釀造出帶有單寧與琥珀色澤的橘酒，成為現代自然酒運動的重要里程碑。"
+    },
+    {
+      "question": "關於「自然酒 (Natural Wine)」，下列敘述何者最為正確？",
+      "options": [
+        "自然酒擁有嚴格的全球統一官方認證標準",
+        "自然酒的核心理念是「無添加，無去除」，通常使用野生酵母發酵且極少或不添加二氧化硫",
+        "自然酒在發酵過程中必須添加大量的人工培養酵母以確保發酵順利",
+        "自然酒裝瓶前必須經過嚴格的澄清與過濾，以確保酒液清澈透明"
+      ],
+      "correctAnswer": 1,
+      "explanation": "自然酒的核心哲學是極簡干預（Nothing added, nothing taken away），依賴野生酵母，不澄清不過濾，且極少使用二氧化硫。目前它缺乏全球統一的官方認證。"
+    }
+  ]
+}
