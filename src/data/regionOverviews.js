@@ -34,6 +34,23 @@ export const regionOverviews = {
     highlights: ['Barolo 酒王', 'Barbaresco 酒后', 'Asti 氣泡酒', 'Alba 白松露產地']
   },
   
+  'valle d\'aosta': {
+    name: 'Valle d\'Aosta',
+    nameCN: '瓦萊達奧斯塔',
+    location: '義大利西北端，阿爾卑斯山谷，與法國、瑞士接壤',
+    climate: '高山氣候，日夜溫差極大，日照充足',
+    area: '約 500 公頃葡萄園',
+    production: '義大利最小且海拔最高的葡萄酒產區',
+    appellations: {
+      docg: 0,
+      doc: 1,
+      igt: 0
+    },
+    mainGrapes: ['Nebbiolo (Picotendro)', 'Petit Rouge', 'Fumin', 'Prié Blanc', 'Petite Arvine'],
+    characteristics: '歐洲海拔最高葡萄園（900-1200公尺），保存多種極稀有原生品種',
+    highlights: ['Blanc de Morgex et de La Salle（歐洲最高葡萄園）', 'Donnas（Nebbiolo）', 'Torrette（Petit Rouge）', '未嫁接自根葡萄藤']
+  },
+  
   tuscany: {
     name: 'Toscana',
     nameCN: '托斯卡納',

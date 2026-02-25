@@ -206,9 +206,11 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, nextTick, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
 import { courseLevels, getUserProgress, saveUserProgress } from '../data/courseLevels'
+import mapboxgl from 'mapbox-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 const router = useRouter()
 
@@ -222,6 +224,12 @@ const lessonContent = ref(null)
 const slides = ref([])
 const currentSlide = ref(0)
 const slideTransition = ref('slide-left')
+
+// ─── 地圖相關狀態 ───
+let italyMap = null
+let piedmontMap = null
+let tuscanyMap = null
+let venetoMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -487,6 +495,16 @@ const loadLessonContent = async () => {
   correctCount.value = 0
   quizCompleted.value = false
   
+  // 清理舊地圖
+  if (italyMap) {
+    italyMap.remove()
+    italyMap = null
+  }
+  if (piedmontMap) {
+    piedmontMap.remove()
+    piedmontMap = null
+  }
+  
   try {
     const response = await fetch(`/courses/${props.levelId}/${props.lessonId}.json`)
     if (response.ok) {
@@ -496,6 +514,10 @@ const loadLessonContent = async () => {
       if (data.quiz && data.quiz.length > 0) {
         quizData.value = data.quiz
       }
+      
+      // 等待 DOM 更新後檢查是否需要初始化地圖
+      await nextTick()
+      initializeMapIfNeeded()
     } else {
       const fallback = `<section class="slide-cover"><h1>${currentLesson.value?.title || '課程'}</h1><p class="subtitle">課程內容準備中，敬請期待</p></section>`
       lessonContent.value = fallback
@@ -509,7 +531,938 @@ const loadLessonContent = async () => {
   }
 }
 
+// ─── 初始化地圖 (支持多種地圖) ───
+const initializeMapIfNeeded = async () => {
+  console.log('=== 準備初始化地圖 ===')
+  
+  // 等待 DOM 更新
+  await nextTick()
+  
+  // 使用 setTimeout 確保投影片動畫和 v-html 已經完全渲染
+  setTimeout(() => {
+    console.log('檢查地圖容器...')
+    
+    // 檢查義大利地圖容器
+    const italyMapContainer = document.getElementById('italy-map')
+    // 檢查 Piedmont 地圖容器
+    const piedmontMapContainer = document.getElementById('piedmont-map')
+    // 檢查 Tuscany 地圖容器
+    const tuscanyMapContainer = document.getElementById('tuscany-map')
+    // 檢查 Veneto 地圖容器
+    const venetoMapContainer = document.getElementById('veneto-map')
+    
+    if (italyMapContainer && !italyMap) {
+      console.log('✓ 找到義大利地圖容器，開始初始化...')
+      initializeItalyMap()
+    } else if (piedmontMapContainer && !piedmontMap) {
+      console.log('✓ 找到 Piedmont 地圖容器，開始初始化...')
+      initializePiedmontMap()
+    } else if (tuscanyMapContainer && !tuscanyMap) {
+      console.log('✓ 找到 Tuscany 地圖容器，開始初始化...')
+      initializeTuscanyMap()
+    } else if (venetoMapContainer && !venetoMap) {
+      console.log('✓ 找到 Veneto 地圖容器，開始初始化...')
+      initializeVenetoMap()
+    } else {
+      console.log('❌ 未找到地圖容器或地圖已存在')
+    }
+  }, 600) // 延遲 600ms 確保投影片動畫和 DOM 完全渲染
+}
+
+// ─── 初始化義大利地圖 ───
+const initializeItalyMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化義大利地圖...')
+    
+    italyMap = new mapboxgl.Map({
+      container: 'italy-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [12.5, 42.5], // 義大利中心坐標
+      zoom: 5.2,
+        pitch: 0,
+        bearing: 0
+      })
+    
+    italyMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    italyMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    // 添加義大利 20 個產區標記
+    italyMap.on('load', () => {
+      const regions = [
+        // 北部產區
+        { name: 'Valle d\'Aosta', nameCN: '奧斯塔谷', coords: [7.2, 45.7], zone: 'north' },
+        { name: 'Piemonte', nameCN: '皮埃蒙特', coords: [8.0, 45.0], zone: 'north' },
+        { name: 'Liguria', nameCN: '利古里亞', coords: [8.5, 44.3], zone: 'north' },
+        { name: 'Lombardy', nameCN: '倫巴第', coords: [10.0, 45.5], zone: 'north' },
+        { name: 'Trentino-Alto Adige', nameCN: '特倫蒂諾', coords: [11.3, 46.4], zone: 'north' },
+        { name: 'Veneto', nameCN: '威尼托', coords: [11.5, 45.4], zone: 'north' },
+        { name: 'Friuli-Venezia Giulia', nameCN: '弗留利', coords: [13.2, 46.0], zone: 'north' },
+        { name: 'Emilia-Romagna', nameCN: '艾米利亞', coords: [11.5, 44.5], zone: 'north' },
+        
+        // 中部產區
+        { name: 'Toscana', nameCN: '托斯卡納', coords: [11.2, 43.3], zone: 'central' },
+        { name: 'Umbria', nameCN: '翁布里亞', coords: [12.5, 42.9], zone: 'central' },
+        { name: 'Marche', nameCN: '馬爾凱', coords: [13.3, 43.3], zone: 'central' },
+        { name: 'Lazio', nameCN: '拉齊奧', coords: [12.6, 41.9], zone: 'central' },
+        { name: 'Abruzzo', nameCN: '阿布魯佐', coords: [13.8, 42.2], zone: 'central' },
+        { name: 'Molise', nameCN: '莫利塞', coords: [14.6, 41.7], zone: 'central' },
+        
+        // 南部產區
+        { name: 'Campania', nameCN: '坎帕尼亞', coords: [14.8, 40.8], zone: 'south' },
+        { name: 'Puglia', nameCN: '普利亞', coords: [16.8, 41.0], zone: 'south' },
+        { name: 'Basilicata', nameCN: '巴西利卡塔', coords: [16.0, 40.6], zone: 'south' },
+        { name: 'Calabria', nameCN: '卡拉布里亞', coords: [16.3, 39.0], zone: 'south' },
+        { name: 'Sicilia', nameCN: '西西里', coords: [14.0, 37.5], zone: 'south' },
+        { name: 'Sardegna', nameCN: '薩丁尼亞', coords: [9.0, 40.0], zone: 'south' }
+      ]
+      
+      regions.forEach(region => {
+        const markerColor = region.zone === 'north' ? '#3498db' : 
+                           region.zone === 'central' ? '#27ae60' : '#e74c3c'
+        
+        const el = document.createElement('div')
+        el.className = 'italy-region-marker'
+        el.style.cssText = `
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: ${markerColor};
+          border: 2px solid white;
+          box-shadow: 0 0 10px ${markerColor};
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '16px'
+          el.style.height = '16px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '12px'
+          el.style.height = '12px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 8px;">
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50;">
+                ${region.nameCN} ${region.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                ${region.zone === 'north' ? '北部產區' : region.zone === 'central' ? '中部產區' : '南部產區'}
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(region.coords)
+          .setPopup(popup)
+          .addTo(italyMap)
+      })
+      
+      console.log('✅ 義大利地圖初始化完成！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化義大利地圖失敗:', error)
+  }
+}
+
+// ─── 初始化 Piedmont 地圖 ───
+const initializePiedmontMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Piedmont 地圖...')
+    
+    piedmontMap = new mapboxgl.Map({
+      container: 'piedmont-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [8.0, 44.8], // Piedmont 中心坐標
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    piedmontMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    piedmontMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    // 載入 GeoJSON 並添加產區邊界
+    piedmontMap.on('load', async () => {
+      console.log('📍 載入 Piedmont GeoJSON 邊界...')
+      
+      // 首先載入 Piedmont 大區邊界
+      try {
+        const regionResponse = await fetch('/regions/piedmont/geojson/Piemonte.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          // 添加 Piedmont 大區邊界
+          piedmontMap.addSource('piedmont-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          // 添加大區邊界填充層（淡淡的背景色）
+          piedmontMap.addLayer({
+            id: 'piedmont-region-fill',
+            type: 'fill',
+            source: 'piedmont-region',
+            paint: {
+              'fill-color': '#8e44ad',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          // 添加大區邊界線（粗一點的金色外框）
+          piedmontMap.addLayer({
+            id: 'piedmont-region-outline',
+            type: 'line',
+            source: 'piedmont-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+          
+          console.log('✓ 載入 Piedmont 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Piedmont 大區邊界:', error)
+      }
+      
+      // 定義主要 DOCG 產區及其等級/顏色
+      const docgRegions = [
+        { name: 'Barolo DOCG', grade: 'S級', color: '#8B0000', fillColor: 'rgba(139, 0, 0, 0.3)' },
+        { name: 'Barbaresco DOCG', grade: 'S級', color: '#8E44AD', fillColor: 'rgba(142, 68, 173, 0.3)' },
+        { name: 'Roero DOCG', grade: 'A級', color: '#E67E22', fillColor: 'rgba(230, 126, 34, 0.25)' },
+        { name: 'Cortese di Gavi Gavi DOCG', grade: 'A級', color: '#16A085', fillColor: 'rgba(22, 160, 133, 0.25)' },
+        { name: 'Barbera d\'Asti DOCG', grade: 'A級', color: '#2980B9', fillColor: 'rgba(41, 128, 185, 0.25)' },
+        { name: 'Gattinara DOCG', grade: 'B級', color: '#7F8C8D', fillColor: 'rgba(127, 140, 141, 0.2)' },
+        { name: 'Ghemme DOCG', grade: 'B級', color: '#95A5A6', fillColor: 'rgba(149, 165, 166, 0.2)' },
+        { name: 'Dogliani DOCG', grade: 'B級', color: '#34495E', fillColor: 'rgba(52, 73, 94, 0.2)' },
+        { name: 'Asti DOCG', grade: 'C級', color: '#F39C12', fillColor: 'rgba(243, 156, 18, 0.25)' }
+      ]
+      
+      // 載入每個產區的 GeoJSON
+      for (const region of docgRegions) {
+        try {
+          const response = await fetch(`/regions/piedmont/geojson/DOCG/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            // 添加數據源
+            piedmontMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.name.replace(' DOCG', ''),
+                  grade: region.grade
+                },
+                geometry: geojson
+              }
+            })
+            
+            // 添加填充層
+            piedmontMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            // 添加邊界線
+            piedmontMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            // 添加懸停效果
+            let hoveredFeatureId = null
+            
+            piedmontMap.on('mousemove', layerId, (e) => {
+              piedmontMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                piedmontMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              piedmontMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            piedmontMap.on('mouseleave', layerId, () => {
+              piedmontMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                piedmontMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            // 添加點擊彈窗
+            piedmontMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      DOCG 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(piedmontMap)
+            })
+            
+            console.log(`✓ 載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      // 添加重要城市標記
+      const cities = [
+        { name: 'Alba', nameCN: '阿爾巴', coords: [8.03, 44.70], label: '葡萄酒之都' },
+        { name: 'Asti', nameCN: '阿斯蒂市', coords: [8.20, 44.90], label: '氣泡酒之鄉' },
+        { name: 'Torino', nameCN: '都靈', coords: [7.68, 45.07], label: '首府' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'piedmont-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f39c12;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #f39c12;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(piedmontMap)
+      })
+      
+      console.log('✅ Piedmont 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Piedmont 地圖失敗:', error)
+  }
+}
+
+// ─── 初始化 Tuscany 地圖 ───
+const initializeTuscanyMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Tuscany 地圖...')
+    
+    tuscanyMap = new mapboxgl.Map({
+      container: 'tuscany-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [11.25, 43.3], // Tuscany 中心坐標
+      zoom: 8.0,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    tuscanyMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    tuscanyMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    // 載入 GeoJSON 並添加產區邊界
+    tuscanyMap.on('load', async () => {
+      console.log('📍 載入 Tuscany GeoJSON 邊界...')
+      
+      // 首先載入 Tuscany 大區邊界
+      try {
+        const regionResponse = await fetch('/regions/tuscany/geojson/Toscana.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          // 添加 Tuscany 大區邊界
+          tuscanyMap.addSource('tuscany-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          // 添加大區邊界填充層（淡淡的背景色）
+          tuscanyMap.addLayer({
+            id: 'tuscany-region-fill',
+            type: 'fill',
+            source: 'tuscany-region',
+            paint: {
+              'fill-color': '#c0392b',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          // 添加大區邊界線（粗一點的金色外框）
+          tuscanyMap.addLayer({
+            id: 'tuscany-region-outline',
+            type: 'line',
+            source: 'tuscany-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+          
+          console.log('✓ 載入 Tuscany 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Tuscany 大區邊界:', error)
+      }
+      
+      // 定義主要 DOCG 產區及其等級/顏色
+      const docgRegions = [
+        { name: 'Brunello di Montalcino DOCG', grade: 'S級', color: '#8B0000', fillColor: 'rgba(192, 57, 43, 0.45)' },
+        { name: 'Chianti Classico DOCG', grade: 'S級', color: '#A52A2A', fillColor: 'rgba(165, 42, 42, 0.4)' },
+        { name: 'Vino Nobile di Montepulciano DOCG', grade: 'A級', color: '#27ae60', fillColor: 'rgba(39, 174, 96, 0.35)' },
+        { name: 'Chianti DOCG', grade: 'A級', color: '#16a085', fillColor: 'rgba(22, 160, 133, 0.3)' },
+        { name: 'Vernaccia di San Gimignano DOCG', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.25)' },
+        { name: 'Morellino di Scansano DOCG', grade: 'B級', color: '#5DADE2', fillColor: 'rgba(93, 173, 226, 0.25)' }
+      ]
+      
+      // 載入每個產區的 GeoJSON
+      for (const region of docgRegions) {
+        try {
+          const response = await fetch(`/regions/tuscany/geojson/DOCG/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            // 添加數據源
+            tuscanyMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.name.replace(' DOCG', ''),
+                  grade: region.grade
+                },
+                geometry: geojson
+              }
+            })
+            
+            // 添加填充層
+            tuscanyMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            // 添加邊界線
+            tuscanyMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            // 添加懸停效果
+            let hoveredFeatureId = null
+            
+            tuscanyMap.on('mousemove', layerId, (e) => {
+              tuscanyMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                tuscanyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              tuscanyMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            tuscanyMap.on('mouseleave', layerId, () => {
+              tuscanyMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                tuscanyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            // 添加點擊彈窗
+            tuscanyMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      DOCG 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(tuscanyMap)
+            })
+            
+            console.log(`✓ 載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      // 添加重要城市標記
+      const cities = [
+        { name: 'Firenze', nameCN: '佛羅倫斯', coords: [11.26, 43.77], label: '首府' },
+        { name: 'Siena', nameCN: '錫耶納', coords: [11.33, 43.32], label: '古城' },
+        { name: 'Montalcino', nameCN: '蒙塔奇諾', coords: [11.49, 43.06], label: 'Brunello 之鄉' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'tuscany-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f39c12;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #f39c12;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(tuscanyMap)
+      })
+      
+      console.log('✅ Tuscany 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Tuscany 地圖失敗:', error)
+  }
+}
+
+// ─── 初始化 Veneto 地圖 ───
+const initializeVenetoMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Veneto 地圖...')
+    
+    venetoMap = new mapboxgl.Map({
+      container: 'veneto-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [11.35, 45.5],
+      zoom: 8.2,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    venetoMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    venetoMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    venetoMap.on('load', async () => {
+      console.log('📍 載入 Veneto GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/veneto/geojson/Veneto.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          venetoMap.addSource('veneto-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          venetoMap.addLayer({
+            id: 'veneto-region-fill',
+            type: 'fill',
+            source: 'veneto-region',
+            paint: {
+              'fill-color': '#16a085',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          venetoMap.addLayer({
+            id: 'veneto-region-outline',
+            type: 'line',
+            source: 'veneto-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+          
+          console.log('✓ 載入 Veneto 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Veneto 大區邊界:', error)
+      }
+      
+      const docgRegions = [
+        { name: 'Amarone della Valpolicella DOCG', grade: 'S級', color: '#8B0000', fillColor: 'rgba(192, 57, 43, 0.45)' },
+        { name: 'Recioto della Valpolicella DOCG', grade: 'S級', color: '#A52A2A', fillColor: 'rgba(165, 42, 42, 0.4)' },
+        { name: 'Conegliano Valdobbiadene Prosecco DOCG', grade: 'A級', color: '#27ae60', fillColor: 'rgba(39, 174, 96, 0.35)' },
+        { name: 'Asolo - Prosecco o Colli Asolani - Prosecco DOCG', grade: 'A級', color: '#16a085', fillColor: 'rgba(22, 160, 133, 0.3)' },
+        { name: 'Soave Superiore DOCG', grade: 'A級', color: '#2ecc71', fillColor: 'rgba(46, 204, 113, 0.35)' },
+        { name: 'Recioto di Soave DOCG', grade: 'A級', color: '#1abc9c', fillColor: 'rgba(26, 188, 156, 0.3)' },
+        { name: 'Bardolino Superiore DOCG', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.25)' },
+        { name: 'Lison DOCG', grade: 'B級', color: '#5DADE2', fillColor: 'rgba(93, 173, 226, 0.25)' },
+        { name: 'Colli di Conegliano DOCG', grade: 'B級', color: '#85C1E2', fillColor: 'rgba(133, 193, 226, 0.25)' },
+        { name: 'Montello  Montello Rosso DOCG', grade: 'B級', color: '#6C8EBF', fillColor: 'rgba(108, 142, 191, 0.25)' },
+        { name: 'Malanotte del Piave DOCG', grade: 'B級', color: '#7FB3D5', fillColor: 'rgba(127, 179, 213, 0.25)' },
+        { name: 'Bagnoli Friularo Friularo di Bagnoli DOCG', grade: 'B級', color: '#5499C7', fillColor: 'rgba(84, 153, 199, 0.25)' },
+        { name: 'Colli Euganei Fior d\'Arancio  Fior d\'Arancio Colli Euganei DOCG', grade: 'B級', color: '#85C1E2', fillColor: 'rgba(133, 193, 226, 0.25)' },
+        { name: 'Recioto di Gambellara DOCG', grade: 'B級', color: '#AED6F1', fillColor: 'rgba(174, 214, 241, 0.25)' }
+      ]
+      
+      for (const region of docgRegions) {
+        try {
+          const response = await fetch(`/regions/veneto/geojson/DOCG/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            venetoMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.name.replace(' DOCG', ''),
+                  grade: region.grade
+                },
+                geometry: geojson
+              }
+            })
+            
+            venetoMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            venetoMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            venetoMap.on('mousemove', layerId, (e) => {
+              venetoMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                venetoMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              venetoMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            venetoMap.on('mouseleave', layerId, () => {
+              venetoMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                venetoMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            venetoMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      DOCG 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(venetoMap)
+            })
+            
+            console.log(`✓ 載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Venezia', nameCN: '威尼斯', coords: [12.34, 45.44], label: '首府' },
+        { name: 'Verona', nameCN: '維羅納', coords: [10.99, 45.44], label: '羅密歐之城' },
+        { name: 'Valdobbiadene', nameCN: '瓦爾多比亞德內', coords: [12.00, 45.90], label: 'Prosecco 中心' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'veneto-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f39c12;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #f39c12;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(venetoMap)
+      })
+      
+      console.log('✅ Veneto 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Veneto 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
+
+// 監聽投影片變化，初始化地圖
+watch(currentSlide, async (newSlide) => {
+  console.log('📄 投影片切換至:', newSlide)
+  await nextTick()
+  initializeMapIfNeeded()
+})
+
+// 清理地圖
+onBeforeUnmount(() => {
+  if (italyMap) {
+    italyMap.remove()
+    italyMap = null
+  }
+  if (piedmontMap) {
+    piedmontMap.remove()
+    piedmontMap = null
+  }
+  if (tuscanyMap) {
+    tuscanyMap.remove()
+    tuscanyMap = null
+  }
+  if (venetoMap) {
+    venetoMap.remove()
+    venetoMap = null
+  }
+})
 </script>
 
 <style scoped>
@@ -1234,6 +2187,169 @@ watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
   height: 100%;
   border: none;
   min-height: 600px;
+}
+
+/* ── Mapbox 地圖容器樣式 ── */
+.slide-frame :deep(.map-slide-container) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  height: 100%;
+  min-height: 500px;
+  padding: 20px;
+}
+
+.slide-frame :deep(.italy-overview-map),
+.slide-frame :deep(.piedmont-region-map),
+.slide-frame :deep(.tuscany-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.map-legend) {
+  background: rgba(26, 26, 46, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: fit-content;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slide-frame :deep(.map-legend h3) {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.6);
+  padding-bottom: 10px;
+}
+
+.slide-frame :deep(.legend-items) {
+  margin-bottom: 25px;
+}
+
+.slide-frame :deep(.legend-item) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.slide-frame :deep(.legend-dot) {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px currentColor;
+  flex-shrink: 0;
+}
+
+.slide-frame :deep(.legend-dot.north) {
+  background: #3498db;
+}
+
+.slide-frame :deep(.legend-dot.central) {
+  background: #27ae60;
+}
+
+.slide-frame :deep(.legend-dot.south) {
+  background: #e74c3c;
+}
+
+.slide-frame :deep(.legend-dot.docg) {
+  background: #c0392b;
+}
+
+.slide-frame :deep(.legend-dot.doc) {
+  background: #3498db;
+}
+
+.slide-frame :deep(.legend-dot.city) {
+  background: #f39c12;
+}
+
+.slide-frame :deep(.region-highlights) {
+  background: rgba(142, 68, 173, 0.15);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(142, 68, 173, 0.3);
+}
+
+.slide-frame :deep(.region-highlights h4) {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.slide-frame :deep(.region-highlights ul) {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.slide-frame :deep(.region-highlights li) {
+  margin: 8px 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.slide-frame :deep(.region-highlights strong) {
+  color: #ffffff;
+}
+
+.slide-frame :deep(.map-tips) {
+  background: rgba(102, 126, 234, 0.15);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.slide-frame :deep(.map-tips p) {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.slide-frame :deep(.map-tips ul) {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+}
+
+.slide-frame :deep(.map-tips li) {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.slide-frame :deep(.mapboxgl-popup-content) {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slide-frame :deep(.mapboxgl-popup-tip) {
+  border-top-color: rgba(255, 255, 255, 0.95);
+}
+
+.slide-frame :deep(.italy-region-marker),
+.slide-frame :deep(.piedmont-region-marker) {
+  cursor: pointer;
 }
 
 /* ── 投影片切換動畫 ── */

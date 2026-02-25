@@ -44,6 +44,7 @@ const router = useRouter()
 const regions = ref([
   { id: 'veneto', nameCN: '威尼托', nameEN: 'Veneto', icon: '🍷', aocCount: 14, hectare: '80,000' },
   { id: 'piedmont', nameCN: '皮埃蒙特', nameEN: 'Piedmont', icon: '🍇', aocCount: 18, hectare: '45,000' },
+  { id: 'valle d\'aosta', nameCN: '瓦萊達奧斯塔', nameEN: 'Valle d\'Aosta', icon: '⛰️', aocCount: 1, hectare: '500' },
   { id: 'tuscany', nameCN: '托斯卡納', nameEN: 'Tuscany', icon: '🌿', aocCount: 11, hectare: '63,000' },
   { id: 'lombardy', nameCN: '倫巴第', nameEN: 'Lombardy', icon: '🥂', aocCount: 5, hectare: '27,000' },
   { id: 'trentino', nameCN: '特倫蒂諾-上阿迪傑', nameEN: 'Trentino-Alto Adige', icon: '🏔️', aocCount: 8, hectare: '15,000' },

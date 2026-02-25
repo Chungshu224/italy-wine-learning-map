@@ -1,7 +1,38 @@
 [
   {
+    "id": "Trentino-Region",
+    "name": "Trentino-Alto Adige",
+    "type": "Trentino 區域",
+    "region": "Trentino-Alto Adige",
+    "province": "Trento, Bolzano",
+    "zone": "全區",
+    "style": [
+      "紅酒",
+      "白酒",
+      "氣泡酒"
+    ],
+    "grapes": [
+      "Teroldego",
+      "Lagrein",
+      "Schiava",
+      "Pinot Grigio",
+      "Chardonnay",
+      "Gewürztraminer",
+      "Müller-Thurgau"
+    ],
+    "description": "Trentino-Alto Adige 位於義大利最北端的阿爾卑斯山區，是義大利海拔最高的葡萄酒產區之一。以高品質白酒、優雅紅酒和頂級傳統法氣泡酒（Trentodoc）聞名。",
+    "details": {
+      "introduction": "Trentino-Alto Adige 分為兩個主要區域：南部的 Trentino（特倫蒂諾）和北部的 Alto Adige（上阿迪傑/南蒂羅爾）。高海拔葡萄園、日夜溫差大和多樣化的土壤造就了清新優雅的葡萄酒風格。",
+      "climate": "高山氣候，日夜溫差極大，夏季日照充足但夜晚涼爽，冬季寒冷。阿迪傑河谷提供微氣候調節。",
+      "subregions": {
+        "Trentino": "以 Teroldego Rotaliano、Marzemino 紅酒和 Trentodoc 氣泡酒著稱。",
+        "Alto Adige": "以精緻白酒（Gewürztraminer、Pinot Grigio）和優雅紅酒（Lagrein、Schiava）聞名。"
+      }
+    }
+  },
+  {
     "id": "DOC/Casteller DOC",
-    "name": "DOC",
+    "name": "Casteller",
     "type": "DOC",
     "style": "紅酒",
     "hectare": 0,
@@ -15,7 +46,7 @@
   },
   {
     "id": "DOC/Teroldego Rotaliano DOC",
-    "name": "DOC",
+    "name": "Teroldego Rotaliano",
     "type": "DOC",
     "style": "紅酒",
     "hectare": 0,
@@ -29,7 +60,7 @@
   },
   {
     "id": "DOC/Terradeiforti Valdadige Terradeiforti DOC",
-    "name": "DOC",
+    "name": "Terradeiforti Valdadige Terradeiforti",
     "type": "DOC",
     "style": "紅酒",
     "hectare": 0,
@@ -43,7 +74,7 @@
   },
   {
     "id": "DOC/Trentino DOC",
-    "name": "DOC",
+    "name": "Trentino",
     "type": "DOC",
     "style": ["紅酒", "白酒"],
     "hectare": 0,
@@ -57,7 +88,7 @@
   },
   {
     "id": "DOC/Trento DOC",
-    "name": "DOC",
+    "name": "Trento",
     "type": "DOC",
     "style": "氣泡酒",
     "hectare": 0,
@@ -71,7 +102,7 @@
   },
   {
     "id": "DOC/Valdadige  Etschtaler DOC",
-    "name": "DOC",
+    "name": "Valdadige Etschtaler",
     "type": "DOC",
     "style": ["紅酒", "白酒"],
     "hectare": 0,

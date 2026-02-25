@@ -43,6 +43,7 @@ const regionId = computed(() => route.params.regionId || 'veneto')
 const regionConfigs = {
   veneto: { name: 'Veneto', color: '#006400', geojsonFolder: 'Veneto', defaultAOC: 'Veneto IGP', defaultGroup: 'IGP' },
   piedmont: { name: 'Piemonte', color: '#8B0000', geojsonFolder: 'Piemonte', defaultAOC: 'Piemonte DOC', defaultGroup: 'DOC' },
+  'valle d\'aosta': { name: 'Valle d\'Aosta', color: '#4169E1', geojsonFolder: 'Valle d\'Aosta', defaultAOC: 'Valle d\'Aosta DOC', defaultGroup: 'DOC' },
   tuscany: { name: 'Toscana', color: '#A0522D', geojsonFolder: 'Toscana', defaultAOC: 'Toscana IGT', defaultGroup: 'IGT' },
   lombardy: { name: 'Lombardy', color: '#4B0082', geojsonFolder: 'Lombardy', defaultAOC: 'Lombardia IGT', defaultGroup: 'IGT' },
   trentino: { name: 'Trentino', color: '#228B22', geojsonFolder: 'Trentino', defaultAOC: 'Trentino DOC', defaultGroup: 'DOC' },

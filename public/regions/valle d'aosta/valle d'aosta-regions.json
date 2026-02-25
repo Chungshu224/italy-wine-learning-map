@@ -1,0 +1,177 @@
+[
+	{
+		"id": "Valle-d-Aosta",
+		"name": "Valle d'Aosta",
+		"type": "Valle d'Aosta區域",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "全區",
+		"style": [
+			"紅酒",
+			"白酒",
+			"粉紅酒"
+		],
+		"grapes": [
+			"Nebbiolo",
+			"Petit Rouge",
+			"Fumin",
+			"Cornalin",
+			"Vien de Nus",
+			"Petite Arvine",
+			"Prié Blanc",
+			"Moscato Bianco"
+		],
+		"description": "Valle d'Aosta 是義大利最小且海拔最高的葡萄酒產區，位於阿爾卑斯山谷中。擁有許多獨特的原生品種，葡萄園多位於陡峭山坡上，產量稀少但品質優異。",
+		"details": {
+			"introduction": "Valle d'Aosta 位於義大利西北端，與法國、瑞士接壤，是義大利最小的大區。整個產區只有一個 DOC（Valle d'Aosta / Vallée d'Aoste），但包含多個命名子產區。由於地理位置與歷史因素，產區受法國影響深遠，許多酒標採用法義雙語。",
+			"climate": "高山氣候，日照充足但夜晚涼爽，晝夜溫差極大。葡萄園多位於海拔 400-1200 公尺的山坡上，是義大利海拔最高的葡 萄酒產區。",
+			"subregions": {
+				"Arnad-Montjovet": "以 Nebbiolo（當地稱 Picotendro）釀造的紅酒為主。",
+				"Donnas": "100% Nebbiolo（Picotendro），風格優雅細緻。",
+				"Chambave": "包括紅白酒，尤以 Moscato 甜酒著稱。",
+				"Nus": "以原生品種 Vien de Nus 紅酒聞名。",
+				"Torrette": "產區最大子產區，以 Petit Rouge 為主的混釀紅酒。",
+				"Enfer d'Arvier": "「地獄」產區，以 Petit Rouge 為主的強勁紅酒。",
+				"Blanc de Morgex et de La Salle": "歐洲海拔最高的葡萄園（1200公尺），100% Prié Blanc 白酒。"
+			}
+		}
+	},
+	{
+		"id": "Valle-d-Aosta-DOC",
+		"name": "Valle d'Aosta / Vallée d'Aoste",
+		"type": "DOC",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "全區及多個命名子產區",
+		"style": ["紅酒", "白酒", "粉紅酒", "氣泡酒", "甜酒"],
+		"grapes": ["Nebbiolo (Picotendro)", "Petit Rouge", "Fumin", "Cornalin", "Vien de Nus", "Mayolet", "Petite Arvine", "Prié Blanc", "Moscato Bianco", "Müller-Thurgau"],
+		"description": "Valle d'Aosta DOC 涵蓋整個大區，包含 7 個命名子產區和多種原生品種。由於高海拔與阿爾卑斯山氣候，葡萄酒風格清新優雅，酸度明顯。",
+		"details": {
+			"introduction": "Valle d'Aosta DOC 創立於 1985 年，是義大利唯一一個涵蓋整個大區的單一 DOC。產區採用法義雙語標示（Valle d'Aosta / Vallée d'Aoste），反映其文化特色。葡萄園總面積僅約 500 公頃，年產量稀少，多為小型家族酒莊。",
+			"climate": "典型高山氣候，冬季寒冷多雪，夏季日照充足但夜間涼爽。Dora Baltea 河谷提供微氣候調節，使葡萄能在極端環境下成熟。",
+			"subregions": {
+				"Arnad-Montjovet": "Nebbiolo（Picotendro）紅酒，需 85% 以上品種，陳年至少 10 個月。",
+				"Donnas": "100% Nebbiolo（Picotendro），陳年至少 24 個月，風格類似 Piemonte 但更清新。",
+				"Chambave": "紅白酒皆可，Chambave Moscato Passito 甜酒極為著名。",
+				"Nus": "Nus Rosso（Vien de Nus 為主）、Nus Malvoisie（Pinot Grigio）、Nus Malvoisie Flétri（風乾甜酒）。",
+				"Torrette": "Petit Rouge 為主（70% 以上），新鮮果香，適合年輕飲用。",
+				"Enfer d'Arvier": "Petit Rouge 為主（85% 以上），名字源自陡峭日曬的「地獄般」葡萄園。",
+				"Blanc de Morgex et de La Salle": "100% Prié Blanc，歐洲海拔最高葡萄園（900-1200 公尺），未嫁接於美洲砧木（根瘤蚜未擴散至此），也生產傳統法氣泡酒。"
+			}
+		}
+	},
+	{
+		"id": "Arnad-Montjovet",
+		"name": "Arnad-Montjovet",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Arnad 與 Montjovet 兩個市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Picotendro)", "Freisa", "Neyret", "Vien de Nus"],
+		"description": "Valle d'Aosta DOC 的子產區，以當地稱為 Picotendro 的 Nebbiolo 為主（至少 85%），風格比 Barolo 更輕盈清新。",
+		"details": {
+			"introduction": "Arnad-Montjovet 位於 Valle d'Aosta 東部，是產區中 Nebbiolo 種植的重要區域。由於海拔較高與氣候涼爽，這裡的 Nebbiolo 展現出更細緻的單寧與明顯的酸度。",
+			"climate": "高山氣候，日夜溫差大，Dora Baltea 河谷提供微氣候調節。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Donnas",
+		"name": "Donnas",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Donnas、Perloz、Pont-Saint-Martin 三個市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Nebbiolo (Picotendro)"],
+		"description": "Valle d'Aosta 最著名的子產區之一，100% Nebbiolo（當地稱 Picotendro）釀造，需陳年至少 24 個月。風格優雅細緻，帶有玫瑰、紫羅蘭與香料香氣。",
+		"details": {
+			"introduction": "Donnas 是 Valle d'Aosta 歷史最悠久的葡萄酒產區，羅馬時代即有種植記錄。葡萄園位於陡峭的梯田上，需手工採收。Donnas 紅酒展現 Nebbiolo 的優雅一面，單寧細緻，酸度清新。",
+			"climate": "受 Dora Baltea 河谷保護，微氣候溫和，但日夜溫差大。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Chambave",
+		"name": "Chambave",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Chambave 市鎮",
+		"style": ["紅酒", "白酒", "甜酒"],
+		"grapes": ["Petit Rouge", "Moscato Bianco", "Pinot Nero"],
+		"description": "Chambave 以多樣化的酒款聞名，包括 Chambave Rosso（紅酒）、Chambave Moscato（白酒）以及著名的 Chambave Moscato Passito（風乾甜酒）。",
+		"details": {
+			"introduction": "Chambave 位於 Valle d'Aosta 中部，是產區中風格最多元的子產區。Chambave Moscato Passito 是當地特產，採用風乾的 Moscato Bianco 釀造，帶有蜂蜜、杏桃乾與花香。",
+			"climate": "河谷氣候，日照充足，適合 Moscato 葡萄達到完美成熟度。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Nus",
+		"name": "Nus",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Nus 市鎮",
+		"style": ["紅酒", "白酒", "甜酒"],
+		"grapes": ["Vien de Nus", "Pinot Grigio (Malvoisie)", "Petit Rouge"],
+		"description": "Nus 以原生品種 Vien de Nus 紅酒與 Pinot Grigio（當地稱 Malvoisie）聞名，也生產 Malvoisie Flétri 風乾甜酒。",
+		"details": {
+			"introduction": "Nus 是 Valle d'Aosta 獨特品種的保存地。Vien de Nus 是極為稀有的原生紅葡萄，僅在此地種植。Nus Malvoisie（Pinot Grigio）展現礦物感與複雜度，Malvoisie Flétri 則是風乾後釀造的甜酒。",
+			"climate": "典型山谷氣候，葡萄園位於向陽山坡。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Torrette",
+		"name": "Torrette",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Aosta 谷地周邊多個市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Petit Rouge", "Fumin", "Cornalin", "Mayolet", "Neyret", "Vien de Nus"],
+		"description": "Torrette 是 Valle d'Aosta 最大的子產區，以 Petit Rouge 為主（至少 70%）的混釀紅酒，風格新鮮果香，單寧柔和，適合年輕飲用。",
+		"details": {
+			"introduction": "Torrette 環繞 Aosta 市周邊，是產區產量最大的子產區。以 Petit Rouge 為基底，混合其他原生品種如 Fumin、Cornalin 等，展現紅色漿果、香料與草本香氣，是 Valle d'Aosta 日常餐酒的代表。",
+			"climate": "谷地氣候，受周圍山脈保護，日照充足。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Enfer-d-Arvier",
+		"name": "Enfer d'Arvier",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Arvier 市鎮",
+		"style": ["紅酒"],
+		"grapes": ["Petit Rouge", "Vien de Nus", "Neyret", "Dolcetto"],
+		"description": "Enfer d'Arvier（地獄）以陡峭的向陽葡萄園命名，炎熱的微氣候釀造出酒體飽滿、強勁有力的 Petit Rouge 紅酒（至少 85%）。",
+		"details": {
+			"introduction": "Enfer d'Arvier 的名字源自極為陡峭且日照強烈的葡萄園環境，工作條件如同「地獄」。這裡的 Petit Rouge 展現更深的顏色與更濃郁的果香，單寧結構比 Torrette 更強勁，適合陳年 3-8 年。",
+			"climate": "特殊微氣候，葡萄園面向南方，吸收大量陽光，溫度較其他子產區高。",
+			"subregions": {}
+		}
+	},
+	{
+		"id": "Blanc-de-Morgex-et-de-La-Salle",
+		"name": "Blanc de Morgex et de La Salle",
+		"type": "DOC 子產區",
+		"region": "Valle d'Aosta",
+		"province": "Aosta",
+		"zone": "Morgex 與 La Salle 兩個市鎮",
+		"style": ["白酒", "氣泡酒"],
+		"grapes": ["Prié Blanc"],
+		"description": "歐洲海拔最高的葡萄園（900-1200 公尺），100% Prié Blanc 釀造，葡萄藤未嫁接於美洲砧木（根瘤蚜未擴散至此）。風格極為清新，酸度明顯，帶有高山草本與礦物感。",
+		"details": {
+			"introduction": "Blanc de Morgex et de La Salle 位於 Mont Blanc（白朗峰）腳下，是歐洲海拔最高的葡萄酒產區之一。由於極端氣候與高海拔，根瘤蚜蟲無法存活，葡萄藤仍保持原始的自根栽培。Prié Blanc 是極為稀有的高山品種，僅在此地生長。",
+			"climate": "高山氣候，夏季短暫但日照強烈，夜晚極為涼爽。葡萄生長期長，酸度保持優異。",
+			"subregions": {
+				"Blanc de Morgex et de La Salle Spumante": "採用傳統法或 Charmat 法釀造的氣泡酒，清新爽口，帶有青蘋果與柑橘香氣。"
+			}
+		}
+	}
+]
