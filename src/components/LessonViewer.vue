@@ -3697,7 +3697,14 @@ onBeforeUnmount(() => {
 
 .slide-frame :deep(.italy-overview-map),
 .slide-frame :deep(.piedmont-region-map),
-.slide-frame :deep(.tuscany-region-map) {
+.slide-frame :deep(.tuscany-region-map),
+.slide-frame :deep(.veneto-region-map),
+.slide-frame :deep(.sicily-region-map),
+.slide-frame :deep(.lombardy-region-map),
+.slide-frame :deep(.trentino-region-map),
+.slide-frame :deep(.friuli-region-map),
+.slide-frame :deep(.liguria-region-map),
+.slide-frame :deep(.emilia-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
