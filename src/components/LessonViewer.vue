@@ -232,6 +232,7 @@ let tuscanyMap = null
 let venetoMap = null
 let sicilyMap = null
 let lombardyMap = null
+let trentinoMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -556,6 +557,8 @@ const initializeMapIfNeeded = async () => {
     const sicilyMapContainer = document.getElementById('sicily-map')
     // 檢查 Lombardy 地圖容器
     const lombardyMapContainer = document.getElementById('lombardy-map')
+    // 檢查 Trentino 地圖容器
+    const trentinoMapContainer = document.getElementById('trentino-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -575,6 +578,9 @@ const initializeMapIfNeeded = async () => {
     } else if (lombardyMapContainer && !lombardyMap) {
       console.log('✓ 找到 Lombardy 地圖容器，開始初始化...')
       initializeLombardyMap()
+    } else if (trentinoMapContainer && !trentinoMap) {
+      console.log('✓ 找到 Trentino 地圖容器，開始初始化...')
+      initializeTrentinoMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -1941,6 +1947,250 @@ const initializeLombardyMap = () => {
   }
 }
 
+const initializeTrentinoMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Trentino-Alto Adige 地圖...')
+    
+    trentinoMap = new mapboxgl.Map({
+      container: 'trentino-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [11.1, 46.3],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    trentinoMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    trentinoMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    trentinoMap.on('load', async () => {
+      console.log('📍 載入 Trentino-Alto Adige GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/trentino/geojson/Trentino.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          trentinoMap.addSource('trentino-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          trentinoMap.addLayer({
+            id: 'trentino-region-fill',
+            type: 'fill',
+            source: 'trentino-region',
+            paint: {
+              'fill-color': '#3498db',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          trentinoMap.addLayer({
+            id: 'trentino-region-outline',
+            type: 'line',
+            source: 'trentino-region',
+            paint: {
+              'line-color': '#3498db',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✓ 載入 Trentino-Alto Adige 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Trentino-Alto Adige 大區邊界:', error)
+      }
+      
+      const docRegions = [
+        { name: 'Trento DOC', grade: 'S級', color: '#f39c12', fillColor: 'rgba(243, 156, 18, 0.5)', type: 'DOC' },
+        { name: 'Teroldego Rotaliano DOC', grade: 'A級', color: '#e74c3c', fillColor: 'rgba(231, 76, 60, 0.45)', type: 'DOC' },
+        { name: 'Trentino DOC', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.35)', type: 'DOC' },
+        { name: 'Valdadige  Etschtaler DOC', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
+      ]
+      
+      for (const region of docRegions) {
+        try {
+          const response = await fetch(`/regions/trentino/geojson/${region.type}/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            let displayName = region.name.replace(' DOC', '').replace(' DOCG', '')
+            if (region.name === 'Valdadige  Etschtaler DOC') {
+              displayName = 'Valdadige'
+            }
+            
+            trentinoMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: displayName,
+                  grade: region.grade,
+                  type: region.type
+                },
+                geometry: geojson
+              }
+            })
+            
+            trentinoMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            trentinoMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            trentinoMap.on('mousemove', layerId, (e) => {
+              trentinoMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                trentinoMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              trentinoMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            trentinoMap.on('mouseleave', layerId, () => {
+              trentinoMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                trentinoMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            trentinoMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      ${properties.type} 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(trentinoMap)
+            })
+            
+            console.log(`✓ 載入 ${displayName}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Trento', nameCN: '特倫托', coords: [11.12, 46.07], label: 'Trentino 首府' },
+        { name: 'Bolzano', nameCN: '博爾扎諾', coords: [11.35, 46.50], label: 'Alto Adige 首府' },
+        { name: 'Rovereto', nameCN: '羅韋雷托', coords: [11.04, 45.89], label: '重要酒鎮' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'trentino-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f39c12;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #f39c12;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(trentinoMap)
+      })
+      
+      console.log('✅ Trentino-Alto Adige 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Trentino-Alto Adige 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -1975,6 +2225,10 @@ onBeforeUnmount(() => {
   if (lombardyMap) {
     lombardyMap.remove()
     lombardyMap = null
+  }
+  if (trentinoMap) {
+    trentinoMap.remove()
+    trentinoMap = null
   }
 })
 </script>
