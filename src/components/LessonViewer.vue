@@ -2693,6 +2693,7 @@ const initializeLiguriaMap = () => {
 // ─── Emilia-Romagna 地圖初始化 ───
 const initializeEmiliaMap = () => {
   try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
     
     if (!mapboxgl.accessToken) {
       console.error('❌ Mapbox access token 未設置')
