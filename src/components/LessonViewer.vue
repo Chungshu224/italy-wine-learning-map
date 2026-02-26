@@ -231,6 +231,7 @@ let piedmontMap = null
 let tuscanyMap = null
 let venetoMap = null
 let sicilyMap = null
+let lombardyMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -553,6 +554,8 @@ const initializeMapIfNeeded = async () => {
     const venetoMapContainer = document.getElementById('veneto-map')
     // 檢查 Sicily 地圖容器
     const sicilyMapContainer = document.getElementById('sicily-map')
+    // 檢查 Lombardy 地圖容器
+    const lombardyMapContainer = document.getElementById('lombardy-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -569,6 +572,9 @@ const initializeMapIfNeeded = async () => {
     } else if (sicilyMapContainer && !sicilyMap) {
       console.log('✓ 找到 Sicily 地圖容器，開始初始化...')
       initializeSicilyMap()
+    } else if (lombardyMapContainer && !lombardyMap) {
+      console.log('✓ 找到 Lombardy 地圖容器，開始初始化...')
+      initializeLombardyMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -1684,6 +1690,257 @@ const initializeSicilyMap = () => {
   }
 }
 
+// ─── 初始化 Lombardy 地圖 ───
+const initializeLombardyMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Lombardy 地圖...')
+    
+    lombardyMap = new mapboxgl.Map({
+      container: 'lombardy-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [10.0, 45.6],
+      zoom: 7.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    lombardyMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    lombardyMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    lombardyMap.on('load', async () => {
+      console.log('📍 載入 Lombardy GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/lombardy/geojson/Lombardy.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          lombardyMap.addSource('lombardy-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          lombardyMap.addLayer({
+            id: 'lombardy-region-fill',
+            type: 'fill',
+            source: 'lombardy-region',
+            paint: {
+              'fill-color': '#bdc3c7',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          lombardyMap.addLayer({
+            id: 'lombardy-region-outline',
+            type: 'line',
+            source: 'lombardy-region',
+            paint: {
+              'line-color': '#95a5a6',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+          
+          console.log('✓ 載入 Lombardy 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Lombardy 大區邊界:', error)
+      }
+      
+      const docgRegions = [
+        { name: 'Franciacorta DOCG', grade: 'S級', color: '#2c3e50', fillColor: 'rgba(52, 73, 94, 0.5)', type: 'DOCG' },
+        { name: 'Oltrepò Pavese metodo classico DOCG', grade: 'A級', color: '#7f8c8d', fillColor: 'rgba(127, 140, 141, 0.4)', type: 'DOCG' },
+        { name: 'Valtellina Superiore DOCG', grade: 'A級', color: '#95a5a6', fillColor: 'rgba(149, 165, 166, 0.4)', type: 'DOCG' },
+        { name: 'Lugana DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.3)', type: 'DOC' },
+        { name: 'Sforzato di Valtellina  Sfursat di Valtellina DOCG', grade: 'B級', color: '#95a5a6', fillColor: 'rgba(149, 165, 166, 0.3)', type: 'DOCG' },
+        { name: 'Valtellina rosso Rosso di Valtellina DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.25)', type: 'DOC' }
+      ]
+      
+      for (const region of docgRegions) {
+        try {
+          const response = await fetch(`/regions/lombardy/geojson/${region.type}/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            let displayName = region.name.replace(' DOCG', '').replace(' DOC', '')
+            if (region.name === 'Oltrepò Pavese metodo classico DOCG') {
+              displayName = 'Oltrepò Pavese MC'
+            } else if (region.name === 'Sforzato di Valtellina  Sfursat di Valtellina DOCG') {
+              displayName = 'Sforzato di Valtellina'
+            } else if (region.name === 'Valtellina rosso Rosso di Valtellina DOC') {
+              displayName = 'Valtellina Rosso'
+            }
+            
+            lombardyMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: displayName,
+                  grade: region.grade,
+                  type: region.type
+                },
+                geometry: geojson
+              }
+            })
+            
+            lombardyMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            lombardyMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            lombardyMap.on('mousemove', layerId, (e) => {
+              lombardyMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                lombardyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              lombardyMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            lombardyMap.on('mouseleave', layerId, () => {
+              lombardyMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                lombardyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            lombardyMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      ${properties.type} 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(lombardyMap)
+            })
+            
+            console.log(`✓ 載入 ${displayName}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Milano', nameCN: '米蘭', coords: [9.19, 45.46], label: '首府' },
+        { name: 'Brescia', nameCN: '布雷西亞', coords: [10.21, 45.54], label: 'Franciacorta 所在地' },
+        { name: 'Bergamo', nameCN: '貝加莫', coords: [9.67, 45.70], label: '歷史名城' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'lombardy-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #7f8c8d;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #7f8c8d;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #7f8c8d; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(lombardyMap)
+      })
+      
+      console.log('✅ Lombardy 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Lombardy 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -1714,6 +1971,10 @@ onBeforeUnmount(() => {
   if (sicilyMap) {
     sicilyMap.remove()
     sicilyMap = null
+  }
+  if (lombardyMap) {
+    lombardyMap.remove()
+    lombardyMap = null
   }
 })
 </script>
