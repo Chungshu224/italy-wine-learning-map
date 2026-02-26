@@ -230,6 +230,7 @@ let italyMap = null
 let piedmontMap = null
 let tuscanyMap = null
 let venetoMap = null
+let sicilyMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -550,6 +551,8 @@ const initializeMapIfNeeded = async () => {
     const tuscanyMapContainer = document.getElementById('tuscany-map')
     // 檢查 Veneto 地圖容器
     const venetoMapContainer = document.getElementById('veneto-map')
+    // 檢查 Sicily 地圖容器
+    const sicilyMapContainer = document.getElementById('sicily-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -563,6 +566,9 @@ const initializeMapIfNeeded = async () => {
     } else if (venetoMapContainer && !venetoMap) {
       console.log('✓ 找到 Veneto 地圖容器，開始初始化...')
       initializeVenetoMap()
+    } else if (sicilyMapContainer && !sicilyMap) {
+      console.log('✓ 找到 Sicily 地圖容器，開始初始化...')
+      initializeSicilyMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -1435,6 +1441,249 @@ const initializeVenetoMap = () => {
   }
 }
 
+// ─── 初始化 Sicily 地圖 ───
+const initializeSicilyMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Sicily 地圖...')
+    
+    sicilyMap = new mapboxgl.Map({
+      container: 'sicily-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [14.25, 37.6],
+      zoom: 7.8,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    sicilyMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    sicilyMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    sicilyMap.on('load', async () => {
+      console.log('📍 載入 Sicily GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/sicily/geojson/Sicily.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          sicilyMap.addSource('sicily-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          sicilyMap.addLayer({
+            id: 'sicily-region-fill',
+            type: 'fill',
+            source: 'sicily-region',
+            paint: {
+              'fill-color': '#e67e22',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          sicilyMap.addLayer({
+            id: 'sicily-region-outline',
+            type: 'line',
+            source: 'sicily-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+          
+          console.log('✓ 載入 Sicily 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Sicily 大區邊界:', error)
+      }
+      
+      const docRegions = [
+        { name: 'Etna DOC', grade: 'S級', color: '#8B0000', fillColor: 'rgba(192, 57, 43, 0.45)', type: 'DOC' },
+        { name: 'Vittoria DOC', grade: 'S級', color: '#c0392b', fillColor: 'rgba(192, 57, 43, 0.4)', type: 'DOCG', displayName: 'Cerasuolo di Vittoria' },
+        { name: 'Marsala DOC', grade: 'A級', color: '#f39c12', fillColor: 'rgba(243, 156, 18, 0.35)', type: 'DOC' },
+        { name: 'Faro DOC', grade: 'A級', color: '#e67e22', fillColor: 'rgba(230, 126, 34, 0.3)', type: 'DOC' },
+        { name: 'Noto DOC', grade: 'B級', color: '#95a5a6', fillColor: 'rgba(149, 165, 166, 0.25)', type: 'DOC' },
+        { name: 'Pantelleria DOC', grade: 'B級', color: '#7f8c8d', fillColor: 'rgba(127, 140, 141, 0.25)', type: 'DOC' },
+        { name: 'Alcamo DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.25)', type: 'DOC' }
+      ]
+      
+      for (const region of docRegions) {
+        try {
+          const response = await fetch(`/regions/sicily/geojson/DOC/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            sicilyMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.displayName || region.name.replace(' DOC', '').replace(' DOCG', ''),
+                  grade: region.grade,
+                  type: region.type
+                },
+                geometry: geojson
+              }
+            })
+            
+            sicilyMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            sicilyMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            sicilyMap.on('mousemove', layerId, (e) => {
+              sicilyMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                sicilyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              sicilyMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            sicilyMap.on('mouseleave', layerId, () => {
+              sicilyMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                sicilyMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            sicilyMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      ${properties.type} 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(sicilyMap)
+            })
+            
+            console.log(`✓ 載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Palermo', nameCN: '巴勒莫', coords: [13.36, 38.12], label: '首府' },
+        { name: 'Catania', nameCN: '卡塔尼亞', coords: [15.09, 37.51], label: 'Etna 山腳' },
+        { name: 'Marsala', nameCN: '馬爾薩拉', coords: [12.44, 37.80], label: '加烈酒之鄉' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'sicily-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #f39c12;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #f39c12;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(sicilyMap)
+      })
+      
+      console.log('✅ Sicily 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Sicily 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -1461,6 +1710,10 @@ onBeforeUnmount(() => {
   if (venetoMap) {
     venetoMap.remove()
     venetoMap = null
+  }
+  if (sicilyMap) {
+    sicilyMap.remove()
+    sicilyMap = null
   }
 })
 </script>
