@@ -233,6 +233,7 @@ let venetoMap = null
 let sicilyMap = null
 let lombardyMap = null
 let trentinoMap = null
+let friuliMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -559,6 +560,8 @@ const initializeMapIfNeeded = async () => {
     const lombardyMapContainer = document.getElementById('lombardy-map')
     // 檢查 Trentino 地圖容器
     const trentinoMapContainer = document.getElementById('trentino-map')
+    // 檢查 Friuli 地圖容器
+    const friuliMapContainer = document.getElementById('friuli-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -581,6 +584,9 @@ const initializeMapIfNeeded = async () => {
     } else if (trentinoMapContainer && !trentinoMap) {
       console.log('✓ 找到 Trentino 地圖容器，開始初始化...')
       initializeTrentinoMap()
+    } else if (friuliMapContainer && !friuliMap) {
+      console.log('✓ 找到 Friuli 地圖容器，開始初始化...')
+      initializeFriuliMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -2191,6 +2197,247 @@ const initializeTrentinoMap = () => {
   }
 }
 
+const initializeFriuliMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Friuli Venezia Giulia 地圖...')
+    
+    friuliMap = new mapboxgl.Map({
+      container: 'friuli-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [13.2, 46.0],
+      zoom: 8.8,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    friuliMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    friuliMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    friuliMap.on('load', async () => {
+      console.log('📍 載入 Friuli Venezia Giulia GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/friuli/geojson/Friuli-Venezia Giulia.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          friuliMap.addSource('friuli-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          friuliMap.addLayer({
+            id: 'friuli-region-fill',
+            type: 'fill',
+            source: 'friuli-region',
+            paint: {
+              'fill-color': '#16a085',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          friuliMap.addLayer({
+            id: 'friuli-region-outline',
+            type: 'line',
+            source: 'friuli-region',
+            paint: {
+              'line-color': '#16a085',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✓ 載入 Friuli Venezia Giulia 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Friuli Venezia Giulia 大區邊界:', error)
+      }
+      
+      const regions = [
+        { name: 'Collio Goriziano Collio DOC', displayName: 'Collio DOC', grade: 'S級', color: '#f39c12', fillColor: 'rgba(243, 156, 18, 0.5)', type: 'DOC' },
+        { name: 'Friuli Colli Orientali DOC', displayName: 'Colli Orientali DOC', grade: 'A級', color: '#e74c3c', fillColor: 'rgba(231, 76, 60, 0.45)', type: 'DOC' },
+        { name: 'Friuli Grave DOC', displayName: 'Friuli Grave DOC', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.35)', type: 'DOC' },
+        { name: 'Ramandolo DOCG', displayName: 'Ramandolo DOCG', grade: '甜酒', color: '#9b59b6', fillColor: 'rgba(155, 89, 182, 0.4)', type: 'DOCG' },
+        { name: 'Rosazzo DOCG', displayName: 'Rosazzo DOCG', grade: '精品', color: '#1abc9c', fillColor: 'rgba(26, 188, 156, 0.4)', type: 'DOCG' },
+        { name: 'Friuli Isonzo Isonzo del Friuli DOC', displayName: 'Friuli Isonzo DOC', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
+      ]
+      
+      for (const region of regions) {
+        try {
+          const response = await fetch(`/regions/friuli/geojson/${region.type}/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            friuliMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.displayName,
+                  grade: region.grade,
+                  type: region.type
+                },
+                geometry: geojson
+              }
+            })
+            
+            friuliMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            friuliMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            friuliMap.on('mousemove', layerId, (e) => {
+              friuliMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                friuliMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              friuliMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            friuliMap.on('mouseleave', layerId, () => {
+              friuliMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                friuliMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            friuliMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      ${properties.type} 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(friuliMap)
+            })
+            
+            console.log(`✓ 載入 ${region.displayName}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Gorizia', nameCN: '戈里齊亞', coords: [13.62, 45.94], label: 'Collio 心臟地帶' },
+        { name: 'Udine', nameCN: '烏迪內', coords: [13.24, 46.07], label: '首府城市' },
+        { name: 'Trieste', nameCN: '的里雅斯特', coords: [13.77, 45.65], label: '港口城市' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'friuli-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #16a085;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #16a085;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #16a085; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(friuliMap)
+      })
+      
+      console.log('✅ Friuli Venezia Giulia 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Friuli Venezia Giulia 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -2229,6 +2476,10 @@ onBeforeUnmount(() => {
   if (trentinoMap) {
     trentinoMap.remove()
     trentinoMap = null
+  }
+  if (friuliMap) {
+    friuliMap.remove()
+    friuliMap = null
   }
 })
 </script>
