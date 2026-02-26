@@ -235,6 +235,7 @@ let lombardyMap = null
 let trentinoMap = null
 let friuliMap = null
 let liguriaMap = null
+let emiliaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -565,6 +566,8 @@ const initializeMapIfNeeded = async () => {
     const friuliMapContainer = document.getElementById('friuli-map')
     // 檢查 Liguria 地圖容器
     const liguriaMapContainer = document.getElementById('liguria-map')
+    // 檢查 Emilia 地圖容器
+    const emiliaMapContainer = document.getElementById('emilia-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -593,6 +596,9 @@ const initializeMapIfNeeded = async () => {
     } else if (liguriaMapContainer && !liguriaMap) {
       console.log('✓ 找到 Liguria 地圖容器，開始初始化...')
       initializeLiguriaMap()
+    } else if (emiliaMapContainer && !emiliaMap) {
+      console.log('✓ 找到 Emilia 地圖容器，開始初始化...')
+      initializeEmiliaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -2684,6 +2690,223 @@ const initializeLiguriaMap = () => {
   }
 }
 
+// ─── Emilia-Romagna 地圖初始化 ───
+const initializeEmiliaMap = () => {
+  try {
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Emilia 地圖...')
+    
+    emiliaMap = new mapboxgl.Map({
+      container: 'emilia-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [10.8, 44.5],
+      zoom: 8.2,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    emiliaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    emiliaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    emiliaMap.on('load', async () => {
+      console.log('📍 載入 Emilia GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/emilia/geojson/Emilia-Romagna.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          emiliaMap.addSource('emilia-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          emiliaMap.addLayer({
+            id: 'emilia-region-fill',
+            type: 'fill',
+            source: 'emilia-region',
+            paint: {
+              'fill-color': '#e74c3c',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          emiliaMap.addLayer({
+            id: 'emilia-region-outline',
+            type: 'line',
+            source: 'emilia-region',
+            paint: {
+              'line-color': '#e74c3c',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Emilia 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Emilia 大區邊界失敗:', error)
+      }
+      
+      // DOC/DOCG 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Lambrusco di Sorbara DOC',
+          grade: 'S級',
+          color: '#f39c12',
+          description: '最優雅的 Lambrusco，粉紅色、高酸度、細膩氣泡',
+          filepath: '/regions/emilia/geojson/DOC/Lambrusco di Sorbara DOC.geojson'
+        },
+        {
+          name: 'Lambrusco Grasparossa di Castelvetro DOC',
+          grade: 'A級',
+          color: '#e74c3c',
+          description: '最濃郁的 Lambrusco，深紫紅色、單寧較高、飽滿',
+          filepath: '/regions/emilia/geojson/DOC/Lambrusco Grasparossa di Castelvetro DOC.geojson'
+        },
+        {
+          name: 'Reggiano DOC',
+          grade: 'A級',
+          color: '#e67e22',
+          description: '平衡型 Lambrusco，多品種混釀、性價比高',
+          filepath: '/regions/emilia/geojson/DOC/Reggiano DOC.geojson'
+        },
+        {
+          name: 'Romagna Albana DOCG',
+          grade: 'B級',
+          color: '#3498db',
+          description: '義大利第一個白酒 DOCG（1987），Albana 品種',
+          filepath: '/regions/emilia/geojson/DOCG/Romagna Albana DOCG.geojson'
+        },
+        {
+          name: 'Colli Bolognesi Classico Pignoletto DOCG',
+          grade: 'B級',
+          color: '#5dade2',
+          description: 'Bologna 丘陵的 Pignoletto 白酒和氣泡酒',
+          filepath: '/regions/emilia/geojson/DOCG/Colli Bolognesi Classico Pignoletto DOCG.geojson'
+        },
+        {
+          name: 'Romagna DOC',
+          grade: 'B級',
+          color: '#85c1e9',
+          description: 'Sangiovese di Romagna 產區，果香柔順、易飲',
+          filepath: '/regions/emilia/geojson/DOC/Romagna DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `emilia-${region.name.toLowerCase().replace(/\s+/g, '-')}`
+            
+            emiliaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            emiliaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            emiliaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            emiliaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              emiliaMap.getCanvas().style.cursor = 'pointer'
+              emiliaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            emiliaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              emiliaMap.getCanvas().style.cursor = ''
+              emiliaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            emiliaMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(emiliaMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(emiliaMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: 'Bologna', coords: [11.3426, 44.4942], label: '波隆那（大區首府、美食之都）' },
+        { name: 'Modena', coords: [10.9252, 44.6471], label: '摩德纳（Lambrusco、Balsamic 醋之鄉）' },
+        { name: 'Parma', coords: [10.3279, 44.8015], label: '帕尔玛（Prosciutto、Parmigiano 之鄉）' },
+        { name: 'Reggio Emilia', coords: [10.6313, 44.6989], label: '雷焦艾米利亚（Parmigiano 發源地）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #e74c3c;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #e74c3c;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(emiliaMap)
+      })
+      
+      console.log('✅ Emilia 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Emilia 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -2730,6 +2953,10 @@ onBeforeUnmount(() => {
   if (liguriaMap) {
     liguriaMap.remove()
     liguriaMap = null
+  }
+  if (emiliaMap) {
+    emiliaMap.remove()
+    emiliaMap = null
   }
 })
 </script>
