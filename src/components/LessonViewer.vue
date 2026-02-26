@@ -234,6 +234,7 @@ let sicilyMap = null
 let lombardyMap = null
 let trentinoMap = null
 let friuliMap = null
+let liguriaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -562,6 +563,8 @@ const initializeMapIfNeeded = async () => {
     const trentinoMapContainer = document.getElementById('trentino-map')
     // 檢查 Friuli 地圖容器
     const friuliMapContainer = document.getElementById('friuli-map')
+    // 檢查 Liguria 地圖容器
+    const liguriaMapContainer = document.getElementById('liguria-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -587,6 +590,9 @@ const initializeMapIfNeeded = async () => {
     } else if (friuliMapContainer && !friuliMap) {
       console.log('✓ 找到 Friuli 地圖容器，開始初始化...')
       initializeFriuliMap()
+    } else if (liguriaMapContainer && !liguriaMap) {
+      console.log('✓ 找到 Liguria 地圖容器，開始初始化...')
+      initializeLiguriaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -2438,6 +2444,246 @@ const initializeFriuliMap = () => {
   }
 }
 
+const initializeLiguriaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Liguria 地圖...')
+    
+    liguriaMap = new mapboxgl.Map({
+      container: 'liguria-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [8.8, 44.3],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    liguriaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    liguriaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    liguriaMap.on('load', async () => {
+      console.log('📍 載入 Liguria GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/liguria/geojson/Liguria.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          liguriaMap.addSource('liguria-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          liguriaMap.addLayer({
+            id: 'liguria-region-fill',
+            type: 'fill',
+            source: 'liguria-region',
+            paint: {
+              'fill-color': '#3498db',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          liguriaMap.addLayer({
+            id: 'liguria-region-outline',
+            type: 'line',
+            source: 'liguria-region',
+            paint: {
+              'line-color': '#3498db',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✓ 載入 Liguria 大區邊界')
+        }
+      } catch (error) {
+        console.warn('⚠️ 無法載入 Liguria 大區邊界:', error)
+      }
+      
+      const regions = [
+        { name: 'Cinque Terre Cinque Terre Sciacchetrà DOC', displayName: 'Cinque Terre DOC', grade: 'S級', color: '#f39c12', fillColor: 'rgba(243, 156, 18, 0.5)', type: 'DOC' },
+        { name: 'Colli di Luni DOC', displayName: 'Colli di Luni DOC', grade: 'A級', color: '#e74c3c', fillColor: 'rgba(231, 76, 60, 0.45)', type: 'DOC' },
+        { name: 'Dolceacqua Rossese di Dolceacqua DOC', displayName: 'Rossese di Dolceacqua', grade: 'A級', color: '#e67e22', fillColor: 'rgba(230, 126, 34, 0.45)', type: 'DOC' },
+        { name: 'Colline di Levanto DOC', displayName: 'Colline di Levanto', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.35)', type: 'DOC' },
+        { name: 'Val Polcèvera DOC', displayName: 'Val Polcèvera', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
+      ]
+      
+      for (const region of regions) {
+        try {
+          const response = await fetch(`/regions/liguria/geojson/${region.type}/${region.name}.geojson`)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `${region.name}-source`
+            const layerId = `${region.name}-layer`
+            const outlineId = `${region.name}-outline`
+            
+            liguriaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {
+                  name: region.displayName,
+                  grade: region.grade,
+                  type: region.type
+                },
+                geometry: geojson
+              }
+            })
+            
+            liguriaMap.addLayer({
+              id: layerId,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.fillColor,
+                'fill-opacity': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.7,
+                  0.4
+                ]
+              }
+            })
+            
+            liguriaMap.addLayer({
+              id: outlineId,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': ['case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  3,
+                  2
+                ]
+              }
+            })
+            
+            let hoveredFeatureId = null
+            
+            liguriaMap.on('mousemove', layerId, (e) => {
+              liguriaMap.getCanvas().style.cursor = 'pointer'
+              
+              if (hoveredFeatureId !== null) {
+                liguriaMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              
+              hoveredFeatureId = e.features[0].id
+              liguriaMap.setFeatureState(
+                { source: sourceId, id: hoveredFeatureId },
+                { hover: true }
+              )
+            })
+            
+            liguriaMap.on('mouseleave', layerId, () => {
+              liguriaMap.getCanvas().style.cursor = ''
+              
+              if (hoveredFeatureId !== null) {
+                liguriaMap.setFeatureState(
+                  { source: sourceId, id: hoveredFeatureId },
+                  { hover: false }
+                )
+              }
+              hoveredFeatureId = null
+            })
+            
+            liguriaMap.on('click', layerId, (e) => {
+              const coordinates = e.lngLat
+              const properties = e.features[0].properties
+              
+              new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(`
+                  <div style="padding: 10px;">
+                    <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                      ${properties.grade}
+                    </div>
+                    <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                      ${properties.name}
+                    </h3>
+                    <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                      ${properties.type} 產區
+                    </p>
+                  </div>
+                `)
+                .addTo(liguriaMap)
+            })
+            
+            console.log(`✓ 載入 ${region.displayName}`)
+          }
+        } catch (error) {
+          console.warn(`⚠️ 無法載入 ${region.name}:`, error)
+        }
+      }
+      
+      const cities = [
+        { name: 'Genova', nameCN: '熱那亞', coords: [8.93, 44.41], label: '首府' },
+        { name: 'La Spezia', nameCN: '拉斯佩齊亞', coords: [9.82, 44.10], label: 'Cinque Terre 門戶' },
+        { name: 'Ventimiglia', nameCN: '文蒂米利亞', coords: [7.61, 43.79], label: 'Rossese 產區' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'liguria-city-marker'
+        el.style.cssText = `
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #3498db;
+          border: 2px solid white;
+          box-shadow: 0 0 10px #3498db;
+          cursor: pointer;
+          transition: all 0.3s;
+        `
+        
+        el.addEventListener('mouseenter', () => {
+          el.style.width = '14px'
+          el.style.height = '14px'
+        })
+        
+        el.addEventListener('mouseleave', () => {
+          el.style.width = '10px'
+          el.style.height = '10px'
+        })
+        
+        const popup = new mapboxgl.Popup({ offset: 25 })
+          .setHTML(`
+            <div style="padding: 10px;">
+              <div style="background: #3498db; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+                ${city.label}
+              </div>
+              <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
+                ${city.nameCN} ${city.name}
+              </h3>
+              <p style="margin: 0; color: #7f8c8d; font-size: 0.9rem;">
+                重要城市
+              </p>
+            </div>
+          `)
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(popup)
+          .addTo(liguriaMap)
+      })
+      
+      console.log('✅ Liguria 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Liguria 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -2480,6 +2726,10 @@ onBeforeUnmount(() => {
   if (friuliMap) {
     friuliMap.remove()
     friuliMap = null
+  }
+  if (liguriaMap) {
+    liguriaMap.remove()
+    liguriaMap = null
   }
 })
 </script>
