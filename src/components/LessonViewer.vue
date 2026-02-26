@@ -1732,7 +1732,7 @@ const initializeLombardyMap = () => {
             type: 'fill',
             source: 'lombardy-region',
             paint: {
-              'fill-color': '#bdc3c7',
+              'fill-color': '#f39c12',
               'fill-opacity': 0.08
             }
           })
@@ -1742,9 +1742,9 @@ const initializeLombardyMap = () => {
             type: 'line',
             source: 'lombardy-region',
             paint: {
-              'line-color': '#95a5a6',
+              'line-color': '#f1c40f',
               'line-width': 3,
-              'line-opacity': 0.8
+              'line-opacity': 0.9
             }
           })
           
@@ -1755,12 +1755,12 @@ const initializeLombardyMap = () => {
       }
       
       const docgRegions = [
-        { name: 'Franciacorta DOCG', grade: 'S級', color: '#2c3e50', fillColor: 'rgba(52, 73, 94, 0.5)', type: 'DOCG' },
-        { name: 'Oltrepò Pavese metodo classico DOCG', grade: 'A級', color: '#7f8c8d', fillColor: 'rgba(127, 140, 141, 0.4)', type: 'DOCG' },
-        { name: 'Valtellina Superiore DOCG', grade: 'A級', color: '#95a5a6', fillColor: 'rgba(149, 165, 166, 0.4)', type: 'DOCG' },
-        { name: 'Lugana DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.3)', type: 'DOC' },
-        { name: 'Sforzato di Valtellina  Sfursat di Valtellina DOCG', grade: 'B級', color: '#95a5a6', fillColor: 'rgba(149, 165, 166, 0.3)', type: 'DOCG' },
-        { name: 'Valtellina rosso Rosso di Valtellina DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.25)', type: 'DOC' }
+        { name: 'Franciacorta DOCG', grade: 'S級', color: '#d4af37', fillColor: 'rgba(212, 175, 55, 0.5)', type: 'DOCG' },
+        { name: 'Oltrepò Pavese metodo classico DOCG', grade: 'A級', color: '#e74c3c', fillColor: 'rgba(231, 76, 60, 0.45)', type: 'DOCG' },
+        { name: 'Valtellina Superiore DOCG', grade: 'A級', color: '#e67e22', fillColor: 'rgba(230, 126, 34, 0.45)', type: 'DOCG' },
+        { name: 'Lugana DOC', grade: 'B級', color: '#3498db', fillColor: 'rgba(52, 152, 219, 0.35)', type: 'DOC' },
+        { name: 'Sforzato di Valtellina  Sfursat di Valtellina DOCG', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.35)', type: 'DOCG' },
+        { name: 'Valtellina rosso Rosso di Valtellina DOC', grade: 'B級', color: '#85c1e9', fillColor: 'rgba(133, 193, 233, 0.3)', type: 'DOC' }
       ]
       
       for (const region of docgRegions) {
@@ -1896,9 +1896,9 @@ const initializeLombardyMap = () => {
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background: #7f8c8d;
+          background: #f39c12;
           border: 2px solid white;
-          box-shadow: 0 0 10px #7f8c8d;
+          box-shadow: 0 0 10px #f39c12;
           cursor: pointer;
           transition: all 0.3s;
         `
@@ -1916,7 +1916,7 @@ const initializeLombardyMap = () => {
         const popup = new mapboxgl.Popup({ offset: 25 })
           .setHTML(`
             <div style="padding: 10px;">
-              <div style="background: #7f8c8d; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
+              <div style="background: #f39c12; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                 ${city.label}
               </div>
               <h3 style="margin: 0 0 5px; font-size: 1.1rem; color: #2c3e50; font-weight: 700;">
