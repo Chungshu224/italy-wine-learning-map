@@ -237,6 +237,7 @@ let friuliMap = null
 let liguriaMap = null
 let emiliaMap = null
 let marcheMap = null
+let umbriaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -571,6 +572,8 @@ const initializeMapIfNeeded = async () => {
     const emiliaMapContainer = document.getElementById('emilia-map')
     // 檢查 Marche 地圖容器
     const marcheMapContainer = document.getElementById('marche-map')
+    // 檢查 Umbria 地圖容器
+    const umbriaMapContainer = document.getElementById('umbria-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -605,6 +608,9 @@ const initializeMapIfNeeded = async () => {
     } else if (marcheMapContainer && !marcheMap) {
       console.log('✓ 找到 Marche 地圖容器，開始初始化...')
       initializeMarcheMap()
+    } else if (umbriaMapContainer && !umbriaMap) {
+      console.log('✓ 找到 Umbria 地圖容器，開始初始化...')
+      initializeUmbriaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3132,6 +3138,217 @@ const initializeMarcheMap = () => {
   }
 }
 
+// ─── Umbria 地圖初始化 ───
+const initializeUmbriaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Umbria 地圖...')
+    
+    umbriaMap = new mapboxgl.Map({
+      container: 'umbria-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [12.6, 42.95],
+      zoom: 8.8,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    umbriaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    umbriaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    umbriaMap.on('load', async () => {
+      console.log('📍 載入 Umbria GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/umbria/geojson/Umbria.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          umbriaMap.addSource('umbria-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          umbriaMap.addLayer({
+            id: 'umbria-region-fill',
+            type: 'fill',
+            source: 'umbria-region',
+            paint: {
+              'fill-color': '#8e44ad',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          umbriaMap.addLayer({
+            id: 'umbria-region-outline',
+            type: 'line',
+            source: 'umbria-region',
+            paint: {
+              'line-color': '#8e44ad',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Umbria 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Umbria 大區邊界失敗:', error)
+      }
+      
+      // DOC/DOCG 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Montefalco Sagrantino DOCG',
+          grade: 'S級',
+          color: '#8e44ad',
+          description: '單寧之王，世界上單寧含量最高的葡萄品種',
+          filepath: '/regions/umbria/geojson/DOCG/Montefalco Sagrantino DOCG.geojson'
+        },
+        {
+          name: 'Orvieto DOC',
+          grade: 'A級',
+          color: '#f39c12',
+          description: 'Umbria 最知名的白酒，歷史可追溯至 Etruscan 文明',
+          filepath: '/regions/umbria/geojson/DOC/Orvieto DOC.geojson'
+        },
+        {
+          name: 'Torgiano Rosso Riserva DOCG',
+          grade: 'A級',
+          color: '#c0392b',
+          description: 'Sangiovese 為主的陳年紅酒，Lungarotti 酒莊推广',
+          filepath: '/regions/umbria/geojson/DOCG/Torgiano Rosso Riserva DOCG.geojson'
+        },
+        {
+          name: 'Montefalco DOC',
+          grade: 'B級',
+          color: '#e74c3c',
+          description: 'Montefalco Rosso，Sangiovese + Sagrantino 混釀、入門選擇',
+          filepath: '/regions/umbria/geojson/DOC/Montefalco DOC.geojson'
+        },
+        {
+          name: 'Torgiano DOC',
+          grade: 'B級',
+          color: '#e67e22',
+          description: 'Torgiano 基礎版本，紅白酒皆有',
+          filepath: '/regions/umbria/geojson/DOC/Torgiano DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `umbria-${region.name.toLowerCase().replace(/\s+/g, '-')}`
+            
+            umbriaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            umbriaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            umbriaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            umbriaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              umbriaMap.getCanvas().style.cursor = 'pointer'
+              umbriaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            umbriaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              umbriaMap.getCanvas().style.cursor = ''
+              umbriaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            umbriaMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(umbriaMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(umbriaMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: 'Perugia', coords: [12.3889, 43.1107], label: '佩魯賈（首府）' },
+        { name: 'Montefalco', coords: [12.6486, 42.8931], label: 'Montefalco（Sagrantino 之鄉）' },
+        { name: 'Orvieto', coords: [12.1133, 42.7183], label: 'Orvieto（古城白酒產區）' },
+        { name: 'Assisi', coords: [12.6167, 43.0703], label: 'Assisi（聖方濟各故鄉）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #8e44ad;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #8e44ad;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(umbriaMap)
+      })
+      
+      console.log('✅ Umbria 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Umbria 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -3186,6 +3403,10 @@ onBeforeUnmount(() => {
   if (marcheMap) {
     marcheMap.remove()
     marcheMap = null
+  }
+  if (umbriaMap) {
+    umbriaMap.remove()
+    umbriaMap = null
   }
 })
 </script>
@@ -3934,7 +4155,8 @@ onBeforeUnmount(() => {
 .slide-frame :deep(.friuli-region-map),
 .slide-frame :deep(.liguria-region-map),
 .slide-frame :deep(.emilia-region-map),
-.slide-frame :deep(.marche-region-map) {
+.slide-frame :deep(.marche-region-map),
+.slide-frame :deep(.umbria-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
