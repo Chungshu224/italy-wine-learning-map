@@ -240,6 +240,7 @@ let marcheMap = null
 let umbriaMap = null
 let lazioMap = null
 let abruzzoMap = null
+let moliseMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -580,6 +581,8 @@ const initializeMapIfNeeded = async () => {
     const lazioMapContainer = document.getElementById('lazio-map')
     // 檢查 Abruzzo 地圖容器
     const abruzzoMapContainer = document.getElementById('abruzzo-map')
+    // 檢查 Molise 地圖容器
+    const moliseMapContainer = document.getElementById('molise-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -623,6 +626,9 @@ const initializeMapIfNeeded = async () => {
     } else if (abruzzoMapContainer && !abruzzoMap) {
       console.log('✓ 找到 Abruzzo 地圖容器，開始初始化...')
       initializeAbruzzoMap()
+    } else if (moliseMapContainer && !moliseMap) {
+      console.log('✓ 找到 Molise 地圖容器，開始初始化...')
+      initializeMoliseMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3150,6 +3156,210 @@ const initializeMarcheMap = () => {
   }
 }
 
+// ─── Molise 地圖初始化 ───
+const initializeMoliseMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Molise 地圖...')
+    
+    moliseMap = new mapboxgl.Map({
+      container: 'molise-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [14.65, 41.75],
+      zoom: 9.0,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    moliseMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    moliseMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    moliseMap.on('load', async () => {
+      console.log('📍 載入 Molise GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/molise/geojson/Molise.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          moliseMap.addSource('molise-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          moliseMap.addLayer({
+            id: 'molise-region-fill',
+            type: 'fill',
+            source: 'molise-region',
+            paint: {
+              'fill-color': '#27ae60',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          moliseMap.addLayer({
+            id: 'molise-region-outline',
+            type: 'line',
+            source: 'molise-region',
+            paint: {
+              'line-color': '#27ae60',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Molise 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Molise 大區邊界失敗:', error)
+      }
+      
+      // DOC 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Tintilia del Molise DOC',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Molise 代表性本土品種 Tintilia，2011年 DOC',
+          filepath: '/regions/molise/geojson/DOC/Tintilia del Molise DOC.geojson'
+        },
+        {
+          name: 'Biferno DOC',
+          grade: 'A級',
+          color: '#e74c3c',
+          description: 'Molise 第一個 DOC（1983），最大產區',
+          filepath: '/regions/molise/geojson/DOC/Biferno DOC.geojson'
+        },
+        {
+          name: 'Pentro di Isernia DOC',
+          grade: 'B級',
+          color: '#3498db',
+          description: '西部山區 Isernia，優雅細臻',
+          filepath: '/regions/molise/geojson/DOC/Pentro di Isernia DOC.geojson'
+        },
+        {
+          name: 'Molise del Molise DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: '涵蓋全區的通用 DOC，品種多樣',
+          filepath: '/regions/molise/geojson/DOC/Molise del Molise DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `molise-${region.name.toLowerCase().replace(/\s+/g, '-')}`
+            
+            moliseMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            moliseMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            moliseMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            moliseMap.on('mouseenter', `${sourceId}-fill`, () => {
+              moliseMap.getCanvas().style.cursor = 'pointer'
+              moliseMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            moliseMap.on('mouseleave', `${sourceId}-fill`, () => {
+              moliseMap.getCanvas().style.cursor = ''
+              moliseMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            moliseMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(moliseMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(moliseMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: 'Campobasso', coords: [14.6559, 41.5630], label: 'Campobasso（首府）' },
+        { name: 'Isernia', coords: [14.2350, 41.5964], label: 'Isernia（Pentro 產區）' },
+        { name: 'Termoli', coords: [14.9938, 42.0007], label: 'Termoli（海岸城市、Biferno 產區）' },
+        { name: 'Campomarino', coords: [15.0289, 41.9556], label: 'Campomarino（Biferno 子產區）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #27ae60;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #27ae60;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(moliseMap)
+      })
+      
+      console.log('✅ Molise 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Molise 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -3849,6 +4059,10 @@ onBeforeUnmount(() => {
   if (abruzzoMap) {
     abruzzoMap.remove()
     abruzzoMap = null
+  }
+  if (moliseMap) {
+    moliseMap.remove()
+    moliseMap = null
   }
 })
 </script>
@@ -4611,6 +4825,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.abruzzo-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.molise-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
