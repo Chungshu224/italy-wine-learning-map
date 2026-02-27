@@ -3864,20 +3864,21 @@ const initializeBasilicataMap = () => {
       }
       
       // 定義要顯示的產區
+      // 注意：基礎 DOC 先加載（下層），DOCG 精選產區後加載（上層）
       const regions = [
-        {
-          name: 'Aglianico del Vulture Superiore DOCG',
-          grade: 'S級',
-          color: '#d4af37',
-          description: '南義最僉大的紅酒之一，Monte Vulture 火山斜坡',
-          filepath: '/regions/basilicata/geojson/DOCG/Aglianico del Vulture Superiore DOCG.geojson'
-        },
         {
           name: 'Aglianico del Vulture DOC',
           grade: 'A級',
           color: '#8e44ad',
           description: 'Aglianico 基本版本，依然優美',
           filepath: '/regions/basilicata/geojson/DOC/Aglianico del Vulture DOC.geojson'
+        },
+        {
+          name: 'Aglianico del Vulture Superiore DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: '南義最僉大的紅酒之一，Monte Vulture 火山斜坡',
+          filepath: '/regions/basilicata/geojson/DOCG/Aglianico del Vulture Superiore DOCG.geojson'
         },
         {
           name: 'Matera DOC',
@@ -4055,20 +4056,21 @@ const initializeCalabriaMap = () => {
       }
       
       // 定義要顯示的產區
+      // 注意：基礎 Cirò DOC 先加載（下層），DOCG 精選產區後加載（上層）
       const regions = [
-        {
-          name: 'Cirò DOCG',
-          grade: 'S級',
-          color: '#d4af37',
-          description: 'Calabria 最知名產區，古希臘奧運選手的酒',
-          filepath: '/regions/calabria/geojson/DOCG/Cirò DOCG.geojson'
-        },
         {
           name: 'Cirò DOC',
           grade: 'A級',
           color: '#c0392b',
           description: 'Gaglioppo 紅葡萄之王，「南義的 Pinot Noir」',
           filepath: '/regions/calabria/geojson/DOC/Cirò DOC.geojson'
+        },
+        {
+          name: 'Cirò DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Calabria 最知名產區，古希臘奧運選手的酒',
+          filepath: '/regions/calabria/geojson/DOCG/Cirò DOCG.geojson'
         },
         {
           name: 'Greco di Bianco DOC',
@@ -4262,14 +4264,15 @@ const initializeSardiniaMap = () => {
       }
       
       // 載入產區 GeoJSON
+      // 注意：全島 'di Sardegna' DOC 先加載（下層），特定區域 DOC/DOCG 後加載（上層）
       const regions = [
-        { name: 'Vermentino di Gallura DOCG', file: 'Vermentino di Gallura DOCG.geojson', folder: 'DOCG', color: '#d4af37', grade: 'S級' },
         { name: 'Cannonau di Sardegna DOC', file: 'Cannonau di Sardegna DOC.geojson', folder: 'DOC', color: '#c0392b', grade: 'A級' },
-        { name: 'Carignano del Sulcis DOC', file: 'Carignano del Sulcis DOC.geojson', folder: 'DOC', color: '#8e44ad', grade: 'A級' },
-        { name: 'Vernaccia di Oristano DOC', file: 'Vernaccia di Oristano DOC.geojson', folder: 'DOC', color: '#f39c12', grade: 'A級' },
         { name: 'Monica di Sardegna DOC', file: 'Monica di Sardegna DOC.geojson', folder: 'DOC', color: '#3498db', grade: 'B級' },
         { name: 'Moscato di Sardegna DOC', file: 'Moscato di Sardegna DOC.geojson', folder: 'DOC', color: '#2ecc71', grade: 'B級' },
-        { name: 'Vermentino di Sardegna DOC', file: 'Vermentino di Sardegna DOC.geojson', folder: 'DOC', color: '#9b59b6', grade: 'B級' }
+        { name: 'Vermentino di Sardegna DOC', file: 'Vermentino di Sardegna DOC.geojson', folder: 'DOC', color: '#9b59b6', grade: 'B級' },
+        { name: 'Vermentino di Gallura DOCG', file: 'Vermentino di Gallura DOCG.geojson', folder: 'DOCG', color: '#d4af37', grade: 'S級' },
+        { name: 'Carignano del Sulcis DOC', file: 'Carignano del Sulcis DOC.geojson', folder: 'DOC', color: '#8e44ad', grade: 'A級' },
+        { name: 'Vernaccia di Oristano DOC', file: 'Vernaccia di Oristano DOC.geojson', folder: 'DOC', color: '#f39c12', grade: 'A級' }
       ]
       
       for (const region of regions) {
@@ -4446,14 +4449,8 @@ const initializeAbruzzoMap = () => {
       }
       
       // DOC/DOCG 產區數據（課程重點產區）
+      // 注意：全區 DOC 先加載（下層），DOCG 特定產區後加載（上層）
       const regions = [
-        {
-          name: 'Montepulciano d\'Abruzzo Colline Teramane DOCG',
-          grade: 'S級',
-          color: '#d4af37',
-          description: 'Abruzzo 唯一 DOCG，最高品質 Montepulciano 紅酒',
-          filepath: '/regions/abruzzo/geojson/DOCG/Montepulciano d\'Abruzzo Colline Teramane DOCG.geojson'
-        },
         {
           name: 'Montepulciano d\'Abruzzo DOC',
           grade: 'A級',
@@ -4474,6 +4471,13 @@ const initializeAbruzzoMap = () => {
           color: '#e91e63',
           description: '義大利最佳粉紅酒之一，櫻桃色',
           filepath: '/regions/abruzzo/geojson/DOC/Cerasuolo d\'Abruzzo DOC.geojson'
+        },
+        {
+          name: 'Montepulciano d\'Abruzzo Colline Teramane DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Abruzzo 唯一 DOCG，最高品質 Montepulciano 紅酒',
+          filepath: '/regions/abruzzo/geojson/DOCG/Montepulciano d\'Abruzzo Colline Teramane DOCG.geojson'
         }
       ]
       
