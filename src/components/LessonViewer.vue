@@ -239,6 +239,7 @@ let emiliaMap = null
 let marcheMap = null
 let umbriaMap = null
 let lazioMap = null
+let abruzzoMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -577,6 +578,8 @@ const initializeMapIfNeeded = async () => {
     const umbriaMapContainer = document.getElementById('umbria-map')
     // 檢查 Lazio 地圖容器
     const lazioMapContainer = document.getElementById('lazio-map')
+    // 檢查 Abruzzo 地圖容器
+    const abruzzoMapContainer = document.getElementById('abruzzo-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -617,6 +620,9 @@ const initializeMapIfNeeded = async () => {
     } else if (lazioMapContainer && !lazioMap) {
       console.log('✓ 找到 Lazio 地圖容器，開始初始化...')
       initializeLazioMap()
+    } else if (abruzzoMapContainer && !abruzzoMap) {
+      console.log('✓ 找到 Abruzzo 地圖容器，開始初始化...')
+      initializeAbruzzoMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3144,6 +3150,210 @@ const initializeMarcheMap = () => {
   }
 }
 
+// ─── Abruzzo 地圖初始化 ───
+const initializeAbruzzoMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Abruzzo 地圖...')
+    
+    abruzzoMap = new mapboxgl.Map({
+      container: 'abruzzo-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [13.8, 42.3],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    abruzzoMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    abruzzoMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    abruzzoMap.on('load', async () => {
+      console.log('📍 載入 Abruzzo GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/abruzzo/geojson/Abruzzo.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          abruzzoMap.addSource('abruzzo-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          abruzzoMap.addLayer({
+            id: 'abruzzo-region-fill',
+            type: 'fill',
+            source: 'abruzzo-region',
+            paint: {
+              'fill-color': '#c0392b',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          abruzzoMap.addLayer({
+            id: 'abruzzo-region-outline',
+            type: 'line',
+            source: 'abruzzo-region',
+            paint: {
+              'line-color': '#c0392b',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Abruzzo 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Abruzzo 大區邊界失敗:', error)
+      }
+      
+      // DOC/DOCG 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Montepulciano d\'Abruzzo Colline Teramane DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Abruzzo 唯一 DOCG，最高品質 Montepulciano 紅酒',
+          filepath: '/regions/abruzzo/geojson/DOCG/Montepulciano d\'Abruzzo Colline Teramane DOCG.geojson'
+        },
+        {
+          name: 'Montepulciano d\'Abruzzo DOC',
+          grade: 'A級',
+          color: '#e74c3c',
+          description: '義大利性價比之王，主要紅酒產區',
+          filepath: '/regions/abruzzo/geojson/DOC/Montepulciano d\'Abruzzo DOC.geojson'
+        },
+        {
+          name: 'Trebbiano d\'Abruzzo DOC',
+          grade: 'A級',
+          color: '#f39c12',
+          description: '高品質白酒，陳年潛力 5-10 年',
+          filepath: '/regions/abruzzo/geojson/DOC/Trebbiano d\'Abruzzo DOC.geojson'
+        },
+        {
+          name: 'Cerasuolo d\'Abruzzo DOC',
+          grade: 'B級',
+          color: '#e91e63',
+          description: '義大利最佳粉紅酒之一，櫻桃色',
+          filepath: '/regions/abruzzo/geojson/DOC/Cerasuolo d\'Abruzzo DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `abruzzo-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`
+            
+            abruzzoMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            abruzzoMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            abruzzoMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            abruzzoMap.on('mouseenter', `${sourceId}-fill`, () => {
+              abruzzoMap.getCanvas().style.cursor = 'pointer'
+              abruzzoMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            abruzzoMap.on('mouseleave', `${sourceId}-fill`, () => {
+              abruzzoMap.getCanvas().style.cursor = ''
+              abruzzoMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            abruzzoMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(abruzzoMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(abruzzoMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: "L'Aquila", coords: [13.3995, 42.3498], label: "L'Aquila（首府）" },
+        { name: 'Pescara', coords: [14.2144, 42.4584], label: 'Pescara（最大城市、港口）' },
+        { name: 'Teramo', coords: [13.7042, 42.6589], label: 'Teramo（Colline Teramane DOCG 產區）' },
+        { name: 'Chieti', coords: [14.1677, 42.3508], label: 'Chieti（重要產酒區）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #c0392b;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #c0392b;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(abruzzoMap)
+      })
+      
+      console.log('✅ Abruzzo 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Abruzzo 地圖失敗:', error)
+  }
+}
+
 // ─── Lazio 地圖初始化 ───
 const initializeLazioMap = () => {
   try {
@@ -3635,6 +3845,10 @@ onBeforeUnmount(() => {
   if (lazioMap) {
     lazioMap.remove()
     lazioMap = null
+  }
+  if (abruzzoMap) {
+    abruzzoMap.remove()
+    abruzzoMap = null
   }
 })
 </script>
@@ -4391,6 +4605,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.lazio-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.abruzzo-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
