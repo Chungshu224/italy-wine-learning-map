@@ -245,6 +245,7 @@ let campaniaMap = null
 let pugliaMap = null
 let basilicataMap = null
 let calabriaMap = null
+let sardiniaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -595,6 +596,8 @@ const initializeMapIfNeeded = async () => {
     const basilicataMapContainer = document.getElementById('basilicata-map')
     // 檢查 Calabria 地圖容器
     const calabriaMapContainer = document.getElementById('calabria-map')
+    // 檢查 Sardinia 地圖容器
+    const sardiniaMapContainer = document.getElementById('sardinia-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -653,6 +656,9 @@ const initializeMapIfNeeded = async () => {
     } else if (calabriaMapContainer && !calabriaMap) {
       console.log('✓ 找到 Calabria 地圖容器，開始初始化...')
       initializeCalabriaMap()
+    } else if (sardiniaMapContainer && !sardiniaMap) {
+      console.log('✓ 找到 Sardinia 地圖容器，開始初始化...')
+      initializeSardiniaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -4190,6 +4196,190 @@ const initializeCalabriaMap = () => {
   }
 }
 
+// ─── Sardinia 地圖初始化 ───
+const initializeSardiniaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Sardinia 地圖...')
+    
+    sardiniaMap = new mapboxgl.Map({
+      container: 'sardinia-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [9.0, 40.0],
+      zoom: 7.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    sardiniaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    sardiniaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    sardiniaMap.on('load', async () => {
+      console.log('📍 載入 Sardinia GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/sardinia/geojson/Sardegna.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          sardiniaMap.addSource('sardinia-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          sardiniaMap.addLayer({
+            id: 'sardinia-region-fill',
+            type: 'fill',
+            source: 'sardinia-region',
+            paint: {
+              'fill-color': '#f39c12',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          sardiniaMap.addLayer({
+            id: 'sardinia-region-outline',
+            type: 'line',
+            source: 'sardinia-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Sardinia 區域邊界已載入')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Sardinia 區域邊界失敗:', error)
+      }
+      
+      // 載入產區 GeoJSON
+      const regions = [
+        { name: 'Vermentino di Gallura DOCG', file: 'Vermentino di Gallura DOCG.geojson', folder: 'DOCG', color: '#d4af37', grade: 'S級' },
+        { name: 'Cannonau di Sardegna DOC', file: 'Cannonau di Sardegna DOC.geojson', folder: 'DOC', color: '#c0392b', grade: 'A級' },
+        { name: 'Carignano del Sulcis DOC', file: 'Carignano del Sulcis DOC.geojson', folder: 'DOC', color: '#8e44ad', grade: 'A級' },
+        { name: 'Vernaccia di Oristano DOC', file: 'Vernaccia di Oristano DOC.geojson', folder: 'DOC', color: '#f39c12', grade: 'A級' },
+        { name: 'Monica di Sardegna DOC', file: 'Monica di Sardegna DOC.geojson', folder: 'DOC', color: '#3498db', grade: 'B級' },
+        { name: 'Moscato di Sardegna DOC', file: 'Moscato di Sardegna DOC.geojson', folder: 'DOC', color: '#2ecc71', grade: 'B級' },
+        { name: 'Vermentino di Sardegna DOC', file: 'Vermentino di Sardegna DOC.geojson', folder: 'DOC', color: '#9b59b6', grade: 'B級' }
+      ]
+      
+      for (const region of regions) {
+        try {
+          const response = await fetch(`/regions/sardinia/geojson/${region.folder}/${region.file}`)
+          if (response.ok) {
+            const geojson = await response.json()
+            const sourceId = `sardinia-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}`
+            
+            sardiniaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            sardiniaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            sardiniaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2
+              }
+            })
+            
+            // 滑鼠互動效果
+            sardiniaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              sardiniaMap.getCanvas().style.cursor = 'pointer'
+              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            sardiniaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              sardiniaMap.getCanvas().style.cursor = ''
+              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊彈窗
+            sardiniaMap.on('click', `${sourceId}-fill`, (e) => {
+              new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(`
+                  <div style="padding:8px;font-family:sans-serif;">
+                    <div style="font-weight:bold;color:${region.color};margin-bottom:4px;font-size:14px;">
+                      ${region.name}
+                    </div>
+                    <div style="font-size:11px;color:#666;">
+                      等級：<span style="color:${region.color};font-weight:bold;">${region.grade}</span>
+                    </div>
+                  </div>
+                `)
+                .addTo(sardiniaMap)
+            })
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 添加城市標記
+      const cities = [
+        { name: 'Cagliari', nameZh: '卡利亞里', coords: [9.1217, 39.2238], info: 'Sardinia 首府，南部最大城市' },
+        { name: 'Sassari', nameZh: '薩薩里', coords: [8.5597, 40.7259], info: 'Sardinia 第二大城，北部重鎮' },
+        { name: 'Olbia', nameZh: '奧爾比亞', coords: [9.5034, 40.9239], info: 'Gallura 產區門戶，Costa Smeralda 度假區' },
+        { name: 'Oristano', nameZh: '奧里斯塔諾', coords: [8.5911, 39.9037], info: 'Vernaccia di Oristano 產區中心' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker-sardinia'
+        el.style.width = '12px'
+        el.style.height = '12px'
+        el.style.borderRadius = '50%'
+        el.style.backgroundColor = '#f39c12'
+        el.style.border = '2px solid white'
+        el.style.boxShadow = '0 2px 4px rgba(0,0,0,0.3)'
+        el.style.cursor = 'pointer'
+        
+        new mapboxgl.Marker(el)
+          .setLngLat(city.coords)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 })
+              .setHTML(`
+                <div style="padding:8px;font-family:sans-serif;min-width:150px;">
+                  <div style="font-weight:bold;color:#f39c12;font-size:13px;margin-bottom:4px;">
+                    ${city.nameZh} ${city.name}
+                  </div>
+                  <div style="font-size:11px;color:#666;line-height:1.4;">
+                    ${city.info}
+                  </div>
+                </div>
+              `)
+          )
+          .addTo(sardiniaMap)
+      })
+      
+      console.log('✅ Sardinia 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Sardinia 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -4909,6 +5099,10 @@ onBeforeUnmount(() => {
   if (calabriaMap) {
     calabriaMap.remove()
     calabriaMap = null
+  }
+  if (sardiniaMap) {
+    sardiniaMap.remove()
+    sardiniaMap = null
   }
 })
 </script>
@@ -5701,6 +5895,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.calabria-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.sardinia-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
