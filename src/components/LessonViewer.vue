@@ -4289,7 +4289,7 @@ const initializeSardiniaMap = () => {
               source: sourceId,
               paint: {
                 'fill-color': region.color,
-                'fill-opacity': 0.15
+                'fill-opacity': 0.35
               }
             })
             
@@ -4306,12 +4306,12 @@ const initializeSardiniaMap = () => {
             // 滑鼠互動效果
             sardiniaMap.on('mouseenter', `${sourceId}-fill`, () => {
               sardiniaMap.getCanvas().style.cursor = 'pointer'
-              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.4)
+              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
             })
             
             sardiniaMap.on('mouseleave', `${sourceId}-fill`, () => {
               sardiniaMap.getCanvas().style.cursor = ''
-              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.15)
+              sardiniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
             })
             
             // 點擊彈窗
