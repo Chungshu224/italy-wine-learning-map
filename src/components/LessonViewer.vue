@@ -236,6 +236,7 @@ let trentinoMap = null
 let friuliMap = null
 let liguriaMap = null
 let emiliaMap = null
+let marcheMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -568,6 +569,8 @@ const initializeMapIfNeeded = async () => {
     const liguriaMapContainer = document.getElementById('liguria-map')
     // 檢查 Emilia 地圖容器
     const emiliaMapContainer = document.getElementById('emilia-map')
+    // 檢查 Marche 地圖容器
+    const marcheMapContainer = document.getElementById('marche-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -599,6 +602,9 @@ const initializeMapIfNeeded = async () => {
     } else if (emiliaMapContainer && !emiliaMap) {
       console.log('✓ 找到 Emilia 地圖容器，開始初始化...')
       initializeEmiliaMap()
+    } else if (marcheMapContainer && !marcheMap) {
+      console.log('✓ 找到 Marche 地圖容器，開始初始化...')
+      initializeMarcheMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -2908,6 +2914,224 @@ const initializeEmiliaMap = () => {
   }
 }
 
+// ─── Marche 地圖初始化 ───
+const initializeMarcheMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Marche 地圖...')
+    
+    marcheMap = new mapboxgl.Map({
+      container: 'marche-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [13.3, 43.3],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    marcheMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    marcheMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    marcheMap.on('load', async () => {
+      console.log('📍 載入 Marche GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/marche/geojson/Marche.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          marcheMap.addSource('marche-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          marcheMap.addLayer({
+            id: 'marche-region-fill',
+            type: 'fill',
+            source: 'marche-region',
+            paint: {
+              'fill-color': '#16a085',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          marcheMap.addLayer({
+            id: 'marche-region-outline',
+            type: 'line',
+            source: 'marche-region',
+            paint: {
+              'line-color': '#16a085',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Marche 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Marche 大區邊界失敗:', error)
+      }
+      
+      // DOC/DOCG 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Castelli di Jesi Verdicchio Riserva DOCG',
+          grade: 'S級',
+          color: '#f39c12',
+          description: '最大的 Verdicchio 產區，清爽礦物感、杏仁香氣',
+          filepath: '/regions/marche/geojson/DOCG/Castelli di Jesi Verdicchio Riserva DOCG.geojson'
+        },
+        {
+          name: 'Verdicchio di Matelica Riserva DOCG',
+          grade: 'A級',
+          color: '#9b59b6',
+          description: '內陸山谷產區，結構更強、酸度更高、陳年潛力佳',
+          filepath: '/regions/marche/geojson/DOCG/Verdicchio di Matelica Riserva DOCG.geojson'
+        },
+        {
+          name: 'Cònero DOCG',
+          grade: 'A級',
+          color: '#e74c3c',
+          description: 'Montepulciano 紅酒，濃郁果香、單寧柔順',
+          filepath: '/regions/marche/geojson/DOCG/Cònero DOCG.geojson'
+        },
+        {
+          name: 'Offida DOCG',
+          grade: 'B級',
+          color: '#3498db',
+          description: 'Pecorino、Passerina 白酒產區',
+          filepath: '/regions/marche/geojson/DOCG/Offida DOCG.geojson'
+        },
+        {
+          name: 'Rosso Piceno Piceno DOC',
+          grade: 'B級',
+          color: '#e67e22',
+          description: 'Sangiovese + Montepulciano 混釀，日常紅酒',
+          filepath: '/regions/marche/geojson/DOC/Rosso Piceno Piceno DOC.geojson'
+        },
+        {
+          name: 'Lacrima di Morro  Lacrima di Morro d\'Alba DOC',
+          grade: 'B級',
+          color: '#e91e63',
+          description: '最芳香的紅葡萄品種，紫羅蘭、玫瑰香氣',
+          filepath: '/regions/marche/geojson/DOC/Lacrima di Morro  Lacrima di Morro d\'Alba DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `marche-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`
+            
+            marcheMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            marcheMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            marcheMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            marcheMap.on('mouseenter', `${sourceId}-fill`, () => {
+              marcheMap.getCanvas().style.cursor = 'pointer'
+              marcheMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            marcheMap.on('mouseleave', `${sourceId}-fill`, () => {
+              marcheMap.getCanvas().style.cursor = ''
+              marcheMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            marcheMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(marcheMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(marcheMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: 'Ancona', coords: [13.5188, 43.6158], label: '安科納（首府、Adriatic 海港）' },
+        { name: 'Jesi', coords: [13.2439, 43.5231], label: 'Jesi（Verdicchio 核心產區）' },
+        { name: 'Matelica', coords: [13.0082, 43.2564], label: 'Matelica（高海拔 Verdicchio）' },
+        { name: 'Ascoli Piceno', coords: [13.5759, 42.8542], label: 'Ascoli Piceno（Rosso Piceno 產區）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #16a085;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #16a085;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(marcheMap)
+      })
+      
+      console.log('✅ Marche 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Marche 地圖失敗:', error)
+  }
+}
+
 watch(() => props.lessonId, () => { loadLessonContent() }, { immediate: true })
 
 // 監聽投影片變化，初始化地圖
@@ -2958,6 +3182,10 @@ onBeforeUnmount(() => {
   if (emiliaMap) {
     emiliaMap.remove()
     emiliaMap = null
+  }
+  if (marcheMap) {
+    marcheMap.remove()
+    marcheMap = null
   }
 })
 </script>
@@ -3705,7 +3933,8 @@ onBeforeUnmount(() => {
 .slide-frame :deep(.trentino-region-map),
 .slide-frame :deep(.friuli-region-map),
 .slide-frame :deep(.liguria-region-map),
-.slide-frame :deep(.emilia-region-map) {
+.slide-frame :deep(.emilia-region-map),
+.slide-frame :deep(.marche-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
