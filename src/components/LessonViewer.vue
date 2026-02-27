@@ -244,6 +244,7 @@ let moliseMap = null
 let campaniaMap = null
 let pugliaMap = null
 let basilicataMap = null
+let calabriaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -592,6 +593,8 @@ const initializeMapIfNeeded = async () => {
     const pugliaMapContainer = document.getElementById('puglia-map')
     // 檢查 Basilicata 地圖容器
     const basilicataMapContainer = document.getElementById('basilicata-map')
+    // 檢查 Calabria 地圖容器
+    const calabriaMapContainer = document.getElementById('calabria-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -647,6 +650,9 @@ const initializeMapIfNeeded = async () => {
     } else if (basilicataMapContainer && !basilicataMap) {
       console.log('✓ 找到 Basilicata 地圖容器，開始初始化...')
       initializeBasilicataMap()
+    } else if (calabriaMapContainer && !calabriaMap) {
+      console.log('✓ 找到 Calabria 地圖容器，開始初始化...')
+      initializeCalabriaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3979,6 +3985,211 @@ const initializeBasilicataMap = () => {
   }
 }
 
+// ─── Calabria 地圖初始化 ───
+const initializeCalabriaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Calabria 地圖...')
+    
+    calabriaMap = new mapboxgl.Map({
+      container: 'calabria-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [16.3, 39.0],
+      zoom: 8.0,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    calabriaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    calabriaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    calabriaMap.on('load', async () => {
+      console.log('📍 載入 Calabria GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/calabria/geojson/Calabria.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          calabriaMap.addSource('calabria-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          calabriaMap.addLayer({
+            id: 'calabria-region-fill',
+            type: 'fill',
+            source: 'calabria-region',
+            paint: {
+              'fill-color': '#16a085',
+              'fill-opacity': 0.1
+            }
+          })
+          
+          calabriaMap.addLayer({
+            id: 'calabria-region-outline',
+            type: 'line',
+            source: 'calabria-region',
+            paint: {
+              'line-color': '#16a085',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+        }
+      } catch (error) {
+        console.error('無法載入 Calabria 邊界:', error)
+      }
+      
+      // 定義要顯示的產區
+      const regions = [
+        {
+          name: 'Cirò DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Calabria 最知名產區，古希臘奧運選手的酒',
+          filepath: '/regions/calabria/geojson/DOCG/Cirò DOCG.geojson'
+        },
+        {
+          name: 'Cirò DOC',
+          grade: 'A級',
+          color: '#c0392b',
+          description: 'Gaglioppo 紅葡萄之王，「南義的 Pinot Noir」',
+          filepath: '/regions/calabria/geojson/DOC/Cirò DOC.geojson'
+        },
+        {
+          name: 'Greco di Bianco DOC',
+          grade: 'A級',
+          color: '#f39c12',
+          description: '稀有甜白酒，17%+ 酒精度',
+          filepath: '/regions/calabria/geojson/DOC/Greco di Bianco DOC.geojson'
+        },
+        {
+          name: 'Lamezia DOC',
+          grade: 'B級',
+          color: '#8e44ad',
+          description: 'Gaglioppo & Magliocco 濃郁版本',
+          filepath: '/regions/calabria/geojson/DOC/Lamezia DOC.geojson'
+        },
+        {
+          name: 'Bivongi DOC',
+          grade: 'B級',
+          color: '#3498db',
+          description: 'Ionian 海岸，紅白 Passito 甘酒',
+          filepath: '/regions/calabria/geojson/DOC/Bivongi DOC.geojson'
+        },
+        {
+          name: 'Savuto DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: 'Tyrrhenian 海西岸，輕盈易飲',
+          filepath: '/regions/calabria/geojson/DOC/Savuto DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `calabria-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '').replace(/\(/g, '').replace(/\)/g, '').replace(/\u00f2/g, 'o')}`
+            
+            calabriaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            calabriaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            calabriaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            calabriaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              calabriaMap.getCanvas().style.cursor = 'pointer'
+              calabriaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            calabriaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              calabriaMap.getCanvas().style.cursor = ''
+              calabriaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            calabriaMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(calabriaMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 12px; max-width: 250px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
+                    <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(calabriaMap)
+            })
+            
+            console.log(`✅ 已載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.error(`載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 添加城市標記
+      const cities = [
+        { name: 'Catanzaro', lngLat: [16.59, 38.91], label: '卡坦扎羅（首府）' },
+        { name: 'Crotone', lngLat: [17.12, 39.08], label: '克羅托內（Cirò 產區）' },
+        { name: 'Lamezia Terme', lngLat: [16.31, 38.97], label: '拉梅齊亞（Lamezia DOC）' },
+        { name: 'Reggio Calabria', lngLat: [15.65, 38.11], label: '雷吉奧（最南端）' }
+      ]
+      
+      cities.forEach(city => {
+        new mapboxgl.Marker({ color: '#16a085' })
+          .setLngLat(city.lngLat)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #16a085;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(calabriaMap)
+      })
+      
+      console.log('✅ Calabria 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Calabria 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -4694,6 +4905,10 @@ onBeforeUnmount(() => {
   if (basilicataMap) {
     basilicataMap.remove()
     basilicataMap = null
+  }
+  if (calabriaMap) {
+    calabriaMap.remove()
+    calabriaMap = null
   }
 })
 </script>
@@ -5480,6 +5695,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.basilicata-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.calabria-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
