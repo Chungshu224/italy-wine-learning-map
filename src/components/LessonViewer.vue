@@ -242,6 +242,7 @@ let lazioMap = null
 let abruzzoMap = null
 let moliseMap = null
 let campaniaMap = null
+let pugliaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -586,6 +587,8 @@ const initializeMapIfNeeded = async () => {
     const moliseMapContainer = document.getElementById('molise-map')
     // 檢查 Campania 地圖容器
     const campaniaMapContainer = document.getElementById('campania-map')
+    // 檢查 Puglia 地圖容器
+    const pugliaMapContainer = document.getElementById('puglia-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -635,6 +638,9 @@ const initializeMapIfNeeded = async () => {
     } else if (campaniaMapContainer && !campaniaMap) {
       console.log('✓ 找到 Campania 地圖容器，開始初始化...')
       initializeCampaniaMap()
+    } else if (pugliaMapContainer && !pugliaMap) {
+      console.log('✓ 找到 Puglia 地圖容器，開始初始化...')
+      initializePugliaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3571,6 +3577,211 @@ const initializeCampaniaMap = () => {
   }
 }
 
+// ─── Puglia 地圖初始化 ───
+const initializePugliaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Puglia 地圖...')
+    
+    pugliaMap = new mapboxgl.Map({
+      container: 'puglia-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [17.2, 40.7],
+      zoom: 7.8,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    pugliaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    pugliaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    pugliaMap.on('load', async () => {
+      console.log('📍 載入 Puglia GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/puglia/geojson/Puglia.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          pugliaMap.addSource('puglia-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          pugliaMap.addLayer({
+            id: 'puglia-region-fill',
+            type: 'fill',
+            source: 'puglia-region',
+            paint: {
+              'fill-color': '#e67e22',
+              'fill-opacity': 0.1
+            }
+          })
+          
+          pugliaMap.addLayer({
+            id: 'puglia-region-outline',
+            type: 'line',
+            source: 'puglia-region',
+            paint: {
+              'line-color': '#e67e22',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+        }
+      } catch (error) {
+        console.error('無法載入 Puglia 邊界:', error)
+      }
+      
+      // 定義要顯示的產區
+      const regions = [
+        {
+          name: 'Primitivo di Manduria Dolce Naturale DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: '甜型 Primitivo，酒精度 16-18%，乾果、無花果風味',
+          filepath: '/regions/puglia/geojson/DOCG/Primitivo di Manduria Dolce Naturale DOCG.geojson'
+        },
+        {
+          name: 'Castel del Monte Nero di Troia DOCG',
+          grade: 'A級',
+          color: '#c0392b',
+          description: 'Apulia 最優雅的紅酒，Nero di Troia 精致版本',
+          filepath: '/regions/puglia/geojson/DOCG/Castel del Monte Nero di Troia DOCG.geojson'
+        },
+        {
+          name: 'Castel del Monte Rosso Riserva DOCG',
+          grade: 'A級',
+          color: '#e74c3c',
+          description: 'Nero di Troia + Aglianico + Montepulciano，複雜混釀',
+          filepath: '/regions/puglia/geojson/DOCG/Castel del Monte Rosso Riserva DOCG.geojson'
+        },
+        {
+          name: 'Salice Salentino DOC',
+          grade: 'B級',
+          color: '#8e44ad',
+          description: 'Negroamaro 最知名產區，濃郁、柔順',
+          filepath: '/regions/puglia/geojson/DOC/Salice Salentino DOC.geojson'
+        },
+        {
+          name: 'Gioia del Colle DOC',
+          grade: 'B級',
+          color: '#3498db',
+          description: '內陸丘陵 Primitivo，比 Manduria 更優雅',
+          filepath: '/regions/puglia/geojson/DOC/Gioia del Colle DOC.geojson'
+        },
+        {
+          name: 'Locorotondo DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: 'Verdeca 白酒，清爽高酸度',
+          filepath: '/regions/puglia/geojson/DOC/Locorotondo DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `puglia-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '').replace(/\(/g, '').replace(/\)/g, '')}`
+            
+            pugliaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            pugliaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            pugliaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            pugliaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              pugliaMap.getCanvas().style.cursor = 'pointer'
+              pugliaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            pugliaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              pugliaMap.getCanvas().style.cursor = ''
+              pugliaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            pugliaMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(pugliaMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 12px; max-width: 250px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
+                    <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(pugliaMap)
+            })
+            
+            console.log(`✅ 已載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.error(`載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 添加城市標記
+      const cities = [
+        { name: 'Bari', lngLat: [16.87, 41.12], label: '巴里（首府）' },
+        { name: 'Lecce', lngLat: [18.17, 40.35], label: '萊切（Salento 文化中心）' },
+        { name: 'Taranto', lngLat: [17.23, 40.48], label: '塔蘭托（Manduria 產區）' },
+        { name: 'Brindisi', lngLat: [17.94, 40.63], label: '布林迪西（東岸港口）' }
+      ]
+      
+      cities.forEach(city => {
+        new mapboxgl.Marker({ color: '#e67e22' })
+          .setLngLat(city.lngLat)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #e67e22;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(pugliaMap)
+      })
+      
+      console.log('✅ Puglia 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Puglia 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -4278,6 +4489,10 @@ onBeforeUnmount(() => {
   if (campaniaMap) {
     campaniaMap.remove()
     campaniaMap = null
+  }
+  if (pugliaMap) {
+    pugliaMap.remove()
+    pugliaMap = null
   }
 })
 </script>
@@ -5052,6 +5267,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.campania-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.puglia-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
