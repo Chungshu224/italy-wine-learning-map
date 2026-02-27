@@ -241,6 +241,7 @@ let umbriaMap = null
 let lazioMap = null
 let abruzzoMap = null
 let moliseMap = null
+let campaniaMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -583,6 +584,8 @@ const initializeMapIfNeeded = async () => {
     const abruzzoMapContainer = document.getElementById('abruzzo-map')
     // 檢查 Molise 地圖容器
     const moliseMapContainer = document.getElementById('molise-map')
+    // 檢查 Campania 地圖容器
+    const campaniaMapContainer = document.getElementById('campania-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -629,6 +632,9 @@ const initializeMapIfNeeded = async () => {
     } else if (moliseMapContainer && !moliseMap) {
       console.log('✓ 找到 Molise 地圖容器，開始初始化...')
       initializeMoliseMap()
+    } else if (campaniaMapContainer && !campaniaMap) {
+      console.log('✓ 找到 Campania 地圖容器，開始初始化...')
+      initializeCampaniaMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3360,6 +3366,211 @@ const initializeMoliseMap = () => {
   }
 }
 
+// ─── Campania 地圖初始化 ───
+const initializeCampaniaMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Campania 地圖...')
+    
+    campaniaMap = new mapboxgl.Map({
+      container: 'campania-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [14.5, 40.8],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    campaniaMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    campaniaMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    campaniaMap.on('load', async () => {
+      console.log('📍 載入 Campania GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/campania/geojson/Campania.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          campaniaMap.addSource('campania-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          campaniaMap.addLayer({
+            id: 'campania-region-fill',
+            type: 'fill',
+            source: 'campania-region',
+            paint: {
+              'fill-color': '#2980b9',
+              'fill-opacity': 0.1
+            }
+          })
+          
+          campaniaMap.addLayer({
+            id: 'campania-region-outline',
+            type: 'line',
+            source: 'campania-region',
+            paint: {
+              'line-color': '#2980b9',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+        }
+      } catch (error) {
+        console.error('無法載入 Campania 邊界:', error)
+      }
+      
+      // 定義要顯示的產區
+      const regions = [
+        {
+          name: 'Taurasi DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: '南義最頂級紅酒，Aglianico 單寧之王，3-4 年強制陳年',
+          filepath: '/regions/campania/geojson/DOCG/Taurasi DOCG.geojson'
+        },
+        {
+          name: 'Fiano di Avellino DOCG',
+          grade: 'A級',
+          color: '#8e44ad',
+          description: '濃郁白酒，火山煙燻礦物感，陳年潛力佳',
+          filepath: '/regions/campania/geojson/DOCG/Fiano di Avellino DOCG.geojson'
+        },
+        {
+          name: 'Greco di Tufo DOCG',
+          grade: 'A級',
+          color: '#9b59b6',
+          description: '高酸度白酒，凝灰岩礦物感，古希臘品種',
+          filepath: '/regions/campania/geojson/DOCG/Greco di Tufo DOCG.geojson'
+        },
+        {
+          name: 'Aglianico del Taburno DOCG',
+          grade: 'B級',
+          color: '#e67e22',
+          description: 'Taburno 山區 Aglianico，結實單寧、黑色水果',
+          filepath: '/regions/campania/geojson/DOCG/Aglianico del Taburno DOCG.geojson'
+        },
+        {
+          name: 'Vesuvio DOC',
+          grade: 'B級',
+          color: '#e74c3c',
+          description: '維蘇威火山葡萄園，Lacryma Christi「基督之淚」',
+          filepath: '/regions/campania/geojson/DOC/Vesuvio DOC.geojson'
+        },
+        {
+          name: 'Campi Flegrei DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: '超級火山土壤，「燃燒的田野」，Piedirosso & Falanghina',
+          filepath: '/regions/campania/geojson/DOC/Campi Flegrei DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `campania-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`
+            
+            campaniaMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            campaniaMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            campaniaMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            campaniaMap.on('mouseenter', `${sourceId}-fill`, () => {
+              campaniaMap.getCanvas().style.cursor = 'pointer'
+              campaniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            campaniaMap.on('mouseleave', `${sourceId}-fill`, () => {
+              campaniaMap.getCanvas().style.cursor = ''
+              campaniaMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            campaniaMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(campaniaMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 12px; max-width: 250px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
+                    <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(campaniaMap)
+            })
+            
+            console.log(`✅ 已載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.error(`載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 添加城市標記
+      const cities = [
+        { name: 'Napoli', lngLat: [14.25, 40.85], label: '那不勒斯（首府）' },
+        { name: 'Avellino', lngLat: [14.79, 40.91], label: '阿韋利諾（三大 DOCG 核心）' },
+        { name: 'Benevento', lngLat: [14.78, 41.13], label: '貝內文托（Taburno 產區）' },
+        { name: 'Salerno', lngLat: [14.77, 40.68], label: '薩萊諾（南部海岸）' }
+      ]
+      
+      cities.forEach(city => {
+        new mapboxgl.Marker({ color: '#2980b9' })
+          .setLngLat(city.lngLat)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #2980b9;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(campaniaMap)
+      })
+      
+      console.log('✅ Campania 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Campania 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -4063,6 +4274,10 @@ onBeforeUnmount(() => {
   if (moliseMap) {
     moliseMap.remove()
     moliseMap = null
+  }
+  if (campaniaMap) {
+    campaniaMap.remove()
+    campaniaMap = null
   }
 })
 </script>
@@ -4831,6 +5046,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.molise-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.campania-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
