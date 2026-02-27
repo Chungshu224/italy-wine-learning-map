@@ -243,6 +243,7 @@ let abruzzoMap = null
 let moliseMap = null
 let campaniaMap = null
 let pugliaMap = null
+let basilicataMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -589,6 +590,8 @@ const initializeMapIfNeeded = async () => {
     const campaniaMapContainer = document.getElementById('campania-map')
     // 檢查 Puglia 地圖容器
     const pugliaMapContainer = document.getElementById('puglia-map')
+    // 檢查 Basilicata 地圖容器
+    const basilicataMapContainer = document.getElementById('basilicata-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -641,6 +644,9 @@ const initializeMapIfNeeded = async () => {
     } else if (pugliaMapContainer && !pugliaMap) {
       console.log('✓ 找到 Puglia 地圖容器，開始初始化...')
       initializePugliaMap()
+    } else if (basilicataMapContainer && !basilicataMap) {
+      console.log('✓ 找到 Basilicata 地圖容器，開始初始化...')
+      initializeBasilicataMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3782,6 +3788,197 @@ const initializePugliaMap = () => {
   }
 }
 
+// ─── Basilicata 地圖初始化 ───
+const initializeBasilicataMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Basilicata 地圖...')
+    
+    basilicataMap = new mapboxgl.Map({
+      container: 'basilicata-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [16.0, 40.4],
+      zoom: 8.5,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    basilicataMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    basilicataMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    basilicataMap.on('load', async () => {
+      console.log('📍 載入 Basilicata GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/basilicata/geojson/Basilicata.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          basilicataMap.addSource('basilicata-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          basilicataMap.addLayer({
+            id: 'basilicata-region-fill',
+            type: 'fill',
+            source: 'basilicata-region',
+            paint: {
+              'fill-color': '#8e44ad',
+              'fill-opacity': 0.1
+            }
+          })
+          
+          basilicataMap.addLayer({
+            id: 'basilicata-region-outline',
+            type: 'line',
+            source: 'basilicata-region',
+            paint: {
+              'line-color': '#8e44ad',
+              'line-width': 3,
+              'line-opacity': 0.8
+            }
+          })
+        }
+      } catch (error) {
+        console.error('無法載入 Basilicata 邊界:', error)
+      }
+      
+      // 定義要顯示的產區
+      const regions = [
+        {
+          name: 'Aglianico del Vulture Superiore DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: '南義最僉大的紅酒之一，Monte Vulture 火山斜坡',
+          filepath: '/regions/basilicata/geojson/DOCG/Aglianico del Vulture Superiore DOCG.geojson'
+        },
+        {
+          name: 'Aglianico del Vulture DOC',
+          grade: 'A級',
+          color: '#8e44ad',
+          description: 'Aglianico 基本版本，依然優美',
+          filepath: '/regions/basilicata/geojson/DOC/Aglianico del Vulture DOC.geojson'
+        },
+        {
+          name: 'Matera DOC',
+          grade: 'B級',
+          color: '#e67e22',
+          description: 'UNESCO 世界遺產城市，Primitivo & Greco',
+          filepath: '/regions/basilicata/geojson/DOC/Matera DOC.geojson'
+        },
+        {
+          name: 'Grottino di Roccanova DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: '「小洞穴」傳統酒窯，產量極小',
+          filepath: '/regions/basilicata/geojson/DOC/Grottino di Roccanova DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `basilicata-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '').replace(/\(/g, '').replace(/\)/g, '')}`
+            
+            basilicataMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            basilicataMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            basilicataMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            basilicataMap.on('mouseenter', `${sourceId}-fill`, () => {
+              basilicataMap.getCanvas().style.cursor = 'pointer'
+              basilicataMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            basilicataMap.on('mouseleave', `${sourceId}-fill`, () => {
+              basilicataMap.getCanvas().style.cursor = ''
+              basilicataMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            basilicataMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(basilicataMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 12px; max-width: 250px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
+                    <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(basilicataMap)
+            })
+            
+            console.log(`✅ 已載入 ${region.name}`)
+          }
+        } catch (error) {
+          console.error(`載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 添加城市標記
+      const cities = [
+        { name: 'Potenza', lngLat: [15.81, 40.64], label: '波坦察（首府）' },
+        { name: 'Matera', lngLat: [16.60, 40.67], label: '馬特拉（UNESCO 世界遺產）' },
+        { name: 'Melfi', lngLat: [15.65, 40.99], label: '梅爾菲（Vulture 產區中心）' },
+        { name: 'Rionero', lngLat: [15.67, 40.92], label: '里奧內羅（Aglianico 核心）' }
+      ]
+      
+      cities.forEach(city => {
+        new mapboxgl.Marker({ color: '#8e44ad' })
+          .setLngLat(city.lngLat)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #8e44ad;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(basilicataMap)
+      })
+      
+      console.log('✅ Basilicata 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Basilicata 地圖失敗:', error)
+  }
+}
+
 // ─── Abruzzo 地圖初始化 ───
 const initializeAbruzzoMap = () => {
   try {
@@ -4493,6 +4690,10 @@ onBeforeUnmount(() => {
   if (pugliaMap) {
     pugliaMap.remove()
     pugliaMap = null
+  }
+  if (basilicataMap) {
+    basilicataMap.remove()
+    basilicataMap = null
   }
 })
 </script>
@@ -5273,6 +5474,12 @@ onBeforeUnmount(() => {
 }
 
 .slide-frame :deep(.puglia-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.basilicata-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
