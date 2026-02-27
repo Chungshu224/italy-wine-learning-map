@@ -3251,13 +3251,14 @@ const initializeMoliseMap = () => {
       }
       
       // DOC 產區數據（課程重點產區）
+      // 注意：大面積產區放在前面先加載（下層），小面積放後面（上層）
       const regions = [
         {
-          name: 'Tintilia del Molise DOC',
-          grade: 'S級',
-          color: '#d4af37',
-          description: 'Molise 代表性本土品種 Tintilia，2011年 DOC',
-          filepath: '/regions/molise/geojson/DOC/Tintilia del Molise DOC.geojson'
+          name: 'Molise del Molise DOC',
+          grade: 'B級',
+          color: '#2ecc71',
+          description: '涵蓋全區的通用 DOC，品種多樣',
+          filepath: '/regions/molise/geojson/DOC/Molise del Molise DOC.geojson'
         },
         {
           name: 'Biferno DOC',
@@ -3274,11 +3275,11 @@ const initializeMoliseMap = () => {
           filepath: '/regions/molise/geojson/DOC/Pentro di Isernia DOC.geojson'
         },
         {
-          name: 'Molise del Molise DOC',
-          grade: 'B級',
-          color: '#2ecc71',
-          description: '涵蓋全區的通用 DOC，品種多樣',
-          filepath: '/regions/molise/geojson/DOC/Molise del Molise DOC.geojson'
+          name: 'Tintilia del Molise DOC',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Molise 代表性本土品種 Tintilia，2011年 DOC',
+          filepath: '/regions/molise/geojson/DOC/Tintilia del Molise DOC.geojson'
         }
       ]
       
