@@ -238,6 +238,7 @@ let liguriaMap = null
 let emiliaMap = null
 let marcheMap = null
 let umbriaMap = null
+let lazioMap = null
 
 // ─── 測驗相關狀態 ───
 const quizData = ref(null)
@@ -574,6 +575,8 @@ const initializeMapIfNeeded = async () => {
     const marcheMapContainer = document.getElementById('marche-map')
     // 檢查 Umbria 地圖容器
     const umbriaMapContainer = document.getElementById('umbria-map')
+    // 檢查 Lazio 地圖容器
+    const lazioMapContainer = document.getElementById('lazio-map')
     
     if (italyMapContainer && !italyMap) {
       console.log('✓ 找到義大利地圖容器，開始初始化...')
@@ -611,6 +614,9 @@ const initializeMapIfNeeded = async () => {
     } else if (umbriaMapContainer && !umbriaMap) {
       console.log('✓ 找到 Umbria 地圖容器，開始初始化...')
       initializeUmbriaMap()
+    } else if (lazioMapContainer && !lazioMap) {
+      console.log('✓ 找到 Lazio 地圖容器，開始初始化...')
+      initializeLazioMap()
     } else {
       console.log('❌ 未找到地圖容器或地圖已存在')
     }
@@ -3138,6 +3144,224 @@ const initializeMarcheMap = () => {
   }
 }
 
+// ─── Lazio 地圖初始化 ───
+const initializeLazioMap = () => {
+  try {
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+    
+    if (!mapboxgl.accessToken) {
+      console.error('❌ Mapbox access token 未設置')
+      return
+    }
+    
+    console.log('🗺️ 開始初始化 Lazio 地圖...')
+    
+    lazioMap = new mapboxgl.Map({
+      container: 'lazio-map',
+      style: 'mapbox://styles/mapbox/satellite-streets-v12',
+      center: [12.5, 41.9],
+      zoom: 8.2,
+      pitch: 0,
+      bearing: 0
+    })
+    
+    lazioMap.addControl(new mapboxgl.NavigationControl(), 'top-right')
+    lazioMap.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+    
+    lazioMap.on('load', async () => {
+      console.log('📍 載入 Lazio GeoJSON 邊界...')
+      
+      try {
+        const regionResponse = await fetch('/regions/lazio/geojson/Lazio.geojson')
+        if (regionResponse.ok) {
+          const regionGeojson = await regionResponse.json()
+          
+          lazioMap.addSource('lazio-region', {
+            type: 'geojson',
+            data: regionGeojson
+          })
+          
+          lazioMap.addLayer({
+            id: 'lazio-region-fill',
+            type: 'fill',
+            source: 'lazio-region',
+            paint: {
+              'fill-color': '#f39c12',
+              'fill-opacity': 0.08
+            }
+          })
+          
+          lazioMap.addLayer({
+            id: 'lazio-region-outline',
+            type: 'line',
+            source: 'lazio-region',
+            paint: {
+              'line-color': '#f39c12',
+              'line-width': 3,
+              'line-opacity': 0.9
+            }
+          })
+          
+          console.log('✅ Lazio 大區邊界已加載')
+        }
+      } catch (error) {
+        console.error('❌ 載入 Lazio 大區邊界失敗:', error)
+      }
+      
+      // DOC/DOCG 產區數據（課程重點產區）
+      const regions = [
+        {
+          name: 'Frascati Superiore DOCG',
+          grade: 'S級',
+          color: '#d4af37',
+          description: 'Roma 最著名的白酒，火山土壤賦予獨特礦物感',
+          filepath: '/regions/lazio/geojson/DOCG/Frascati Superiore DOCG.geojson'
+        },
+        {
+          name: 'Cesanese del Piglio DOCG',
+          grade: 'S級',
+          color: '#e74c3c',
+          description: 'Lazio 唯一的紅酒 DOCG，Cesanese 本土品種',
+          filepath: '/regions/lazio/geojson/DOCG/Cesanese del Piglio Piglio DOCG.geojson'
+        },
+        {
+          name: 'Cannellino di Frascati DOCG',
+          grade: 'A級',
+          color: '#9b59b6',
+          description: 'Frascati 的甜酒版本，晚收或風乾葡萄釀造',
+          filepath: '/regions/lazio/geojson/DOCG/Cannellino di Frascati DOCG.geojson'
+        },
+        {
+          name: 'Est! Est!! Est!!! di Montefiascone DOC',
+          grade: 'B級',
+          color: '#3498db',
+          description: '以傳說聞名的白酒，Bolsena 湖畔產區',
+          filepath: '/regions/lazio/geojson/DOC/Est! Est!! Est!!! di Montefiascone DOC.geojson'
+        },
+        {
+          name: 'Marino DOC',
+          grade: 'B級',
+          color: '#5dade2',
+          description: 'Frascati 的鄰居，風格相似、價格更親民',
+          filepath: '/regions/lazio/geojson/DOC/Marino DOC.geojson'
+        },
+        {
+          name: 'Cesanese di Olevano Romano DOC',
+          grade: 'B級',
+          color: '#e67e22',
+          description: 'Cesanese 的 DOC 版本，傳統風格、可釀成不同甜度',
+          filepath: '/regions/lazio/geojson/DOC/Cesanese di Olevano Romano Olevano Romano DOC.geojson'
+        }
+      ]
+      
+      // 逐一載入各產區的 GeoJSON
+      for (const region of regions) {
+        try {
+          const response = await fetch(region.filepath)
+          if (response.ok) {
+            const geojson = await response.json()
+            
+            const sourceId = `lazio-${region.name.toLowerCase().replace(/\s+/g, '-').replace(/!/g, '')}`
+            
+            lazioMap.addSource(sourceId, {
+              type: 'geojson',
+              data: geojson
+            })
+            
+            lazioMap.addLayer({
+              id: `${sourceId}-fill`,
+              type: 'fill',
+              source: sourceId,
+              paint: {
+                'fill-color': region.color,
+                'fill-opacity': 0.35
+              }
+            })
+            
+            lazioMap.addLayer({
+              id: `${sourceId}-outline`,
+              type: 'line',
+              source: sourceId,
+              paint: {
+                'line-color': region.color,
+                'line-width': 2.5,
+                'line-opacity': 0.9
+              }
+            })
+            
+            // 懸停效果
+            lazioMap.on('mouseenter', `${sourceId}-fill`, () => {
+              lazioMap.getCanvas().style.cursor = 'pointer'
+              lazioMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.6)
+            })
+            
+            lazioMap.on('mouseleave', `${sourceId}-fill`, () => {
+              lazioMap.getCanvas().style.cursor = ''
+              lazioMap.setPaintProperty(`${sourceId}-fill`, 'fill-opacity', 0.35)
+            })
+            
+            // 點擊顯示資訊
+            lazioMap.on('click', `${sourceId}-fill`, () => {
+              new mapboxgl.Popup()
+                .setLngLat(lazioMap.getCenter())
+                .setHTML(`
+                  <div style="padding: 8px; min-width: 200px;">
+                    <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
+                    <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
+                    <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
+                  </div>
+                `)
+                .addTo(lazioMap)
+            })
+            
+            console.log(`✅ ${region.name} 已加載`)
+          }
+        } catch (error) {
+          console.error(`❌ 載入 ${region.name} 失敗:`, error)
+        }
+      }
+      
+      // 重要城市標記
+      const cities = [
+        { name: 'Roma', coords: [12.4964, 41.9028], label: '羅馬（首都、永恆之城）' },
+        { name: 'Frascati', coords: [12.6814, 41.8081], label: 'Frascati（Frascati 白酒產區）' },
+        { name: 'Montefiascone', coords: [12.0417, 42.5417], label: 'Montefiascone（Est! Est!! Est!!! 產區）' },
+        { name: 'Piglio', coords: [13.1375, 41.8208], label: 'Piglio（Cesanese del Piglio 產區）' }
+      ]
+      
+      cities.forEach(city => {
+        const el = document.createElement('div')
+        el.className = 'city-marker'
+        el.style.cssText = `
+          background: #f39c12;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+          cursor: pointer;
+        `
+        
+        new mapboxgl.Marker({ element: el })
+          .setLngLat(city.coords)
+          .setPopup(new mapboxgl.Popup({ offset: 15 })
+            .setHTML(`
+              <div style="padding: 8px; text-align: center;">
+                <h4 style="margin: 0 0 5px; color: #f39c12;">${city.name}</h4>
+                <p style="margin: 0; color: #555; font-size: 0.9rem;">${city.label}</p>
+              </div>
+            `)
+          )
+          .addTo(lazioMap)
+      })
+      
+      console.log('✅ Lazio 地圖初始化完成（含 GeoJSON 邊界）！')
+    })
+  } catch (error) {
+    console.error('❌ 初始化 Lazio 地圖失敗:', error)
+  }
+}
+
 // ─── Umbria 地圖初始化 ───
 const initializeUmbriaMap = () => {
   try {
@@ -3407,6 +3631,10 @@ onBeforeUnmount(() => {
   if (umbriaMap) {
     umbriaMap.remove()
     umbriaMap = null
+  }
+  if (lazioMap) {
+    lazioMap.remove()
+    lazioMap = null
   }
 })
 </script>
@@ -4157,6 +4385,12 @@ onBeforeUnmount(() => {
 .slide-frame :deep(.emilia-region-map),
 .slide-frame :deep(.marche-region-map),
 .slide-frame :deep(.umbria-region-map) {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.slide-frame :deep(.lazio-region-map) {
   width: 100%;
   height: 100%;
   min-height: 500px;
