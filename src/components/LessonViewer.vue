@@ -2230,6 +2230,8 @@ const initializeTrentinoMap = () => {
         { name: 'Valdadige  Etschtaler DOC', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
       ]
       
+      const regionBounds = {}
+      
       for (const region of docRegions) {
         try {
           const response = await fetch(`/regions/trentino/geojson/${region.type}/${region.name}.geojson`)
@@ -2244,6 +2246,17 @@ const initializeTrentinoMap = () => {
             if (region.name === 'Valdadige  Etschtaler DOC') {
               displayName = 'Valdadige'
             }
+            
+            // 計算產區邊界
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[displayName] = bounds
             
             trentinoMap.addSource(sourceId, {
               type: 'geojson',
@@ -2397,6 +2410,20 @@ const initializeTrentinoMap = () => {
           .addTo(trentinoMap)
       })
       
+      // Trentino 產區縮放函數
+      window.zoomToTrentinoRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && trentinoMap) {
+          trentinoMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
+      
       console.log('✅ Trentino-Alto Adige 地圖初始化完成（含 GeoJSON 邊界）！')
     })
   } catch (error) {
@@ -2476,6 +2503,8 @@ const initializeFriuliMap = () => {
         { name: 'Friuli Isonzo Isonzo del Friuli DOC', displayName: 'Friuli Isonzo DOC', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
       ]
       
+      const regionBounds = {}
+      
       for (const region of regions) {
         try {
           const response = await fetch(`/regions/friuli/geojson/${region.type}/${region.name}.geojson`)
@@ -2485,6 +2514,17 @@ const initializeFriuliMap = () => {
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
             const outlineId = `${region.name}-outline`
+            
+            // 計算產區邊界
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[region.displayName] = bounds
             
             friuliMap.addSource(sourceId, {
               type: 'geojson',
@@ -2638,6 +2678,20 @@ const initializeFriuliMap = () => {
           .addTo(friuliMap)
       })
       
+      // Friuli 產區縮放函數
+      window.zoomToFriuliRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && friuliMap) {
+          friuliMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
+      
       console.log('✅ Friuli Venezia Giulia 地圖初始化完成（含 GeoJSON 邊界）！')
     })
   } catch (error) {
@@ -2716,6 +2770,8 @@ const initializeLiguriaMap = () => {
         { name: 'Val Polcèvera DOC', displayName: 'Val Polcèvera', grade: 'B級', color: '#5dade2', fillColor: 'rgba(93, 173, 226, 0.3)', type: 'DOC' }
       ]
       
+      const regionBounds = {}
+      
       for (const region of regions) {
         try {
           const response = await fetch(`/regions/liguria/geojson/${region.type}/${region.name}.geojson`)
@@ -2725,6 +2781,17 @@ const initializeLiguriaMap = () => {
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
             const outlineId = `${region.name}-outline`
+            
+            // 計算產區邊界
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[region.displayName] = bounds
             
             liguriaMap.addSource(sourceId, {
               type: 'geojson',
@@ -2878,6 +2945,20 @@ const initializeLiguriaMap = () => {
           .addTo(liguriaMap)
       })
       
+      // Liguria 產區縮放函數
+      window.zoomToLiguriaRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && liguriaMap) {
+          liguriaMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
+      
       console.log('✅ Liguria 地圖初始化完成（含 GeoJSON 邊界）！')
     })
   } catch (error) {
@@ -2995,6 +3076,8 @@ const initializeEmiliaMap = () => {
         }
       ]
       
+      const regionBounds = {}
+      
       // 逐一載入各產區的 GeoJSON
       for (const region of regions) {
         try {
@@ -3003,6 +3086,27 @@ const initializeEmiliaMap = () => {
             const geojson = await response.json()
             
             const sourceId = `emilia-${region.name.toLowerCase().replace(/\s+/g, '-')}`
+            
+            // 計算產區邊界
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            } else if (geojson.type === 'FeatureCollection') {
+              geojson.features.forEach(feature => {
+                const coords = feature.geometry.coordinates
+                if (feature.geometry.type === 'MultiPolygon') {
+                  coords.forEach(polygon => polygon[0].forEach(coord => bounds.extend(coord)))
+                } else if (feature.geometry.type === 'Polygon') {
+                  coords[0].forEach(coord => bounds.extend(coord))
+                }
+              })
+            }
+            const displayName = region.name.replace(' DOC', '').replace(' DOCG', '')
+            regionBounds[displayName] = bounds
             
             emiliaMap.addSource(sourceId, {
               type: 'geojson',
@@ -3095,6 +3199,20 @@ const initializeEmiliaMap = () => {
           )
           .addTo(emiliaMap)
       })
+      
+      // Emilia 產區縮放函數
+      window.zoomToEmiliaRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && emiliaMap) {
+          emiliaMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
       
       console.log('✅ Emilia 地圖初始化完成（含 GeoJSON 邊界）！')
     })
