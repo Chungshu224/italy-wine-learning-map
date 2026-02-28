@@ -853,12 +853,23 @@ const initializePiedmontMap = () => {
         { name: 'Asti DOCG', grade: 'C級', color: '#F39C12', fillColor: 'rgba(243, 156, 18, 0.25)' }
       ]
       
+      // 保存產區的 bounds 供按鈕點擊使用
+      const regionBounds = {}
+      
       // 載入每個產區的 GeoJSON
       for (const region of docgRegions) {
         try {
           const response = await fetch(`/regions/piedmont/geojson/DOCG/${region.name}.geojson`)
           if (response.ok) {
             const geojson = await response.json()
+            
+            // 計算並保存產區的 bounds
+            const bounds = new mapboxgl.LngLatBounds()
+            const coordinates = geojson.type === 'Polygon' ? geojson.coordinates : geojson.coordinates.flat()
+            coordinates[0].forEach(coord => {
+              bounds.extend(coord)
+            })
+            regionBounds[region.name] = bounds
             
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
@@ -1021,6 +1032,20 @@ const initializePiedmontMap = () => {
           .addTo(piedmontMap)
       })
       
+      // 創建全局函數供產區按鈕點擊使用
+      window.zoomToPiedmontRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && piedmontMap) {
+          piedmontMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
+      
       console.log('✅ Piedmont 地圖初始化完成（含 GeoJSON 邊界）！')
     })
   } catch (error) {
@@ -1107,12 +1132,26 @@ const initializeTuscanyMap = () => {
         { name: 'Morellino di Scansano DOCG', grade: 'B級', color: '#5DADE2', fillColor: 'rgba(93, 173, 226, 0.25)' }
       ]
       
+      // 保存產區的 bounds 供按鈕點擊使用
+      const regionBounds = {}
+      
       // 載入每個產區的 GeoJSON
       for (const region of docgRegions) {
         try {
           const response = await fetch(`/regions/tuscany/geojson/DOCG/${region.name}.geojson`)
           if (response.ok) {
             const geojson = await response.json()
+            
+            // 計算並保存產區的 bounds
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[region.name] = bounds
             
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
@@ -1274,6 +1313,20 @@ const initializeTuscanyMap = () => {
           .setPopup(popup)
           .addTo(tuscanyMap)
       })
+      
+      // 創建全局函數供產區按鈕點擊使用
+      window.zoomToTuscanyRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && tuscanyMap) {
+          tuscanyMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
       
       console.log('✅ Tuscany 地圖初始化完成（含 GeoJSON 邊界）！')
     })
