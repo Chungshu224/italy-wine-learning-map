@@ -1685,11 +1685,25 @@ const initializeSicilyMap = () => {
         { name: 'Alcamo DOC', grade: 'B級', color: '#bdc3c7', fillColor: 'rgba(189, 195, 199, 0.25)', type: 'DOC' }
       ]
       
+      // 用於存儲每個產區的邊界
+      const regionBounds = {}
+      
       for (const region of docRegions) {
         try {
           const response = await fetch(`/regions/sicily/geojson/DOC/${region.name}.geojson`)
           if (response.ok) {
             const geojson = await response.json()
+            
+            // 計算並保存產區的 bounds
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[region.name] = bounds
             
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
@@ -1849,6 +1863,20 @@ const initializeSicilyMap = () => {
       
       console.log('✅ Sicily 地圖初始化完成（含 GeoJSON 邊界）！')
     })
+    
+    // 全局縮放函數
+    window.zoomToSicilyRegion = (regionName) => {
+      const bounds = regionBounds[regionName]
+      if (bounds && sicilyMap) {
+        sicilyMap.fitBounds(bounds, {
+          padding: 50,
+          maxZoom: 11,
+          duration: 1000
+        })
+      } else {
+        console.warn(`找不到產區: ${regionName}`)
+      }
+    }
   } catch (error) {
     console.error('❌ 初始化 Sicily 地圖失敗:', error)
   }
