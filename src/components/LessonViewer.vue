@@ -1416,11 +1416,24 @@ const initializeVenetoMap = () => {
         { name: 'Recioto di Gambellara DOCG', grade: 'B級', color: '#AED6F1', fillColor: 'rgba(174, 214, 241, 0.25)' }
       ]
       
+      const regionBounds = {}
+      
       for (const region of docgRegions) {
         try {
           const response = await fetch(`/regions/veneto/geojson/DOCG/${region.name}.geojson`)
           if (response.ok) {
             const geojson = await response.json()
+            
+            // 計算並保存產區的 bounds
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[region.name] = bounds
             
             const sourceId = `${region.name}-source`
             const layerId = `${region.name}-layer`
@@ -1576,6 +1589,20 @@ const initializeVenetoMap = () => {
           .setPopup(popup)
           .addTo(venetoMap)
       })
+      
+      // 創建全局函數供產區按鈕點擊使用
+      window.zoomToVenetoRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && venetoMap) {
+          venetoMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
       
       console.log('✅ Veneto 地圖初始化完成（含 GeoJSON 邊界）！')
     })
