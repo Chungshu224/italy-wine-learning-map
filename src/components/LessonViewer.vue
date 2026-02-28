@@ -1861,22 +1861,22 @@ const initializeSicilyMap = () => {
           .addTo(sicilyMap)
       })
       
+      // 創建全局函數供產區按鈕點擊使用
+      window.zoomToSicilyRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && sicilyMap) {
+          sicilyMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
+      
       console.log('✅ Sicily 地圖初始化完成（含 GeoJSON 邊界）！')
     })
-    
-    // 全局縮放函數
-    window.zoomToSicilyRegion = (regionName) => {
-      const bounds = regionBounds[regionName]
-      if (bounds && sicilyMap) {
-        sicilyMap.fitBounds(bounds, {
-          padding: 50,
-          maxZoom: 11,
-          duration: 1000
-        })
-      } else {
-        console.warn(`找不到產區: ${regionName}`)
-      }
-    }
   } catch (error) {
     console.error('❌ 初始化 Sicily 地圖失敗:', error)
   }
