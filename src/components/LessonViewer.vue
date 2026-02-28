@@ -1955,6 +1955,8 @@ const initializeLombardyMap = () => {
         { name: 'Valtellina rosso Rosso di Valtellina DOC', grade: 'B級', color: '#85c1e9', fillColor: 'rgba(133, 193, 233, 0.3)', type: 'DOC' }
       ]
       
+      const regionBounds = {}
+      
       for (const region of docgRegions) {
         try {
           const response = await fetch(`/regions/lombardy/geojson/${region.type}/${region.name}.geojson`)
@@ -1973,6 +1975,17 @@ const initializeLombardyMap = () => {
             } else if (region.name === 'Valtellina rosso Rosso di Valtellina DOC') {
               displayName = 'Valtellina Rosso'
             }
+            
+            // 計算產區邊界
+            const bounds = new mapboxgl.LngLatBounds()
+            if (geojson.type === 'MultiPolygon') {
+              geojson.coordinates.forEach(polygon => {
+                polygon[0].forEach(coord => bounds.extend(coord))
+              })
+            } else if (geojson.type === 'Polygon') {
+              geojson.coordinates[0].forEach(coord => bounds.extend(coord))
+            }
+            regionBounds[displayName] = bounds
             
             lombardyMap.addSource(sourceId, {
               type: 'geojson',
@@ -2125,6 +2138,20 @@ const initializeLombardyMap = () => {
           .setPopup(popup)
           .addTo(lombardyMap)
       })
+      
+      // Lombardy 產區縮放函數
+      window.zoomToLombardyRegion = (regionName) => {
+        const bounds = regionBounds[regionName]
+        if (bounds && lombardyMap) {
+          lombardyMap.fitBounds(bounds, {
+            padding: 50,
+            maxZoom: 11,
+            duration: 1000
+          })
+        } else {
+          console.warn(`找不到產區: ${regionName}`)
+        }
+      }
       
       console.log('✅ Lombardy 地圖初始化完成（含 GeoJSON 邊界）！')
     })
