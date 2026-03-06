@@ -25,7 +25,16 @@
       >
         <div class="region-icon">{{ region.icon }}</div>
         <h3>{{ region.nameCN }}</h3>
-        <p class="region-name-en">{{ region.nameEN }}</p>
+        <div class="name-with-audio">
+          <p class="region-name-en">{{ region.nameEN }}</p>
+          <button 
+            class="pronunciation-button-small" 
+            @click.stop="playRegionAudio(region.nameEN)"
+            :title="`播放 ${region.nameEN} 的發音`"
+          >
+            🔊
+          </button>
+        </div>
         <div class="region-stats">
           <span>{{ region.aocCount }} DOC/DOCG</span>
           <span>~{{ region.hectare }} ha</span>
@@ -74,6 +83,42 @@ const gotoCourse = () => {
 
 const gotoAppellations = () => {
   router.push('/regions/appellations')
+}
+
+// 播放產區名稱的發音
+const playRegionAudio = (regionName) => {
+  // 產區英文名稱→義大利語音頻文件名映射表
+  const regionNameMap = {
+    'Piedmont': 'Piemonte',
+    'Tuscany': 'Toscana',
+    'Lombardy': 'Lombardia',
+    'Trentino-Alto Adige': 'Trentino-Alto Adige',
+    'Friuli Venezia Giulia': 'Friuli-Venezia Giulia',
+    'Emilia-Romagna': 'Emilia-Romagna',
+    'Marche': 'Marche',
+    'Umbria': 'Umbria',
+    'Lazio': 'Lazio',
+    'Abruzzo': 'Abruzzo',
+    'Campania': 'Campania',
+    'Puglia': 'Puglia',
+    'Basilicata': 'Basilicata',
+    'Calabria': 'Calabria',
+    'Sardinia': 'Sardegna',
+    'Sicily': 'Sicily',
+    'Liguria': 'Liguria',
+    'Molise': 'Molise',
+    'Veneto': 'Veneto',
+    'Valle d\'Aosta': 'Valle d\'Aosta'
+  }
+  
+  // 使用映射表轉換名稱，如果沒有映射則使用原名稱
+  const audioName = regionNameMap[regionName] || regionName
+  
+  if (window.playPronunciation) {
+    window.playPronunciation(audioName)
+  } else {
+    console.warn('音頻播放功能未載入')
+  }
 }
 </script>
 
@@ -238,13 +283,46 @@ const gotoAppellations = () => {
   font-family: var(--font-serif);
 }
 
+.name-with-audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  min-height: 20px;
+}
+
 .region-name-en {
   font-style: italic;
   color: var(--text-secondary);
   font-size: 0.95rem;
-  margin-bottom: 20px;
-  min-height: 20px;
+  margin: 0;
   font-family: var(--font-serif);
+}
+
+.pronunciation-button-small {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+  flex-shrink: 0;
+}
+
+.pronunciation-button-small:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.pronunciation-button-small:active {
+  transform: scale(0.95);
 }
 
 .region-stats {

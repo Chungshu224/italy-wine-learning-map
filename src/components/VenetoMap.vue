@@ -11,6 +11,8 @@
       :toggleRegion="toggleRegion"
       :activeAOC="activeAOC"
       :aocColor="aocColor"
+      :regionName="'Veneto'"
+      :regionId="'veneto'"
       @selectAOC="showAOCGeojson"
     />
     

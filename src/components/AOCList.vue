@@ -28,6 +28,13 @@
             >
               <span class="aoc-dot" :style="{ background: aocColor(group) }"></span>
               <span class="aoc-name">{{ region }}</span>
+              <button 
+                class="pronunciation-btn-list" 
+                @click.stop="playRegionAudio(region)"
+                title="播放發音"
+              >
+                🔊
+              </button>
             </div>
           </div>
         </div>
@@ -45,6 +52,10 @@ const props = defineProps({
   regionName: {
     type: String,
     default: 'Veneto'
+  },
+  regionId: {
+    type: String,
+    default: 'veneto'
   },
   search: String,
   aocGroups: Object,
@@ -72,6 +83,16 @@ const formatAOCName = (aoc) => {
 
 const isActive = (group, aoc) => {
   return props.activeAOC?.group === group && props.activeAOC?.aoc === aoc
+}
+
+// 播放產區名稱的發音
+const playRegionAudio = (regionName) => {
+  if (window.playPronunciation) {
+    // 傳遞地區信息以便在該地區的 sounds 文件夾中查找
+    window.playPronunciation(regionName, null, props.regionId)
+  } else {
+    console.warn('音頻播放功能未載入')
+  }
 }
 </script>
 
@@ -166,6 +187,7 @@ h2 {
 .aoc-item {
   display: flex;
   align-items: center;
+  gap: 8px;
   padding: 8px 12px;
   margin: 4px 0;
   border-radius: 6px;
@@ -179,6 +201,37 @@ h2 {
   background: var(--cream-bg);
   color: var(--wine-red);
   transform: translateX(3px);
+}
+
+.pronunciation-btn-list {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.3);
+  flex-shrink: 0;
+  margin-left: auto;
+  opacity: 0;
+}
+
+.aoc-item:hover .pronunciation-btn-list {
+  opacity: 1;
+}
+
+.pronunciation-btn-list:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.pronunciation-btn-list:active {
+  transform: scale(0.95);
 }
 
 .aoc-item.active {

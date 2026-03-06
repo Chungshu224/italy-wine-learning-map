@@ -97,7 +97,16 @@
 
         <div class="card-body">
           <!-- 名稱 -->
-          <h3 class="card-name">{{ item.name }}</h3>
+          <div class="name-with-pronunciation">
+            <h3 class="card-name">{{ item.name }}</h3>
+            <button 
+              class="pronunciation-btn-inline" 
+              @click.stop="playAppellationAudio(item.name, item.regionId)"
+              :title="`播放 ${item.name} 的發音`"
+            >
+              🔊
+            </button>
+          </div>
 
           <!-- 葡萄酒風格徽章 -->
           <div class="style-badges">
@@ -243,6 +252,16 @@ const toggleType = (t) => { activeType.value = t; resetPage() }
 const toggleStyle = (s) => { activeStyle.value = s; resetPage() }
 const resetPage = () => { currentPage.value = 1 }
 const resetAll = () => { keyword.value = ''; activeType.value = ''; activeStyle.value = ''; activeRegion.value = ''; resetPage() }
+
+// 播放產區名稱的發音
+const playAppellationAudio = (appellationName, regionId) => {
+  if (window.playPronunciation) {
+    // 傳遞地區信息以便在該地區的 sounds 文件夾中查找
+    window.playPronunciation(appellationName, null, regionId)
+  } else {
+    console.warn('音頻播放功能未載入')
+  }
+}
 
 const styleClass = (s) => {
   const map = { '紅酒': 'red', '白酒': 'white', '甜酒': 'sweet', '氣泡酒': 'sparkling', '粉紅酒': 'rose' }
@@ -489,12 +508,45 @@ onMounted(async () => {
   flex: 1;
 }
 
+.name-with-pronunciation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
 .card-name {
   font-size: 1.3rem;
   font-family: var(--font-serif);
   color: var(--wine-red-dark);
-  margin: 0 0 12px;
+  margin: 0;
   line-height: 1.3;
+  flex: 1;
+}
+
+.pronunciation-btn-inline {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  flex-shrink: 0;
+}
+
+.pronunciation-btn-inline:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.pronunciation-btn-inline:active {
+  transform: scale(0.95);
 }
 
 /* 風格徽章 */

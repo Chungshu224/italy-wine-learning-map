@@ -109,10 +109,19 @@
     <!-- AOC 產區資訊顯示 -->
     <div class="map-info-bar" v-if="activeAOC?.aoc">
       <div class="info-header-bar">
-        <span class="aoc-info-title">
-          <span class="aoc-dot" :style="{background: aocColor(activeAOC.group)}"></span>
-          {{ activeAOC.aoc.replace('.geojson','').replace(/_/g,' ') }}
-        </span>
+        <div class="aoc-title-with-audio">
+          <span class="aoc-info-title">
+            <span class="aoc-dot" :style="{background: aocColor(activeAOC.group)}"></span>
+            {{ activeAOC.aoc.replace('.geojson','').replace(/_/g,' ') }}
+          </span>
+          <button 
+            class="pronunciation-btn-map" 
+            @click="playAOCAudio(activeAOC.aoc)"
+            title="播放發音"
+          >
+            🔊
+          </button>
+        </div>
         <div class="map-buttons">
           <button class="btn-reset" @click="resetMap">重置地圖</button>
         </div>
@@ -120,10 +129,12 @@
       
       <div v-if="regionInfo" class="region-info-content">
         <div class="info-header">
-          <div>
-            <b>{{ regionInfo.name }}</b> 
-            <span class="region-type">({{ regionInfo.type }})</span>
-            <span v-if="regionInfo.hectare" class="region-hectare"> - {{ regionInfo.hectare }} 公頃</span>
+          <div class="name-row-with-audio">
+            <div>
+              <b>{{ regionInfo.name }}</b> 
+              <span class="region-type">({{ regionInfo.type }})</span>
+              <span v-if="regionInfo.hectare" class="region-hectare"> - {{ regionInfo.hectare }} 公頃</span>
+            </div>
           </div>
           <div class="style-badges">
             <div v-for="style in Array.isArray(regionInfo.style) ? regionInfo.style : [regionInfo.style]" 
@@ -384,6 +395,17 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['resetMap'])
+
+// 播放產區名稱的發音
+const playAOCAudio = (aocName) => {
+  const cleanName = aocName.replace('.geojson', '').replace(/_/g, ' ')
+  if (window.playPronunciation) {
+    // 傳遞地區信息以便在該地區的 sounds 文件夾中查找
+    window.playPronunciation(cleanName, null, props.regionId)
+  } else {
+    console.warn('音頻播放功能未載入')
+  }
+}
 
 // 獲取當前大區的基礎資訊
 const regionOverview = computed(() => regionOverviews[props.regionId] || null)
@@ -707,6 +729,13 @@ onUnmounted(() => {
   border-bottom: 1px solid var(--border-color);
 }
 
+.aoc-title-with-audio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
 .aoc-info-title {
   font-weight: 700;
   font-size: 1.1rem;
@@ -714,6 +743,37 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   font-family: var(--font-serif);
+}
+
+.pronunciation-btn-map {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  flex-shrink: 0;
+}
+
+.pronunciation-btn-map:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.pronunciation-btn-map:active {
+  transform: scale(0.95);
+}
+
+.name-row-with-audio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .aoc-dot {

@@ -12,6 +12,7 @@
       :activeAOC="activeAOC"
       :aocColor="aocColor"
       :regionName="regionConfig.name"
+      :regionId="regionId"
       @selectAOC="showAOCGeojson"
     />
     
