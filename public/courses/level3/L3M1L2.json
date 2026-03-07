@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Ciliegiolo 這個名字的由來是什麼？",
-      "options": ["產區名稱", "櫻桃(Ciliegia)", "發現者名字", "羅馬神話人物"],
+      "options": [
+        "產區名稱",
+        "櫻桃(Ciliegia)",
+        "發現者名字",
+        "羅馬神話人物"
+      ],
       "answer": 1,
       "explanation": "Ciliegiolo 源自義大利文 'Ciliegia'（櫻桃），因其明顯的櫻桃風味而得名。"
     },
     {
       "question": "哪位古羅馬學者在著作中提及 Cesanese 葡萄？",
-      "options": ["Julius Caesar", "Pliny the Elder", "Cicero", "Virgil"],
+      "options": [
+        "Julius Caesar",
+        "Pliny the Elder",
+        "Cicero",
+        "Virgil"
+      ],
       "answer": 1,
       "explanation": "古羅馬博物學家 Pliny the Elder 在其著作中提及了 Cesanese，證明這個品種有超過 2000 年的歷史。"
     },
     {
       "question": "Cesanese del Piglio 在哪一年獲得 DOCG 認證？",
-      "options": ["1996", "2003", "2008", "2015"],
+      "options": [
+        "1996",
+        "2003",
+        "2008",
+        "2015"
+      ],
       "answer": 2,
       "explanation": "Cesanese del Piglio 在 2008 年獲得 DOCG 認證，成為拉齊奧大區第一個也是唯一的 DOCG。"
     },
     {
       "question": "哪個酒莊是 Ciliegiolo 自然酒的代表？",
-      "options": ["Gaja", "Paolo Bea", "Antinori", "Frescobaldi"],
+      "options": [
+        "Gaja",
+        "Paolo Bea",
+        "Antinori",
+        "Frescobaldi"
+      ],
       "answer": 1,
       "explanation": "Paolo Bea 是翁布里亞的自然酒先驅，其 Rosso de Veo（100% Ciliegiolo）是國際知名的自然酒代表。"
     }

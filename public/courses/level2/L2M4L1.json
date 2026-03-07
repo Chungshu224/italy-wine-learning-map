@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Nebbiolo 為什麼幾乎只在 Piemonte 表現卓越？",
-      "options": ["對風土要求極端（海拔、朝向、土壤、氣候）", "容易種植", "早熟品種", "適應性強"],
+      "options": [
+        "對風土要求極端（海拔、朝向、土壤、氣候）",
+        "容易種植",
+        "早熟品種",
+        "適應性強"
+      ],
       "answer": 0,
       "explanation": "Nebbiolo 對風土要求極端：需要特定海拔（200-450m）、朝向（南至西南）、土壤（Tortonian/Serravallian）和霧氣氣候，只在 Piemonte 特定區域完美表現。"
     },
     {
       "question": "Barbera 的最大特點是？",
-      "options": ["低酸高單寧", "酸度極高（TA 7-9 g/L）、單寧低", "甜型", "適合陳年 30 年"],
+      "options": [
+        "低酸高單寧",
+        "酸度極高（TA 7-9 g/L）、單寧低",
+        "甜型",
+        "適合陳年 30 年"
+      ],
       "answer": 1,
       "explanation": "Barbera 是義大利酸度最高的紅葡萄品種（TA 7-9 g/L），同時單寧低，這種特性讓它成為義大利料理的完美配酒。"
     },
     {
       "question": "Sangiovese Grosso 主要用於哪個 DOCG？",
-      "options": ["Chianti Classico", "Brunello di Montalcino", "Barolo", "Barbaresco"],
+      "options": [
+        "Chianti Classico",
+        "Brunello di Montalcino",
+        "Barolo",
+        "Barbaresco"
+      ],
       "answer": 1,
       "explanation": "Sangiovese Grosso（大顆粒克隆）是 Brunello di Montalcino DOCG 的專用克隆，皮厚、濃縮、單寧高，需陳年 5 年（Riserva 6 年）。"
     },
     {
       "question": "為什麼 Aglianico 被稱為「南方的 Nebbiolo」？",
-      "options": ["顏色相似", "單寧、酸度極高、需長時間陳年", "產量相似", "價格相似"],
+      "options": [
+        "顏色相似",
+        "單寧、酸度極高、需長時間陳年",
+        "產量相似",
+        "價格相似"
+      ],
       "answer": 1,
       "explanation": "Aglianico 與 Nebbiolo 相似之處在於：單寧、酸度極高，極需陳年（5-30 年），都是各自地區最高貴的品種，結構複雜、陳年潛力驚人。"
     }

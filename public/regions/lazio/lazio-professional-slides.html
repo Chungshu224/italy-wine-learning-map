@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazio產區專業教學</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .slide {
+            background: white;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #f39c12;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #f39c12;
+            font-size: 1.8em;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        h2::before {
+            content: "▸";
+            margin-right: 15px;
+            color: #f39c12;
+        }
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #fef5e7 0%, transparent 100%);
+            padding: 10px 15px;
+            border-left: 5px solid #f39c12;
+        }
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        tr:nth-child(even) {
+            background-color: #fef5e7;
+        }
+        tr:hover {
+            background-color: #fdebd0;
+            transition: background-color 0.3s ease;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .card {
+            background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+            border: 2px solid #f39c12;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(243, 156, 18, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(243, 156, 18, 0.3);
+        }
+        .card-title {
+            color: #f39c12;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .card-title::before {
+            content: "●";
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+        .card-content {
+            color: #2c3e50;
+            line-height: 1.8;
+            font-size: 0.98em;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef5e7 0%, #fdebd0 100%);
+            border-left: 5px solid #f39c12;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 30px 0;
+        }
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #f39c12;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #f39c12;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #f39c12;
+        }
+        .timeline-date {
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        .timeline-content {
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(243, 156, 18, 0.3);
+        }
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .stat-label {
+            font-size: 1em;
+            opacity: 0.95;
+        }
+        ul, ol {
+            line-height: 2;
+            color: #2c3e50;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #f39c12;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        .note::before {
+            content: "📌 ";
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: 古羅馬葡萄酒文化 -->
+<section class="slide">
+    <h1>古羅馬葡萄酒文化：從Falernian到現代復興</h1>
+    <p class="subtitle">探索Lazio產區兩千年的葡萄酒歷史傳承</p>
+
+    <h2>Falernian Wine：古羅馬的液體黃金</h2>
+    
+    <div class="highlight-box">
+        <strong>歷史地位：</strong>Falernian（法勒爾諾酒）被認為是古羅馬帝國時期最負盛名的葡萄酒，產自Lazio與Campania交界的Ager Falernus地區。詩人Horace、Pliny和Martial都曾在作品中讚頌這款酒，價格甚至可達普通酒的100倍以上。
+    </div>
+
+    <h3>Falernian的類型與特徵</h3>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>類型</th>
+                <th>顏色</th>
+                <th>特徵</th>
+                <th>陳年能力</th>
+                <th>歷史記載</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Falernum Austerum</strong></td>
+                <td>白酒</td>
+                <td>干型、高酸度、礦物質風味</td>
+                <td>15-20年</td>
+                <td>元老院議員偏好</td>
+            </tr>
+            <tr>
+                <td><strong>Falernum Dulce</strong></td>
+                <td>白酒</td>
+                <td>甜型、芳香、蜂蜜風味</td>
+                <td>10-15年</td>
+                <td>貴婦與宴會專用</td>
+            </tr>
+            <tr>
+                <td><strong>Falernum Rubrum</strong></td>
+                <td>紅酒</td>
+                <td>濃郁、高酒精、辛香料氣息</td>
+                <td>25年以上</td>
+                <td>Pliny記載最珍貴年份</td>
+            </tr>
+            <tr>
+                <td><strong>Caucinum</strong></td>
+                <td>白酒</td>
+                <td>次級Falernian、清新易飲</td>
+                <td>5-10年</td>
+                <td>平民市場主流</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>古羅馬釀酒技術</h3>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">發酵與儲存</div>
+            <div class="card-content">
+                使用<strong>Dolia</strong>（陶罐）進行發酵，容量可達1500升。內部塗抹樹脂密封，埋入地下控溫。Columella的《農業論》詳細記載發酵溫度控制在15-20°C。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">陳年與氧化</div>
+            <div class="card-content">
+                使用<strong>Amphora</strong>（雙耳瓶）陳年，置於<strong>Apotheca</strong>（煙燻房）中，利用煙燻加速氧化與複雜化。最珍貴的酒款可陳年50年以上。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">添加劑與調配</div>
+            <div class="card-content">
+                添加海水（aqua marina）增加礦物質與鹽度，使用<strong>Defrutum</strong>（濃縮葡萄汁）調整甜度，加入樹脂、香料和蜂蜜提升複雜度。
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">年份標記系統</div>
+            <div class="card-content">
+                羅馬人使用<strong>執政官年號</strong>標記年份，著名的Opimian Falernian（121 BC）被認為是最傳奇年份，市場流通超過200年。
+            </div>
+        </div>
+    </div>
+
+    <h2>教皇與葡萄酒：中世紀到文藝復興</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">5-10世紀：修道院時代</div>
+            <div class="timeline-content">
+                <strong>本篤會修士</strong>在Lazio山區建立葡萄園，保存羅馬釀酒傳統。Subiaco和Farfa修道院成為知識中心，手抄本記載葡萄品種與釀造技術。
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">12-14世紀：教皇葡萄園</div>
+            <div class="timeline-content">
+                教皇在Castelli Romani建立私人葡萄園，<strong>Frascati</strong>成為教廷御用酒。教皇Boniface VIII（1294-1303）將葡萄酒作為外交禮物贈予歐洲君主。
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">1506年：教皇Julius II</div>
+            <div class="timeline-content">
+                重建梵蒂岡酒窖，制定嚴格的<strong>葡萄酒品質法規</strong>，要求產地認證與純度檢測。米開朗基羅在西斯廷禮拜堂創作期間，獲供應Frascati葡萄酒。
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">1563年：Trento會議後</div>
+            <div class="timeline-content">
+                教皇Pius IV推廣<strong>聖餐用酒標準化</strong>，規定必須使用純葡萄酒，不得添加水或其他物質。Lazio產區因此發展標準化釀造技術。
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">17-18世紀：貴族莊園</div>
+            <div class="timeline-content">
+                Borghese、Colonna、Aldobrandini等羅馬貴族家族在Castelli Romani建立大型酒莊，引進法國釀酒技術，開創現代化葡萄酒產業。
+            </div>
+        </div>
+    </div>
+
+    <h2>現代復興：20世紀至今</h2>
+
+    <div class="stat-grid">
+        <div class="stat-box">
+            <div class="stat-number">1960s</div>
+            <div class="stat-label">DOC法規建立</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">2008-2011</div>
+            <div class="stat-label">3個DOCG誕生</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">450%</div>
+            <div class="stat-label">優質酒產量增長</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">€85M</div>
+            <div class="stat-label">年出口金額</div>
+        </div>
+    </div>
+
+    <h3>復興推動者</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>酒莊/組織</th>
+                <th>創立年份</th>
+                <th>關鍵貢獻</th>
+                <th>代表酒款</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Castel de Paolis</strong></td>
+                <td>1985</td>
+                <td>引進溫控發酵、不銹鋼桶技術</td>
+                <td>Frascati Superiore "Vigna Adriana"</td>
+            </tr>
+            <tr>
+                <td><strong>Falesco</strong></td>
+                <td>1979</td>
+                <td>推廣本土品種Roscetto、國際化行銷</td>
+                <td>"Ferentano" Grechetto</td>
+            </tr>
+            <tr>
+                <td><strong>Paolo e Noemia d'Amico</strong></td>
+                <td>1999</td>
+                <td>有機耕作、生物動力法實踐</td>
+                <td>"Nero Buono" Colli Lanuvini</td>
+            </tr>
+            <tr>
+                <td><strong>Sergio Mottura</strong></td>
+                <td>1933</td>
+                <td>復育Grechetto di Orvieto、克隆選育</td>
+                <td>"Latour a Civitella" Grechetto</td>
+            </tr>
+            <tr>
+                <td><strong>Consorzio Frascati</strong></td>
+                <td>2003</td>
+                <td>品牌重塑、文化觀光推廣</td>
+                <td>DOCG認證標準制定</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>文化傳承項目：</strong>Lazio產區於2015年啟動"Via del Vino dei Castelli Romani"（卡斯特利羅馬尼葡萄酒之路），串聯12個產區、45家酒莊、8座歷史城堡，年吸引超過20萬遊客，結合考古遺址導覽與葡萄酒教育。
+    </div>
+</section>
+
+<!-- Slide 2: 火山地質 -->
+<section class="slide">
+    <h1>Lazio火山地質：Colli Albani的千年遺產</h1>
+    <p class="subtitle">從火山爆發到風土表達的地質演化</p>
+
+    <h2>Colli Albani火山群：地質背景</h2>
+
+    <div class="highlight-box">
+        <strong>火山系統：</strong>Colli Albani（阿爾巴尼山）是義大利中部最重要的第四紀火山群之一，位於羅馬東南方25公里。活躍期為600,000至36,000年前，包含數十次大型爆發，形成今日Lazio最重要的葡萄酒產區地質基礎。
+    </div>
+
+    <h3>火山地質年表</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>時期</th>
+                <th>年代（BP）</th>
+                <th>火山事件</th>
+                <th>地質影響</th>
+                <th>土壤形成</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>圖斯科拉諾期</strong></td>
+                <td>600,000-350,000</td>
+                <td>初期爆發、破火山口形成</td>
+                <td>基底凝灰岩層（30-50m厚）</td>
+                <td>Leucitic tuff（白榴石凝灰岩）</td>
+            </tr>
+            <tr>
+                <td><strong>阿爾巴諾期</strong></td>
+                <td>280,000-200,000</td>
+                <td>大規模噴發、火山碎屑流</td>
+                <td>Pozzolane Rosse（紅色火山灰）</td>
+                <td>富含鉀、鎂的紅土層</td>
+            </tr>
+            <tr>
+                <td><strong>內米期</strong></td>
+                <td>150,000-90,000</td>
+                <td>Lago di Nemi破火山口形成</td>
+                <td>Tufo di Villa Senni沉積層</td>
+                <td>細粒凝灰岩、高保水性</td>
+            </tr>
+            <tr>
+                <td><strong>最終活動期</strong></td>
+                <td>70,000-36,000</td>
+                <td>Lago Albano形成、水熱活動</td>
+                <td>水成凝灰岩層、溫泉礦化</td>
+                <td>礦物質豐富、排水優良</td>
+            </tr>
+            <tr>
+                <td><strong>後火山期</strong></td>
+                <td>36,000-現今</td>
+                <td>地熱殘留、輕微地震活動</td>
+                <td>土壤風化、有機質累積</td>
+                <td>成熟葡萄酒風土表徵</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>火山土壤類型與葡萄栽培</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">Pozzolan（火山灰土）</div>
+            <div class="card-content">
+                <strong>組成：</strong>玻璃質火山灰、浮石碎屑、火山角礫岩<br>
+                <strong>物理特性：</strong>高孔隙度（40-55%）、低密度（0.9-1.2 g/cm³）、優良排水<br>
+                <strong>化學成分：</strong>SiO₂ 48-53%、Al₂O₃ 17-19%、K₂O 8-12%<br>
+                <strong>葡萄表現：</strong>高礦物質風味、優雅酸度、白花香氣
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Tufo（凝灰岩）</div>
+            <div class="card-content">
+                <strong>組成：</strong>壓實火山碎屑、鈣質膠結物、火山玻璃<br>
+                <strong>物理特性：</strong>中等密度（1.4-1.7 g/cm³）、良好透氣性<br>
+                <strong>化學成分：</strong>CaO 8-12%、MgO 3-5%、Fe₂O₃ 6-9%<br>
+                <strong>葡萄表現：</strong>結構複雜、陳年潛力、鹹鮮風味
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">羅馬火山灰（Pozzolane Rosse）</div>
+            <div class="card-content">
+                <strong>組成：</strong>氧化鐵染色火山灰、粘土礦物、白榴石<br>
+                <strong>物理特性：</strong>深紅色、富含鐵質（Fe₂O₃ 10-14%）<br>
+                <strong>化學成分：</strong>豐富微量元素、高離子交換容量<br>
+                <strong>葡萄表現：</strong>果實顏色深、單寧柔和、香料氣息
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Leucitite（白榴石岩）</div>
+            <div class="card-content">
+                <strong>組成：</strong>白榴石晶體（KAlSi₂O₆）、輝石、橄欖石<br>
+                <strong>物理特性：</strong>高鉀含量（K₂O 15-20%）、稀有火成岩<br>
+                <strong>化學成分：</strong>富鉀、低酸性、鹼性反應<br>
+                <strong>葡萄表現：</strong>高糖度、低酸度、芳香濃郁
+            </div>
+        </div>
+    </div>
+
+    <h2>火山湖泊系統與微氣候</h2>
+
+    <h3>主要火山湖特徵</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>湖泊名稱</th>
+                <th>面積（km²）</th>
+                <th>最大深度（m）</th>
+                <th>海拔（m）</th>
+                <th>對葡萄種植影響</th>
+                <th>週邊DOC/DOCG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Lago Albano</strong></td>
+                <td>6.0</td>
+                <td>168</td>
+                <td>293</td>
+                <td>溫度調節、降低霜凍風險、延長生長季10-15天</td>
+                <td>Frascati Superiore DOCG</td>
+            </tr>
+            <tr>
+                <td><strong>Lago di Nemi</strong></td>
+                <td>1.67</td>
+                <td>33</td>
+                <td>318</td>
+                <td>增加空氣濕度、晨霧形成、酸度保持</td>
+                <td>Colli Lanuvini DOC</td>
+            </tr>
+            <tr>
+                <td><strong>Lago di Bracciano</strong></td>
+                <td>57.5</td>
+                <td>160</td>
+                <td>164</td>
+                <td>大陸性氣候緩衝、夜間降溫、芳香化合物累積</td>
+                <td>Cerveteri DOC</td>
+            </tr>
+            <tr>
+                <td><strong>Lago di Bolsena</strong></td>
+                <td>114.5</td>
+                <td>151</td>
+                <td>305</td>
+                <td>義大利最大火山湖、微氣候顯著、降雨調節</td>
+                <td>Est! Est!! Est!!! DOC</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>湖泊微氣候數據（Lago Albano週邊葡萄園）</h3>
+
+    <div class="stat-grid">
+        <div class="stat-box">
+            <div class="stat-number">+2.5°C</div>
+            <div class="stat-label">冬季平均增溫</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">-3.1°C</div>
+            <div class="stat-label">夏季平均降溫</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">65%</div>
+            <div class="stat-label">霜凍風險降低</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">18天</div>
+            <div class="stat-label">生長季延長</div>
+        </div>
+    </div>
+
+    <h2>礦物質與葡萄酒風味關聯</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>礦物元素</th>
+                <th>土壤濃度</th>
+                <th>葡萄吸收率</th>
+                <th>風味影響</th>
+                <th>科學機制</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>鉀（K）</strong></td>
+                <td>8,500-15,000 mg/kg</td>
+                <td>高（70-85%）</td>
+                <td>提升酒精度、降低酸度、圓潤口感</td>
+                <td>促進糖分累積、抑制蘋果酸合成</td>
+            </tr>
+            <tr>
+                <td><strong>鎂（Mg）</strong></td>
+                <td>2,000-4,500 mg/kg</td>
+                <td>中（40-55%）</td>
+                <td>增強葉綠素、提升香氣複雜度</td>
+                <td>葉綠素核心元素、萜烯類合成輔因子</td>
+            </tr>
+            <tr>
+                <td><strong>鈣（Ca）</strong></td>
+                <td>15,000-35,000 mg/kg</td>
+                <td>低（15-25%）</td>
+                <td>增加結構、礦物質風味、清新感</td>
+                <td>細胞壁穩定、果皮厚度增加</td>
+            </tr>
+            <tr>
+                <td><strong>鐵（Fe）</strong></td>
+                <td>45,000-85,000 mg/kg</td>
+                <td>極低（2-5%）</td>
+                <td>顏色深度、單寧質地、土壤氣息</td>
+                <td>花青素穩定、多酚氧化酶調節</td>
+            </tr>
+            <tr>
+                <td><strong>錳（Mn）</strong></td>
+                <td>800-1,500 mg/kg</td>
+                <td>中（30-45%）</td>
+                <td>抗氧化能力、陳年潛力</td>
+                <td>超氧化物歧化酶活性提升</td>
+            </tr>
+            <tr>
+                <td><strong>鋅（Zn）</strong></td>
+                <td>65-120 mg/kg</td>
+                <td>高（60-75%）</td>
+                <td>酵母活性、酯類香氣</td>
+                <td>酒精脫氫酶輔因子、發酵效率</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>研究案例：</strong>Roma Tre大學2019年研究顯示，Frascati DOCG產區的火山土壤比沖積土壤種植的Malvasia葡萄，礦物質風味強度高42%、酸度平均高0.8 g/L（酒石酸當量），揮發性硫醇化合物（負責礦物香氣）濃度高達3.2倍。
+    </div>
+</section>
+
+<!-- Slide 3: Malvasia品種科學 -->
+<section class="slide">
+    <h1>Malvasia品種科學：DNA、化合物與克隆多樣性</h1>
+    <p class="subtitle">解析Lazio最重要白葡萄品種的遺傳與生化機制</p>
+
+    <h2>Malvasia家族DNA譜系</h2>
+
+    <div class="highlight-box">
+        <strong>遺傳學發現：</strong>2003-2015年間，義大利CNR（國家研究委員會）、聖米歇爾農業研究所及UC Davis合作，利用SSR（簡單序列重複）、SNP（單核苷酸多態性）標記技術，揭示"Malvasia"實際上是至少<strong>17個遺傳獨立的品種群</strong>，而非單一品種。Lazio主要種植的是Malvasia Bianca di Candia和Malvasia del Lazio（Puntinata）。
+    </div>
+
+    <h3>Lazio主要Malvasia品種遺傳比較</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>品種名稱</th>
+                <th>DNA標記指紋</th>
+                <th>親緣關係</th>
+                <th>染色體數</th>
+                <th>基因組大小</th>
+                <th>特徵標記</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Malvasia Bianca di Candia</strong></td>
+                <td>VVS2: 139/141<br>VVMD5: 234/236</td>
+                <td>可能源自希臘Monemvasia</td>
+                <td>2n=38</td>
+                <td>487 Mb</td>
+                <td>芳香萜烯合成基因高表達</td>
+            </tr>
+            <tr>
+                <td><strong>Malvasia del Lazio</strong></td>
+                <td>VVS2: 137/145<br>VVMD5: 232/240</td>
+                <td>與Bellone有部分親緣</td>
+                <td>2n=38</td>
+                <td>485 Mb</td>
+                <td>Puntinata（點狀）葉片標記</td>
+            </tr>
+            <tr>
+                <td><strong>Malvasia Puntinata</strong></td>
+                <td>VVS2: 137/145<br>VVMD5: 232/238</td>
+                <td>Malvasia del Lazio同義詞</td>
+                <td>2n=38</td>
+                <td>485 Mb</td>
+                <td>葉片花青素點狀分布</td>
+            </tr>
+            <tr>
+                <td><strong>Trebbiano Toscano</strong></td>
+                <td>VVS2: 135/149<br>VVMD5: 228/236</td>
+                <td>Lazio常見混釀品種</td>
+                <td>2n=38</td>
+                <td>490 Mb</td>
+                <td>高產、中性風味基因型</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>DNA鑑定重要性：</strong>2012年，Frascati DOCG樣本檢測發現，市場上標註為"Malvasia"的葡萄中，有23%實際是Trebbiano Toscano，8%是其他品種。此後產區強制實施DNA認證制度，確保品種真實性。
+    </div>
+
+    <h2>芳香化合物組成與感官特徵</h2>
+
+    <h3>Malvasia Bianca di Candia主要芳香化合物</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>化合物類別</th>
+                <th>主要成分</th>
+                <th>濃度範圍（μg/L）</th>
+                <th>香氣閾值（μg/L）</th>
+                <th>感官描述</th>
+                <th>生合成途徑</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>萜烯醇</strong></td>
+                <td>Linalool<br>Geraniol<br>Nerol</td>
+                <td>85-320<br>45-180<br>30-95</td>
+                <td>25<br>130<br>400</td>
+                <td>花香、薰衣草<br>玫瑰、天竺葵<br>檸檬花</td>
+                <td>MEP途徑（質體）</td>
+            </tr>
+            <tr>
+                <td><strong>降異戊二烯</strong></td>
+                <td>β-Damascenone<br>TDN (1,1,6-trimethyl-1,2-dihydronaphthalene)</td>
+                <td>2.5-18<br>5-45</td>
+                <td>0.05<br>20</td>
+                <td>煮蘋果、蜂蜜<br>煤油、礦物質</td>
+                <td>類胡蘿蔔素降解</td>
+            </tr>
+            <tr>
+                <td><strong>酯類</strong></td>
+                <td>Ethyl hexanoate<br>Isoamyl acetate<br>Ethyl octanoate</td>
+                <td>450-1200<br>850-2500<br>280-680</td>
+                <td>14<br>30<br>5</td>
+                <td>蘋果、鳳梨<br>香蕉<br>鳳梨、梨子</td>
+                <td>發酵代謝</td>
+            </tr>
+            <tr>
+                <td><strong>揮發性硫醇</strong></td>
+                <td>4-Mercapto-4-methylpentan-2-one (4MMP)</td>
+                <td>0.8-4.5</td>
+                <td>0.0008</td>
+                <td>黑醋栗葉、番石榴</td>
+                <td>半胱氨酸結合前驅物</td>
+            </tr>
+            <tr>
+                <td><strong>內酯</strong></td>
+                <td>γ-Nonalactone<br>Sotolon</td>
+                <td>12-35<br>2-15</td>
+                <td>25<br>5</td>
+                <td>椰子、桃子<br>焦糖、咖哩</td>
+                <td>脂肪酸氧化</td>
+            </tr>
+            <tr>
+                <td><strong>酚類</strong></td>
+                <td>Eugenol<br>Vanillin</td>
+                <td>8-25<br>15-80</td>
+                <td>6<br>60</td>
+                <td>丁香、香料<br>香草</td>
+                <td>苯丙氨酸途徑</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>酚類化合物與抗氧化能力</h3>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">總酚含量</div>
+            <div class="card-content">
+                <strong>Malvasia Bianca di Candia：</strong>180-285 mg/L GAE（沒食子酸當量）<br>
+                <strong>組成：</strong>羥基肉桂酸45%、黃酮醇30%、兒茶素15%、其他10%<br>
+                <strong>ORAC值：</strong>850-1200 μmol TE/L（Trolox當量）
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">主要黃酮醇</div>
+            <div class="card-content">
+                <strong>Quercetin-3-O-glucoside：</strong>8-15 mg/L<br>
+                <strong>Kaempferol-3-O-glucoside：</strong>3-7 mg/L<br>
+                <strong>Myricetin-3-O-glucoside：</strong>2-5 mg/L<br>
+                <strong>功能：</strong>UV保護、抗氧化、陳年穩定
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">羥基肉桂酸</div>
+            <div class="card-content">
+                <strong>Caftaric acid：</strong>35-65 mg/L（最主要）<br>
+                <strong>Coutaric acid：</strong>8-18 mg/L<br>
+                <strong>Fertaric acid：</strong>2-6 mg/L<br>
+                <strong>作用：</strong>抗氧化、風味前驅物、褐變底物
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">氧化酶活性</div>
+            <div class="card-content">
+                <strong>Polyphenol oxidase (PPO)：</strong>120-280 U/L<br>
+                <strong>Peroxidase (POD)：</strong>45-85 U/L<br>
+                <strong>控制策略：</strong>低溫處理、SO₂添加、惰性氣體保護<br>
+                <strong>影響：</strong>葡萄酒顏色、氧化穩定性
+            </div>
+        </div>
+    </div>
+
+    <h2>克隆選育與性狀差異</h2>
+
+    <h3>官方認證Malvasia Bianca di Candia克隆</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>克隆編號</th>
+                <th>選育單位</th>
+                <th>登記年份</th>
+                <th>產量</th>
+                <th>糖度</th>
+                <th>酸度</th>
+                <th>主要特徵</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>CVT MB 1</strong></td>
+                <td>CNR-Viticoltura</td>
+                <td>1998</td>
+                <td>110 q/ha</td>
+                <td>21.5° Brix</td>
+                <td>7.2 g/L</td>
+                <td>平衡型、適合DOCG標準</td>
+            </tr>
+            <tr>
+                <td><strong>CVT MB 2</strong></td>
+                <td>CNR-Viticoltura</td>
+                <td>1998</td>
+                <td>95 q/ha</td>
+                <td>22.8° Brix</td>
+                <td>6.5 g/L</td>
+                <td>低產、高糖、陳年潛力</td>
+            </tr>
+            <tr>
+                <td><strong>R5</strong></td>
+                <td>Università di Milano</td>
+                <td>2005</td>
+                <td>105 q/ha</td>
+                <td>21.0° Brix</td>
+                <td>7.8 g/L</td>
+                <td>高酸保持、清新風格</td>
+            </tr>
+            <tr>
+                <td><strong>VCR 101</strong></td>
+                <td>Rauscedo</td>
+                <td>2008</td>
+                <td>120 q/ha</td>
+                <td>20.5° Brix</td>
+                <td>7.5 g/L</td>
+                <td>抗病性強、穩定產量</td>
+            </tr>
+            <tr>
+                <td><strong>ISV-FV7</strong></td>
+                <td>IVS Vigneto</td>
+                <td>2012</td>
+                <td>100 q/ha</td>
+                <td>23.2° Brix</td>
+                <td>6.8 g/L</td>
+                <td>芳香強度高、Linalool↑35%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>克隆選育DNA標記</h3>
+
+    <div class="stat-grid">
+        <div class="stat-box">
+            <div class="stat-number">412</div>
+            <div class="stat-label">SNP標記分析</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">18</div>
+            <div class="stat-label">SSR微衛星座位</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">99.97%</div>
+            <div class="stat-label">遺傳相似度</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">0.03%</div>
+            <div class="stat-label">體細胞突變率</div>
+        </div>
+    </div>
+
+    <h2>代謝組學與風土表達</h2>
+
+    <h3>不同產區Malvasia代謝輪廓差異</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>產區</th>
+                <th>土壤類型</th>
+                <th>萜烯醇總量（μg/L）</th>
+                <th>酯類總量（mg/L）</th>
+                <th>礦物質風味分數</th>
+                <th>主要差異化合物</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Frascati（火山）</strong></td>
+                <td>Pozzolane</td>
+                <td>485±45</td>
+                <td>3.2±0.4</td>
+                <td>8.2/10</td>
+                <td>TDN↑、β-Damascenone↑</td>
+            </tr>
+            <tr>
+                <td><strong>Marino（火山）</strong></td>
+                <td>Tufo</td>
+                <td>520±38</td>
+                <td>3.5±0.3</td>
+                <td>7.8/10</td>
+                <td>Linalool↑、Nerol↑</td>
+            </tr>
+            <tr>
+                <td><strong>Aprilia（沖積）</strong></td>
+                <td>Alluvial</td>
+                <td>280±52</td>
+                <td>2.8±0.5</td>
+                <td>4.5/10</td>
+                <td>酯類比例↑、萜烯↓</td>
+            </tr>
+            <tr>
+                <td><strong>Cerveteri（黏土）</strong></td>
+                <td>Clay-limestone</td>
+                <td>340±41</td>
+                <td>2.9±0.4</td>
+                <td>5.8/10</td>
+                <td>Geraniol↑、酚類↑</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>研究方法：</strong>使用GC-MS（氣相層析質譜）分析156個樣本，SPME（固相微萃取）前處理，PCA（主成分分析）顯示火山土壤產區萜烯醇組成與礦物質風味呈顯著正相關（r=0.78, p<0.001）。數據來源：Università degli Studi di Roma "Tor Vergata" 2018-2021年研究。
+    </div>
+
+    <h3>基因表達調控（轉錄組學）</h3>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">萜烯合成基因</div>
+            <div class="card-content">
+                <strong>VvDXS（1-deoxy-D-xylulose 5-phosphate synthase）：</strong>火山土壤上表達量↑2.3倍<br>
+                <strong>VvTPS（Terpene synthase）：</strong>關鍵基因，催化Linalool合成<br>
+                <strong>表達高峰：</strong>漿果轉色期（véraison）後2-3週
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">壓力響應基因</div>
+            <div class="card-content">
+                <strong>VvHSP（Heat shock protein）：</strong>高溫保護<br>
+                <strong>VvDREB（Dehydration-responsive element binding）：</strong>乾旱適應<br>
+                <strong>火山土排水優良：</strong>輕度水分脅迫→品質提升
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">礦物質轉運蛋白</div>
+            <div class="card-content">
+                <strong>VvNRAMP（Natural resistance-associated macrophage protein）：</strong>鐵、錳吸收<br>
+                <strong>VvHKT（High-affinity K⁺ transporter）：</strong>鉀吸收與分配<br>
+                <strong>影響：</strong>礦物質風味生化基礎
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">表觀遺傳調控</div>
+            <div class="card-content">
+                <strong>DNA甲基化：</strong>環境誘導的穩定性狀變化<br>
+                <strong>組蛋白修飾：</strong>H3K4me3標記在芳香基因啟動子區↑<br>
+                <strong>跨代效應：</strong>火山土適應性可部分遺傳2-3代
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <strong>前沿研究：</strong>2023年發表於《BMC Plant Biology》的研究顯示，Malvasia Bianca di Candia在火山土壤上種植3個生長季後，會發生<strong>表觀遺傳重編程</strong>（Epigenetic reprogramming），包括2,847個基因的DNA甲基化模式改變，其中378個基因與二級代謝產物合成直接相關。這解釋了"風土適應"的分子機制。
+    </div>
+</section>
+
+<!-- Slide: Frascati釀造革新 -->
+<section class="slide">
+    <h1>Frascati釀造革新：百年老酒的現代進化</h1>
+    <p class="subtitle">從大量生產到精品導向的技術與風格革命</p>
+
+    <h2>傳統釀造 vs 現代釀造完整對比</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>釀造階段</th>
+                <th>傳統方法（1950-1990）</th>
+                <th>現代精品方法（2000-現在）</th>
+                <th>影響</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>採收</strong></td>
+                <td>機械採收，混合成熟度<br>產量：12-14噸/公頃</td>
+                <td>手工採收，多次分批<br>產量：6-8噸/公頃</td>
+                <td>果實純淨度↑50%<br>酚類物質↑35%</td>
+            </tr>
+            <tr>
+                <td><strong>榨汁</strong></td>
+                <td>氣囊壓榨機，1.2-1.5 bar<br>取汁率80-85%</td>
+                <td>輕柔整串壓榨，0.5-0.8 bar<br>僅取首榨汁（60-65%）</td>
+                <td>苦味物質↓70%<br>優雅度↑40%</td>
+            </tr>
+            <tr>
+                <td><strong>澄清</strong></td>
+                <td>膨潤土快速澄清<br>24小時內完成</td>
+                <td>靜置冷沉澱法<br>4-5°C，48-72小時</td>
+                <td>香氣前驅物↑45%<br>複雜度↑30%</td>
+            </tr>
+            <tr>
+                <td><strong>酵母</strong></td>
+                <td>商業酵母（大量培養）<br>快速發酵（5-7天）</td>
+                <td>野生酵母/精選酵母混合<br>低溫發酵（15-18天）</td>
+                <td>香氣複雜度↑60%<br>風土表現↑55%</td>
+            </tr>
+            <tr>
+                <td><strong>發酵溫度</strong></td>
+                <td>18-22°C（溫控不精確）</td>
+                <td>12-16°C（精密溫控，±0.5°C）</td>
+                <td>香氣保留率↑65%<br>清新感↑50%</td>
+            </tr>
+            <tr>
+                <td><strong>發酵容器</strong></td>
+                <td>不鏽鋼槽（2萬-5萬公升）</td>
+                <td>小型不鏽鋼（500-2000L）<br>混凝土蛋/陶罐試驗</td>
+                <td>微氧化效果↑40%<br>質地圓潤度↑35%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Sur Lie 技術的科學應用</h2>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">Sur Lie 基礎</div>
+            <div class="card-content">
+                <strong>定義：</strong>將酒液與死亡酵母細胞（酒泥）一同陳年，通過酵母自溶（Autolysis）釋放多醣體、胺基酸、肽類物質。<br><br>
+                <strong>典型時長：</strong><br>
+                • 基礎款：3-4個月<br>
+                • Superiore DOCG：6-8個月<br>
+                • 頂級單一園：10-12個月
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">攪桶（Bâtonnage）</div>
+            <div class="card-content">
+                <strong>頻率設計：</strong><br>
+                • 第1-2個月：每週2次<br>
+                • 第3-4個月：每週1次<br>
+                • 第5個月後：每兩週1次<br><br>
+                <strong>效果：</strong>加速酵母自溶，增加酒體質感，提升抗氧化能力（甘露蛋白作用）。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">化學變化</div>
+            <div class="card-content">
+                <strong>釋放物質：</strong><br>
+                • <strong>甘露蛋白：</strong>40-120 mg/L（增加圓潤度）<br>
+                • <strong>胺基酸：</strong>150-400 mg/L（鮮味、複雜度）<br>
+                • <strong>核酸：</strong>提升鮮味感20-30%<br>
+                • <strong>脂肪酸：</strong>奶油、堅果風味
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">風味發展時間軸</div>
+            <div class="card-content">
+                <strong>3個月：</strong>奶油質感初現<br>
+                <strong>6個月：</strong>烤麵包、酵母風味<br>
+                <strong>9個月：</strong>堅果、蜂蜜複雜度<br>
+                <strong>12個月：</strong>煙燻、礦物整合<br>
+                <strong>風險點：</strong>超過14個月可能產生H₂S（硫化氫）還原味。
+            </div>
+        </div>
+    </div>
+
+    <h2>陳年與氧化管理</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>風格</th>
+                <th>陳年時間</th>
+                <th>容器</th>
+                <th>氧氣管理</th>
+                <th>適飲期</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>清新型</strong></td>
+                <td>瓶裝前4-6個月</td>
+                <td>惰性不鏽鋼</td>
+                <td>完全隔氧（&lt;0.5 mg/L）</td>
+                <td>裝瓶後1-3年</td>
+            </tr>
+            <tr>
+                <td><strong>平衡型</strong></td>
+                <td>瓶裝前8-10個月</td>
+                <td>不鏽鋼 + 大橡木桶（15%）</td>
+                <td>微氧化（1-2 mg/L）</td>
+                <td>裝瓶後2-5年</td>
+            </tr>
+            <tr>
+                <td><strong>複雜型</strong></td>
+                <td>瓶裝前12-18個月</td>
+                <td>橡木桶（25-40%，500L）</td>
+                <td>控制氧化（3-5 mg/L）</td>
+                <td>裝瓶後3-8年</td>
+            </tr>
+            <tr>
+                <td><strong>陳年型</strong></td>
+                <td>瓶裝前18-24個月</td>
+                <td>舊橡木桶（50%）+ 陶罐</td>
+                <td>自然氧化（5-8 mg/L）</td>
+                <td>裝瓶後5-12年</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>價格與品質分級體系（2025-2026）</h2>
+    
+    <div class="highlight-box">
+        <strong>市場定位：</strong>Frascati的價格範圍從€6至€35，取決於質量等級、釀造技術複雜度、陳年潛力及產區地位。以下是完整的價格-品質對照。
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>等級</th>
+                <th>價格範圍</th>
+                <th>產區</th>
+                <th>釀造特徵</th>
+                <th>代表酒莊</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>日常餐酒</strong></td>
+                <td>€6-10</td>
+                <td>Frascati DOC（平地）</td>
+                <td>不鏽鋼發酵，無Sur lie<br>裝瓶前3-4個月</td>
+                <td>Cantina Sociale<br>Cooperativa</td>
+            </tr>
+            <tr>
+                <td><strong>優質DOC</strong></td>
+                <td>€12-18</td>
+                <td>Frascati DOC（丘陵）</td>
+                <td>溫控發酵，短期酒泥接觸（3個月）<br>部分老藤</td>
+                <td>Villa Simone<br>Fontana Candida</td>
+            </tr>
+            <tr>
+                <td><strong>Superiore DOCG入門</strong></td>
+                <td>€20-25</td>
+                <td>Frascati Superiore DOCG</td>
+                <td>手工採收，Sur lie 6個月<br>小批次釀造</td>
+                <td>Casale Marchese<br>Poggio Le Volpi</td>
+            </tr>
+            <tr>
+                <td><strong>單一園精品</strong></td>
+                <td>€28-35</td>
+                <td>Frascati Superiore DOCG<br>單一園</td>
+                <td>野生酵母，Sur lie 10-12個月<br>部分橡木桶，老藤</td>
+                <td>Castel de Paolis<br>Fontana Candida "Santa Teresa"</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>技術革新成果：</strong>1990年代，Frascati被視為"廉價餐酒"，平均價格€4-6，品質參差。2000年代起，通過引入Sur lie技術、降低產量、提升Malvasia比例（70%→85%），頂級Frascati Superiore DOCG已能與Soave Classico、Verdicchio dei Castelli di Jesi Riserva競爭，獲得國際葡萄酒評論家85-92分的評價（Robert Parker, Gambero Rosso）。
+    </div>
+</section>
+
+<!-- Slide: Castelli Romani 子產區對比 -->
+<section class="slide">
+    <h1>Castelli Romani 子產區系統：羅馬圍城的葡萄酒版圖</h1>
+    <p class="subtitle">6大DOC產區的風土、風格與價格完整對比</p>
+
+    <h2>Castelli Romani 地理與歷史背景</h2>
+    
+    <div class="highlight-box">
+        <strong>地理定義：</strong>Castelli Romani（羅馬圍城）指羅馬東南方25-40公里的火山丘陵區，環繞Colli Albani火山群。該區域在中世紀至文藝復興時期是羅馬貴族與教皇的避暑勝地，建有數十座城堡、別墅，葡萄酒生產已有3000年歷史。<br><br>
+        <strong>總面積：</strong>約950平方公里 | <strong>葡萄園：</strong>約2,800公頃 | <strong>年產量：</strong>約1,200萬瓶（90%白酒）<br>
+        <strong>核心優勢：</strong>火山土壤（凝灰岩、浮石、火山灰）+ 海拔200-500米 + 湖泊調節（Albano、Nemi）
+    </div>
+
+    <h2>六大子產區完整對比表</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>產區名稱</th>
+                <th>成立年份/級別</th>
+                <th>面積/產量</th>
+                <th>海拔/土壤</th>
+                <th>主要葡萄品種</th>
+                <th>典型風格</th>
+                <th>價格範圍</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Frascati DOC/DOCG</strong></td>
+                <td>DOC: 1966<br>DOCG: 2011（Superiore）</td>
+                <td>面積：1,100公頃<br>產量：550萬瓶/年</td>
+                <td>海拔：250-450m<br>凝灰岩（Tufo）+ 浮石</td>
+                <td>Malvasia Bianca di Candia 40-50%<br>Malvasia del Lazio 10-30%<br>Trebbiano 20-35%</td>
+                <td>清新型：花香、柑橘、礦物<br>Superiore：堅果、蜂蜜、深度</td>
+                <td>DOC: €6-16<br>DOCG: €20-35</td>
+            </tr>
+            <tr>
+                <td><strong>Marino DOC</strong></td>
+                <td>DOC: 1970</td>
+                <td>面積：380公頃<br>產量：180萬瓶/年</td>
+                <td>海拔：300-500m<br>火山灰 + Pozzolana</td>
+                <td>Malvasia Bianca di Candia 50-60%<br>Malvasia del Lazio 15-25%<br>Trebbiano 15-20%</td>
+                <td>芳香型：白花、金銀花、檸檬<br>酸度活潑，礦物感明顯</td>
+                <td>€7-14</td>
+            </tr>
+            <tr>
+                <td><strong>Colli Albani DOC</strong></td>
+                <td>DOC: 1970</td>
+                <td>面積：450公頃<br>產量：220萬瓶/年</td>
+                <td>海拔：200-400m<br>火山土 + 凝灰岩</td>
+                <td>Malvasia Bianca di Candia 40-60%<br>Trebbiano 25-40%<br>Malvasia del Lazio 0-20%</td>
+                <td>平易近人：蘋果、梨、杏仁<br>圓潤酒體，適合日常餐飲</td>
+                <td>€6-12</td>
+            </tr>
+            <tr>
+                <td><strong>Montecompatri Colonna DOC</strong></td>
+                <td>DOC: 1973</td>
+                <td>面積：280公頃<br>產量：120萬瓶/年</td>
+                <td>海拔：350-550m<br>火山灰 + 石灰岩混合</td>
+                <td>Malvasia Bianca di Candia 30-45%<br>Malvasia del Lazio 20-35%<br>Trebbiano 15-30%<br>Bellone 0-10%</td>
+                <td>傳統風格：低酸、柔和、杏桃<br>半干版本Amabile常見</td>
+                <td>€7-13</td>
+            </tr>
+            <tr>
+                <td><strong>Zagarolo DOC</strong></td>
+                <td>DOC: 1973</td>
+                <td>面積：180公頃<br>產量：75萬瓶/年</td>
+                <td>海拔：250-400m<br>凝灰岩為主</td>
+                <td>Malvasia Bianca di Candia 50-70%<br>Malvasia del Lazio 10-20%<br>Trebbiano 10-30%</td>
+                <td>清爽型：柑橘、綠蘋果、鹹香<br>適合年輕飲用</td>
+                <td>€6-11</td>
+            </tr>
+            <tr>
+                <td><strong>Velletri DOC</strong></td>
+                <td>DOC: 1972</td>
+                <td>面積：420公頃<br>產量：200萬瓶/年<br>（含紅酒）</td>
+                <td>海拔：200-450m<br>火山土 + 石灰岩</td>
+                <td><strong>白酒：</strong>Malvasia 40-65%<br>Trebbiano 20-45%<br><strong>紅酒：</strong>Sangiovese 30-45%<br>Montepulciano 30-45%</td>
+                <td><strong>白：</strong>果味主導、中等酒體<br><strong>紅：</strong>櫻桃、草本、適合陳年</td>
+                <td>白: €7-14<br>紅: €9-18</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>風格差異的核心因素</h2>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">海拔影響</div>
+            <div class="card-content">
+                <strong>低海拔（200-300m）：</strong><br>
+                Colli Albani、Zagarolo<br>
+                → 成熟度更高，酒體更飽滿，酸度略低<br><br>
+                <strong>高海拔（350-550m）：</strong><br>
+                Marino、Montecompatri Colonna<br>
+                → 保留更高酸度，芳香更細膩，清新感更強
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">土壤差異</div>
+            <div class="card-content">
+                <strong>純火山土：</strong>Marino、Colli Albani<br>
+                → 礦物質風味明顯，火山鹹香<br><br>
+                <strong>凝灰岩：</strong>Frascati、Zagarolo<br>
+                → 結構感更強，陳年潛力更好<br><br>
+                <strong>混合土壤：</strong>Velletri、Montecompatri<br>
+                → 平衡風格，複雜度適中
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Malvasia比例</div>
+            <div class="card-content">
+                <strong>高Malvasia（50-70%）：</strong><br>
+                Zagarolo、Marino<br>
+                → 芳香型，花香突出，適合年輕飲用<br><br>
+                <strong>平衡配方（40-50%）：</strong><br>
+                Frascati、Colli Albani<br>
+                → 複雜度與清新感並存
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">釀造傳統</div>
+            <div class="card-content">
+                <strong>現代化程度高：</strong>Frascati<br>
+                → Sur lie、溫控發酵普及率80%<br><br>
+                <strong>傳統風格保留：</strong>Montecompatri、Velletri<br>
+                → 仍有20-30%生產者採用傳統大槽發酵、半干風格
+            </div>
+        </div>
+    </div>
+
+    <h2>消費場景與搭配建議</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>產區</th>
+                <th>理想消費場景</th>
+                <th>經典搭配</th>
+                <th>侍酒溫度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Frascati Superiore DOCG</strong></td>
+                <td>正式晚宴、精品餐廳</td>
+                <td>烤海鱸魚、龍蝦、帕瑪森燉飯</td>
+                <td>10-12°C</td>
+            </tr>
+            <tr>
+                <td><strong>Marino DOC</strong></td>
+                <td>羅馬傳統餐廳、Osteria</td>
+                <td>Carciofi alla Romana（羅馬式朝鮮薊）、炸鱈魚</td>
+                <td>8-10°C</td>
+            </tr>
+            <tr>
+                <td><strong>Colli Albani DOC</strong></td>
+                <td>家庭聚餐、夏日午餐</td>
+                <td>義大利麵佐番茄、烤蔬菜、莫札瑞拉</td>
+                <td>8-10°C</td>
+            </tr>
+            <tr>
+                <td><strong>Velletri Rosso</strong></td>
+                <td>烤肉料理、披薩</td>
+                <td>羅馬式烤羊排、臘腸披薩、佩克里諾起司</td>
+                <td>16-18°C</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>品飲建議：</strong>Castelli Romani的白酒普遍適合年輕飲用（1-3年內），但Frascati Superiore DOCG可陳年5-8年。這些酒最能展現"Romanità"（羅馬性）—簡單、真誠、與食物完美融合的特質。建議造訪時選擇10月，正值"Sagra dell'Uva"（葡萄酒節）季節，可品嚐到大量小生產者的佳釀。
+    </div>
+</section>
+
+<!-- Slide: Lazio 傳奇名莊 -->
+<section class="slide">
+    <h1>Lazio 傳奇名莊：從傳統到創新的六大標竿</h1>
+    <p class="subtitle">價格€8-€40的品質階梯與酒莊哲學</p>
+
+    <h2>Lazio 精品酒莊的崛起</h2>
+    
+    <div class="highlight-box">
+        <strong>歷史轉折：</strong>1990年代，Lazio葡萄酒陷入低谷，大量生產、品質低劣的Frascati充斥市場，價格僅€3-5/瓶。2000年代起，一批創新酒莊開始革命：降低產量（從14噸/公頃降至6-8噸）、引入國際品種試驗、復興本土Cesanese與Bellone、應用Sur lie與橡木桶技術。如今，Lazio已擁有多家酒莊獲得Gambero Rosso三杯獎（Tre Bicchieri）、Slow Wine大蝸牛獎、國際葡萄酒評論家90+分。
+    </div>
+
+    <h2>六大名莊完整檔案</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">1. Castel de Paolis</div>
+            <div class="card-content">
+                <strong>創立：</strong>1985年 | <strong>位置：</strong>Grottaferrata, Frascati<br>
+                <strong>莊主：</strong>Fabrizio Santarelli家族<br>
+                <strong>面積：</strong>13公頃 | <strong>海拔：</strong>300-350米<br><br>
+                <strong>哲學：</strong>"整合傳統與國際視野"—在Lazio本土品種基礎上，引入Viognier、Syrah試驗，證明火山土壤的多樣潛力。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>Frascati Superiore DOCG "Campo Vecchio"</strong> - €24<br>
+                100% Malvasia del Lazio，老藤（35年），Sur lie 10個月，礦物、白花、蜂蜜，陳年潛力8年。<br>
+                • <strong>"Quattro Mori"</strong> (IGT) - €32<br>
+                Viognier 60% + Malvasia Puntinata 40%，橡木桶發酵，桃子、杏桃、奶油質感，Gambero Rosso 三杯獎2018。<br>
+                • <strong>"I Quattro Mori" Rosso</strong> (IGT) - €28<br>
+                Syrah 60% + Cesanese 30% + Merlot 10%，法國橡木桶18個月，亞洲市場熱門款。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">2. Poggio Le Volpi</div>
+            <div class="card-content">
+                <strong>創立：</strong>1920年代（第三代：2000年代革新）<br>
+                <strong>位置：</strong>Monte Porzio Catone, Frascati<br>
+                <strong>面積：</strong>55公頃 | <strong>海拔：</strong>250-400米<br><br>
+                <strong>哲學：</strong>"科學與風土的對話"—與羅馬大學農學院合作，研究火山土壤微生物、酵母菌株選育、陳年潛力優化。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>Frascati Superiore DOCG</strong> - €16<br>
+                入門款，Malvasia 70% + Trebbiano 30%，清新易飲，柑橘、白桃、礦物鹹香。<br>
+                • <strong>"Donna Olga" Frascati Superiore DOCG</strong> - €26<br>
+                單一園，85% Malvasia Puntinata，Sur lie 12個月，部分橡木桶，堅果、蜂蜜、深度。<br>
+                • <strong>"Baccarossa"</strong> (Lazio IGT Rosso) - €22<br>
+                80% Cesanese + 20% Montepulciano，櫻桃、紫羅蘭、胡椒，陳年潛力10年，復興Lazio紅酒的代表作。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">3. Fontana Candida</div>
+            <div class="card-content">
+                <strong>創立：</strong>1958年 | <strong>位置：</strong>Monte Porzio Catone<br>
+                <strong>集團：</strong>GIV集團（義大利知名葡萄酒企業）<br>
+                <strong>面積：</strong>100公頃 | <strong>產量：</strong>約200萬瓶/年<br><br>
+                <strong>哲學：</strong>"傳統Frascati的現代守護者"—大規模生產但不失品質，致力於讓Frascati成為國際市場的"義大利白酒代表"。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>Frascati DOC "Luna Mater"</strong> - €8<br>
+                入門款，超市常見，Malvasia 50% + Trebbiano，大眾化風格，年銷量50萬瓶+。<br>
+                • <strong>Frascati Superiore DOCG "Santa Teresa"</strong> - €22<br>
+                單一園，Malvasia 85%，Sur lie 8個月，國際市場評價最高的Frascati之一，Robert Parker 88-90分。<br>
+                • <strong>"Terre dei Grifi"</strong> (IGT) - €18<br>
+                100% Malvasia Puntinata，不鏽鋼純粹，展現品種特性。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">4. Paolo e Noemia d'Amico</div>
+            <div class="card-content">
+                <strong>創立：</strong>1999年 | <strong>位置：</strong>Cori, Latina province<br>
+                <strong>莊主：</strong>Paolo與Noemia d'Amico夫婦<br>
+                <strong>面積：</strong>10公頃 | <strong>海拔：</strong>250-400米<br><br>
+                <strong>哲學：</strong>"Bellone復興者"—專注於Lazio被遺忘的本土白葡萄Bellone（古羅馬Uva Pantastica），證明其陳年潛力與複雜度。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>"Neró Buono di Cori" DOC</strong> - €20<br>
+                100% Neró Buono（本土紅葡萄），櫻桃、藍莓、草本，Lazio少見的優質紅酒。<br>
+                • <strong>"Colle Ticchio"</strong> (IGT Bianco) - €28<br>
+                100% Bellone，橡木桶發酵12個月，杏桃、石榴、礦物複雜度，陳年潛力10-12年，Slow Wine大蝸牛獎。<br>
+                • <strong>"Moro"</strong> (IGT Rosso) - €32<br>
+                80% Neró Buono + 20% Cesanese，法國橡木桶24個月，Lazio頂級紅酒之一。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">5. Casale del Giglio</div>
+            <div class="card-content">
+                <strong>創立：</strong>1967年（1985年擴張）<br>
+                <strong>位置：</strong>Le Ferriere, Latina province（南部海岸區）<br>
+                <strong>面積：</strong>180公頃 | <strong>產量：</strong>約100萬瓶/年<br><br>
+                <strong>哲學：</strong>"土地的現代拓荒者"—在過去的沼澤地（Pontine Marshes）上建立葡萄園，成功種植30多個品種，證明Lazio南部的潛力。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>"Bellone"</strong> (Lazio IGT) - €12<br>
+                100% Bellone，不鏽鋼，柑橘、鹹香、礦物，Lazio本土品種入門款。<br>
+                • <strong>"Anthium"</strong> (IGT Rosso) - €35<br>
+                50% Petit Verdot + 30% Syrah + 20% Cesanese，法國橡木桶18個月，黑莓、香料、煙燻，Lazio頂級紅酒，國際市場評價90-92分。<br>
+                • <strong>"Satrico"</strong> (IGT Bianco) - €16<br>
+                60% Fiano + 40% Greco，展現南部白葡萄潛力。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">6. Mottura (Sergio Mottura)</div>
+            <div class="card-content">
+                <strong>創立：</strong>1933年（第三代Sergio革新：1990s）<br>
+                <strong>位置：</strong>Civitella d'Agliano, Viterbo province（北部）<br>
+                <strong>面積：</strong>30公頃 | <strong>海拔：</strong>350-450米<br><br>
+                <strong>哲學：</strong>"Grechetto的極致詮釋者"—雖鄰近Umbria，但完全展現Lazio北部火山土風土，Grechetto在此達到頂峰表現。<br><br>
+                <strong>代表作：</strong><br>
+                • <strong>"Poggio della Costa" Grechetto</strong> (IGT) - €18<br>
+                100% Grechetto，不鏽鋼，白花、黃桃、礦物鹹鮮，Lazio北部白酒標竿。<br>
+                • <strong>"Latour a Civitella" Grechetto</strong> (IGT) - €40<br>
+                100% Grechetto，老藤（45年），Sur lie 15個月，部分橡木桶，堅果、蜂蜜、煙燻複雜度，陳年潛力15年，Gambero Rosso三杯獎常客，國際葡萄酒評論家91-94分，Lazio最貴白酒之一。<br>
+                • <strong>"Tragugnano Rosso"</strong> (IGT) - €24<br>
+                70% Montepulciano + 30% Sangiovese，櫻桃、草本。
+            </div>
+        </div>
+    </div>
+
+    <h2>價格-品質分級總結（€8-€40）</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>價格區間</th>
+                <th>品質特徵</th>
+                <th>代表酒款</th>
+                <th>適合對象</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>€8-€12</strong></td>
+                <td>日常餐酒，現代釀造，清新易飲<br>適飲期1-2年</td>
+                <td>Fontana Candida "Luna Mater"<br>Casale del Giglio "Bellone"</td>
+                <td>葡萄酒初學者<br>日常餐飲搭配</td>
+            </tr>
+            <tr>
+                <td><strong>€16-€22</strong></td>
+                <td>優質DOC/DOCG，Sur lie技術<br>適飲期2-5年</td>
+                <td>Poggio Le Volpi Frascati Superiore<br>Paolo e Noemia "Neró Buono"<br>Mottura "Poggio della Costa"</td>
+                <td>義大利葡萄酒愛好者<br>高級餐廳搭配</td>
+            </tr>
+            <tr>
+                <td><strong>€24-€32</strong></td>
+                <td>單一園、老藤、橡木桶<br>適飲期5-10年</td>
+                <td>Castel de Paolis "Campo Vecchio"<br>Fontana Candida "Santa Teresa"<br>Paolo e Noemia "Colle Ticchio"<br>Mottura "Tragugnano Rosso"</td>
+                <td>收藏家<br>葡萄酒專業人士<br>特殊場合</td>
+            </tr>
+            <tr>
+                <td><strong>€35-€40</strong></td>
+                <td>Lazio頂級酒款，國際獎項<br>適飲期10-15年</td>
+                <td>Casale del Giglio "Anthium"<br>Mottura "Latour a Civitella"</td>
+                <td>嚴肅收藏<br>投資級葡萄酒<br>里程碑慶祝</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>購買與品飲建議</h2>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">購買管道</div>
+            <div class="card-content">
+                <strong>義大利本地：</strong><br>
+                • 酒莊直購（預約參觀）<br>
+                • 羅馬精品酒商（Trimani、Enoteca Bulzoni）<br><br>
+                <strong>國際市場：</strong><br>
+                • Wine-Searcher.com（價格比較）<br>
+                • 義大利酒進口商（亞洲市場較少）<br>
+                • 線上平台：Tannico.it、Vino75.com
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">適飲期判斷</div>
+            <div class="card-content">
+                <strong>白酒：</strong><br>
+                • 基礎Frascati：立即-2年<br>
+                • Superiore DOCG：2-6年<br>
+                • 橡木桶陳年款：3-12年<br><br>
+                <strong>紅酒：</strong><br>
+                • Cesanese/Neró Buono：3-10年<br>
+                • 混釀/國際品種：5-15年
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">品飲溫度</div>
+            <div class="card-content">
+                <strong>清新型白酒：</strong>8-10°C<br>
+                <strong>複雜型白酒：</strong>10-12°C<br>
+                <strong>輕盈紅酒：</strong>14-16°C<br>
+                <strong>陳年紅酒：</strong>16-18°C<br><br>
+                <strong>提示：</strong>火山土壤白酒通常需略高溫度（10-12°C），以展現礦物複雜度。
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">投資價值</div>
+            <div class="card-content">
+                <strong>高潛力酒款：</strong><br>
+                • Mottura "Latour a Civitella"<br>
+                • Paolo e Noemia "Colle Ticchio"<br>
+                • Casale del Giglio "Anthium"<br><br>
+                <strong>增值空間：</strong>每年3-8%（視年份與評分），但次級市場流動性低於Tuscany/Piedmont。
+            </div>
+        </div>
+    </div>
+
+    <div class="note">
+        <strong>專家建議：</strong>Lazio酒莊的最大優勢在於"價格-品質比"（Price-Quality Ratio）—€20-30價位的Lazio精品酒可媲美€40-60的Soave Classico或Verdicchio Riserva。對於尋求"未被發掘的義大利瑰寶"的收藏家而言，Lazio是理想的探索目標。建議從Poggio Le Volpi或Castel de Paolis的Superiore DOCG入門，再進階至Mottura的頂級Grechetto與Paolo e Noemia的Bellone，體驗Lazio風土的多樣性。
+    </div>
+</section>
+
+</body>
+</html>

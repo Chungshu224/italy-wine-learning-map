@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "哪個品種被稱為「義大利之王」，釀造 Barolo 和 Barbaresco？",
-      "options": ["Sangiovese", "Nebbiolo", "Barbera", "Montepulciano"],
+      "options": [
+        "Sangiovese",
+        "Nebbiolo",
+        "Barbera",
+        "Montepulciano"
+      ],
       "answer": 1,
       "explanation": "Nebbiolo 是義大利最偉大的紅葡萄品種，用於釀造 Barolo 和 Barbaresco 等頂級酒款。"
     },
     {
       "question": "Barbera 的主要特色是？",
-      "options": ["高單寧、低酸度", "低單寧、高酸度", "高單寧、高酸度", "低單寧、低酸度"],
+      "options": [
+        "高單寧、低酸度",
+        "低單寧、高酸度",
+        "高單寧、高酸度",
+        "低單寧、低酸度"
+      ],
       "answer": 1,
       "explanation": "Barbera 的獨特之處在於低單寧配合高酸度，使其非常適合日常飲用和配餐。"
     },
     {
       "question": "哪個品種是義大利種植最廣的紅葡萄？",
-      "options": ["Nebbiolo", "Sangiovese", "Barbera", "Nero d'Avola"],
+      "options": [
+        "Nebbiolo",
+        "Sangiovese",
+        "Barbera",
+        "Nero d'Avola"
+      ],
       "answer": 1,
       "explanation": "Sangiovese 是義大利種植最廣泛的紅葡萄品種，尤其在托斯卡納地區。"
     },
     {
       "question": "Nero d'Avola 主要產自哪個產區？",
-      "options": ["Piemonte", "Tuscany", "Veneto", "Sicily"],
+      "options": [
+        "Piemonte",
+        "Tuscany",
+        "Veneto",
+        "Sicily"
+      ],
       "answer": 3,
       "explanation": "Nero d'Avola 是西西里島的代表性紅葡萄品種，被稱為「西西里之王」。"
     }

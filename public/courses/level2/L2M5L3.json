@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "為什麼義大利重視季節性飲食（Stagionalità）？",
-      "options": ["節省成本", "當季食材風味最佳、葡萄酒釋放時機、體感溫度匹配", "政府規定", "只是傳統習慣"],
+      "options": [
+        "節省成本",
+        "當季食材風味最佳、葡萄酒釋放時機、體感溫度匹配",
+        "政府規定",
+        "只是傳統習慣"
+      ],
       "answer": 1,
       "explanation": "義大利季節性飲食原因：當季食材風味最濃、營養最佳；許多葡萄酒有傳統釋放時間配合季節；體感溫度影響對食物、酒款的偏好（夏天清爽、冬天濃郁）。"
     },
     {
       "question": "夏季義大利 Rosato（粉紅酒）季節的代表酒款不包括？",
-      "options": ["Cerasuolo d'Abruzzo", "Bardolino Chiaretto", "Salice Salentino Rosato", "Barolo"],
+      "options": [
+        "Cerasuolo d'Abruzzo",
+        "Bardolino Chiaretto",
+        "Salice Salentino Rosato",
+        "Barolo"
+      ],
       "answer": 3,
       "explanation": "夏季 Rosato 代表：Cerasuolo d'Abruzzo（Montepulciano）、Bardolino Chiaretto（Corvina）、Salice Salentino Rosato（Negroamaro）。Barolo 是冬季厚重紅酒，不適合夏天。"
     },
     {
       "question": "白松露（Tartufo Bianco）季節與最佳配酒是？",
-      "options": ["春季、Prosecco", "夏季、Rosato", "秋冬季（10-12 月）、陳年 Barolo（15-20 年）", "全年、Chianti"],
+      "options": [
+        "春季、Prosecco",
+        "夏季、Rosato",
+        "秋冬季（10-12 月）、陳年 Barolo（15-20 年）",
+        "全年、Chianti"
+      ],
       "answer": 2,
       "explanation": "白松露季節：10-12 月（秋冬）。Piemonte 傳統配陳年 Barolo（15-20 年），因為陳年 Nebbiolo 發展出松露、森林地面風味完美呼應。但也有爭議（部分專家建議清淡白酒）。"
     },
     {
       "question": "Vino Novello（新酒）的釋放日期是？",
-      "options": ["1 月 1 日", "11 月第一個星期四（00:01）", "12 月 25 日", "隨時可釋放"],
+      "options": [
+        "1 月 1 日",
+        "11 月第一個星期四（00:01）",
+        "12 月 25 日",
+        "隨時可釋放"
+      ],
       "answer": 1,
       "explanation": "Vino Novello 法定釋放日期：每年 11 月第一個星期四（00:01），類似法國 Beaujolais Nouveau 第三個星期四。使用 Carbonic Maceration 釀造，果香爆炸、極低單寧、需 3-6 個月內飲用。"
     }

@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "DOCG 的完整英文名稱是？",
-      "options": ["Denominazione di Origine Controllata", "Denominazione di Origine Controllata e Garantita", "Denominazione di Origine Classica", "Denominazione di Origine Certificata"],
+      "options": [
+        "Denominazione di Origine Controllata",
+        "Denominazione di Origine Controllata e Garantita",
+        "Denominazione di Origine Classica",
+        "Denominazione di Origine Certificata"
+      ],
       "answer": 1,
       "explanation": "DOCG 是 Denominazione di Origine Controllata e Garantita 的縮寫，意為「保證法定產區」。"
     },
     {
       "question": "目前義大利有多少個 DOCG 產區？",
-      "options": ["約 50 個", "約 74 個", "約 100 個", "約 120 個"],
+      "options": [
+        "約 50 個",
+        "約 74 個",
+        "約 100 個",
+        "約 120 個"
+      ],
       "answer": 1,
       "explanation": "截至目前，義大利共有 74 個 DOCG 產區，是最高等級的葡萄酒分級。"
     },
     {
       "question": "以下哪個不是 DOCG 的要求？",
-      "options": ["必須先成為 DOC 至少 5 年", "瓶頸貼有官方編號封條", "必須使用國際品種", "必須通過化學分析與感官評鑑"],
+      "options": [
+        "必須先成為 DOC 至少 5 年",
+        "瓶頸貼有官方編號封條",
+        "必須使用國際品種",
+        "必須通過化學分析與感官評鑑"
+      ],
       "answer": 2,
       "explanation": "DOCG 通常強調本土品種，並非必須使用國際品種。"
     },
     {
       "question": "IGT 相當於法國的哪個等級？",
-      "options": ["AOC", "IGP", "Vin de France", "Grand Cru"],
+      "options": [
+        "AOC",
+        "IGP",
+        "Vin de France",
+        "Grand Cru"
+      ],
       "answer": 1,
       "explanation": "IGT（Indicazione Geografica Tipica）相當於法國的 IGP（Indication Géographique Protégée）。"
     }

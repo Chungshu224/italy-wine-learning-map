@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "義大利約有多少百分比的土地是丘陵地形？",
-      "options": ["約 23%", "約 35%", "約 42%", "約 50%"],
+      "options": [
+        "約 23%",
+        "約 35%",
+        "約 42%",
+        "約 50%"
+      ],
       "answer": 2,
       "explanation": "義大利約 42% 的土地為丘陵地形，這是最適合葡萄種植的地形。"
     },
     {
       "question": "義大利北部主要是什麼氣候類型？",
-      "options": ["地中海氣候", "大陸性氣候", "海洋性氣候", "熱帶氣候"],
+      "options": [
+        "地中海氣候",
+        "大陸性氣候",
+        "海洋性氣候",
+        "熱帶氣候"
+      ],
       "answer": 1,
       "explanation": "義大利北部（如 Piemonte）主要是大陸性氣候，冬冷夏熱，晝夜溫差大。"
     },
     {
       "question": "火山土壤最常見於義大利哪些產區？",
-      "options": ["Piemonte 和 Veneto", "Toscana 和 Umbria", "Sicily 和 Campania", "Lombardy 和 Friuli"],
+      "options": [
+        "Piemonte 和 Veneto",
+        "Toscana 和 Umbria",
+        "Sicily 和 Campania",
+        "Lombardy 和 Friuli"
+      ],
       "answer": 2,
       "explanation": "Sicily 的 Etna 火山和 Campania 的 Vesuvius 火山區域擁有豐富的火山土壤。"
     },
     {
       "question": "以下哪個特徵不是義大利南部葡萄酒的典型風格？",
-      "options": ["濃郁", "酒精度高", "果味豐富", "高酸度"],
+      "options": [
+        "濃郁",
+        "酒精度高",
+        "果味豐富",
+        "高酸度"
+      ],
       "answer": 3,
       "explanation": "義大利南部炎熱氣候通常產出濃郁、酒精度高、果味豐富的葡萄酒，酸度相對較低。"
     }

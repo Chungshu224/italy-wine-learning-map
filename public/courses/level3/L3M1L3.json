@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Aglianico del Vulture 為什麼被稱為「南義的 Barolo」？",
-      "options": ["價格相同", "都需要長時間陳年且單寧強勁", "使用相同葡萄品種", "產區海拔相同"],
+      "options": [
+        "價格相同",
+        "都需要長時間陳年且單寧強勁",
+        "使用相同葡萄品種",
+        "產區海拔相同"
+      ],
       "answer": 1,
       "explanation": "Aglianico del Vulture 因其極高的單寧、酸度和需要 10 年以上陳年的特性，被稱為南義的 Barolo。"
     },
     {
       "question": "Greco di Tufo 的 'Tufo' 指的是什麼？",
-      "options": ["村莊名稱", "凝灰岩（火山灰沉積岩）", "葡萄克隆", "釀酒師名字"],
+      "options": [
+        "村莊名稱",
+        "凝灰岩（火山灰沉積岩）",
+        "葡萄克隆",
+        "釀酒師名字"
+      ],
       "answer": 1,
       "explanation": "Tufo 是義大利文的凝灰岩（火山灰沉積岩），Greco di Tufo 的葡萄園必須位於這種土壤上。"
     },
     {
       "question": "Primitivo 與哪個品種 DNA 完全相同？",
-      "options": ["Syrah", "Zinfandel", "Grenache", "Tempranillo"],
+      "options": [
+        "Syrah",
+        "Zinfandel",
+        "Grenache",
+        "Tempranillo"
+      ],
       "answer": 1,
       "explanation": "1968 年科學研究證實 Primitivo 與美國加州的 Zinfandel DNA 完全相同，是同一品種的不同名稱。"
     },
     {
       "question": "哪個酒莊是 Aglianico del Vulture 的生物動力法代表？",
-      "options": ["Gaja", "Elena Fucci", "Antinori", "Feudi di San Gregorio"],
+      "options": [
+        "Gaja",
+        "Elena Fucci",
+        "Antinori",
+        "Feudi di San Gregorio"
+      ],
       "answer": 1,
       "explanation": "Elena Fucci 是 Basilicata 的生物動力法先驅，其旗艦酒款 Titolo 獲得 Wine Advocate 96+ 高分。"
     }

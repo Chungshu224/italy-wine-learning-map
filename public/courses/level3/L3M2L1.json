@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Barolo MGA 制度正式實施是在哪一年？",
-      "options": ["1990", "2000", "2010", "2015"],
+      "options": [
+        "1990",
+        "2000",
+        "2010",
+        "2015"
+      ],
       "answer": 2,
       "explanation": "Barolo MGA 制度於 2010 年正式實施，共有 170 個葡萄園獲得 MGA 認證。"
     },
     {
       "question": "Giacomo Conterno 的傳奇酒款 Monfortino Francia 實際上來自哪個 MGA？",
-      "options": ["Cannubi", "Brunate", "Vigna Rionda", "Bussia"],
+      "options": [
+        "Cannubi",
+        "Brunate",
+        "Vigna Rionda",
+        "Bussia"
+      ],
       "answer": 2,
       "explanation": "Francia 是 Giacomo Conterno 家族對 Vigna Rionda 的稱呼，Monfortino Francia 實際上就是 Vigna Rionda MGA。"
     },
     {
       "question": "Barbaresco 的官方 MGA 數量是多少？",
-      "options": ["33 個", "66 個", "100 個", "170 個"],
+      "options": [
+        "33 個",
+        "66 個",
+        "100 個",
+        "170 個"
+      ],
       "answer": 1,
       "explanation": "Barbaresco 有 66 個官方 MGA，遠少於 Barolo 的 170 個。"
     },
     {
       "question": "酒標上標示 MGA 時，MGA 名稱的字體大小有何限制？",
-      "options": ["不可大於生產者名稱", "不可大於產區名稱", "不可大於年份數字", "沒有限制"],
+      "options": [
+        "不可大於生產者名稱",
+        "不可大於產區名稱",
+        "不可大於年份數字",
+        "沒有限制"
+      ],
       "answer": 1,
       "explanation": "法規規定 MGA 名稱不可大於產區名稱（如 Barolo），以防止誤導消費者。"
     }

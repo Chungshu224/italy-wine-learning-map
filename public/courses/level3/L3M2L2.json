@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Barolo Riserva 的最低陳年要求是多少？",
-      "options": ["38 個月", "50 個月", "62 個月", "72 個月"],
+      "options": [
+        "38 個月",
+        "50 個月",
+        "62 個月",
+        "72 個月"
+      ],
       "answer": 2,
       "explanation": "Barolo Riserva 需要至少 62 個月陳年（5年+），比基本款的 38 個月多 24 個月。"
     },
     {
       "question": "\"Superiore\" 術語主要強調什麼？",
-      "options": ["更長的陳年時間", "更高的酒精度（葡萄成熟度）", "單一葡萄園", "有機認證"],
+      "options": [
+        "更長的陳年時間",
+        "更高的酒精度（葡萄成熟度）",
+        "單一葡萄園",
+        "有機認證"
+      ],
       "answer": 1,
       "explanation": "Superiore 主要強調更高的酒精度（通常 +0.5-1% ABV），代表更成熟的葡萄，通常也有更長的陳年要求。"
     },
     {
       "question": "氣泡酒甜度術語中，哪一個比 Brut 更甜？",
-      "options": ["Extra Brut", "Brut Nature", "Extra Dry", "Dosaggio Zero"],
+      "options": [
+        "Extra Brut",
+        "Brut Nature",
+        "Extra Dry",
+        "Dosaggio Zero"
+      ],
       "answer": 2,
       "explanation": "Extra Dry（12-17 g/L）比 Brut（6-12 g/L）更甜，這是歷史遺留的命名問題，容易造成誤解。"
     },
     {
       "question": "Chianti Classico Gran Selezione 要求葡萄必須來自哪裡？",
-      "options": ["任何 Chianti Classico 產區", "酒莊自有葡萄園", "指定的 MGA", "有機認證葡萄園"],
+      "options": [
+        "任何 Chianti Classico 產區",
+        "酒莊自有葡萄園",
+        "指定的 MGA",
+        "有機認證葡萄園"
+      ],
       "answer": 1,
       "explanation": "Gran Selezione（2014年創立）要求葡萄必須來自酒莊自有葡萄園，且陳年至少 30 個月，代表最高品質保證。"
     }

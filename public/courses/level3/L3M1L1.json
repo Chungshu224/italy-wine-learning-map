@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "誰是 Timorasso 葡萄復興的先驅者？",
-      "options": ["Angelo Gaja", "Walter Massa", "Bruno Giacosa", "Paolo Scavino"],
+      "options": [
+        "Angelo Gaja",
+        "Walter Massa",
+        "Bruno Giacosa",
+        "Paolo Scavino"
+      ],
       "answer": 1,
       "explanation": "Walter Massa 在 1987 年開始 Timorasso 的復興計畫，將這個幾近絕種的品種重新帶回市場。"
     },
     {
       "question": "Ruché 葡萄最獨特的風味特徵是什麼？",
-      "options": ["黑莓和巧克力", "玫瑰精油和紫羅蘭", "青草和醋栗", "無花果和蜂蜜"],
+      "options": [
+        "黑莓和巧克力",
+        "玫瑰精油和紫羅蘭",
+        "青草和醋栗",
+        "無花果和蜂蜜"
+      ],
       "answer": 1,
       "explanation": "Ruché 以其極濃郁的玫瑰精油和紫羅蘭香氣聞名，這是其最顯著的特徵。"
     },
     {
       "question": "Freisa 葡萄可以釀造成幾種不同的風格？",
-      "options": ["1種", "2種", "3種", "4種"],
+      "options": [
+        "1種",
+        "2種",
+        "3種",
+        "4種"
+      ],
       "answer": 2,
       "explanation": "Freisa 可以釀造成三種風格：干型(Secco)、微甜(Amabile)和氣泡(Frizzante)。"
     },
     {
       "question": "Timorasso 的陳年潛力通常是多久？",
-      "options": ["1-3年", "5-8年", "15-20年", "30年以上"],
+      "options": [
+        "1-3年",
+        "5-8年",
+        "15-20年",
+        "30年以上"
+      ],
       "answer": 2,
       "explanation": "Timorasso 具有極高的陳年潛力，通常可以陳年 15-20 年，是義大利最耐久的白葡萄酒之一。"
     }

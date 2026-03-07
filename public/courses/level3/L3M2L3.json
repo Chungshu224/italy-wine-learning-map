@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Barolo Boys 革命始於哪一年代？",
-      "options": ["1960年代", "1970年代", "1980年代", "1990年代"],
+      "options": [
+        "1960年代",
+        "1970年代",
+        "1980年代",
+        "1990年代"
+      ],
       "answer": 2,
       "explanation": "Barolo Boys 革命始於 1980 年代，Elio Altare 等現代派釀酒師引入法國橡木桶和新技術，挑戰傳統派。"
     },
     {
       "question": "傳統派 Barolo 主要使用什麼橡木桶？",
-      "options": ["法國小桶（225L Barrique）", "美國橡木桶", "斯洛維尼亞大桶（20-100 HL Botti）", "不鏽鋼桶"],
+      "options": [
+        "法國小桶（225L Barrique）",
+        "美國橡木桶",
+        "斯洛維尼亞大桶（20-100 HL Botti）",
+        "不鏽鋼桶"
+      ],
       "answer": 2,
       "explanation": "傳統派使用大型斯洛維尼亞橡木桶（Botti），容量 20-100 HL，幾乎不增添橡木香氣，保留純淨風土表達。"
     },
     {
       "question": "Giacomo Conterno Monfortino 的葡萄來自哪個 MGA？",
-      "options": ["Cannubi", "Brunate", "Vigna Rionda（稱為 Francia）", "Bussia"],
+      "options": [
+        "Cannubi",
+        "Brunate",
+        "Vigna Rionda（稱為 Francia）",
+        "Bussia"
+      ],
       "answer": 2,
       "explanation": "Monfortino 的葡萄來自 Vigna Rionda MGA，但 Conterno 家族稱之為 Francia，這是傳奇中的傳奇酒款。"
     },
     {
       "question": "盲品時，如何快速判斷傳統派 vs 現代派 Barolo？",
-      "options": ["看產區標示", "觀察顏色深度和橡木影響", "品嚐酸度", "聞花香"],
+      "options": [
+        "看產區標示",
+        "觀察顏色深度和橡木影響",
+        "品嚐酸度",
+        "聞花香"
+      ],
       "answer": 1,
       "explanation": "顏色深度（傳統派較淺）和橡木影響（現代派有明顯香草、巧克力）是最直接的判斷依據。"
     }

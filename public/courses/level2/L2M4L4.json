@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "為什麼義大利品種難以國際化？",
-      "options": ["品種太稀有", "風土依賴性強、克隆複雜、知識門檻高、需長期陳年", "政府禁止出口", "消費者不喜歡"],
+      "options": [
+        "品種太稀有",
+        "風土依賴性強、克隆複雜、知識門檻高、需長期陳年",
+        "政府禁止出口",
+        "消費者不喜歡"
+      ],
       "answer": 1,
       "explanation": "義大利品種國際化困難源於：對風土要求極端（離開原產地難以複製）、克隆眾多且差異大、消費者認知度低、許多品種需 8-15 年陳年（不符合新世界即飲市場）。"
     },
     {
       "question": "美國加州哪個產區的 Sangiovese 最成功？",
-      "options": ["Sonoma Valley", "Napa Valley（Atlas Peak）", "Central Valley", "Paso Robles"],
+      "options": [
+        "Sonoma Valley",
+        "Napa Valley（Atlas Peak）",
+        "Central Valley",
+        "Paso Robles"
+      ],
       "answer": 1,
       "explanation": "Napa Valley 的 Atlas Peak 產區（海拔 400-600m、火山土壤）是加州 Sangiovese 最成功的產區，氣候、土壤條件最接近 Tuscany。"
     },
     {
       "question": "Argentina 的 Bonarda 實際上是哪個義大利品種？",
-      "options": ["真正的 Bonarda", "Croatina", "Barbera", "Dolcetto"],
+      "options": [
+        "真正的 Bonarda",
+        "Croatina",
+        "Barbera",
+        "Dolcetto"
+      ],
       "answer": 1,
       "explanation": "DNA 研究證明，Argentina 的 \"Bonarda\" 實際上是義大利北部的 Croatina 品種，不是 Piemonte 的 Bonarda！這是常見的名稱混淆。"
     },
     {
       "question": "Prosecco 全球化成功的關鍵因素不包括？",
-      "options": ["價格親民（€8-15）", "風格易飲、果香豐富", "品牌命名簡單易記", "需要長期陳年"],
+      "options": [
+        "價格親民（€8-15）",
+        "風格易飲、果香豐富",
+        "品牌命名簡單易記",
+        "需要長期陳年"
+      ],
       "answer": 3,
       "explanation": "Prosecco 成功因素：價格親民、風格易飲（不需教育消費者）、品牌命名簡單、場合定位明確（慶祝、派對）、產區保護。Prosecco 是即飲型氣泡酒，不需陳年。"
     }

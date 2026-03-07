@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "DOCG 制度創立於哪一年？",
-      "options": ["1963", "1980", "1992", "2010"],
+      "options": [
+        "1963",
+        "1980",
+        "1992",
+        "2010"
+      ],
       "answer": 1,
       "explanation": "DOCG 制度創立於 1980 年，為了區分頂級產區。首批 DOCG 包括 Barolo、Barbaresco、Brunello、Vino Nobile。"
     },
     {
       "question": "DOCG 和 DOC 最大的差異是什麼？",
-      "options": ["產量限制更嚴格", "陳年時間更長", "每批次強制品質檢測（化學+感官）", "價格更高"],
+      "options": [
+        "產量限制更嚴格",
+        "陳年時間更長",
+        "每批次強制品質檢測（化學+感官）",
+        "價格更高"
+      ],
       "answer": 2,
       "explanation": "DOCG 最大特徵是每批次必須通過政府化學分析和感官品鑑委員會測試，這是 DOC 所沒有的。"
     },
     {
       "question": "DOCG 酒標上必須有什麼獨特標識？",
-      "options": ["金色標籤", "國家保證封條（Fascetta）", "生產者簽名", "MGA 標示"],
+      "options": [
+        "金色標籤",
+        "國家保證封條（Fascetta）",
+        "生產者簽名",
+        "MGA 標示"
+      ],
       "answer": 1,
       "explanation": "DOCG 酒款必須在瓶頸貼上帶有序號的國家保證封條（粉紅色或綠色），證明已通過檢測，這是 DOCG 獨有特徵。"
     },
     {
       "question": "截至 2024 年,義大利共有多少個 DOCG？",
-      "options": ["33 個", "57 個", "77 個", "100 個"],
+      "options": [
+        "33 個",
+        "57 個",
+        "77 個",
+        "100 個"
+      ],
       "answer": 2,
       "explanation": "截至 2024 年，義大利共有 77 個 DOCG，其中 Piedmont 擁有最多（18 個）。"
     }

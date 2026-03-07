@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Alto Piemonte 在 19 世紀末的葡萄園面積是多少？",
-      "options": ["5,000 公頃", "15,000 公頃", "40,000 公頃", "80,000 公頃"],
+      "options": [
+        "5,000 公頃",
+        "15,000 公頃",
+        "40,000 公頃",
+        "80,000 公頃"
+      ],
       "answer": 2,
       "explanation": "Alto Piemonte 在 19 世紀末達到巔峰，葡萄園面積高達 40,000 公頃，遠超今日的 Langhe 產區。"
     },
     {
       "question": "Carema 使用哪種特殊的葡萄培型系統？",
-      "options": ["Guyot", "Alberello", "Pergola（石柱支撐）", "Cordone Speronato"],
+      "options": [
+        "Guyot",
+        "Alberello",
+        "Pergola（石柱支撐）",
+        "Cordone Speronato"
+      ],
       "answer": 2,
       "explanation": "Carema 使用獨特的石柱 Pergola 系統來支撐葡萄藤，以抵抗山谷的強風。"
     },
     {
       "question": "Gattinara 的火山岩土壤主要是什麼岩石？",
-      "options": ["玄武岩", "斑岩", "石灰岩", "片岩"],
+      "options": [
+        "玄武岩",
+        "斑岩",
+        "石灰岩",
+        "片岩"
+      ],
       "answer": 1,
       "explanation": "Gattinara 的土壤主要是斑岩（火成岩），由數百萬年前的火山活動形成，賦予酒款獨特的礦物感和煙燻氣息。"
     },
     {
       "question": "Boca DOC 的總葡萄園面積約為多少？",
-      "options": ["12 公頃", "50 公頃", "100 公頃", "500 公頃"],
+      "options": [
+        "12 公頃",
+        "50 公頃",
+        "100 公頃",
+        "500 公頃"
+      ],
       "answer": 0,
       "explanation": "Boca 是全義大利最小產區之一，總面積僅約 12 公頃，年產量僅約 40,000 瓶。"
     }

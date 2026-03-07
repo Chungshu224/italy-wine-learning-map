@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "Verdicchio 的陳年潛力可達多久？",
-      "options": ["1-3 年", "3-5 年", "5-8 年", "10-20 年"],
+      "options": [
+        "1-3 年",
+        "3-5 年",
+        "5-8 年",
+        "10-20 年"
+      ],
       "answer": 3,
       "explanation": "頂級 Verdicchio（特別是 Matelica Riserva）擁有驚人的陳年潛力，可達 10-20 年，陳年後發展出蜂蠟、榛果、松露等複雜風味。"
     },
     {
       "question": "Vino Nobile di Montepulciano DOCG 的主要品種是？",
-      "options": ["Montepulciano", "Sangiovese (Prugnolo Gentile)", "Nebbiolo", "Barbera"],
+      "options": [
+        "Montepulciano",
+        "Sangiovese (Prugnolo Gentile)",
+        "Nebbiolo",
+        "Barbera"
+      ],
       "answer": 1,
       "explanation": "常見混淆！Vino Nobile di Montepulciano（產自 Tuscany 小鎮）的主要品種是 Sangiovese（當地稱 Prugnolo Gentile），不是 Montepulciano 品種。"
     },
     {
       "question": "Sagrantino 的單寧含量為何世界第一？",
-      "options": ["浸皮時間短", "單寧含量 5,000-6,000 mg/L，果皮極厚", "酸度低", "酒精度低"],
+      "options": [
+        "浸皮時間短",
+        "單寧含量 5,000-6,000 mg/L，果皮極厚",
+        "酸度低",
+        "酒精度低"
+      ],
       "answer": 1,
       "explanation": "Sagrantino 擁有世界最高單寧含量（5,000-6,000 mg/L），源自果皮極厚、多酚含量基因極高、長時間浸皮（20-30 天）。"
     },
     {
       "question": "Pecorino 為什麼叫這個名字？",
-      "options": ["像起司一樣", "羊喜歡吃葡萄 / 羊群遷徙路徑", "顏色像羊毛", "發明者姓 Pecorino"],
+      "options": [
+        "像起司一樣",
+        "羊喜歡吃葡萄 / 羊群遷徙路徑",
+        "顏色像羊毛",
+        "發明者姓 Pecorino"
+      ],
       "answer": 1,
       "explanation": "Pecorino（意為「小羊」）名稱源自兩種說法：羊群喜愛吃 Pecorino 葡萄，或因 Marche、Abruzzo 是傳統羊群遷徙路徑（Transumanza）。"
     }

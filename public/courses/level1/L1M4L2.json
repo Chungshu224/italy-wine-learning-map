@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "地域性配對的核心理念是？",
-      "options": ["選最貴的酒", "當地酒配當地菜", "紅酒配紅肉白酒配白肉", "隨意搭配"],
+      "options": [
+        "選最貴的酒",
+        "當地酒配當地菜",
+        "紅酒配紅肉白酒配白肉",
+        "隨意搭配"
+      ],
       "answer": 1,
       "explanation": "「What grows together, goes together」- 當地的葡萄酒與料理經過數百年共同演化，已達到完美平衡。"
     },
     {
       "question": "Bistecca alla Fiorentina（佛羅倫斯牛排）最經典的搭配是？",
-      "options": ["Barolo", "Chianti Classico", "Prosecco", "Soave"],
+      "options": [
+        "Barolo",
+        "Chianti Classico",
+        "Prosecco",
+        "Soave"
+      ],
       "answer": 1,
       "explanation": "佛羅倫斯牛排來自托斯卡納，當地的 Chianti Classico（Sangiovese）的高酸高單寧完美切割牛肉油脂。"
     },
     {
       "question": "為什麼白松露燉飯適合搭配 Barolo？",
-      "options": ["顏色相同", "土壤香與松露呼應，高單寧切割奶油", "價格相近", "都來自法國"],
+      "options": [
+        "顏色相同",
+        "土壤香與松露呼應，高單寧切割奶油",
+        "價格相近",
+        "都來自法國"
+      ],
       "answer": 1,
       "explanation": "Barolo 的土壤香與白松露完美呼應，且高單寧能切割燉飯中奶油的油膩感。"
     },
     {
       "question": "西西里的 Pasta alla Norma（茄子番茄麵）最佳搭配是？",
-      "options": ["Nero d'Avola", "Barbaresco", "Franciacorta", "Verdicchio"],
+      "options": [
+        "Nero d'Avola",
+        "Barbaresco",
+        "Franciacorta",
+        "Verdicchio"
+      ],
       "answer": 0,
       "explanation": "Pasta alla Norma 是西西里經典菜餚，搭配當地的 Nero d'Avola，茄子香與果香呼應。"
     }

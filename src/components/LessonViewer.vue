@@ -959,6 +959,7 @@ const initializePiedmontMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -1241,6 +1242,7 @@ const initializeTuscanyMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -1518,6 +1520,7 @@ const initializeVenetoMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -1789,6 +1792,7 @@ const initializeSicilyMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -2067,6 +2071,7 @@ const initializeLombardyMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -2338,6 +2343,7 @@ const initializeTrentinoMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -2606,6 +2612,7 @@ const initializeFriuliMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -2873,6 +2880,7 @@ const initializeLiguriaMap = () => {
                 .setLngLat(coordinates)
                 .setHTML(`
                   <div style="padding: 10px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(properties.name) : ''}
                     <div style="background: ${region.color}; color: white; padding: 5px 10px; border-radius: 5px; margin-bottom: 8px; text-align: center; font-size: 0.85rem; font-weight: 600;">
                       ${properties.grade}
                     </div>
@@ -3151,6 +3159,7 @@ const initializeEmiliaMap = () => {
                 .setLngLat(emiliaMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
@@ -3383,6 +3392,7 @@ const initializeMarcheMap = () => {
                 .setLngLat(marcheMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
@@ -3588,6 +3598,7 @@ const initializeMoliseMap = () => {
                 .setLngLat(moliseMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
@@ -3804,6 +3815,7 @@ const initializeCampaniaMap = () => {
                 .setLngLat(campaniaMap.getCenter())
                 .setHTML(`
                   <div style="padding: 12px; max-width: 250px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
                     <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
@@ -4009,6 +4021,7 @@ const initializePugliaMap = () => {
                 .setLngLat(pugliaMap.getCenter())
                 .setHTML(`
                   <div style="padding: 12px; max-width: 250px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
                     <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
@@ -4201,6 +4214,7 @@ const initializeBasilicataMap = () => {
                 .setLngLat(basilicataMap.getCenter())
                 .setHTML(`
                   <div style="padding: 12px; max-width: 250px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
                     <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
@@ -4407,6 +4421,7 @@ const initializeCalabriaMap = () => {
                 .setLngLat(calabriaMap.getCenter())
                 .setHTML(`
                   <div style="padding: 12px; max-width: 250px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <div style="display: inline-block; background: ${region.color}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 8px;">${region.grade}</div>
                     <p style="margin: 8px 0 0; color: #333; line-height: 1.5; font-size: 0.95rem;">${region.description}</p>
@@ -4577,6 +4592,7 @@ const initializeSardiniaMap = () => {
                 .setLngLat(e.lngLat)
                 .setHTML(`
                   <div style="padding:8px;font-family:sans-serif;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <div style="font-weight:bold;color:${region.color};margin-bottom:4px;font-size:14px;">
                       ${region.name}
                     </div>
@@ -4786,6 +4802,7 @@ const initializeAbruzzoMap = () => {
                 .setLngLat(abruzzoMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
@@ -5004,6 +5021,7 @@ const initializeLazioMap = () => {
                 .setLngLat(lazioMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>
@@ -5215,6 +5233,7 @@ const initializeUmbriaMap = () => {
                 .setLngLat(umbriaMap.getCenter())
                 .setHTML(`
                   <div style="padding: 8px; min-width: 200px;">
+                    ${window.generatePronunciationButton ? window.generatePronunciationButton(region.name) : ''}
                     <h3 style="margin: 0 0 8px; color: ${region.color}; font-size: 1.1rem;">${region.name}</h3>
                     <p style="margin: 5px 0; font-weight: 600; color: #2c3e50;">等級：${region.grade}</p>
                     <p style="margin: 5px 0; color: #555; line-height: 1.5;">${region.description}</p>

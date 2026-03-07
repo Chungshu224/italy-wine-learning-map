@@ -5,25 +5,45 @@
   "quiz": [
     {
       "question": "義大利出口量最大的白葡萄酒是？",
-      "options": ["Trebbiano", "Pinot Grigio", "Garganega", "Vermentino"],
+      "options": [
+        "Trebbiano",
+        "Pinot Grigio",
+        "Garganega",
+        "Vermentino"
+      ],
       "answer": 1,
       "explanation": "Pinot Grigio 是義大利出口量最大的白葡萄酒，在全球市場非常受歡迎。"
     },
     {
       "question": "Soave 主要使用哪個葡萄品種釀造？",
-      "options": ["Pinot Grigio", "Trebbiano", "Garganega", "Verdicchio"],
+      "options": [
+        "Pinot Grigio",
+        "Trebbiano",
+        "Garganega",
+        "Verdicchio"
+      ],
       "answer": 2,
       "explanation": "Soave（尤其是 Soave Classico DOCG）主要使用 Garganega 葡萄釀造，以杏仁香聞名。"
     },
     {
       "question": "哪個品種以獨特的魚形瓶（Anfora）包裝聞名？",
-      "options": ["Vermentino", "Verdicchio", "Garganega", "Trebbiano"],
+      "options": [
+        "Vermentino",
+        "Verdicchio",
+        "Garganega",
+        "Trebbiano"
+      ],
       "answer": 1,
       "explanation": "Verdicchio dei Castelli di Jesi 傳統上使用魚形瓶（Anfora）包裝，非常具有辨識度。"
     },
     {
       "question": "Vermentino 的特色風味是？",
-      "options": ["杏仁、白桃", "檸檬、礦物、海鹽", "柑橘、海風、香草", "青蘋果、梨子"],
+      "options": [
+        "杏仁、白桃",
+        "檸檬、礦物、海鹽",
+        "柑橘、海風、香草",
+        "青蘋果、梨子"
+      ],
       "answer": 2,
       "explanation": "Vermentino 生長於海岸產區，帶有明顯的柑橘、海風和鹹鮮感，是其獨特之處。"
     }
