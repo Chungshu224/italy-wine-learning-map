@@ -5,18 +5,21 @@
     </div>
     
     <!-- 大區資訊顯示（無 AOC 選擇時） -->
-    <div class="map-info-bar" v-if="!activeAOC?.aoc && regionOverview">
+    <div class="map-info-bar" v-if="!activeAOC?.aoc && regionOverview" :class="{ collapsed: isInfoCollapsed }">
       <div class="info-header-bar">
         <span class="aoc-info-title">
           <span class="aoc-dot" style="background: var(--wine-red)"></span>
           {{ regionOverview.nameCN }} {{ regionOverview.name }}
         </span>
         <div class="map-buttons">
+          <button class="btn-collapse" @click="isInfoCollapsed = !isInfoCollapsed" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'">
+            {{ isInfoCollapsed ? '▼ 展開' : '▲ 收合' }}
+          </button>
           <button class="btn-reset" @click="resetToRegion">重置大區</button>
         </div>
       </div>
       
-      <div class="region-overview-content">
+      <div class="region-overview-content" v-show="!isInfoCollapsed">
         <div class="overview-section">
           <div class="overview-item">
             <span class="overview-label">📍 位置:</span>
@@ -107,7 +110,7 @@
     </div>
     
     <!-- AOC 產區資訊顯示 -->
-    <div class="map-info-bar" v-if="activeAOC?.aoc">
+    <div class="map-info-bar" v-if="activeAOC?.aoc" :class="{ collapsed: isInfoCollapsed }">
       <div class="info-header-bar">
         <div class="aoc-title-with-audio">
           <span class="aoc-info-title">
@@ -123,11 +126,14 @@
           </button>
         </div>
         <div class="map-buttons">
+          <button class="btn-collapse" @click="isInfoCollapsed = !isInfoCollapsed" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'">
+            {{ isInfoCollapsed ? '▼ 展開' : '▲ 收合' }}
+          </button>
           <button class="btn-reset" @click="resetMap">重置地圖</button>
         </div>
       </div>
       
-      <div v-if="regionInfo" class="region-info-content">
+      <div v-if="regionInfo" class="region-info-content" v-show="!isInfoCollapsed">
         <div class="info-header">
           <div class="name-row-with-audio">
             <div>
@@ -219,15 +225,23 @@
           </template>
         </div>
       </div>
-      <div v-else class="no-info">無詳細產區資料</div>
+      <div v-else class="no-info" v-show="!isInfoCollapsed">無詳細產區資料</div>
     </div>
     <div ref="mapContainer" class="map"></div>
-    <button class="btn-3d" @click="toggle3D">
-      {{ is3D ? '2D' : '3D' }}
-    </button>
-    <button class="btn-region-boundary" @click="toggleRegionBoundary">
-      {{ showRegionBoundary ? '隱藏大區' : '顯示大區' }}
-    </button>
+    
+    <!-- Map Control Buttons -->
+    <div class="map-controls">
+      <button class="btn-3d-terrain" @click="toggle3DTerrain" :title="is3D ? '關閉 3D 地形視圖' : '開啟 3D 地形視圖'">
+        {{ is3D ? '🏔️ 2D 平面' : '🏔️ 3D 地形' }}
+      </button>
+      <button class="btn-contour" @click="toggleContours" :title="showContours ? '隱藏等高線' : '顯示等高線'">
+        {{ showContours ? '📏 隱藏等高線' : '📏 顯示等高線' }}
+      </button>
+      <button class="btn-region-boundary" @click="toggleRegionBoundary">
+        {{ showRegionBoundary ? '隱藏大區' : '顯示大區' }}
+      </button>
+    </div>
+    
     <div v-if="mapError" class="map-error">
       {{ mapError }}
     </div>
@@ -416,6 +430,9 @@ const mapContainer = ref(null)
 let map = null
 const is3D = ref(false)
 const showRegionBoundary = ref(true)
+const showTerrain = ref(false)
+const showContours = ref(false)
+const isInfoCollapsed = ref(false)
 const geojsonCache = new Map()
 
 function aocColor(groupName) {
@@ -585,10 +602,85 @@ const resetToRegion = async () => {
   }
 }
 
-const toggle3D = () => {
+const toggle3DTerrain = () => {
+  if (!map) return
+  
+  // 切換狀態
   is3D.value = !is3D.value
-  if (map) {
-    map.easeTo({ pitch: is3D.value ? 45 : 0, duration: 800 })
+  showTerrain.value = is3D.value
+  
+  if (is3D.value) {
+    // 啟用 3D 地形和視角
+    map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 })
+    map.easeTo({ pitch: 60, duration: 800 })
+  } else {
+    // 關閉 3D 地形和視角
+    map.setTerrain(null)
+    map.easeTo({ pitch: 0, duration: 800 })
+  }
+}
+
+const toggleContours = () => {
+  if (!map) return
+  
+  showContours.value = !showContours.value
+  
+  if (showContours.value) {
+    // 添加等高線圖層
+    if (!map.getSource('contours')) {
+      map.addSource('contours', {
+        type: 'vector',
+        url: 'mapbox://mapbox.mapbox-terrain-v2'
+      })
+    }
+    
+    // 添加等高線線圖層
+    if (!map.getLayer('contour-lines')) {
+      map.addLayer({
+        id: 'contour-lines',
+        type: 'line',
+        source: 'contours',
+        'source-layer': 'contour',
+        paint: {
+          'line-color': '#ff6900',
+          'line-width': 1,
+          'line-opacity': 0.8
+        }
+      })
+    }
+    
+    // 添加等高線標籤圖層 - 顯示每條等高線的高度
+    if (!map.getLayer('contour-labels')) {
+      map.addLayer({
+        id: 'contour-labels',
+        type: 'symbol',
+        source: 'contours',
+        'source-layer': 'contour',
+        layout: {
+          'text-field': ['concat', ['get', 'ele'], 'm'],
+          'text-font': ['DIN Offc Pro Bold', 'Arial Unicode MS Bold'],
+          'text-size': 11,
+          'symbol-placement': 'line',
+          'text-rotation-alignment': 'map',
+          'text-pitch-alignment': 'viewport',
+          'text-max-angle': 30
+        },
+        paint: {
+          'text-color': '#ff6900',
+          'text-halo-color': '#ffffff',
+          'text-halo-width': 2,
+          'text-halo-blur': 0.5
+        }
+      })
+    }
+  } else {
+    // 移除等高線圖層
+    if (map.getLayer('contour-lines')) {
+      map.removeLayer('contour-lines')
+    }
+    if (map.getLayer('contour-labels')) {
+      map.removeLayer('contour-labels')
+    }
   }
 }
 
@@ -615,6 +707,25 @@ const initMap = async (retry = 0) => {
     })
     
     map.on('load', async () => {
+      // 添加地形數據源（用於 3D 地形）
+      map.addSource('mapbox-dem', {
+        type: 'raster-dem',
+        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        tileSize: 512,
+        maxzoom: 14
+      })
+      
+      // 添加天空圖層以增強 3D 效果
+      map.addLayer({
+        id: 'sky',
+        type: 'sky',
+        paint: {
+          'sky-type': 'atmosphere',
+          'sky-atmosphere-sun': [0.0, 0.0],
+          'sky-atmosphere-sun-intensity': 15
+        }
+      })
+      
       map.addControl(new mapboxgl.NavigationControl(), 'top-right')
       map.addControl(new mapboxgl.FullscreenControl(), 'top-right')
       
@@ -1058,49 +1169,95 @@ onUnmounted(() => {
   font-size: 0.9rem;
 }
 
-.btn-3d {
+/* 地圖控制按鈕群組 */
+.map-controls {
   position: absolute;
   top: 140px;
   right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.map-controls button {
   padding: 10px 20px;
   background: white;
   color: var(--wine-red-dark);
   border: 1px solid var(--border-color);
   border-radius: 30px;
   cursor: pointer;
-  z-index: 10;
   font-weight: 600;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
-}
-
-.btn-3d:hover {
-  background: var(--cream-bg);
-  border-color: var(--wine-red-light);
-  transform: translateY(-2px);
-}
-
-.btn-region-boundary {
-  position: absolute;
-  top: 190px;
-  right: 10px;
-  padding: 10px 20px;
-  background: white;
-  color: var(--wine-red-dark);
-  border: 1px solid var(--border-color);
-  border-radius: 30px;
-  cursor: pointer;
-  z-index: 10;
-  font-weight: 600;
-  box-shadow: var(--shadow-md);
-  transition: all 0.3s ease;
+  white-space: nowrap;
   font-size: 0.9rem;
 }
 
-.btn-region-boundary:hover {
+.map-controls button:hover {
   background: var(--cream-bg);
   border-color: var(--wine-red-light);
-  transform: translateY(-2px);
+  transform: translateX(-5px);
+}
+
+.map-controls button:active {
+  transform: translateX(-3px);
+}
+
+.btn-3d-terrain {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4) !important;
+}
+
+.btn-3d-terrain:hover {
+  background: linear-gradient(135deg, #43a6f5 0%, #00d9e8 100%) !important;
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6) !important;
+  transform: translateX(-5px) translateY(-2px) !important;
+}
+
+.btn-contour {
+  background: linear-gradient(135deg, #ffffff 0%, #fff9f0 100%) !important;
+}
+
+/* 收合按鈕樣式 */
+.btn-collapse {
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.btn-collapse:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+}
+
+.btn-collapse:active {
+  transform: scale(0.95);
+}
+
+/* 收合狀態樣式 */
+.map-info-bar.collapsed {
+  max-height: 90px;
+  overflow: visible;
+}
+
+.map-info-bar.collapsed .info-header-bar {
+  border-bottom: none;
+}
+
+.map-info-bar.collapsed .region-overview-content,
+.map-info-bar.collapsed .region-info-content,
+.map-info-bar.collapsed .no-info {
+  display: none;
 }
 
 .loading-overlay {
@@ -1166,15 +1323,22 @@ onUnmounted(() => {
     font-size: 1.2rem;
   }
   
+  .map-controls {
+    top: 120px;
+    right: 8px;
+    gap: 8px;
+  }
+  
+  .map-controls button {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
   .btn-3d {
-    top: 130px;
-    right: 10px;
     padding: 8px 16px;
   }
   
   .btn-region-boundary {
-    top: 180px;
-    right: 10px;
     padding: 8px 16px;
     font-size: 0.85rem;
   }
